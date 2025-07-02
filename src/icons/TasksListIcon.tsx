@@ -1,7 +1,7 @@
 import type { SvgIconProps } from '../types';
 import { twMerge } from 'tailwind-merge';
 
-export const CollapseIcon = ({ className }: SvgIconProps) => {
+export const TasksListIcon = ({ className }: SvgIconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -15,9 +15,12 @@ export const CollapseIcon = ({ className }: SvgIconProps) => {
       stroke-linejoin="round"
       className={twMerge('size-5', className)}
     >
-      <rect width="18" height="18" x="3" y="3" rx="2" />
-      <path d="M15 3v18" />
-      <path d="m10 15-3-3 3-3" />
+      <rect width="7" height="7" x="3" y="3" rx="1" />
+      <rect width="7" height="7" x="3" y="14" rx="1" />
+      <path d="M14 4h7" />
+      <path d="M14 9h7" />
+      <path d="M14 15h7" />
+      <path d="M14 20h7" />
     </svg>
   );
 };

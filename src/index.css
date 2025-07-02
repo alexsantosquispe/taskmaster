@@ -6,7 +6,8 @@
 }
 
 @theme {
-  --color-primary: #181818;
+  --color-primary: #171717;
+  --background: var(--color-gray-100);
 }
 
 html,
@@ -15,4 +16,5 @@ body {
   margin: 0;
   font-family: var(--font-fira-sans);
   color: var(--color-primary);
+  background-color: var(--background);
 }

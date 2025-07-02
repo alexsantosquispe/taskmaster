@@ -11,7 +11,7 @@ export const ToggleButton = () => {
 
   return (
     <button
-      className="hover:text-primary text-gray-400 hover:cursor-pointer"
+      className="text-primary/60 rounded-lg p-2 hover:cursor-pointer hover:bg-blue-50 hover:text-blue-600"
       onClick={toggleButton}
     >
       {isExpanded ? <CollapseIcon /> : <ExpandIcon />}
