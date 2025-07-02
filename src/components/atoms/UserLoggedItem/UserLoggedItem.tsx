@@ -26,7 +26,12 @@ export const UserLoggedItem = ({
       )}
     >
       <div className="flex items-center gap-2">
-        <div className="h-8 w-8">
+        <div
+          className={twMerge(
+            'h-8 w-8',
+            clsx({ 'hover:cursor-pointer': isCollapsed })
+          )}
+        >
           <img src={avatarUrl} className="h-8 w-8" alt="avatar user" />
         </div>
 
@@ -39,7 +44,7 @@ export const UserLoggedItem = ({
       </div>
 
       {!isCollapsed && (
-        <EllipsisVerticalIcon className="size-6 rounded p-1 hover:cursor-pointer hover:bg-blue-50 hover:text-blue-600" />
+        <EllipsisVerticalIcon className="size-6 rounded p-1 text-gray-600 hover:cursor-pointer hover:bg-blue-50 hover:text-blue-600" />
       )}
     </div>
   );

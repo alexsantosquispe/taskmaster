@@ -1,5 +1,3 @@
-import { use, useState } from 'react';
-
 import { BoardIcon } from '../../../icons/BoardIcon';
 import { BoxIcon } from '../../../icons/BoxIcon';
 import { ChartPieIcon } from '../../../icons/ChartPieIcon';
@@ -12,6 +10,7 @@ import { ToggleButton } from '../ToggleButton/ToggleButton';
 import { UserLoggedItem } from '../UserLoggedItem/UserLoggedItem';
 import cn from 'clsx';
 import { twMerge } from 'tailwind-merge';
+import { useState } from 'react';
 
 const SIDE_BAR_ITEMS = [
   {
@@ -71,7 +70,7 @@ export const Sidebar = () => {
         className={twMerge(
           'flex items-center justify-between p-2',
           cn({
-            'flex-col gap-2': isSideBarCollapsed,
+            'flex-col-reverse gap-2': isSideBarCollapsed,
             'flex-row pl-5': !isSideBarCollapsed
           })
         )}

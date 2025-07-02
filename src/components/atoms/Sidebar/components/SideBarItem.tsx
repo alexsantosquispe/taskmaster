@@ -28,7 +28,7 @@ export const SideBarItem = ({
         key={id}
         className={twMerge(
           ITEM_STYLES,
-          cn({ 'bg-blue-50 text-blue-600': isActive })
+          cn({ 'bg-blue-50 text-blue-600': isActive, 'px-2': isCollapsed })
         )}
       >
         <div>{icon}</div>
