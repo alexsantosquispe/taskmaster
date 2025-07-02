@@ -1,39 +1,39 @@
 @font-face {
   font-display: swap;
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 300;
-  src: url("/fonts/fira-sans-300.woff2") format("woff2");
+  src: url('/fonts/fira-sans-300.woff2') format('woff2');
 }
 
 @font-face {
   font-display: swap;
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/fira-sans-400.woff2") format("woff2");
+  src: url('/fonts/fira-sans-400.woff2') format('woff2');
 }
 
 @font-face {
   font-display: swap;
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 500;
-  src: url("/fonts/fira-sans-500.woff2") format("woff2");
+  src: url('/fonts/fira-sans-500.woff2') format('woff2');
 }
 
 @font-face {
   font-display: swap;
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 600;
-  src: url("/fonts/fira-sans-600.woff2") format("woff2");
+  src: url('/fonts/fira-sans-600.woff2') format('woff2');
 }
 
 @font-face {
   font-display: swap;
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/fira-sans-700.woff2") format("woff2");
+  src: url('/fonts/fira-sans-700.woff2') format('woff2');
 }

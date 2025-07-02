@@ -1,8 +1,8 @@
-@import "./fonts.css";
-@import "tailwindcss";
+@import './fonts.css';
+@import 'tailwindcss';
 
 :root {
-  --font-fira-sans: "Fira Sans", sans-serif;
+  --font-fira-sans: 'Fira Sans', sans-serif;
 }
 
 html,
