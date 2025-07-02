@@ -1,3 +1,4 @@
+import type { SvgIconProps } from '../types';
 import { twMerge } from 'tailwind-merge';
 
 export const ExpandIcon = ({ className }: SvgIconProps) => {
@@ -12,15 +13,11 @@ export const ExpandIcon = ({ className }: SvgIconProps) => {
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
-      className={twMerge(
-        'icon icon-tabler icons-tabler-outline icon-tabler-layout-sidebar-left-expand',
-        className
-      )}
+      className={twMerge('size-5', className)}
     >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
-      <path d="M9 4v16" />
-      <path d="M14 10l2 2l-2 2" />
+      <rect width="18" height="18" x="3" y="3" rx="2" />
+      <path d="M15 3v18" />
+      <path d="m8 9 3 3-3 3" />
     </svg>
   );
 };
