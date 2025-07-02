@@ -1,5 +1,13 @@
+@import "./fonts.css";
 @import "tailwindcss";
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-fira-sans: "Fira Sans", sans-serif;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-fira-sans);
 }
