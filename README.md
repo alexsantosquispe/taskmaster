@@ -7,7 +7,7 @@
 
 ## 📌 Overview
 
-This project is a modern, scalable example of working with remote APIs using **React**, **TypeScript**, and **React Query**. It integrates **JSONPlaceholder** as a data source and showcases best practices in component architecture, testing, and UI development with **Tailwind CSS**.
+This project is a task manager to handle projects and daily tasks with multiple users with **React**.
 
 ---
 
