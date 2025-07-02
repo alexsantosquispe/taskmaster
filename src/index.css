@@ -5,9 +5,14 @@
   --font-fira-sans: 'Fira Sans', sans-serif;
 }
 
+@theme {
+  --color-primary: #181818;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: var(--font-fira-sans);
+  color: var(--color-primary);
 }
