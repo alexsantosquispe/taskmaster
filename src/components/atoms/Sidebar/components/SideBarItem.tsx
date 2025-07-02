@@ -8,6 +8,7 @@ interface SideBarItemProps {
   icon: ReactNode;
   onSelectItem: (id: string) => void;
   isActive?: boolean;
+  isCollapsed?: boolean;
 }
 
 const ITEM_STYLES =
@@ -18,7 +19,8 @@ export const SideBarItem = ({
   label,
   icon,
   onSelectItem,
-  isActive = false
+  isActive = false,
+  isCollapsed = false
 }: SideBarItemProps) => {
   return (
     <button onClick={() => onSelectItem(id)} className="w-full">
@@ -29,8 +31,8 @@ export const SideBarItem = ({
           cn({ 'bg-blue-50 text-blue-600': isActive })
         )}
       >
-        {icon}
-        {label}
+        <div>{icon}</div>
+        {!isCollapsed && label}
       </li>
     </button>
   );
