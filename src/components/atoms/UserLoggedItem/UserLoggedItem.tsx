@@ -18,7 +18,7 @@ export const UserLoggedItem = ({
   return (
     <div
       className={twMerge(
-        'flex items-center rounded-lg border-gray-200 py-2',
+        'flex items-center rounded-lg border-gray-200 py-2 transition-opacity duration-300 ease-in-out',
         clsx({
           'justify-between border pr-2 pl-3': !isCollapsed,
           'justify-center': isCollapsed

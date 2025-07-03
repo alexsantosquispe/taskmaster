@@ -1,5 +1,5 @@
 import { Detail } from './components/molecules/Detail/Detail';
-import { Sidebar } from './components/atoms/Sidebar/Sidebar';
+import { Sidebar } from './components/molecules/Sidebar/Sidebar';
 
 function App() {
   return (
