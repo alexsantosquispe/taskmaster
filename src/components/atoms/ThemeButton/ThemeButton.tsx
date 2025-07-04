@@ -32,7 +32,7 @@ export const ThemeButton = ({ isCollapsed }: ThemeButtonProps) => {
   return (
     <div
       className={twMerge(
-        'flex w-fit transform gap-1 self-center rounded-lg bg-gray-100 p-1 text-[0.8125rem]',
+        'flex w-fit gap-1 self-center rounded-lg bg-gray-100 p-1 text-[0.8125rem]',
         cn({
           'flex-col': isCollapsed,
           'flex-row': !isCollapsed

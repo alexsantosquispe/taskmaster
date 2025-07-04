@@ -1,6 +1,3 @@
-import cn from 'clsx';
-import { useState } from 'react';
-import { twMerge } from 'tailwind-merge';
 import {
   BoardIcon,
   ChartPieIcon,
@@ -9,6 +6,10 @@ import {
   SettingsIcon,
   TasksListIcon
 } from '../../../icons';
+
+import cn from 'clsx';
+import { useState } from 'react';
+import { twMerge } from 'tailwind-merge';
 import { ThemeButton } from '../../atoms/ThemeButton/ThemeButton';
 import { UserLoggedItem } from '../../atoms/UserLoggedItem/UserLoggedItem';
 import { SideBarHeader } from './components/SideBarHeader';
@@ -73,7 +74,7 @@ const currentUser = {
   avatarUrl: '/img/avatar.png'
 };
 
-export const Sidebar = () => {
+export const SideBar = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [selectedId, setSelectedId] = useState(SIDE_BAR_ITEMS[0].id);
 
