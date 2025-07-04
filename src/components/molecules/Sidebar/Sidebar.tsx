@@ -9,6 +9,7 @@ import {
   SettingsIcon,
   TasksListIcon
 } from '../../../icons';
+import { ThemeButton } from '../../atoms/ThemeButton/ThemeButton';
 import { UserLoggedItem } from '../../atoms/UserLoggedItem/UserLoggedItem';
 import { SideBarHeader } from './components/SideBarHeader';
 import { SideBarItem } from './components/SideBarItem';
@@ -113,6 +114,8 @@ export const Sidebar = () => {
               isCollapsed={isCollapsed}
             />
           ))}
+
+          <ThemeButton isCollapsed={isCollapsed} />
 
           <div className="pt-2">
             <UserLoggedItem {...currentUser} isCollapsed={isCollapsed} />
