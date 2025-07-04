@@ -1,6 +1,6 @@
-import { EllipsisVerticalIcon } from '../../../icons/EllipsisVerticalIcon';
 import clsx from 'clsx';
 import { twMerge } from 'tailwind-merge';
+import { EllipsisVerticalIcon } from '../../../icons/EllipsisVerticalIcon';
 
 interface UserLoggedItemProps {
   name: string;
@@ -20,7 +20,7 @@ export const UserLoggedItem = ({
       className={twMerge(
         'flex items-center rounded-lg border-gray-200 py-2 transition-opacity duration-300 ease-in-out',
         clsx({
-          'justify-between border pr-2 pl-3': !isCollapsed,
+          'justify-between border px-2': !isCollapsed,
           'justify-center': isCollapsed
         })
       )}

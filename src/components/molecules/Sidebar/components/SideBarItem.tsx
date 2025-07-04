@@ -80,9 +80,9 @@ export const SideBarItem = ({
         {subItems && !isCollapsed && (
           <ChevronDownIcon
             className={twMerge(
-              'size-4',
+              'size-4 transition-transform duration-300',
               cn({
-                'rotate-180 transition-transform duration-300': showSubItems
+                'rotate-180': showSubItems
               })
             )}
           />

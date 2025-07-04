@@ -79,8 +79,8 @@ export const Sidebar = () => {
   return (
     <section
       className={twMerge(
-        'flex flex-col rounded-xl bg-white shadow-lg transition-all duration-200 ease-in-out',
-        cn({ 'w-14': isCollapsed, 'w-80': !isCollapsed })
+        'flex flex-col rounded-xl bg-white shadow-lg transition-all duration-300 ease-in-out',
+        cn({ 'w-14': isCollapsed, 'w-[20rem]': !isCollapsed })
       )}
     >
       <SideBarHeader
@@ -114,7 +114,9 @@ export const Sidebar = () => {
             />
           ))}
 
-          <UserLoggedItem {...currentUser} isCollapsed={isCollapsed} />
+          <div className="pt-2">
+            <UserLoggedItem {...currentUser} isCollapsed={isCollapsed} />
+          </div>
         </div>
       </div>
     </section>
