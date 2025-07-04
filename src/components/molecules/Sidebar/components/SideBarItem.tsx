@@ -34,8 +34,8 @@ const SideBarItemButtonWrapper = ({
   return (
     <button
       className={twMerge(
-        'justify- flex w-full items-center justify-between gap-2 rounded-lg p-2 transition-colors duration-150 ease-in-out hover:cursor-pointer hover:bg-blue-50 hover:text-blue-600',
-        cn({ 'bg-blue-50 text-blue-600': isActive }),
+        'flex w-full items-center justify-between gap-2 rounded-lg p-2 transition-colors duration-150 ease-in-out hover:cursor-pointer hover:bg-gray-100 hover:text-blue-700',
+        cn({ 'bg-gray-100 text-blue-700': isActive }),
         className
       )}
       onClick={onClick}

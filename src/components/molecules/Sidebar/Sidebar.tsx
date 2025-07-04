@@ -10,9 +10,9 @@ import {
 import cn from 'clsx';
 import { useState } from 'react';
 import { twMerge } from 'tailwind-merge';
-import { ThemeButton } from '../../atoms/ThemeButton/ThemeButton';
-import { UserLoggedItem } from '../../atoms/UserLoggedItem/UserLoggedItem';
-import { SideBarHeader } from './components/SideBarHeader';
+import ThemeButton from '../../atoms/ThemeButton/ThemeButton';
+import UserLoggedItem from '../../atoms/UserLoggedItem/UserLoggedItem';
+import SideBarHeader from './components/SideBarHeader';
 import { SideBarItem } from './components/SideBarItem';
 
 const SIDE_BAR_ITEMS = [

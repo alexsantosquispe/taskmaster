@@ -1,4 +1,5 @@
 import cn from 'clsx';
+import { memo } from 'react';
 import { twMerge } from 'tailwind-merge';
 import { BoxIcon } from '../../../../icons/BoxIcon';
 import { ToggleButton } from '../../../atoms/ToggleButton/ToggleButton';
@@ -8,10 +9,7 @@ interface SideBarHeaderProps {
   setIsCollapsed: (value: boolean) => void;
 }
 
-export const SideBarHeader = ({
-  isCollapsed,
-  setIsCollapsed
-}: SideBarHeaderProps) => {
+const SideBarHeader = ({ isCollapsed, setIsCollapsed }: SideBarHeaderProps) => {
   return (
     <div
       className={twMerge(
@@ -34,3 +32,5 @@ export const SideBarHeader = ({
     </div>
   );
 };
+
+export default memo(SideBarHeader);

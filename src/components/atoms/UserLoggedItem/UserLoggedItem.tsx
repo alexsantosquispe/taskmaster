@@ -1,4 +1,5 @@
-import clsx from 'clsx';
+import cn from 'clsx';
+import { memo } from 'react';
 import { twMerge } from 'tailwind-merge';
 import { EllipsisVerticalIcon } from '../../../icons/EllipsisVerticalIcon';
 
@@ -9,7 +10,7 @@ interface UserLoggedItemProps {
   isCollapsed?: boolean;
 }
 
-export const UserLoggedItem = ({
+const UserLoggedItem = ({
   name,
   email,
   avatarUrl,
@@ -18,20 +19,15 @@ export const UserLoggedItem = ({
   return (
     <div
       className={twMerge(
-        'flex items-center rounded-lg border-gray-200 py-2 transition-opacity duration-300 ease-in-out',
-        clsx({
-          'justify-between border px-2': !isCollapsed,
+        'flex items-center rounded-lg py-2 transition-opacity duration-300 ease-in-out hover:cursor-pointer',
+        cn({
+          'justify-between px-2 hover:bg-gray-100': !isCollapsed,
           'justify-center': isCollapsed
         })
       )}
     >
       <div className="flex items-center gap-2">
-        <div
-          className={twMerge(
-            'h-8 w-8',
-            clsx({ 'hover:cursor-pointer': isCollapsed })
-          )}
-        >
+        <div className="h-8 w-8">
           <img src={avatarUrl} className="h-8 w-8" alt="avatar user" />
         </div>
 
@@ -44,8 +40,10 @@ export const UserLoggedItem = ({
       </div>
 
       {!isCollapsed && (
-        <EllipsisVerticalIcon className="size-6 rounded p-1 text-gray-600 hover:cursor-pointer hover:bg-blue-50 hover:text-blue-600" />
+        <EllipsisVerticalIcon className="size-6 rounded p-1 text-gray-600 hover:cursor-pointer" />
       )}
     </div>
   );
 };
+
+export default memo(UserLoggedItem);

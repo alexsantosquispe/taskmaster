@@ -1,10 +1,17 @@
-import cn from 'clsx';
-import { useState, type ReactNode } from 'react';
-import { twMerge } from 'tailwind-merge';
-import { Theme, type ThemeType } from '../../../contexts/ThemeContext';
 import { LaptopIcon, MoonIcon, SunIcon } from '../../../icons';
 
+import cn from 'clsx';
+import { memo, type ReactNode } from 'react';
+import { twMerge } from 'tailwind-merge';
+import type { ThemeType } from '../../../contexts/ThemeContext';
+import { useTheme } from '../../../hooks/useTheme';
+
 const THEME_BUTTONS: { id: ThemeType; label: string; icon: ReactNode }[] = [
+  {
+    id: 'system',
+    label: 'System',
+    icon: <LaptopIcon />
+  },
   {
     id: 'light',
     label: 'Light',
@@ -14,11 +21,6 @@ const THEME_BUTTONS: { id: ThemeType; label: string; icon: ReactNode }[] = [
     id: 'dark',
     label: 'Dark',
     icon: <MoonIcon />
-  },
-  {
-    id: 'system',
-    label: 'System',
-    icon: <LaptopIcon />
   }
 ];
 
@@ -26,15 +28,15 @@ interface ThemeButtonProps {
   isCollapsed?: boolean;
 }
 
-export const ThemeButton = ({ isCollapsed }: ThemeButtonProps) => {
-  const [activeTheme, setActiveTheme] = useState<ThemeType>(Theme.light);
+const ThemeButton = ({ isCollapsed }: ThemeButtonProps) => {
+  const { theme, setTheme } = useTheme();
 
   return (
     <div
       className={twMerge(
-        'flex w-fit gap-1 self-center rounded-lg bg-gray-100 p-1 text-[0.8125rem]',
+        'flex w-fit self-center rounded-lg bg-gray-100 p-1 text-[0.8125rem]',
         cn({
-          'flex-col': isCollapsed,
+          'flex-col gap-y-0.5': isCollapsed,
           'flex-row': !isCollapsed
         })
       )}
@@ -43,15 +45,14 @@ export const ThemeButton = ({ isCollapsed }: ThemeButtonProps) => {
         <button
           key={item.id}
           className={twMerge(
-            'flex max-w-20 items-center gap-1 rounded-md px-2 py-1 hover:cursor-pointer',
+            'flex items-center gap-1 rounded-md px-2 py-1 transition-colors duration-150 ease-in-out hover:cursor-pointer',
             cn({
-              'bg-white shadow': item.id === activeTheme,
+              'bg-white shadow': item.id === theme,
+              'w-20': !isCollapsed,
               'p-1': isCollapsed
             })
           )}
-          onClick={() => {
-            setActiveTheme(item.id);
-          }}
+          onClick={() => setTheme(item.id)}
         >
           <div>{item.icon}</div>
           {!isCollapsed && <label>{item.label}</label>}
@@ -60,3 +61,5 @@ export const ThemeButton = ({ isCollapsed }: ThemeButtonProps) => {
     </div>
   );
 };
+
+export default memo(ThemeButton);
