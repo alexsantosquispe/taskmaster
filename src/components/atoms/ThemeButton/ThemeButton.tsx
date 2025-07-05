@@ -1,24 +1,24 @@
 import { LaptopIcon, MoonIcon, SunIcon } from '../../../icons';
 
 import cn from 'clsx';
-import { memo, type ReactNode } from 'react';
+import { memo } from 'react';
 import { twMerge } from 'tailwind-merge';
-import type { ThemeType } from '../../../contexts/ThemeContext';
+import { Theme } from '../../../contexts/ThemeContext';
 import { useTheme } from '../../../hooks/useTheme';
 
-const THEME_BUTTONS: { id: ThemeType; label: string; icon: ReactNode }[] = [
+const THEME_BUTTONS = [
   {
-    id: 'system',
+    id: Theme.system,
     label: 'System',
     icon: <LaptopIcon />
   },
   {
-    id: 'light',
+    id: Theme.light,
     label: 'Light',
     icon: <SunIcon />
   },
   {
-    id: 'dark',
+    id: Theme.dark,
     label: 'Dark',
     icon: <MoonIcon />
   }
@@ -34,7 +34,7 @@ const ThemeButton = ({ isCollapsed }: ThemeButtonProps) => {
   return (
     <div
       className={twMerge(
-        'flex w-fit self-center rounded-lg bg-gray-100 p-1 text-[0.8125rem]',
+        'flex w-fit self-center rounded-lg bg-neutral-100 p-1 text-[0.8125rem] dark:bg-neutral-800',
         cn({
           'flex-col gap-y-0.5': isCollapsed,
           'flex-row': !isCollapsed
@@ -47,7 +47,7 @@ const ThemeButton = ({ isCollapsed }: ThemeButtonProps) => {
           className={twMerge(
             'flex items-center gap-1 rounded-md px-2 py-1 transition-colors duration-150 ease-in-out hover:cursor-pointer',
             cn({
-              'bg-white shadow': item.id === theme,
+              'dark:bg-primary bg-white shadow': item.id === theme,
               'w-20': !isCollapsed,
               'p-1': isCollapsed
             })

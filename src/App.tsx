@@ -1,9 +1,9 @@
 import { Detail } from './components/molecules/Detail/Detail';
-import { SideBar } from './components/molecules/SideBar/Sidebar';
+import { SideBar } from './components/molecules/SideBar/SideBar';
 
 function App() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="text-primary flex min-h-screen flex-col bg-neutral-100 dark:bg-neutral-800 dark:text-white">
       <main className="flex h-screen gap-2 p-2">
         <SideBar />
         <Detail />

@@ -1,4 +1,11 @@
-import { useState, type ReactNode } from 'react';
+import { useEffect, useState, type ReactNode } from 'react';
+import { THEME_KEY } from '../constants';
+import { setLSValue } from '../utils/localStorage.utils';
+import {
+  applyThemeToDocument,
+  getStoredTheme,
+  getSystemTheme
+} from '../utils/theme.utils';
 import { Theme, ThemeContext, type ThemeType } from './ThemeContext';
 
 interface ThemeProviderProps {
@@ -6,7 +13,18 @@ interface ThemeProviderProps {
 }
 
 export const ThemeProvider = ({ children }: ThemeProviderProps) => {
-  const [currentTheme, setCurrentTheme] = useState<ThemeType>(Theme.system);
+  const initialTheme = getStoredTheme();
+  const [currentTheme, setCurrentTheme] = useState<ThemeType>(
+    initialTheme ?? Theme.system
+  );
+
+  useEffect(() => {
+    const theme =
+      currentTheme === Theme.system ? getSystemTheme() : currentTheme;
+
+    applyThemeToDocument(theme);
+    setLSValue(THEME_KEY, currentTheme);
+  }, [currentTheme]);
 
   return (
     <ThemeContext.Provider
