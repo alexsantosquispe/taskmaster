@@ -81,7 +81,7 @@ export const SideBar = () => {
   return (
     <section
       className={twMerge(
-        'flex flex-col rounded-xl bg-white shadow-lg transition-all duration-300 ease-in-out',
+        'dark:bg-primary flex flex-col rounded-xl bg-white shadow-xl transition-all duration-300 ease-in-out',
         cn({ 'w-14': isCollapsed, 'w-[20rem]': !isCollapsed })
       )}
     >

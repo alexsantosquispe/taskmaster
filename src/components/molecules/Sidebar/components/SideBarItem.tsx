@@ -34,8 +34,12 @@ const SideBarItemButtonWrapper = ({
   return (
     <button
       className={twMerge(
-        'flex w-full items-center justify-between gap-2 rounded-lg p-2 transition-colors duration-150 ease-in-out hover:cursor-pointer hover:bg-gray-100 hover:text-blue-700',
-        cn({ 'bg-gray-100 text-blue-700': isActive }),
+        'flex w-full items-center justify-between gap-2 rounded-lg p-2 transition-colors duration-150 ease-in-out hover:cursor-pointer',
+        'hover:bg-neutral-100 hover:text-blue-700 dark:hover:bg-neutral-800 dark:hover:text-blue-500',
+        cn({
+          'bg-neutral-100 text-blue-700 dark:bg-neutral-800 dark:text-blue-500':
+            isActive
+        }),
         className
       )}
       onClick={onClick}
@@ -66,7 +70,9 @@ export const SideBarItem = ({
   return (
     <li
       key={id}
-      className={twMerge('text-primary/80 flex w-full flex-col items-center')}
+      className={twMerge(
+        'text-primary/80 flex w-full flex-col items-center dark:text-white/80'
+      )}
     >
       <SideBarItemButtonWrapper
         isActive={id === selectedId}

@@ -16,7 +16,7 @@ export const ToggleButton = ({
 
   return (
     <button
-      className="text-primary/60 rounded-lg p-2 hover:cursor-pointer hover:bg-blue-50 hover:text-blue-600"
+      className="rounded-lg p-2 text-neutral-600 hover:cursor-pointer hover:bg-neutral-100 hover:text-blue-700 dark:text-white/60 dark:hover:bg-neutral-800 dark:hover:text-blue-500"
       onClick={toggleButton}
     >
       {isCollapsed ? <ExpandIcon /> : <CollapseIcon />}

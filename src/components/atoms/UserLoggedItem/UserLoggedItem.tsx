@@ -21,7 +21,8 @@ const UserLoggedItem = ({
       className={twMerge(
         'flex items-center rounded-lg py-2 transition-opacity duration-300 ease-in-out hover:cursor-pointer',
         cn({
-          'justify-between px-2 hover:bg-gray-100': !isCollapsed,
+          'justify-between px-2 hover:bg-neutral-100 dark:hover:bg-neutral-800':
+            !isCollapsed,
           'justify-center': isCollapsed
         })
       )}
@@ -34,13 +35,13 @@ const UserLoggedItem = ({
         {!isCollapsed && (
           <div className="flex flex-col justify-center text-xs">
             <span>{name}</span>
-            <span className="text-gray-600">{email}</span>
+            <span className="text-neutral-600 dark:text-white/60">{email}</span>
           </div>
         )}
       </div>
 
       {!isCollapsed && (
-        <EllipsisVerticalIcon className="size-6 rounded p-1 text-gray-600 hover:cursor-pointer" />
+        <EllipsisVerticalIcon className="size-6 rounded p-1 text-neutral-600 hover:cursor-pointer dark:text-white/60" />
       )}
     </div>
   );
