@@ -74,7 +74,7 @@ const currentUser = {
   avatarUrl: '/img/avatar.png'
 };
 
-export const SideBar = () => {
+export const SideBarMenu = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [selectedId, setSelectedId] = useState(SIDE_BAR_ITEMS[0].id);
 
