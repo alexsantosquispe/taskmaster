@@ -21,12 +21,14 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
   useEffect(() => {
     const theme =
       currentTheme === Theme.system ? getSystemTheme() : currentTheme;
+
     applyThemeToDocument(theme);
     setLSValue(THEME_KEY, currentTheme);
   }, [currentTheme]);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
     const handleChange = (e: MediaQueryListEvent) => {
       if (getStoredTheme() === Theme.system) {
         applyThemeToDocument(e.matches ? Theme.dark : Theme.light);

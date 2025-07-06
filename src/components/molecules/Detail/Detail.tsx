@@ -1,4 +1,10 @@
-import { ChevronUpIcon } from '../../../icons';
+import {
+  ChevronUpIcon,
+  CircleDotDashedIcon,
+  CirclePlusIcon
+} from '../../../icons';
+
+import Card from '../../Card';
 import TabBar from '../../atoms/TabBar/TabBar';
 
 const TABS = [
@@ -41,7 +47,47 @@ export const Detail = () => {
       {/* Board Section */}
       <div className="flex w-full flex-col gap-3">
         <TabBar tabs={TABS} />
-        <div>board section</div>
+
+        <div className="flex w-full gap-3">
+          <div className="flex w-64 flex-col gap-2 rounded-xl border border-neutral-200 bg-neutral-100 p-[0.5rem] pt-3">
+            <div className="flex items-center justify-between text-neutral-700">
+              <div className="flex items-center gap-2 text-sm">
+                <CircleDotDashedIcon className="size-4" />
+                <h3>Backlog</h3>
+              </div>
+
+              <CirclePlusIcon className="size-4" />
+            </div>
+            <Card />
+            <Card />
+          </div>
+
+          <div className="flex w-64 flex-col gap-2 rounded-xl border border-neutral-200 bg-neutral-100 p-[0.5rem] pt-3">
+            <div className="flex items-center justify-between text-neutral-700">
+              <div className="flex items-center gap-2 text-sm">
+                <CircleDotDashedIcon className="size-4" />
+                <h3>Backlog</h3>
+              </div>
+
+              <CirclePlusIcon className="size-4" />
+            </div>
+            <Card />
+            <Card />
+            <Card />
+          </div>
+
+          <div className="flex w-64 flex-col gap-2 rounded-xl border border-neutral-200 bg-neutral-100 p-[0.5rem] pt-3">
+            <div className="flex items-center justify-between text-neutral-700">
+              <div className="flex items-center gap-2 text-sm">
+                <CircleDotDashedIcon className="size-4" />
+                <h3>Backlog</h3>
+              </div>
+
+              <CirclePlusIcon className="size-4" />
+            </div>
+            <Card />
+          </div>
+        </div>
       </div>
     </section>
   );
