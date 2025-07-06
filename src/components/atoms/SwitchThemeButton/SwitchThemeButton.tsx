@@ -24,17 +24,17 @@ const THEME_BUTTONS = [
   }
 ];
 
-interface ThemeButtonProps {
+interface SwitchThemeButtonProps {
   isCollapsed?: boolean;
 }
 
-const ThemeButton = ({ isCollapsed }: ThemeButtonProps) => {
+const SwitchThemeButton = ({ isCollapsed }: SwitchThemeButtonProps) => {
   const { theme, setTheme } = useTheme();
 
   return (
     <div
       className={twMerge(
-        'flex w-fit self-center rounded-lg bg-neutral-100 p-1 text-[0.8125rem] dark:bg-neutral-800',
+        'flex w-fit self-center rounded-lg bg-neutral-100 p-0.5 text-[0.8125rem] dark:bg-neutral-800',
         cn({
           'flex-col gap-y-0.5': isCollapsed,
           'flex-row': !isCollapsed
@@ -55,11 +55,11 @@ const ThemeButton = ({ isCollapsed }: ThemeButtonProps) => {
           onClick={() => setTheme(item.id)}
         >
           <div>{item.icon}</div>
-          {!isCollapsed && <label>{item.label}</label>}
+          {!isCollapsed && <span>{item.label}</span>}
         </button>
       ))}
     </div>
   );
 };
 
-export default memo(ThemeButton);
+export default memo(SwitchThemeButton);

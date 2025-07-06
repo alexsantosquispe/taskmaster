@@ -3,3 +3,8 @@ export interface SvgIconProps {
 }
 
 export type LSValuesTypes = string | number | boolean;
+
+export type TabItem = {
+  id: string;
+  label: string;
+};

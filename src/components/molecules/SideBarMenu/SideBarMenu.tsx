@@ -10,7 +10,7 @@ import {
 import cn from 'clsx';
 import { useState } from 'react';
 import { twMerge } from 'tailwind-merge';
-import ThemeButton from '../../atoms/ThemeButton/ThemeButton';
+import SwitchThemeButton from '../../atoms/SwitchThemeButton/SwitchThemeButton';
 import UserLoggedItem from '../../atoms/UserLoggedItem/UserLoggedItem';
 import SideBarHeader from './components/SideBarHeader';
 import { SideBarItem } from './components/SideBarItem';
@@ -81,7 +81,7 @@ export const SideBarMenu = () => {
   return (
     <section
       className={twMerge(
-        'dark:bg-primary flex flex-col rounded-xl bg-white shadow-xl transition-all duration-300 ease-in-out',
+        'flex flex-col rounded-xl bg-white shadow-xl transition-all duration-300 ease-in-out dark:bg-black/30',
         cn({ 'w-14': isCollapsed, 'w-[20rem]': !isCollapsed })
       )}
     >
@@ -116,7 +116,7 @@ export const SideBarMenu = () => {
             />
           ))}
 
-          <ThemeButton isCollapsed={isCollapsed} />
+          <SwitchThemeButton isCollapsed={isCollapsed} />
 
           <div className="pt-2">
             <UserLoggedItem {...currentUser} isCollapsed={isCollapsed} />
