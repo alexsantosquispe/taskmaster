@@ -1,7 +1,7 @@
 import { twMerge } from 'tailwind-merge';
 import type { SvgIconProps } from '../models/types';
 
-export const ChevronUpIcon = ({ className }: SvgIconProps) => {
+export const CircleCheckIcon = ({ className }: SvgIconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -15,7 +15,8 @@ export const ChevronUpIcon = ({ className }: SvgIconProps) => {
       strokeLinejoin="round"
       className={twMerge('size-5', className)}
     >
-      <path d="m18 15-6-6-6 6" />
+      <circle cx="12" cy="12" r="10" />
+      <path d="m9 12 2 2 4-4" />
     </svg>
   );
 };

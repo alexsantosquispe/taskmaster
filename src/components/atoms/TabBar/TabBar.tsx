@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { twMerge } from 'tailwind-merge';
-import type { TabItem } from '../../../types';
+import type { TabItem } from '../../../models/types';
 import { TabBarItem } from './components/TabBarItem';
 
 interface TabBarProps {

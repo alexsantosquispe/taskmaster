@@ -1,5 +1,5 @@
-import type { SvgIconProps } from '../types';
 import { twMerge } from 'tailwind-merge';
+import type { SvgIconProps } from '../models/types';
 
 export const TasksListIcon = ({ className }: SvgIconProps) => {
   return (
