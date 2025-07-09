@@ -1,6 +1,6 @@
 import cn from 'clsx';
 import { twMerge } from 'tailwind-merge';
-import type { TabItem } from '../../../../types';
+import type { TabItem } from '../../../../models/types';
 
 interface TabBarItemProps {
   tabItem: TabItem;

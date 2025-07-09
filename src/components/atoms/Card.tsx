@@ -1,12 +1,15 @@
-import { CalendarIcon } from '../icons';
+import { CalendarIcon } from '../../icons';
 
 const Card = () => {
   return (
     <div className="flex w-full flex-col rounded-lg border border-neutral-200 bg-white text-sm">
-      <div className="flex flex-col px-2 pt-3">
-        <span>Research landing page trends.</span>
-        <p className="text-neutral-500">
-          compile competitor landing page designs for inspiration. Gather...
+      <div className="flex flex-col gap-2 px-2 pt-3">
+        <span className="text-base font-medium">
+          Research landing page trends.
+        </span>
+        <p className="text-neutral-600">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint quidem
+          rem quia exercitationem vitae doloremque voluptate optio quos fugit.
         </p>
       </div>
 
@@ -15,6 +18,7 @@ const Card = () => {
           <CalendarIcon className="size-4" />
           <span>12 Nov</span>
         </div>
+
         <div className="flex items-center gap-1 rounded px-1.5 py-0.5 text-neutral-400 shadow">
           <div className="h-3 w-3 rounded-full border-[1.5px] border-neutral-200" />
           <span>0%</span>

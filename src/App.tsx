@@ -1,5 +1,5 @@
-import { Detail } from './components/molecules/Detail/Detail';
 import { SideBarMenu } from './components/molecules/SideBarMenu/SideBarMenu';
+import { Detail } from './components/organisms/Detail/Detail';
 
 function App() {
   return (
