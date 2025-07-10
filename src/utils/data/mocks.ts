@@ -11,10 +11,10 @@ export const TASKS: TaskType[] = [
     description:
       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint quidem rem quia exercitationem vitae doloremque voluptate optio quos fugit.',
     status: STATUS_TYPES.BACKLOG,
-    createdAt: '2025-07-09T15:48:13-04:00',
+    createdAt: '2025-07-08T15:48:13-04:00',
     lastUpdate: '2025-07-09T15:48:13-04:00',
     priority: PRIORITY_TYPES.LOW,
-    progress: 0
+    progress: 15
   },
   {
     id: '2',
@@ -22,10 +22,10 @@ export const TASKS: TaskType[] = [
     description:
       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint quidem rem quia exercitationem vitae doloremque voluptate optio quos fugit.',
     status: STATUS_TYPES.BACKLOG,
-    createdAt: '2025-07-09T15:48:13-04:00',
-    lastUpdate: '2025-07-09T15:48:13-04:00',
+    createdAt: '2025-07-08T15:48:13-04:00',
+    lastUpdate: '2025-07-10T15:48:13-04:00',
     priority: PRIORITY_TYPES.MEDIUM,
-    progress: 0
+    progress: 50
   },
   {
     id: '3',
@@ -33,10 +33,10 @@ export const TASKS: TaskType[] = [
     description:
       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint quidem rem quia exercitationem vitae doloremque voluptate optio quos fugit.',
     status: STATUS_TYPES.BACKLOG,
-    createdAt: '2025-07-09T15:48:13-04:00',
-    lastUpdate: '2025-07-09T15:48:13-04:00',
+    createdAt: '2025-07-05T16:07:13-04:00',
+    lastUpdate: '2025-07-09T07:48:13-04:00',
     priority: PRIORITY_TYPES.HIGH,
-    progress: 0
+    progress: 67
   },
   {
     id: '4',
@@ -44,9 +44,9 @@ export const TASKS: TaskType[] = [
     description:
       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint quidem rem quia exercitationem vitae doloremque voluptate optio quos fugit.',
     status: STATUS_TYPES.BACKLOG,
-    createdAt: '2025-07-09T15:48:13-04:00',
-    lastUpdate: '2025-07-09T15:48:13-04:00',
+    createdAt: '2025-07-06T18:08:13-04:00',
+    lastUpdate: '2025-07-10T12:23:13-04:00',
     priority: PRIORITY_TYPES.LOW,
-    progress: 0
+    progress: 100
   }
 ];
