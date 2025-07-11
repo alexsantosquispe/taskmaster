@@ -4,8 +4,14 @@ import {
   CircleDotDashedIcon,
   LoadIcon
 } from '../../../icons';
+import {
+  BACKLOG_TASKS,
+  DONE_TASKS,
+  IN_PROGRESS_TASKS,
+  ON_HOLD_TASKS,
+  REVIEW_TASKS
+} from '../../../utils/data/mocks';
 
-import { TASKS } from '../../../utils/data/mocks';
 import { Breadcrumb } from '../../atoms/Breadcrumb/Breadcrumb';
 import TabBar from '../../atoms/TabBar/TabBar';
 import { StatusColumn } from '../../molecules/StatusColumn/StatusColumn';
@@ -53,33 +59,35 @@ export const Detail = () => {
       </div>
 
       {/* Board Section */}
-      <div className="flex w-full flex-col gap-3 overflow-hidden">
+      <div className="flex h-full w-full flex-col gap-y-4 overflow-hidden">
         <TabBar tabs={TABS} />
-        <div className="flex gap-3 overflow-hidden">
+        <div className="flex gap-x-[0.625rem] overflow-hidden">
           <StatusColumn
             title="Backlog"
             icon={<CircleDotDashedIcon />}
-            tasks={TASKS}
+            tasks={BACKLOG_TASKS}
           />
-
+          <StatusColumn
+            title="On Hold"
+            icon={<CircleDashedIcon />}
+            tasks={ON_HOLD_TASKS}
+          />
           <StatusColumn
             title="In Progress"
             icon={<LoadIcon className="text-amber-500 dark:text-amber-300" />}
-            tasks={TASKS}
+            tasks={IN_PROGRESS_TASKS}
           />
-
+          <StatusColumn
+            title="Review"
+            icon={<CircleDashedIcon />}
+            tasks={REVIEW_TASKS}
+          />
           <StatusColumn
             title="Done"
             icon={
               <CircleCheckIcon className="text-green-600 dark:text-green-500" />
             }
-            tasks={TASKS}
-          />
-
-          <StatusColumn
-            title="On Hold"
-            icon={<CircleDashedIcon />}
-            tasks={TASKS}
+            tasks={DONE_TASKS}
           />
         </div>
       </div>

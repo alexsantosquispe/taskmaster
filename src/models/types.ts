@@ -1,3 +1,12 @@
+export interface SvgIconProps {
+  className?: string;
+}
+
+export type TabItem = {
+  id: string;
+  label: string;
+};
+
 export const PRIORITY_TYPES = {
   LOW: 'Low',
   MEDIUM: 'Medium',
@@ -7,25 +16,20 @@ export const PRIORITY_TYPES = {
 export type PriorityType = (typeof PRIORITY_TYPES)[keyof typeof PRIORITY_TYPES];
 
 export const STATUS_TYPES = {
-  BACKLOG: 'Backlog',
-  TODO: 'To-Do',
-  IN_PROGRESS: 'In Progress',
-  REVIEW: 'Review',
-  DONE: 'Done'
+  BACKLOG: 'backlog',
+  ON_HOLD: 'on-hold',
+  IN_PROGRESS: 'in-progress',
+  REVIEW: 'review',
+  DONE: 'done'
 } as const;
 
 export type StatusType = (typeof STATUS_TYPES)[keyof typeof STATUS_TYPES];
 
-export interface SvgIconProps {
-  className?: string;
-}
-
-export type LSValuesTypes = string | number | boolean;
-
-export type TabItem = {
+export interface UserType {
   id: string;
-  label: string;
-};
+  name: string;
+  avatarUrl: string;
+}
 
 export type TaskType = {
   id: string;
@@ -36,4 +40,5 @@ export type TaskType = {
   progress: number;
   createdAt: string; //datetime
   lastUpdate: string; //datetime
+  assignee?: UserType;
 };

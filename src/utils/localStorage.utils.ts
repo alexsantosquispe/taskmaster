@@ -1,4 +1,4 @@
-import type { LSValuesTypes } from '../models/types';
+type LSValuesTypes = string | number | boolean;
 
 export const getLSValue = (key: string) => localStorage.getItem(key);
 
