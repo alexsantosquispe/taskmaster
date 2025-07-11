@@ -8,12 +8,7 @@
 ## 📌 Overview
 
 This project is a task manager to handle projects and daily tasks with multiple users with **React**.
-
----
-
-## 🖼️ Screenshots
-
-TODO: Add screenshots
+(Note: This project is still in progress 👷‍♂️)
 
 ---
 
@@ -28,12 +23,16 @@ TODO: Add screenshots
 # Clone repo
 git clone git@github.com:alexsantosquispe/taskmaster.git
 cd taskmaster
+```
 
+```bash
 # Install dependencies
 pnpm install
 or
 npm install
+```
 
+```bash
 # Run development server
 pnpm run dev
 or
@@ -41,5 +40,21 @@ np run dev
 ```
 
 Visit `http://localhost:5173` to view the app.
+
+---
+
+## 🖼️ Screenshots
+
+### Light
+
+<div style="display:flex; gap: 12px;">
+  <img src="./screenshots/light-mode.webp" alt="Desktop view" width="80%"/>
+</div>
+
+### Dark
+
+<div style="display:flex; gap: 12px;">
+  <img src="./screenshots/dark-mode.webp" alt="Desktop view" width="80%"/>
+</div>
 
 ---
