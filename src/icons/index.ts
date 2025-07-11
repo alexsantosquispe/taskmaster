@@ -7,6 +7,7 @@ import { ChevronUpIcon } from './ChevronUpIcon';
 import { CircleCheckIcon } from './CircleCheckIcon';
 import { CircleDashedIcon } from './CircleDashedIcon';
 import { CircleDotDashedIcon } from './CircleDotDashedIcon';
+import { CircleDotIcon } from './CircleDotIcon';
 import { CirclePlusIcon } from './CirclePlusIcon';
 import { CollapseIcon } from './CollapseIcon';
 import { EllipsisVerticalIcon } from './EllipsisVerticalIcon';
@@ -19,6 +20,7 @@ import { ProjectIcon } from './ProjectIcon';
 import { SettingsIcon } from './SettingsIcon';
 import { SunIcon } from './SunIcon';
 import { TasksListIcon } from './TasksListIcon';
+import { UserIcon } from './UserIcon';
 
 export {
   BoardIcon,
@@ -30,6 +32,7 @@ export {
   CircleCheckIcon,
   CircleDashedIcon,
   CircleDotDashedIcon,
+  CircleDotIcon,
   CirclePlusIcon,
   CollapseIcon,
   EllipsisVerticalIcon,
@@ -41,5 +44,6 @@ export {
   ProjectIcon,
   SettingsIcon,
   SunIcon,
-  TasksListIcon
+  TasksListIcon,
+  UserIcon
 };

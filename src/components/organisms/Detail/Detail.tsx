@@ -2,6 +2,7 @@ import {
   CircleCheckIcon,
   CircleDashedIcon,
   CircleDotDashedIcon,
+  CircleDotIcon,
   LoadIcon
 } from '../../../icons';
 import {
@@ -50,7 +51,7 @@ const TABS = [
 
 export const Detail = () => {
   return (
-    <section className="flex max-h-screen w-full flex-col gap-6 px-6 py-2">
+    <section className="flex max-h-screen w-full flex-col gap-6 px-4 pt-4">
       <div className="flex flex-col gap-2">
         <Breadcrumb items={BREADCRUMBS} />
         <h2 className="text-2xl leading-12 font-medium">
@@ -61,7 +62,7 @@ export const Detail = () => {
       {/* Board Section */}
       <div className="flex h-full w-full flex-col gap-y-4 overflow-hidden">
         <TabBar tabs={TABS} />
-        <div className="flex gap-x-[0.625rem] overflow-hidden">
+        <div className="flex gap-x-3 overflow-hidden">
           <StatusColumn
             title="Backlog"
             icon={<CircleDotDashedIcon />}
@@ -79,7 +80,7 @@ export const Detail = () => {
           />
           <StatusColumn
             title="Review"
-            icon={<CircleDashedIcon />}
+            icon={<CircleDotIcon />}
             tasks={REVIEW_TASKS}
           />
           <StatusColumn
