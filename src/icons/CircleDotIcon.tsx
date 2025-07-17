@@ -1,5 +1,5 @@
-import { twMerge } from 'tailwind-merge';
 import type { SvgIconProps } from '../models/types';
+import { twMerge } from 'tailwind-merge';
 
 export const CircleDotIcon = ({ className }: SvgIconProps) => {
   return (
@@ -10,9 +10,9 @@ export const CircleDotIcon = ({ className }: SvgIconProps) => {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       className={twMerge('size-5', className)}
     >
       <circle cx="12" cy="12" r="10" />

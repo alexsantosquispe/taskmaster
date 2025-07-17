@@ -36,7 +36,7 @@ npm install
 # Run development server
 pnpm run dev
 or
-np run dev
+npm run dev
 ```
 
 Visit `http://localhost:5173` to view the app.

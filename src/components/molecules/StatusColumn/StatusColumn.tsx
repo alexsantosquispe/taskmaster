@@ -1,7 +1,7 @@
-import type { ReactNode } from 'react';
-import type { TaskType } from '../../../models/types';
 import { Chip } from '../../atoms/Chip/Chip';
+import type { ReactNode } from 'react';
 import { TaskItemCard } from '../../atoms/TaskItem/TaskItemCard';
+import type { TaskType } from '../../../models/types';
 
 interface StatusColumnProps {
   title: string;
@@ -11,7 +11,7 @@ interface StatusColumnProps {
 
 export const StatusColumn = ({ title, icon, tasks }: StatusColumnProps) => {
   return (
-    <div className="dark:bg-primary flex w-1/5 flex-col overflow-hidden rounded-xl border border-neutral-200 bg-gray-100 px-2 pb-2 dark:border-neutral-700">
+    <div className="dark:bg-primary flex w-1/5 flex-col overflow-hidden rounded-xl border border-neutral-200 bg-neutral-100 px-2 pb-2 dark:border-neutral-700">
       <div className="flex items-center gap-2 py-4 text-sm text-neutral-800 dark:text-white">
         {icon}
         <div className="flex items-center gap-2">
