@@ -4,7 +4,7 @@ import { Detail } from './components/organisms/Detail/Detail';
 function App() {
   return (
     <div className="text-primary flex min-h-screen flex-col bg-white dark:bg-black dark:text-white">
-      <main className="flex h-screen gap-2 p-2">
+      <main className="flex h-screen w-full flex-col gap-2 p-2 md:flex-row">
         <SideBarMenu />
         <Detail />
       </main>

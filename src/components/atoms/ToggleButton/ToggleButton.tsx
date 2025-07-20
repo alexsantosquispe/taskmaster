@@ -1,14 +1,17 @@
-import { CollapseIcon } from '../../../icons/CollapseIcon';
-import { ExpandIcon } from '../../../icons/ExpandIcon';
+import type { ReactNode } from 'react';
 
 interface ToggleButtonProps {
   isCollapsed: boolean;
   setIsCollapsed: (value: boolean) => void;
+  expandIcon: ReactNode;
+  collapseIcon: ReactNode;
 }
 
 export const ToggleButton = ({
   isCollapsed,
-  setIsCollapsed
+  setIsCollapsed,
+  expandIcon,
+  collapseIcon
 }: ToggleButtonProps) => {
   const toggleButton = () => {
     setIsCollapsed(!isCollapsed);
@@ -19,7 +22,7 @@ export const ToggleButton = ({
       className="rounded-lg p-2 text-neutral-600 hover:cursor-pointer hover:bg-neutral-100 hover:text-blue-700 dark:text-white/60 dark:hover:bg-neutral-800 dark:hover:text-blue-500"
       onClick={toggleButton}
     >
-      {isCollapsed ? <ExpandIcon /> : <CollapseIcon />}
+      {isCollapsed ? collapseIcon : expandIcon}
     </button>
   );
 };

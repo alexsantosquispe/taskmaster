@@ -82,7 +82,10 @@ export const SideBarMenu = () => {
     <section
       className={twMerge(
         'dark:bg-primary flex flex-col rounded-xl border border-gray-200 bg-white shadow-xl transition-all duration-300 ease-in-out dark:border-white/15',
-        cn({ 'w-14': isCollapsed, 'w-[20rem]': !isCollapsed })
+        cn({
+          'md:w-14': isCollapsed,
+          'md:w-[20rem]': !isCollapsed
+        })
       )}
     >
       <SideBarHeader
@@ -90,7 +93,7 @@ export const SideBarMenu = () => {
         setIsCollapsed={setIsCollapsed}
       />
 
-      <div className="flex h-full flex-col justify-between p-2 text-sm">
+      <div className="hidden flex-col justify-between p-2 text-sm md:flex md:h-full">
         <nav>
           <ul className="flex flex-col gap-1">
             {SIDE_BAR_ITEMS.map((item) => (

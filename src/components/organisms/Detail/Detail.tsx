@@ -51,7 +51,7 @@ const TABS = [
 
 export const Detail = () => {
   return (
-    <section className="flex max-h-screen w-full flex-col gap-6 px-4 pt-4">
+    <section className="flex max-h-screen w-full flex-col gap-6 py-2 md:px-4 md:pt-4 md:pb-0">
       <div className="flex flex-col gap-2">
         <Breadcrumb items={BREADCRUMBS} />
         <h2 className="text-2xl leading-12 font-medium">
@@ -60,9 +60,9 @@ export const Detail = () => {
       </div>
 
       {/* Board Section */}
-      <div className="flex h-full w-full flex-col gap-y-4 overflow-hidden">
+      <div className="flex w-full flex-col gap-y-4 overflow-hidden md:h-full">
         <TabBar tabs={TABS} />
-        <div className="flex gap-x-3 overflow-hidden">
+        <div className="scroll-x-auto md:scroll-none flex gap-x-3 overflow-auto md:overflow-hidden">
           <StatusColumn
             title="Backlog"
             icon={<CircleDotDashedIcon />}
