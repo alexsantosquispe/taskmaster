@@ -14,7 +14,7 @@ const TabBar = ({ tabs, className }: TabBarProps) => {
   return (
     <div
       className={twMerge(
-        'flex w-fit rounded-lg bg-neutral-100 p-0.5 text-sm dark:bg-neutral-800',
+        'flex w-full rounded-lg bg-neutral-100 p-0.5 text-sm md:w-fit dark:bg-neutral-800',
         className
       )}
     >

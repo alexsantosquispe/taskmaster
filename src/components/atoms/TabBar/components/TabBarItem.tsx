@@ -19,7 +19,7 @@ export const TabBarItem = ({
     <button
       key={tabItem.id}
       className={twMerge(
-        'flex h-7 w-24 items-center justify-center gap-1 rounded-md text-neutral-500 transition-colors duration-150 ease-in-out hover:cursor-pointer dark:text-white/70',
+        'flex h-7 w-full items-center justify-center gap-1 rounded-md px-4 text-neutral-500 transition-colors duration-150 ease-in-out hover:cursor-pointer md:w-24 dark:text-white/70',
         cn({
           'dark:bg-primary text-primary bg-white shadow dark:text-white':
             isSelected

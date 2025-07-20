@@ -23,7 +23,7 @@ export const StatusColumn = ({ title, icon, tasks }: StatusColumnProps) => {
         </div>
       </div>
 
-      <div className="flex w-80 flex-col gap-2 md:w-full md:overflow-auto">
+      <div className="flex w-72 flex-col gap-2 md:w-full md:overflow-auto">
         {tasks.map((task) => (
           <TaskItemCard key={task.id} {...task} />
         ))}
