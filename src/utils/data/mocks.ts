@@ -26,6 +26,17 @@ export const BACKLOG_TASKS: TaskType[] = [
     lastUpdate: '2025-07-06T09:00:00-04:00',
     priority: PRIORITY_TYPES.HIGH,
     progress: 0
+  },
+  {
+    id: '18',
+    title: 'Write project README',
+    description:
+      'Added complete project documentation including setup, scripts, and folder structure.',
+    status: STATUS_TYPES.DONE,
+    createdAt: '2025-07-03T13:40:00-04:00',
+    lastUpdate: '2025-07-06T10:00:00-04:00',
+    priority: PRIORITY_TYPES.LOW,
+    progress: 100
   }
 ];
 
@@ -90,6 +101,17 @@ export const REVIEW_TASKS: TaskType[] = [
     lastUpdate: '2025-07-08T12:30:00-04:00',
     priority: PRIORITY_TYPES.HIGH,
     progress: 100
+  },
+  {
+    id: '19',
+    title: 'Create logo and favicon',
+    description:
+      'Exported multiple sizes and formats for the logo. Favicon added to HTML head.',
+    status: STATUS_TYPES.DONE,
+    createdAt: '2025-07-04T08:00:00-04:00',
+    lastUpdate: '2025-07-07T09:20:00-04:00',
+    priority: PRIORITY_TYPES.MEDIUM,
+    progress: 100
   }
 ];
 
@@ -127,28 +149,7 @@ export const DONE_TASKS: TaskType[] = [
     priority: PRIORITY_TYPES.HIGH,
     progress: 100
   },
-  {
-    id: '18',
-    title: 'Write project README',
-    description:
-      'Added complete project documentation including setup, scripts, and folder structure.',
-    status: STATUS_TYPES.DONE,
-    createdAt: '2025-07-03T13:40:00-04:00',
-    lastUpdate: '2025-07-06T10:00:00-04:00',
-    priority: PRIORITY_TYPES.LOW,
-    progress: 100
-  },
-  {
-    id: '19',
-    title: 'Create logo and favicon',
-    description:
-      'Exported multiple sizes and formats for the logo. Favicon added to HTML head.',
-    status: STATUS_TYPES.DONE,
-    createdAt: '2025-07-04T08:00:00-04:00',
-    lastUpdate: '2025-07-07T09:20:00-04:00',
-    priority: PRIORITY_TYPES.MEDIUM,
-    progress: 100
-  },
+
   {
     id: '20',
     title: 'Test form validation logic',
