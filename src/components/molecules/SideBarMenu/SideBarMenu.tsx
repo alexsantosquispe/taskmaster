@@ -81,7 +81,7 @@ export const SideBarMenu = () => {
   return (
     <section
       className={twMerge(
-        'fixed flex flex-col border-b border-gray-200 bg-white shadow-xl transition-all duration-300 ease-in-out md:relative md:rounded-xl md:border dark:border-white/15 dark:bg-white/10',
+        'dark:bg-primary fixed flex flex-col border-b border-gray-200 bg-white shadow-xl transition-all duration-300 ease-in-out md:relative md:rounded-xl md:border dark:border-white/15',
         cn({
           'w-full md:w-14': isCollapsed,
           'w-full md:w-[20rem]': !isCollapsed

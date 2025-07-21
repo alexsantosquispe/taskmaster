@@ -19,7 +19,7 @@ export const TaskItemCard = ({
   return (
     <article
       data-id={id}
-      className="dark:bg-primary flex w-full flex-col rounded-xl border border-neutral-200 bg-white px-3 text-[0.8125rem] dark:border-neutral-700 dark:text-white"
+      className="flex w-full flex-col rounded-xl border border-neutral-200 bg-white px-3 text-[0.8125rem] dark:border-neutral-700 dark:bg-transparent dark:text-white"
     >
       <div className="flex flex-col gap-2 pt-2">
         <a
