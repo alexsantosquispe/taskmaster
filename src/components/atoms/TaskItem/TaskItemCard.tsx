@@ -1,9 +1,9 @@
+import type { TaskType } from '../../../models/types';
+import { getPriorityStyles } from '../../../utils';
 import { Avatar } from '../Avatar/Avatar';
 import { Chip } from '../Chip/Chip';
 import { DateBadge } from '../DateBadge/DateBadge';
 import { ProgressBadge } from '../ProgressBadge/ProgressBadge';
-import type { TaskType } from '../../../models/types';
-import { getPriorityStyles } from '../../../utils';
 
 type TaskItemCardProps = Omit<TaskType, 'createdAt' | 'status'>;
 
@@ -24,7 +24,7 @@ export const TaskItemCard = ({
       <div className="flex flex-col gap-2 pt-2">
         <a
           href="#"
-          className="text-[0.9375rem] hover:cursor-pointer hover:text-blue-600 hover:underline dark:hover:text-blue-500"
+          className="text-[0.9375rem] hover:cursor-pointer hover:text-blue-600 hover:underline dark:hover:text-orange-500"
         >
           {title}
         </a>

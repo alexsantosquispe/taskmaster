@@ -12,6 +12,7 @@ interface SideBarItemButtonWrapperProps {
   children: ReactNode;
   isActive: boolean;
   onClick: () => void;
+  ariaLabel: string;
   className?: string;
 }
 
@@ -29,19 +30,21 @@ const SideBarItemButtonWrapper = ({
   children,
   isActive,
   onClick,
+  ariaLabel,
   className
 }: SideBarItemButtonWrapperProps) => {
   return (
     <button
       className={twMerge(
         'flex w-full items-center justify-between gap-2 rounded-lg p-2 transition-colors duration-150 ease-in-out hover:cursor-pointer',
-        'hover:bg-neutral-100 hover:text-blue-700 dark:hover:bg-neutral-800 dark:hover:text-blue-500',
+        'hover:bg-neutral-100 hover:text-blue-700 dark:hover:bg-white/5 dark:hover:text-orange-500',
         cn({
-          'bg-neutral-100 text-blue-700 dark:bg-neutral-800 dark:text-blue-500':
+          'bg-neutral-100 text-blue-700 dark:bg-white/5 dark:text-orange-500':
             isActive
         }),
         className
       )}
+      aria-label={ariaLabel}
       onClick={onClick}
     >
       {children}
@@ -71,11 +74,12 @@ export const SideBarItem = ({
     <li
       key={id}
       className={twMerge(
-        'text-primary/80 flex w-full flex-col items-center dark:text-white/80'
+        'text-primary flex w-full flex-col items-center dark:text-white/90'
       )}
     >
       <SideBarItemButtonWrapper
         isActive={id === selectedId}
+        ariaLabel={label}
         onClick={selectItemHandler}
       >
         <div className="flex gap-4">
@@ -101,6 +105,7 @@ export const SideBarItem = ({
             <li key={subItem.id} className="w-full">
               <SideBarItemButtonWrapper
                 isActive={subItem.id === selectedId}
+                ariaLabel={subItem.label}
                 onClick={() => onSelectItem(subItem.id)}
                 className="justify-start"
               >

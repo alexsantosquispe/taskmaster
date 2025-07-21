@@ -17,14 +17,14 @@ export const Breadcrumb = ({ items, className }: BreadcrumbProps) => {
   return (
     <div
       className={twMerge(
-        'flex items-center gap-2 text-[0.8125rem] text-neutral-400 dark:text-white/70',
+        'text-primary/80 flex items-center gap-2 text-[0.8125rem] dark:text-white/70',
         className
       )}
     >
       {items.map((item, index) => {
         const isLastItem = index === items.length - 1;
         return (
-          <div key={item.id} className="flex items-center gap-2">
+          <div key={item.id} className="flex items-center gap-2 font-medium">
             <a
               href={item.href}
               className={twMerge(

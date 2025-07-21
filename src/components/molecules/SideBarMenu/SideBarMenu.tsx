@@ -81,7 +81,7 @@ export const SideBarMenu = () => {
   return (
     <section
       className={twMerge(
-        'dark:bg-primary fixed flex flex-col border-b border-gray-200 bg-white shadow-xl transition-all duration-300 ease-in-out md:relative md:rounded-xl md:border dark:border-white/15',
+        'fixed flex flex-col border-b border-gray-200 bg-white shadow-xl transition-all duration-300 ease-in-out md:relative md:rounded-xl md:border dark:border-white/15 dark:bg-white/10',
         cn({
           'w-full md:w-14': isCollapsed,
           'w-full md:w-[20rem]': !isCollapsed
@@ -109,15 +109,17 @@ export const SideBarMenu = () => {
         </nav>
 
         <div className="flex flex-col gap-1">
-          {FOOTER_ITEMS.map((item) => (
-            <SideBarItem
-              key={item.id}
-              {...item}
-              selectedId={selectedId}
-              onSelectItem={setSelectedId}
-              isCollapsed={isCollapsed}
-            />
-          ))}
+          <ul>
+            {FOOTER_ITEMS.map((item) => (
+              <SideBarItem
+                key={item.id}
+                {...item}
+                selectedId={selectedId}
+                onSelectItem={setSelectedId}
+                isCollapsed={isCollapsed}
+              />
+            ))}
+          </ul>
 
           <SwitchThemeButton isCollapsed={isCollapsed} />
 
