@@ -4,7 +4,6 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --font-fira-sans: 'Fira Sans', system-ui, sans-serif;
   --font-nunito-sans: 'Nunito Sans', system-ui, sans-serif;
 }
 

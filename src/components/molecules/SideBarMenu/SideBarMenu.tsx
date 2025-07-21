@@ -71,7 +71,7 @@ const FOOTER_ITEMS = [
 const currentUser = {
   name: 'Alex Santos',
   email: 'alex.santos456@gmail.com',
-  avatarUrl: '/img/avatar.png'
+  avatarUrl: '/img/avatar.webp'
 };
 
 export const SideBarMenu = () => {
