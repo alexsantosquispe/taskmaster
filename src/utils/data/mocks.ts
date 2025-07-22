@@ -36,7 +36,7 @@ export const BACKLOG_TASKS: TaskType[] = [
     createdAt: '2025-07-03T13:40:00-04:00',
     lastUpdate: '2025-07-06T10:00:00-04:00',
     priority: PRIORITY_TYPES.LOW,
-    progress: 100
+    progress: 0
   }
 ];
 
