@@ -30,9 +30,12 @@ const SideBarHeader = ({ isCollapsed, setIsCollapsed }: SideBarHeaderProps) => {
       <div className={twMerge('flex items-center gap-x-2')}>
         <BoxIcon className="rounded bg-blue-700 p-[0.1875rem] text-white dark:bg-orange-600" />
         <h1
-          className={cn({ 'md:hidden': isCollapsed, 'md:block': !isCollapsed })}
+          className={twMerge(
+            'text-lg',
+            cn({ 'md:hidden': isCollapsed, 'md:block': !isCollapsed })
+          )}
         >
-          <strong className="font-semibold">Task</strong>Master
+          <span className="font-bold">Task</span>Master
         </h1>
       </div>
       <div className="hidden md:flex">

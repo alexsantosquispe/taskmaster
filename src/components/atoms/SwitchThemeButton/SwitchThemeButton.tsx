@@ -3,8 +3,9 @@ import { LaptopIcon, MoonIcon, SunIcon } from '../../../icons';
 import cn from 'clsx';
 import { memo } from 'react';
 import { twMerge } from 'tailwind-merge';
-import { Theme } from '../../../contexts/ThemeContext';
+import { Theme, type ThemeType } from '../../../contexts/ThemeContext';
 import { useTheme } from '../../../hooks/useTheme';
+import { TabBarItem } from '../TabBar/components/TabBarItem';
 
 const THEME_BUTTONS = [
   {
@@ -42,21 +43,21 @@ const SwitchThemeButton = ({ isCollapsed }: SwitchThemeButtonProps) => {
       )}
     >
       {THEME_BUTTONS.map((item) => (
-        <button
+        <TabBarItem
           key={item.id}
+          tabItem={item}
+          isSelected={theme === item.id}
+          onSelectTab={() => setTheme(item.id as ThemeType)}
           className={twMerge(
-            'flex items-center gap-1 rounded-md px-2 py-1 transition-colors duration-150 ease-in-out hover:cursor-pointer',
+            'px-2 md:w-fit',
             cn({
               'dark:bg-primary bg-white shadow': item.id === theme,
-              'w-20': !isCollapsed,
+              'md:w-20': !isCollapsed,
               'p-1': isCollapsed
             })
           )}
-          onClick={() => setTheme(item.id)}
-        >
-          <div>{item.icon}</div>
-          {!isCollapsed && <span>{item.label}</span>}
-        </button>
+          isCollapsed={isCollapsed}
+        />
       ))}
     </div>
   );

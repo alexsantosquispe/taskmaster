@@ -6,9 +6,10 @@ import { TabBarItem } from './components/TabBarItem';
 interface TabBarProps {
   tabs: TabItem[];
   className?: string;
+  classNameTabItem?: string;
 }
 
-const TabBar = ({ tabs, className }: TabBarProps) => {
+const TabBar = ({ tabs, className, classNameTabItem }: TabBarProps) => {
   const [tabSelected, setTabSelected] = useState(tabs[0].id);
 
   return (
@@ -24,6 +25,7 @@ const TabBar = ({ tabs, className }: TabBarProps) => {
           tabItem={tab}
           isSelected={tabSelected === tab.id}
           onSelectTab={setTabSelected}
+          className={classNameTabItem}
         />
       ))}
     </div>

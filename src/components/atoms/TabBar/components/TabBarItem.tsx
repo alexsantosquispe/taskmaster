@@ -7,17 +7,20 @@ interface TabBarItemProps {
   isSelected: boolean;
   onSelectTab: (tabId: string) => void;
   className?: string;
+  isCollapsed?: boolean;
 }
 
 export const TabBarItem = ({
   tabItem,
   isSelected,
   onSelectTab,
-  className
+  className,
+  isCollapsed = false
 }: TabBarItemProps) => {
   return (
     <button
       key={tabItem.id}
+      aria-label={tabItem.label}
       className={twMerge(
         'flex h-7 w-full items-center justify-center gap-1 rounded-md px-4 font-semibold text-neutral-600 transition-colors duration-150 ease-in-out hover:cursor-pointer md:w-24 dark:text-white/70',
         cn({
@@ -28,7 +31,8 @@ export const TabBarItem = ({
       )}
       onClick={() => onSelectTab(tabItem.id)}
     >
-      {tabItem.label}
+      {!!tabItem?.icon && <div>{tabItem.icon}</div>}
+      {!isCollapsed && <span>{tabItem.label}</span>}
     </button>
   );
 };
