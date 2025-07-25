@@ -11,6 +11,7 @@ import { CircleDotIcon } from './CircleDotIcon';
 import { CirclePlusIcon } from './CirclePlusIcon';
 import { CloseIcon } from './CloseIcon';
 import { CollapseIcon } from './CollapseIcon';
+import { CommentCircleIcon } from './CommentCircleIcon';
 import { EllipsisVerticalIcon } from './EllipsisVerticalIcon';
 import { ExpandIcon } from './ExpandIcon';
 import { InfoIcon } from './InfoIcon';
@@ -38,6 +39,7 @@ export {
   CirclePlusIcon,
   CloseIcon,
   CollapseIcon,
+  CommentCircleIcon,
   EllipsisVerticalIcon,
   ExpandIcon,
   InfoIcon,

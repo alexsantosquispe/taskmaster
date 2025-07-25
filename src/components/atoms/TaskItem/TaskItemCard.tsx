@@ -2,6 +2,7 @@ import type { TaskType } from '../../../models/types';
 import { getPriorityStyles } from '../../../utils';
 import { Avatar } from '../Avatar/Avatar';
 import { Chip } from '../Chip/Chip';
+import { CommentsBadge } from '../CommentsBadge/CommentsBadge';
 import { DateBadge } from '../DateBadge/DateBadge';
 import { ProgressBadge } from '../ProgressBadge/ProgressBadge';
 
@@ -44,8 +45,8 @@ export const TaskItemCard = ({
 
       <hr className="text-neutral-200 dark:text-neutral-700" />
       <div className="flex items-center justify-between gap-2 py-2 dark:text-white/80">
-        <Avatar />
-        <div>comments section</div>
+        <Avatar url="/img/user-avatar.webp" />
+        <CommentsBadge numberOfComments={23} />
       </div>
     </article>
   );
