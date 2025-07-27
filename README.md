@@ -48,13 +48,13 @@ Visit `http://localhost:5173` to view the app.
 ### Light
 
 <div style="display:flex; gap: 12px;">
-  <img src="./screenshots/light-mode.webp" alt="Desktop view" width="80%"/>
+  <img src="./screenshots/light.webp" alt="Desktop view" width="80%"/>
 </div>
 
 ### Dark
 
 <div style="display:flex; gap: 12px;">
-  <img src="./screenshots/dark-mode.webp" alt="Desktop view" width="80%"/>
+  <img src="./screenshots/dark.webp" alt="Desktop view" width="80%"/>
 </div>
 
 ---
