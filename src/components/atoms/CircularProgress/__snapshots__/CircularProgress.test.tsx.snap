@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`CircularProgress should render the component correctly 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <svg
+        height="16"
+        width="16"
+      >
+        <circle
+          class="stroke-gray-200 dark:stroke-neutral-600"
+          cx="8"
+          cy="8"
+          fill="none"
+          r="7"
+          stroke-width="2"
+        />
+        <circle
+          class=""
+          cx="8"
+          cy="8"
+          fill="none"
+          r="7"
+          stroke-dasharray="43.982297150257104"
+          stroke-dashoffset="43.54247417875453"
+          stroke-linecap="round"
+          stroke-width="2"
+          transform="rotate(-90 8 8)"
+        />
+      </svg>
+    </div>
+  </body>,
+  "container": <div>
+    <svg
+      height="16"
+      width="16"
+    >
+      <circle
+        class="stroke-gray-200 dark:stroke-neutral-600"
+        cx="8"
+        cy="8"
+        fill="none"
+        r="7"
+        stroke-width="2"
+      />
+      <circle
+        class=""
+        cx="8"
+        cy="8"
+        fill="none"
+        r="7"
+        stroke-dasharray="43.982297150257104"
+        stroke-dashoffset="43.54247417875453"
+        stroke-linecap="round"
+        stroke-width="2"
+        transform="rotate(-90 8 8)"
+      />
+    </svg>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
