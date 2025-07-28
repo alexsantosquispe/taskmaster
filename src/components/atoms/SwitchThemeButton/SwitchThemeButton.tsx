@@ -32,6 +32,10 @@ interface SwitchThemeButtonProps {
 const SwitchThemeButton = ({ isCollapsed }: SwitchThemeButtonProps) => {
   const { theme, setTheme } = useTheme();
 
+  const onSelectTheme = (id: string) => {
+    setTheme(id as ThemeType);
+  };
+
   return (
     <div
       className={twMerge(
@@ -47,7 +51,7 @@ const SwitchThemeButton = ({ isCollapsed }: SwitchThemeButtonProps) => {
           key={item.id}
           tabItem={item}
           isSelected={theme === item.id}
-          onSelectTab={() => setTheme(item.id as ThemeType)}
+          onSelectTab={() => onSelectTheme(item.id)}
           className={twMerge(
             'px-2 md:w-fit',
             cn({

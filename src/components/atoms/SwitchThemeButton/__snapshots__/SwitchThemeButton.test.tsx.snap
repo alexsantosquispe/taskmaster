@@ -1,0 +1,666 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`SwitchThemeButton styles should render the component correctly 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="flex w-fit self-center rounded-lg bg-neutral-100 p-0.5 text-[0.8125rem] dark:bg-neutral-800 flex-row"
+      >
+        <button
+          aria-label="System"
+          class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold transition-colors duration-150 ease-in-out hover:cursor-pointer text-primary dark:text-white px-2 dark:bg-primary bg-white shadow md:w-20"
+        >
+          <div>
+            <svg
+              class="size-5"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18 5a2 2 0 0 1 2 2v8.526a2 2 0 0 0 .212.897l1.068 2.127a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45l1.068-2.127A2 2 0 0 0 4 15.526V7a2 2 0 0 1 2-2z"
+              />
+              <path
+                d="M20.054 15.987H3.946"
+              />
+            </svg>
+          </div>
+          <span>
+            System
+          </span>
+        </button>
+        <button
+          aria-label="Light"
+          class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold text-neutral-600 transition-colors duration-150 ease-in-out hover:cursor-pointer dark:text-white/70 px-2 md:w-20"
+        >
+          <div>
+            <svg
+              class="size-5"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="4"
+              />
+              <path
+                d="M12 2v2"
+              />
+              <path
+                d="M12 20v2"
+              />
+              <path
+                d="m4.93 4.93 1.41 1.41"
+              />
+              <path
+                d="m17.66 17.66 1.41 1.41"
+              />
+              <path
+                d="M2 12h2"
+              />
+              <path
+                d="M20 12h2"
+              />
+              <path
+                d="m6.34 17.66-1.41 1.41"
+              />
+              <path
+                d="m19.07 4.93-1.41 1.41"
+              />
+            </svg>
+          </div>
+          <span>
+            Light
+          </span>
+        </button>
+        <button
+          aria-label="Dark"
+          class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold text-neutral-600 transition-colors duration-150 ease-in-out hover:cursor-pointer dark:text-white/70 px-2 md:w-20"
+        >
+          <div>
+            <svg
+              class="size-5"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"
+              />
+            </svg>
+          </div>
+          <span>
+            Dark
+          </span>
+        </button>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="flex w-fit self-center rounded-lg bg-neutral-100 p-0.5 text-[0.8125rem] dark:bg-neutral-800 flex-row"
+    >
+      <button
+        aria-label="System"
+        class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold transition-colors duration-150 ease-in-out hover:cursor-pointer text-primary dark:text-white px-2 dark:bg-primary bg-white shadow md:w-20"
+      >
+        <div>
+          <svg
+            class="size-5"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18 5a2 2 0 0 1 2 2v8.526a2 2 0 0 0 .212.897l1.068 2.127a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45l1.068-2.127A2 2 0 0 0 4 15.526V7a2 2 0 0 1 2-2z"
+            />
+            <path
+              d="M20.054 15.987H3.946"
+            />
+          </svg>
+        </div>
+        <span>
+          System
+        </span>
+      </button>
+      <button
+        aria-label="Light"
+        class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold text-neutral-600 transition-colors duration-150 ease-in-out hover:cursor-pointer dark:text-white/70 px-2 md:w-20"
+      >
+        <div>
+          <svg
+            class="size-5"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="4"
+            />
+            <path
+              d="M12 2v2"
+            />
+            <path
+              d="M12 20v2"
+            />
+            <path
+              d="m4.93 4.93 1.41 1.41"
+            />
+            <path
+              d="m17.66 17.66 1.41 1.41"
+            />
+            <path
+              d="M2 12h2"
+            />
+            <path
+              d="M20 12h2"
+            />
+            <path
+              d="m6.34 17.66-1.41 1.41"
+            />
+            <path
+              d="m19.07 4.93-1.41 1.41"
+            />
+          </svg>
+        </div>
+        <span>
+          Light
+        </span>
+      </button>
+      <button
+        aria-label="Dark"
+        class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold text-neutral-600 transition-colors duration-150 ease-in-out hover:cursor-pointer dark:text-white/70 px-2 md:w-20"
+      >
+        <div>
+          <svg
+            class="size-5"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"
+            />
+          </svg>
+        </div>
+        <span>
+          Dark
+        </span>
+      </button>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`SwitchThemeButton styles should render the component correctly 2`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="flex w-fit self-center rounded-lg bg-neutral-100 p-0.5 text-[0.8125rem] dark:bg-neutral-800 flex-row"
+      >
+        <button
+          aria-label="System"
+          class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold transition-colors duration-150 ease-in-out hover:cursor-pointer text-primary dark:text-white px-2 dark:bg-primary bg-white shadow md:w-20"
+        >
+          <div>
+            <svg
+              class="size-5"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18 5a2 2 0 0 1 2 2v8.526a2 2 0 0 0 .212.897l1.068 2.127a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45l1.068-2.127A2 2 0 0 0 4 15.526V7a2 2 0 0 1 2-2z"
+              />
+              <path
+                d="M20.054 15.987H3.946"
+              />
+            </svg>
+          </div>
+          <span>
+            System
+          </span>
+        </button>
+        <button
+          aria-label="Light"
+          class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold text-neutral-600 transition-colors duration-150 ease-in-out hover:cursor-pointer dark:text-white/70 px-2 md:w-20"
+        >
+          <div>
+            <svg
+              class="size-5"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="4"
+              />
+              <path
+                d="M12 2v2"
+              />
+              <path
+                d="M12 20v2"
+              />
+              <path
+                d="m4.93 4.93 1.41 1.41"
+              />
+              <path
+                d="m17.66 17.66 1.41 1.41"
+              />
+              <path
+                d="M2 12h2"
+              />
+              <path
+                d="M20 12h2"
+              />
+              <path
+                d="m6.34 17.66-1.41 1.41"
+              />
+              <path
+                d="m19.07 4.93-1.41 1.41"
+              />
+            </svg>
+          </div>
+          <span>
+            Light
+          </span>
+        </button>
+        <button
+          aria-label="Dark"
+          class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold text-neutral-600 transition-colors duration-150 ease-in-out hover:cursor-pointer dark:text-white/70 px-2 md:w-20"
+        >
+          <div>
+            <svg
+              class="size-5"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"
+              />
+            </svg>
+          </div>
+          <span>
+            Dark
+          </span>
+        </button>
+      </div>
+    </div>
+    <div>
+      <div
+        class="flex w-fit self-center rounded-lg bg-neutral-100 p-0.5 text-[0.8125rem] dark:bg-neutral-800 flex-col gap-y-0.5"
+      >
+        <button
+          aria-label="System"
+          class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold transition-colors duration-150 ease-in-out hover:cursor-pointer text-primary dark:text-white md:w-fit dark:bg-primary bg-white shadow p-1"
+        >
+          <div>
+            <svg
+              class="size-5"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18 5a2 2 0 0 1 2 2v8.526a2 2 0 0 0 .212.897l1.068 2.127a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45l1.068-2.127A2 2 0 0 0 4 15.526V7a2 2 0 0 1 2-2z"
+              />
+              <path
+                d="M20.054 15.987H3.946"
+              />
+            </svg>
+          </div>
+        </button>
+        <button
+          aria-label="Light"
+          class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold text-neutral-600 transition-colors duration-150 ease-in-out hover:cursor-pointer dark:text-white/70 md:w-fit p-1"
+        >
+          <div>
+            <svg
+              class="size-5"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="4"
+              />
+              <path
+                d="M12 2v2"
+              />
+              <path
+                d="M12 20v2"
+              />
+              <path
+                d="m4.93 4.93 1.41 1.41"
+              />
+              <path
+                d="m17.66 17.66 1.41 1.41"
+              />
+              <path
+                d="M2 12h2"
+              />
+              <path
+                d="M20 12h2"
+              />
+              <path
+                d="m6.34 17.66-1.41 1.41"
+              />
+              <path
+                d="m19.07 4.93-1.41 1.41"
+              />
+            </svg>
+          </div>
+        </button>
+        <button
+          aria-label="Dark"
+          class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold text-neutral-600 transition-colors duration-150 ease-in-out hover:cursor-pointer dark:text-white/70 md:w-fit p-1"
+        >
+          <div>
+            <svg
+              class="size-5"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="flex w-fit self-center rounded-lg bg-neutral-100 p-0.5 text-[0.8125rem] dark:bg-neutral-800 flex-col gap-y-0.5"
+    >
+      <button
+        aria-label="System"
+        class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold transition-colors duration-150 ease-in-out hover:cursor-pointer text-primary dark:text-white md:w-fit dark:bg-primary bg-white shadow p-1"
+      >
+        <div>
+          <svg
+            class="size-5"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18 5a2 2 0 0 1 2 2v8.526a2 2 0 0 0 .212.897l1.068 2.127a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45l1.068-2.127A2 2 0 0 0 4 15.526V7a2 2 0 0 1 2-2z"
+            />
+            <path
+              d="M20.054 15.987H3.946"
+            />
+          </svg>
+        </div>
+      </button>
+      <button
+        aria-label="Light"
+        class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold text-neutral-600 transition-colors duration-150 ease-in-out hover:cursor-pointer dark:text-white/70 md:w-fit p-1"
+      >
+        <div>
+          <svg
+            class="size-5"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="4"
+            />
+            <path
+              d="M12 2v2"
+            />
+            <path
+              d="M12 20v2"
+            />
+            <path
+              d="m4.93 4.93 1.41 1.41"
+            />
+            <path
+              d="m17.66 17.66 1.41 1.41"
+            />
+            <path
+              d="M2 12h2"
+            />
+            <path
+              d="M20 12h2"
+            />
+            <path
+              d="m6.34 17.66-1.41 1.41"
+            />
+            <path
+              d="m19.07 4.93-1.41 1.41"
+            />
+          </svg>
+        </div>
+      </button>
+      <button
+        aria-label="Dark"
+        class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold text-neutral-600 transition-colors duration-150 ease-in-out hover:cursor-pointer dark:text-white/70 md:w-fit p-1"
+      >
+        <div>
+          <svg
+            class="size-5"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"
+            />
+          </svg>
+        </div>
+      </button>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
