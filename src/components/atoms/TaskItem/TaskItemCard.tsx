@@ -6,7 +6,7 @@ import { CommentsBadge } from '../CommentsBadge/CommentsBadge';
 import { DateBadge } from '../DateBadge/DateBadge';
 import { ProgressBadge } from '../ProgressBadge/ProgressBadge';
 
-type TaskItemCardProps = Omit<TaskType, 'createdAt' | 'status'>;
+export type TaskItemCardProps = Omit<TaskType, 'createdAt' | 'status'>;
 
 export const TaskItemCard = ({
   id,
@@ -17,6 +17,7 @@ export const TaskItemCard = ({
   lastUpdate
 }: TaskItemCardProps) => {
   const priorityStyles = getPriorityStyles(priority);
+
   return (
     <article
       data-id={id}
