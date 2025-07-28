@@ -1,6 +1,7 @@
 import js from '@eslint/js';
 import tsPlugin from '@typescript-eslint/eslint-plugin';
 import tsParser from '@typescript-eslint/parser';
+import jestPlugin from 'eslint-plugin-jest';
 import prettierPlugin from 'eslint-plugin-prettier';
 import reactPlugin from 'eslint-plugin-react';
 import { defineConfig } from 'eslint/config';
@@ -36,6 +37,20 @@ export default defineConfig([
       ...reactPlugin.configs.recommended.rules,
       'react/react-in-jsx-scope': 'off',
       'prettier/prettier': 'error'
+    }
+  },
+
+  // ✅ Add Jest support only for test files
+  {
+    files: ['**/*.test.{js,jsx,ts,tsx}', '**/__tests__/**/*.{js,jsx,ts,tsx}'],
+    plugins: { jest: jestPlugin },
+    languageOptions: {
+      globals: {
+        ...globals.jest // ✅ Adds describe, it, expect, etc.
+      }
+    },
+    rules: {
+      ...jestPlugin.configs.recommended.rules
     }
   }
 ]);
