@@ -17,7 +17,7 @@ exports[`UserLoggedItem should render the component correctly 1`] = `
             <img
               alt="avatar user"
               class="h-8 w-8"
-              src="./img/avatar.webp"
+              src="/img/avatar.webp"
             />
           </div>
           <div
@@ -77,7 +77,7 @@ exports[`UserLoggedItem should render the component correctly 1`] = `
           <img
             alt="avatar user"
             class="h-8 w-8"
-            src="./img/avatar.webp"
+            src="/img/avatar.webp"
           />
         </div>
         <div

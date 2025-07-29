@@ -5,7 +5,7 @@ describe('UserLoggedItem', () => {
   const props = {
     name: 'Jhon Doe',
     email: 'jhon@test.com',
-    avatarUrl: './img/avatar.webp'
+    avatarUrl: '/img/avatar.webp'
   };
 
   it('should render the component correctly', () => {

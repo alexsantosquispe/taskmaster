@@ -39,14 +39,16 @@ export default defineConfig([
       'prettier/prettier': 'error'
     }
   },
-
-  // ✅ Add Jest support only for test files
   {
-    files: ['**/*.test.{js,jsx,ts,tsx}', '**/__tests__/**/*.{js,jsx,ts,tsx}'],
+    files: [
+      '**/*.test.{js,jsx,ts,tsx}',
+      '**/__tests__/**/*.{js,jsx,ts,tsx}',
+      'jest.setup.ts'
+    ],
     plugins: { jest: jestPlugin },
     languageOptions: {
       globals: {
-        ...globals.jest // ✅ Adds describe, it, expect, etc.
+        ...globals.jest
       }
     },
     rules: {

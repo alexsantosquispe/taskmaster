@@ -5,18 +5,6 @@ import { fireEvent, render, screen } from '@testing-library/react';
 import { ThemeProvider } from '../../../contexts/ThemeProvider';
 import SwitchThemeButton from './SwitchThemeButton';
 
-Object.defineProperty(window, 'matchMedia', {
-  writable: true,
-  value: jest.fn().mockImplementation((query) => ({
-    matches: false,
-    media: query,
-    onchange: null,
-    addEventListener: jest.fn(),
-    removeEventListener: jest.fn(),
-    dispatchEvent: jest.fn()
-  }))
-});
-
 describe('SwitchThemeButton', () => {
   describe('styles', () => {
     it('should render the component correctly', () => {

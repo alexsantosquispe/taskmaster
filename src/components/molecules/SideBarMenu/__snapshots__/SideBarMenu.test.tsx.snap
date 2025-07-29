@@ -1,0 +1,1222 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`SideBarMenu should render the component correctly 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <section
+        class="dark:bg-primary fixed flex flex-col border-b border-gray-200 bg-white shadow-xl transition-all duration-300 ease-in-out md:relative md:rounded-xl md:border dark:border-white/15 w-full md:w-[20rem]"
+      >
+        <div
+          class="flex items-center justify-between p-2 md:flex-row md:pl-4"
+        >
+          <div
+            class="flex items-center gap-x-2"
+          >
+            <svg
+              class="size-6 rounded bg-blue-700 p-[0.1875rem] text-white dark:bg-orange-600"
+              fill="none"
+              height="16"
+              id="Box--Streamline-Majesticons"
+              viewBox="0 0 16 16"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <desc>
+                
+    Box Streamline Icon: https://streamlinehq.com
+  
+              </desc>
+              <path
+                clip-rule="evenodd"
+                d="M7.6466666666666665 1.4346666666666668a0.6666666666666666 0.6666666666666666 0 0 1 0.7066666666666667 0l4.602666666666666 2.876666666666667L8 7.226666666666667 3.0439999999999996 4.311333333333333l4.602666666666666 -2.876666666666667zM2.005333333333333 5.247333333333334A0.6673333333333332 0.6673333333333332 0 0 0 2 5.333333333333333v5.333333333333333a0.6666666666666666 0.6666666666666666 0 0 0 0.3133333333333333 0.5653333333333332L7.333333333333333 14.369333333333332v-5.9879999999999995L2.005333333333333 5.246666666666666zM8.666666666666666 14.369333333333332l5.02 -3.1373333333333333A0.6666666666666666 0.6666666666666666 0 0 0 14 10.666666666666666V5.333333333333333c0 -0.028666666666666663 -0.002 -0.057999999999999996 -0.005333333333333333 -0.086L8.666666666666666 8.380666666666666v5.988666666666667z"
+                fill="currentColor"
+                fill-rule="evenodd"
+                stroke-width="0.6667"
+              />
+            </svg>
+            <h1
+              class="text-lg md:block"
+            >
+              <span
+                class="font-bold"
+              >
+                Task
+              </span>
+              Master
+            </h1>
+          </div>
+          <div
+            class="hidden md:flex"
+          >
+            <button
+              aria-label="Collapse menu"
+              class="rounded-lg p-2 text-neutral-600 hover:cursor-pointer hover:bg-neutral-100 hover:text-blue-700 dark:text-white/60 dark:hover:bg-neutral-800 dark:hover:text-orange-500"
+            >
+              <svg
+                class="size-5"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  height="18"
+                  rx="2"
+                  width="18"
+                  x="3"
+                  y="3"
+                />
+                <path
+                  d="M15 3v18"
+                />
+                <path
+                  d="m8 9 3 3-3 3"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="flex md:hidden"
+          >
+            <button
+              aria-label="Collapse menu"
+              class="rounded-lg p-2 text-neutral-600 hover:cursor-pointer hover:bg-neutral-100 hover:text-blue-700 dark:text-white/60 dark:hover:bg-neutral-800 dark:hover:text-orange-500"
+            >
+              <svg
+                class="size-5"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3 12h18"
+                />
+                <path
+                  d="M3 18h18"
+                />
+                <path
+                  d="M3 6h18"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div
+          class="hidden flex-col justify-between p-2 text-sm md:flex md:h-full"
+        >
+          <nav>
+            <ul
+              class="flex flex-col gap-1"
+            >
+              <li
+                class="text-primary flex w-full flex-col items-center dark:text-white/90"
+              >
+                <button
+                  aria-label="Dashboard"
+                  class="flex w-full items-center justify-between gap-2 rounded-lg p-2 transition-colors duration-150 ease-in-out hover:cursor-pointer hover:bg-neutral-100 hover:text-blue-700 dark:hover:bg-white/5 dark:hover:text-orange-500 bg-neutral-100 text-blue-700 dark:bg-white/5 dark:text-orange-500"
+                >
+                  <div
+                    class="flex gap-4"
+                  >
+                    <div>
+                      <svg
+                        class="size-5"
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          height="9"
+                          rx="1"
+                          width="7"
+                          x="3"
+                          y="3"
+                        />
+                        <rect
+                          height="5"
+                          rx="1"
+                          width="7"
+                          x="14"
+                          y="3"
+                        />
+                        <rect
+                          height="9"
+                          rx="1"
+                          width="7"
+                          x="14"
+                          y="12"
+                        />
+                        <rect
+                          height="5"
+                          rx="1"
+                          width="7"
+                          x="3"
+                          y="16"
+                        />
+                      </svg>
+                    </div>
+                    Dashboard
+                  </div>
+                </button>
+              </li>
+              <li
+                class="text-primary flex w-full flex-col items-center dark:text-white/90"
+              >
+                <button
+                  aria-label="Projects"
+                  class="flex w-full items-center justify-between gap-2 rounded-lg p-2 transition-colors duration-150 ease-in-out hover:cursor-pointer hover:bg-neutral-100 hover:text-blue-700 dark:hover:bg-white/5 dark:hover:text-orange-500"
+                >
+                  <div
+                    class="flex gap-4"
+                  >
+                    <div>
+                      <svg
+                        class="size-5"
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"
+                        />
+                        <path
+                          d="M8 10v4"
+                        />
+                        <path
+                          d="M12 10v2"
+                        />
+                        <path
+                          d="M16 10v6"
+                        />
+                      </svg>
+                    </div>
+                    Projects
+                  </div>
+                  <svg
+                    class="size-4 transition-transform duration-300"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="m6 9 6 6 6-6"
+                    />
+                  </svg>
+                </button>
+              </li>
+              <li
+                class="text-primary flex w-full flex-col items-center dark:text-white/90"
+              >
+                <button
+                  aria-label="Tasks"
+                  class="flex w-full items-center justify-between gap-2 rounded-lg p-2 transition-colors duration-150 ease-in-out hover:cursor-pointer hover:bg-neutral-100 hover:text-blue-700 dark:hover:bg-white/5 dark:hover:text-orange-500"
+                >
+                  <div
+                    class="flex gap-4"
+                  >
+                    <div>
+                      <svg
+                        class="size-5"
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          height="7"
+                          rx="1"
+                          width="7"
+                          x="3"
+                          y="3"
+                        />
+                        <rect
+                          height="7"
+                          rx="1"
+                          width="7"
+                          x="3"
+                          y="14"
+                        />
+                        <path
+                          d="M14 4h7"
+                        />
+                        <path
+                          d="M14 9h7"
+                        />
+                        <path
+                          d="M14 15h7"
+                        />
+                        <path
+                          d="M14 20h7"
+                        />
+                      </svg>
+                    </div>
+                    Tasks
+                  </div>
+                </button>
+              </li>
+              <li
+                class="text-primary flex w-full flex-col items-center dark:text-white/90"
+              >
+                <button
+                  aria-label="Reports"
+                  class="flex w-full items-center justify-between gap-2 rounded-lg p-2 transition-colors duration-150 ease-in-out hover:cursor-pointer hover:bg-neutral-100 hover:text-blue-700 dark:hover:bg-white/5 dark:hover:text-orange-500"
+                >
+                  <div
+                    class="flex gap-4"
+                  >
+                    <div>
+                      <svg
+                        class="size-5"
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.951c-.55-.055-.998.398-.998.95v8a1 1 0 0 0 1 1z"
+                        />
+                        <path
+                          d="M21.21 15.89A10 10 0 1 1 8 2.83"
+                        />
+                      </svg>
+                    </div>
+                    Reports
+                  </div>
+                </button>
+              </li>
+            </ul>
+          </nav>
+          <div
+            class="flex flex-col gap-1"
+          >
+            <ul>
+              <li
+                class="text-primary flex w-full flex-col items-center dark:text-white/90"
+              >
+                <button
+                  aria-label="Settings"
+                  class="flex w-full items-center justify-between gap-2 rounded-lg p-2 transition-colors duration-150 ease-in-out hover:cursor-pointer hover:bg-neutral-100 hover:text-blue-700 dark:hover:bg-white/5 dark:hover:text-orange-500"
+                >
+                  <div
+                    class="flex gap-4"
+                  >
+                    <div>
+                      <svg
+                        class="size-5"
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"
+                        />
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="3"
+                        />
+                      </svg>
+                    </div>
+                    Settings
+                  </div>
+                </button>
+              </li>
+              <li
+                class="text-primary flex w-full flex-col items-center dark:text-white/90"
+              >
+                <button
+                  aria-label="Help"
+                  class="flex w-full items-center justify-between gap-2 rounded-lg p-2 transition-colors duration-150 ease-in-out hover:cursor-pointer hover:bg-neutral-100 hover:text-blue-700 dark:hover:bg-white/5 dark:hover:text-orange-500"
+                >
+                  <div
+                    class="flex gap-4"
+                  >
+                    <div>
+                      <svg
+                        class="size-5"
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="10"
+                        />
+                        <path
+                          d="M12 16v-4"
+                        />
+                        <path
+                          d="M12 8h.01"
+                        />
+                      </svg>
+                    </div>
+                    Help
+                  </div>
+                </button>
+              </li>
+            </ul>
+            <div
+              class="flex w-fit self-center rounded-lg bg-neutral-100 p-0.5 text-[0.8125rem] dark:bg-neutral-800 flex-row"
+            >
+              <button
+                aria-label="System"
+                class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold transition-colors duration-150 ease-in-out hover:cursor-pointer text-primary dark:text-white px-2 dark:bg-primary bg-white shadow md:w-20"
+              >
+                <div>
+                  <svg
+                    class="size-5"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18 5a2 2 0 0 1 2 2v8.526a2 2 0 0 0 .212.897l1.068 2.127a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45l1.068-2.127A2 2 0 0 0 4 15.526V7a2 2 0 0 1 2-2z"
+                    />
+                    <path
+                      d="M20.054 15.987H3.946"
+                    />
+                  </svg>
+                </div>
+                <span>
+                  System
+                </span>
+              </button>
+              <button
+                aria-label="Light"
+                class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold text-neutral-600 transition-colors duration-150 ease-in-out hover:cursor-pointer dark:text-white/70 px-2 md:w-20"
+              >
+                <div>
+                  <svg
+                    class="size-5"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="4"
+                    />
+                    <path
+                      d="M12 2v2"
+                    />
+                    <path
+                      d="M12 20v2"
+                    />
+                    <path
+                      d="m4.93 4.93 1.41 1.41"
+                    />
+                    <path
+                      d="m17.66 17.66 1.41 1.41"
+                    />
+                    <path
+                      d="M2 12h2"
+                    />
+                    <path
+                      d="M20 12h2"
+                    />
+                    <path
+                      d="m6.34 17.66-1.41 1.41"
+                    />
+                    <path
+                      d="m19.07 4.93-1.41 1.41"
+                    />
+                  </svg>
+                </div>
+                <span>
+                  Light
+                </span>
+              </button>
+              <button
+                aria-label="Dark"
+                class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold text-neutral-600 transition-colors duration-150 ease-in-out hover:cursor-pointer dark:text-white/70 px-2 md:w-20"
+              >
+                <div>
+                  <svg
+                    class="size-5"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"
+                    />
+                  </svg>
+                </div>
+                <span>
+                  Dark
+                </span>
+              </button>
+            </div>
+            <div
+              class="pt-2"
+            >
+              <div
+                class="flex items-center rounded-lg py-2 transition-opacity duration-300 ease-in-out hover:cursor-pointer justify-between px-2 hover:bg-neutral-100 dark:hover:bg-neutral-800"
+              >
+                <div
+                  class="flex items-center gap-2"
+                >
+                  <div
+                    class="h-8 w-8"
+                  >
+                    <img
+                      alt="avatar user"
+                      class="h-8 w-8"
+                      src="/img/avatar.webp"
+                    />
+                  </div>
+                  <div
+                    class="flex flex-col justify-center text-xs"
+                  >
+                    <span>
+                      Alex Santos
+                    </span>
+                    <span
+                      class="text-neutral-600 dark:text-white/60"
+                    >
+                      alex.santos456@gmail.com
+                    </span>
+                  </div>
+                </div>
+                <svg
+                  class="size-6 rounded p-1 text-neutral-600 hover:cursor-pointer dark:text-white/60"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="1"
+                  />
+                  <circle
+                    cx="12"
+                    cy="5"
+                    r="1"
+                  />
+                  <circle
+                    cx="12"
+                    cy="19"
+                    r="1"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>,
+  "container": <div>
+    <section
+      class="dark:bg-primary fixed flex flex-col border-b border-gray-200 bg-white shadow-xl transition-all duration-300 ease-in-out md:relative md:rounded-xl md:border dark:border-white/15 w-full md:w-[20rem]"
+    >
+      <div
+        class="flex items-center justify-between p-2 md:flex-row md:pl-4"
+      >
+        <div
+          class="flex items-center gap-x-2"
+        >
+          <svg
+            class="size-6 rounded bg-blue-700 p-[0.1875rem] text-white dark:bg-orange-600"
+            fill="none"
+            height="16"
+            id="Box--Streamline-Majesticons"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <desc>
+              
+    Box Streamline Icon: https://streamlinehq.com
+  
+            </desc>
+            <path
+              clip-rule="evenodd"
+              d="M7.6466666666666665 1.4346666666666668a0.6666666666666666 0.6666666666666666 0 0 1 0.7066666666666667 0l4.602666666666666 2.876666666666667L8 7.226666666666667 3.0439999999999996 4.311333333333333l4.602666666666666 -2.876666666666667zM2.005333333333333 5.247333333333334A0.6673333333333332 0.6673333333333332 0 0 0 2 5.333333333333333v5.333333333333333a0.6666666666666666 0.6666666666666666 0 0 0 0.3133333333333333 0.5653333333333332L7.333333333333333 14.369333333333332v-5.9879999999999995L2.005333333333333 5.246666666666666zM8.666666666666666 14.369333333333332l5.02 -3.1373333333333333A0.6666666666666666 0.6666666666666666 0 0 0 14 10.666666666666666V5.333333333333333c0 -0.028666666666666663 -0.002 -0.057999999999999996 -0.005333333333333333 -0.086L8.666666666666666 8.380666666666666v5.988666666666667z"
+              fill="currentColor"
+              fill-rule="evenodd"
+              stroke-width="0.6667"
+            />
+          </svg>
+          <h1
+            class="text-lg md:block"
+          >
+            <span
+              class="font-bold"
+            >
+              Task
+            </span>
+            Master
+          </h1>
+        </div>
+        <div
+          class="hidden md:flex"
+        >
+          <button
+            aria-label="Collapse menu"
+            class="rounded-lg p-2 text-neutral-600 hover:cursor-pointer hover:bg-neutral-100 hover:text-blue-700 dark:text-white/60 dark:hover:bg-neutral-800 dark:hover:text-orange-500"
+          >
+            <svg
+              class="size-5"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                height="18"
+                rx="2"
+                width="18"
+                x="3"
+                y="3"
+              />
+              <path
+                d="M15 3v18"
+              />
+              <path
+                d="m8 9 3 3-3 3"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="flex md:hidden"
+        >
+          <button
+            aria-label="Collapse menu"
+            class="rounded-lg p-2 text-neutral-600 hover:cursor-pointer hover:bg-neutral-100 hover:text-blue-700 dark:text-white/60 dark:hover:bg-neutral-800 dark:hover:text-orange-500"
+          >
+            <svg
+              class="size-5"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 12h18"
+              />
+              <path
+                d="M3 18h18"
+              />
+              <path
+                d="M3 6h18"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div
+        class="hidden flex-col justify-between p-2 text-sm md:flex md:h-full"
+      >
+        <nav>
+          <ul
+            class="flex flex-col gap-1"
+          >
+            <li
+              class="text-primary flex w-full flex-col items-center dark:text-white/90"
+            >
+              <button
+                aria-label="Dashboard"
+                class="flex w-full items-center justify-between gap-2 rounded-lg p-2 transition-colors duration-150 ease-in-out hover:cursor-pointer hover:bg-neutral-100 hover:text-blue-700 dark:hover:bg-white/5 dark:hover:text-orange-500 bg-neutral-100 text-blue-700 dark:bg-white/5 dark:text-orange-500"
+              >
+                <div
+                  class="flex gap-4"
+                >
+                  <div>
+                    <svg
+                      class="size-5"
+                      fill="none"
+                      height="24"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        height="9"
+                        rx="1"
+                        width="7"
+                        x="3"
+                        y="3"
+                      />
+                      <rect
+                        height="5"
+                        rx="1"
+                        width="7"
+                        x="14"
+                        y="3"
+                      />
+                      <rect
+                        height="9"
+                        rx="1"
+                        width="7"
+                        x="14"
+                        y="12"
+                      />
+                      <rect
+                        height="5"
+                        rx="1"
+                        width="7"
+                        x="3"
+                        y="16"
+                      />
+                    </svg>
+                  </div>
+                  Dashboard
+                </div>
+              </button>
+            </li>
+            <li
+              class="text-primary flex w-full flex-col items-center dark:text-white/90"
+            >
+              <button
+                aria-label="Projects"
+                class="flex w-full items-center justify-between gap-2 rounded-lg p-2 transition-colors duration-150 ease-in-out hover:cursor-pointer hover:bg-neutral-100 hover:text-blue-700 dark:hover:bg-white/5 dark:hover:text-orange-500"
+              >
+                <div
+                  class="flex gap-4"
+                >
+                  <div>
+                    <svg
+                      class="size-5"
+                      fill="none"
+                      height="24"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"
+                      />
+                      <path
+                        d="M8 10v4"
+                      />
+                      <path
+                        d="M12 10v2"
+                      />
+                      <path
+                        d="M16 10v6"
+                      />
+                    </svg>
+                  </div>
+                  Projects
+                </div>
+                <svg
+                  class="size-4 transition-transform duration-300"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m6 9 6 6 6-6"
+                  />
+                </svg>
+              </button>
+            </li>
+            <li
+              class="text-primary flex w-full flex-col items-center dark:text-white/90"
+            >
+              <button
+                aria-label="Tasks"
+                class="flex w-full items-center justify-between gap-2 rounded-lg p-2 transition-colors duration-150 ease-in-out hover:cursor-pointer hover:bg-neutral-100 hover:text-blue-700 dark:hover:bg-white/5 dark:hover:text-orange-500"
+              >
+                <div
+                  class="flex gap-4"
+                >
+                  <div>
+                    <svg
+                      class="size-5"
+                      fill="none"
+                      height="24"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        height="7"
+                        rx="1"
+                        width="7"
+                        x="3"
+                        y="3"
+                      />
+                      <rect
+                        height="7"
+                        rx="1"
+                        width="7"
+                        x="3"
+                        y="14"
+                      />
+                      <path
+                        d="M14 4h7"
+                      />
+                      <path
+                        d="M14 9h7"
+                      />
+                      <path
+                        d="M14 15h7"
+                      />
+                      <path
+                        d="M14 20h7"
+                      />
+                    </svg>
+                  </div>
+                  Tasks
+                </div>
+              </button>
+            </li>
+            <li
+              class="text-primary flex w-full flex-col items-center dark:text-white/90"
+            >
+              <button
+                aria-label="Reports"
+                class="flex w-full items-center justify-between gap-2 rounded-lg p-2 transition-colors duration-150 ease-in-out hover:cursor-pointer hover:bg-neutral-100 hover:text-blue-700 dark:hover:bg-white/5 dark:hover:text-orange-500"
+              >
+                <div
+                  class="flex gap-4"
+                >
+                  <div>
+                    <svg
+                      class="size-5"
+                      fill="none"
+                      height="24"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.951c-.55-.055-.998.398-.998.95v8a1 1 0 0 0 1 1z"
+                      />
+                      <path
+                        d="M21.21 15.89A10 10 0 1 1 8 2.83"
+                      />
+                    </svg>
+                  </div>
+                  Reports
+                </div>
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <div
+          class="flex flex-col gap-1"
+        >
+          <ul>
+            <li
+              class="text-primary flex w-full flex-col items-center dark:text-white/90"
+            >
+              <button
+                aria-label="Settings"
+                class="flex w-full items-center justify-between gap-2 rounded-lg p-2 transition-colors duration-150 ease-in-out hover:cursor-pointer hover:bg-neutral-100 hover:text-blue-700 dark:hover:bg-white/5 dark:hover:text-orange-500"
+              >
+                <div
+                  class="flex gap-4"
+                >
+                  <div>
+                    <svg
+                      class="size-5"
+                      fill="none"
+                      height="24"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"
+                      />
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="3"
+                      />
+                    </svg>
+                  </div>
+                  Settings
+                </div>
+              </button>
+            </li>
+            <li
+              class="text-primary flex w-full flex-col items-center dark:text-white/90"
+            >
+              <button
+                aria-label="Help"
+                class="flex w-full items-center justify-between gap-2 rounded-lg p-2 transition-colors duration-150 ease-in-out hover:cursor-pointer hover:bg-neutral-100 hover:text-blue-700 dark:hover:bg-white/5 dark:hover:text-orange-500"
+              >
+                <div
+                  class="flex gap-4"
+                >
+                  <div>
+                    <svg
+                      class="size-5"
+                      fill="none"
+                      height="24"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="10"
+                      />
+                      <path
+                        d="M12 16v-4"
+                      />
+                      <path
+                        d="M12 8h.01"
+                      />
+                    </svg>
+                  </div>
+                  Help
+                </div>
+              </button>
+            </li>
+          </ul>
+          <div
+            class="flex w-fit self-center rounded-lg bg-neutral-100 p-0.5 text-[0.8125rem] dark:bg-neutral-800 flex-row"
+          >
+            <button
+              aria-label="System"
+              class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold transition-colors duration-150 ease-in-out hover:cursor-pointer text-primary dark:text-white px-2 dark:bg-primary bg-white shadow md:w-20"
+            >
+              <div>
+                <svg
+                  class="size-5"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18 5a2 2 0 0 1 2 2v8.526a2 2 0 0 0 .212.897l1.068 2.127a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45l1.068-2.127A2 2 0 0 0 4 15.526V7a2 2 0 0 1 2-2z"
+                  />
+                  <path
+                    d="M20.054 15.987H3.946"
+                  />
+                </svg>
+              </div>
+              <span>
+                System
+              </span>
+            </button>
+            <button
+              aria-label="Light"
+              class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold text-neutral-600 transition-colors duration-150 ease-in-out hover:cursor-pointer dark:text-white/70 px-2 md:w-20"
+            >
+              <div>
+                <svg
+                  class="size-5"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="4"
+                  />
+                  <path
+                    d="M12 2v2"
+                  />
+                  <path
+                    d="M12 20v2"
+                  />
+                  <path
+                    d="m4.93 4.93 1.41 1.41"
+                  />
+                  <path
+                    d="m17.66 17.66 1.41 1.41"
+                  />
+                  <path
+                    d="M2 12h2"
+                  />
+                  <path
+                    d="M20 12h2"
+                  />
+                  <path
+                    d="m6.34 17.66-1.41 1.41"
+                  />
+                  <path
+                    d="m19.07 4.93-1.41 1.41"
+                  />
+                </svg>
+              </div>
+              <span>
+                Light
+              </span>
+            </button>
+            <button
+              aria-label="Dark"
+              class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold text-neutral-600 transition-colors duration-150 ease-in-out hover:cursor-pointer dark:text-white/70 px-2 md:w-20"
+            >
+              <div>
+                <svg
+                  class="size-5"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"
+                  />
+                </svg>
+              </div>
+              <span>
+                Dark
+              </span>
+            </button>
+          </div>
+          <div
+            class="pt-2"
+          >
+            <div
+              class="flex items-center rounded-lg py-2 transition-opacity duration-300 ease-in-out hover:cursor-pointer justify-between px-2 hover:bg-neutral-100 dark:hover:bg-neutral-800"
+            >
+              <div
+                class="flex items-center gap-2"
+              >
+                <div
+                  class="h-8 w-8"
+                >
+                  <img
+                    alt="avatar user"
+                    class="h-8 w-8"
+                    src="/img/avatar.webp"
+                  />
+                </div>
+                <div
+                  class="flex flex-col justify-center text-xs"
+                >
+                  <span>
+                    Alex Santos
+                  </span>
+                  <span
+                    class="text-neutral-600 dark:text-white/60"
+                  >
+                    alex.santos456@gmail.com
+                  </span>
+                </div>
+              </div>
+              <svg
+                class="size-6 rounded p-1 text-neutral-600 hover:cursor-pointer dark:text-white/60"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="1"
+                />
+                <circle
+                  cx="12"
+                  cy="5"
+                  r="1"
+                />
+                <circle
+                  cx="12"
+                  cy="19"
+                  r="1"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
