@@ -1,0 +1,18 @@
+# .husky/pre-commit
+handle_error() {
+    echo "❌ $1 failed!"
+    exit 1
+}
+
+echo "🔍 Running code quality checks..."
+echo "⏳ Checking ESLint and Prettier rules..."
+
+if ! npx lint-staged; then
+    echo "❌ Code quality checks failed!"
+    exit 1
+fi
+
+echo "🧪 Running all tests..."
+npm run test || handle_error "Tests"
+
+echo "Code quality checks passed successfully!"
