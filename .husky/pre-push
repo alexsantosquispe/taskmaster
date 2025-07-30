@@ -1,0 +1,17 @@
+# .husky/pre-commit
+handle_error() {
+    echo "❌ $1 failed!"
+    exit 1
+}
+
+echo "🧪 Running all tests..."
+npm run test:coverage || handle_error "Tests"
+
+echo "🔍 Running type check..."
+tsc --noEmit || handle_error "Type check"
+
+echo "🏗️ Verifying build..."
+npm run build || handle_error "Build"
+
+echo "✨ All pre-push checks passed successfully!"
+echo "🚀 Pushing to remote..." 
