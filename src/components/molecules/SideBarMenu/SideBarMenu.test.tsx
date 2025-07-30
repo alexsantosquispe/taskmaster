@@ -11,7 +11,7 @@ describe('SideBarMenu', () => {
     sideBarItemsLength + (SIDE_BAR_ITEMS[1].subItems?.length || 0);
 
   describe('styles', () => {
-    it('should render the component correctly', () => {
+    it('should render the component correctly expanded/collapsed', () => {
       const component = render(
         <ThemeProvider>
           <SideBarMenu />
@@ -23,6 +23,18 @@ describe('SideBarMenu', () => {
       const items = screen.getAllByRole('listitem');
 
       expect(items).toHaveLength(sideBarItemsLength);
+
+      const collapseButton = screen.getByTestId('collapse-icon');
+
+      expect(collapseButton).toBeInTheDocument();
+
+      fireEvent.click(collapseButton);
+
+      expect(collapseButton).not.toBeInTheDocument();
+
+      const expandButton = screen.getByTestId('expand-icon');
+
+      expect(expandButton).toBeInTheDocument();
     });
   });
 

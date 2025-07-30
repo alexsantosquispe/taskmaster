@@ -16,6 +16,24 @@ interface SideBarHeaderProps {
   setIsCollapsed: (value: boolean) => void;
 }
 
+const LogoHeader = ({
+  isCollapsed
+}: Pick<SideBarHeaderProps, 'isCollapsed'>) => {
+  return (
+    <div className={twMerge('flex items-center gap-x-2')}>
+      <BoxIcon className="rounded bg-blue-700 p-[0.1875rem] text-white dark:bg-orange-600" />
+      <h1
+        className={twMerge(
+          'text-lg',
+          cn({ 'md:hidden': isCollapsed, 'md:block': !isCollapsed })
+        )}
+      >
+        <span className="font-bold">Task</span>Master
+      </h1>
+    </div>
+  );
+};
+
 const SideBarHeader = ({ isCollapsed, setIsCollapsed }: SideBarHeaderProps) => {
   return (
     <div
@@ -27,17 +45,7 @@ const SideBarHeader = ({ isCollapsed, setIsCollapsed }: SideBarHeaderProps) => {
         })
       )}
     >
-      <div className={twMerge('flex items-center gap-x-2')}>
-        <BoxIcon className="rounded bg-blue-700 p-[0.1875rem] text-white dark:bg-orange-600" />
-        <h1
-          className={twMerge(
-            'text-lg',
-            cn({ 'md:hidden': isCollapsed, 'md:block': !isCollapsed })
-          )}
-        >
-          <span className="font-bold">Task</span>Master
-        </h1>
-      </div>
+      <LogoHeader isCollapsed={isCollapsed} />
       <div className="hidden md:flex">
         <ToggleButton
           isCollapsed={isCollapsed}

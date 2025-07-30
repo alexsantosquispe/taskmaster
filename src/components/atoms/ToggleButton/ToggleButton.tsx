@@ -23,7 +23,7 @@ export const ToggleButton = ({
       className="rounded-lg p-2 text-neutral-600 hover:cursor-pointer hover:bg-neutral-100 hover:text-blue-700 dark:text-white/60 dark:hover:bg-neutral-800 dark:hover:text-orange-500"
       onClick={toggleButton}
     >
-      {isCollapsed ? collapseIcon : expandIcon}
+      {isCollapsed ? expandIcon : collapseIcon}
     </button>
   );
 };
