@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
-exports[`SideBarMenu should render the component correctly 1`] = `
+exports[`SideBarMenu styles should render the component correctly 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>

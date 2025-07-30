@@ -8,6 +8,7 @@ export type SideBarSubItemType = {
   label: string;
   color: string;
 };
+
 interface SideBarItemButtonWrapperProps {
   children: ReactNode;
   isActive: boolean;

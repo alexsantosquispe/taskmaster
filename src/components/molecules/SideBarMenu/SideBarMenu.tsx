@@ -15,7 +15,7 @@ import UserLoggedItem from '../../atoms/UserLoggedItem/UserLoggedItem';
 import SideBarHeader from './components/SideBarHeader';
 import { SideBarItem } from './components/SideBarItem';
 
-const SIDE_BAR_ITEMS = [
+export const SIDE_BAR_ITEMS = [
   {
     id: '1',
     label: 'Dashboard',
@@ -55,7 +55,7 @@ const SIDE_BAR_ITEMS = [
   }
 ];
 
-const FOOTER_ITEMS = [
+export const FOOTER_ITEMS = [
   {
     id: '5',
     label: 'Settings',
