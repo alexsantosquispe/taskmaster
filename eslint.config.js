@@ -12,7 +12,6 @@ export default defineConfig([
     ignores: [
       'dist/**',
       'node_modules/**',
-      '.eslintrc.cjs',
       'coverage/**',
       'storybook-static/**'
     ]
