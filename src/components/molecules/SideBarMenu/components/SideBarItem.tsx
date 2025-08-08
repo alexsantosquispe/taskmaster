@@ -87,7 +87,7 @@ export const SideBarItem = ({
       >
         <div className="flex gap-4">
           <div>{icon}</div>
-          {!isCollapsed && label}
+          {(!isCollapsed && label) || (isMobile && label)}
         </div>
 
         {!isMobile && subItems && !isCollapsed && (
