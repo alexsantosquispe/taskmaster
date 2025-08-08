@@ -10,6 +10,7 @@ import {
 import cn from 'clsx';
 import { useState } from 'react';
 import { twMerge } from 'tailwind-merge';
+import { useIsMobile } from '../../../hooks/useIsMobile';
 import SwitchThemeButton from '../../atoms/SwitchThemeButton/SwitchThemeButton';
 import UserLoggedItem from '../../atoms/UserLoggedItem/UserLoggedItem';
 import { MobileMenu } from './components/MobileMenu';
@@ -79,6 +80,15 @@ export const SideBarMenu = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [selectedId, setSelectedId] = useState(SIDE_BAR_ITEMS[0].id);
+  const isMobile = useIsMobile();
+  const showMenu = !isMobile || (isMobile && isOpen);
+
+  const onSelectItem = (id: string) => {
+    setSelectedId(id);
+    if (isMobile) {
+      setIsOpen(false);
+    }
+  };
 
   return (
     <section
@@ -97,40 +107,44 @@ export const SideBarMenu = () => {
 
       <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen} />
 
-      <div className="hidden flex-col justify-between p-2 text-sm md:flex md:h-full">
-        <nav>
-          <ul className="flex flex-col gap-1">
-            {SIDE_BAR_ITEMS.map((item) => (
-              <SideBarItem
-                key={item.id}
-                {...item}
-                selectedId={selectedId}
-                onSelectItem={setSelectedId}
-                isCollapsed={isCollapsed}
-              />
-            ))}
-          </ul>
-        </nav>
+      <div className="flex-col px-4 text-sm md:flex md:h-full md:justify-between md:p-2">
+        {showMenu && (
+          <nav>
+            <ul className="flex flex-col gap-1">
+              {SIDE_BAR_ITEMS.map((item) => (
+                <SideBarItem
+                  key={item.id}
+                  {...item}
+                  selectedId={selectedId}
+                  onSelectItem={onSelectItem}
+                  isCollapsed={isCollapsed}
+                />
+              ))}
+            </ul>
+          </nav>
+        )}
 
-        <div className="flex flex-col gap-1">
-          <ul>
-            {FOOTER_ITEMS.map((item) => (
-              <SideBarItem
-                key={item.id}
-                {...item}
-                selectedId={selectedId}
-                onSelectItem={setSelectedId}
-                isCollapsed={isCollapsed}
-              />
-            ))}
-          </ul>
+        {!isMobile && (
+          <div className="flex flex-col gap-1">
+            <ul>
+              {FOOTER_ITEMS.map((item) => (
+                <SideBarItem
+                  key={item.id}
+                  {...item}
+                  selectedId={selectedId}
+                  onSelectItem={setSelectedId}
+                  isCollapsed={isCollapsed}
+                />
+              ))}
+            </ul>
 
-          <SwitchThemeButton isCollapsed={isCollapsed} />
+            <SwitchThemeButton isCollapsed={isCollapsed} />
 
-          <div className="pt-2">
-            <UserLoggedItem {...currentUser} isCollapsed={isCollapsed} />
+            <div className="pt-2">
+              <UserLoggedItem {...currentUser} isCollapsed={isCollapsed} />
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </section>
   );

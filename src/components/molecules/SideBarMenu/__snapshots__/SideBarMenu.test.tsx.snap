@@ -81,7 +81,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
           </button>
         </div>
         <div
-          class="flex items-center justify-between p-2 md:hidden"
+          class="flex h-[3.5rem] items-center justify-between pr-2 pl-4 md:hidden"
         >
           <div
             class="flex items-center gap-x-2"
@@ -148,7 +148,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
           </button>
         </div>
         <div
-          class="hidden flex-col justify-between p-2 text-sm md:flex md:h-full"
+          class="flex-col px-4 text-sm md:flex md:h-full md:justify-between md:p-2"
         >
           <nav>
             <ul
@@ -696,7 +696,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
         </button>
       </div>
       <div
-        class="flex items-center justify-between p-2 md:hidden"
+        class="flex h-[3.5rem] items-center justify-between pr-2 pl-4 md:hidden"
       >
         <div
           class="flex items-center gap-x-2"
@@ -763,7 +763,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
         </button>
       </div>
       <div
-        class="hidden flex-col justify-between p-2 text-sm md:flex md:h-full"
+        class="flex-col px-4 text-sm md:flex md:h-full md:justify-between md:p-2"
       >
         <nav>
           <ul

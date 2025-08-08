@@ -11,7 +11,11 @@ interface MobileMenuProps {
 
 export const MobileMenu = ({ isOpen, setIsOpen }: MobileMenuProps) => {
   return (
-    <div className={twMerge('flex items-center justify-between p-2 md:hidden')}>
+    <div
+      className={twMerge(
+        'flex h-[3.5rem] items-center justify-between pr-2 pl-4 md:hidden'
+      )}
+    >
       <LogoHeader isCollapsed={false} />
       <ToggleButton
         isCollapsed={isOpen}
