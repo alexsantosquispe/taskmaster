@@ -93,7 +93,7 @@ export const SideBarMenu = () => {
   return (
     <section
       className={twMerge(
-        'dark:bg-primary fixed flex flex-col border-b border-gray-200 bg-white shadow-xl transition-all duration-300 ease-in-out md:relative md:rounded-xl md:border dark:border-white/15',
+        'md:dark:bg-primary dark:bg-primary/70 fixed z-50 flex flex-col border-b border-gray-200 bg-white/40 backdrop-blur-md transition-all duration-300 ease-in-out md:relative md:rounded-xl md:border md:bg-white md:shadow-xl md:dark:border-white/15',
         cn({
           'w-full md:w-14': isCollapsed,
           'w-full md:w-[20rem]': !isCollapsed
@@ -107,10 +107,10 @@ export const SideBarMenu = () => {
 
       <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen} />
 
-      <div className="flex-col px-4 text-sm md:flex md:h-full md:justify-between md:p-2">
+      <div className="flex-col px-2 text-sm md:flex md:h-full md:justify-between md:p-2">
         {showMenu && (
           <nav>
-            <ul className="flex flex-col gap-1">
+            <ul className="flex flex-col gap-1 py-2 md:p-0">
               {SIDE_BAR_ITEMS.map((item) => (
                 <SideBarItem
                   key={item.id}
