@@ -12,6 +12,7 @@ import { useState } from 'react';
 import { twMerge } from 'tailwind-merge';
 import SwitchThemeButton from '../../atoms/SwitchThemeButton/SwitchThemeButton';
 import UserLoggedItem from '../../atoms/UserLoggedItem/UserLoggedItem';
+import { MobileMenu } from './components/MobileMenu';
 import SideBarHeader from './components/SideBarHeader';
 import { SideBarItem } from './components/SideBarItem';
 
@@ -76,6 +77,7 @@ const currentUser = {
 
 export const SideBarMenu = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const [selectedId, setSelectedId] = useState(SIDE_BAR_ITEMS[0].id);
 
   return (
@@ -92,6 +94,8 @@ export const SideBarMenu = () => {
         isCollapsed={isCollapsed}
         setIsCollapsed={setIsCollapsed}
       />
+
+      <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen} />
 
       <div className="hidden flex-col justify-between p-2 text-sm md:flex md:h-full">
         <nav>

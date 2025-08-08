@@ -1,9 +1,4 @@
-import {
-  CloseIcon,
-  CollapseIcon,
-  ExpandIcon,
-  MenuIcon
-} from '../../../../icons';
+import { CollapseIcon, ExpandIcon } from '../../../../icons';
 
 import cn from 'clsx';
 import { memo } from 'react';
@@ -16,7 +11,7 @@ interface SideBarHeaderProps {
   setIsCollapsed: (value: boolean) => void;
 }
 
-const LogoHeader = ({
+export const LogoHeader = ({
   isCollapsed
 }: Pick<SideBarHeaderProps, 'isCollapsed'>) => {
   return (
@@ -38,7 +33,7 @@ const SideBarHeader = ({ isCollapsed, setIsCollapsed }: SideBarHeaderProps) => {
   return (
     <div
       className={twMerge(
-        'flex items-center justify-between p-2',
+        'hidden items-center justify-between p-2 md:flex',
         cn({
           'gap-2 md:flex-col-reverse': isCollapsed,
           'md:flex-row md:pl-4': !isCollapsed
@@ -46,22 +41,12 @@ const SideBarHeader = ({ isCollapsed, setIsCollapsed }: SideBarHeaderProps) => {
       )}
     >
       <LogoHeader isCollapsed={isCollapsed} />
-      <div className="hidden md:flex">
-        <ToggleButton
-          isCollapsed={isCollapsed}
-          setIsCollapsed={setIsCollapsed}
-          expandIcon={<ExpandIcon />}
-          collapseIcon={<CollapseIcon />}
-        />
-      </div>
-      <div className="flex md:hidden">
-        <ToggleButton
-          isCollapsed={isCollapsed}
-          setIsCollapsed={setIsCollapsed}
-          expandIcon={<MenuIcon />}
-          collapseIcon={<CloseIcon />}
-        />
-      </div>
+      <ToggleButton
+        isCollapsed={isCollapsed}
+        setIsCollapsed={setIsCollapsed}
+        expandIcon={<ExpandIcon />}
+        collapseIcon={<CollapseIcon />}
+      />
     </div>
   );
 };
