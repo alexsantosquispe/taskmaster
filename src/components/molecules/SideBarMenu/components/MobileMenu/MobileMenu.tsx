@@ -1,8 +1,8 @@
-import { CloseIcon, MenuIcon } from '../../../../icons';
+import { CloseIcon, MenuIcon } from '../../../../../icons';
 
 import { twMerge } from 'tailwind-merge';
-import { ToggleButton } from '../../../atoms/ToggleButton/ToggleButton';
-import { LogoHeader } from './SideBarHeader';
+import { ToggleButton } from '../../../../atoms/ToggleButton/ToggleButton';
+import { LogoHeader } from '../SideBarHeader';
 
 interface MobileMenuProps {
   isOpen: boolean;

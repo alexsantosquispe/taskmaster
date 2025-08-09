@@ -13,7 +13,7 @@ import { twMerge } from 'tailwind-merge';
 import { useIsMobile } from '../../../hooks/useIsMobile';
 import SwitchThemeButton from '../../atoms/SwitchThemeButton/SwitchThemeButton';
 import UserLoggedItem from '../../atoms/UserLoggedItem/UserLoggedItem';
-import { MobileMenu } from './components/MobileMenu';
+import { MobileMenu } from './components/MobileMenu/MobileMenu';
 import SideBarHeader from './components/SideBarHeader';
 import { SideBarItem } from './components/SideBarItem';
 
