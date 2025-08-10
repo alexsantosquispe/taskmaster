@@ -7,13 +7,19 @@ import { LogoHeader } from '../SideBarHeader';
 interface MobileMenuProps {
   isOpen: boolean;
   setIsOpen: (value: boolean) => void;
+  className?: string;
 }
 
-export const MobileMenu = ({ isOpen, setIsOpen }: MobileMenuProps) => {
+export const MobileMenu = ({
+  isOpen,
+  setIsOpen,
+  className
+}: MobileMenuProps) => {
   return (
     <div
       className={twMerge(
-        'flex h-[3.5rem] items-center justify-between pr-2 pl-4 md:hidden'
+        'flex h-[3.5rem] items-center justify-between pr-2 pl-4 md:hidden',
+        className
       )}
     >
       <LogoHeader isCollapsed={false} />
