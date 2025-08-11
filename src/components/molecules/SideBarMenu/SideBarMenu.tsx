@@ -21,12 +21,14 @@ export const SIDE_BAR_ITEMS = [
   {
     id: '1',
     label: 'Dashboard',
-    icon: <BoardIcon />
+    icon: <BoardIcon />,
+    path: '/dashboard'
   },
   {
     id: '2',
     label: 'Projects',
     icon: <ProjectIcon />,
+    path: '/projects',
     subItems: [
       {
         id: '2-1',
@@ -48,12 +50,14 @@ export const SIDE_BAR_ITEMS = [
   {
     id: '3',
     label: 'Tasks',
-    icon: <TasksListIcon />
+    icon: <TasksListIcon />,
+    path: '/tasks'
   },
   {
     id: '4',
     label: 'Reports',
-    icon: <ChartPieIcon />
+    icon: <ChartPieIcon />,
+    path: '/reports'
   }
 ];
 
@@ -96,7 +100,7 @@ export const SideBarMenu = () => {
         'md:dark:bg-primary dark:bg-primary/70 fixed z-50 flex flex-col border-b border-gray-200 bg-white/40 backdrop-blur-md transition-all duration-300 ease-in-out md:relative md:rounded-xl md:border md:bg-white md:shadow-xl dark:border-white/15',
         cn({
           'w-full md:w-14': isCollapsed,
-          'w-full md:w-[20rem]': !isCollapsed
+          'w-full md:w-[16rem]': !isCollapsed
         })
       )}
     >
