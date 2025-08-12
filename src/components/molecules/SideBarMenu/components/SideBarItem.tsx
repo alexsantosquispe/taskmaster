@@ -1,64 +1,51 @@
+import type {
+  NavBarLinkItem,
+  NavBarLinkSubItem
+} from '../../../../models/types';
+
+import { ChevronDownIcon } from '../../../../icons/ChevronDownIcon';
+import { NavBarLink } from './NavBarLink/NavBarLink';
 import cn from 'clsx';
-import { useState, type ReactNode } from 'react';
 import { twMerge } from 'tailwind-merge';
 import { useIsMobile } from '../../../../hooks/useIsMobile';
-import { ChevronDownIcon } from '../../../../icons/ChevronDownIcon';
+import { useState } from 'react';
 
-export type SideBarSubItemType = {
-  id: string;
-  label: string;
-  color: string;
-};
-
-interface SideBarItemButtonWrapperProps {
-  children: ReactNode;
-  isActive: boolean;
-  onClick: () => void;
-  ariaLabel: string;
-  className?: string;
+interface SideBarSubItemProps extends NavBarLinkSubItem {
+  onSelectItem: () => void;
 }
 
-interface SideBarItemProps {
-  id: string;
-  label: string;
-  icon: ReactNode;
-  selectedId: string;
-  onSelectItem: (id: string) => void;
-  isCollapsed?: boolean;
-  subItems?: SideBarSubItemType[];
-}
-
-const SideBarItemButtonWrapper = ({
-  children,
-  isActive,
-  onClick,
-  ariaLabel,
-  className
-}: SideBarItemButtonWrapperProps) => {
+export const SideBarSubItem = ({
+  id,
+  path,
+  label,
+  color,
+  onSelectItem
+}: SideBarSubItemProps) => {
   return (
-    <button
-      className={twMerge(
-        'flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2',
-        'hover:bg-neutral-100 hover:text-blue-700 dark:hover:bg-white/5 dark:hover:text-orange-500',
-        cn({
-          'bg-black/10 text-blue-700 md:bg-neutral-100 dark:bg-white/5 dark:text-orange-500':
-            isActive
-        }),
-        className
-      )}
-      aria-label={ariaLabel}
-      onClick={onClick}
-    >
-      {children}
-    </button>
+    <li key={id} className="w-full">
+      <NavBarLink
+        path={path}
+        ariaLabel={label}
+        onClick={onSelectItem}
+        className="justify-start"
+      >
+        <div className={twMerge('h-2 w-2 rounded-full', color)} />
+        <span>{label}</span>
+      </NavBarLink>
+    </li>
   );
 };
+
+interface SideBarItemProps extends NavBarLinkItem {
+  onSelectItem: () => void;
+  isCollapsed?: boolean;
+}
 
 export const SideBarItem = ({
   id,
   label,
+  path,
   icon,
-  selectedId,
   onSelectItem,
   isCollapsed = false,
   subItems
@@ -67,7 +54,7 @@ export const SideBarItem = ({
   const [showSubItems, setShowSubItems] = useState(false);
 
   const selectItemHandler = () => {
-    onSelectItem(id);
+    onSelectItem();
     if (!isMobile && subItems?.length) {
       setShowSubItems(!showSubItems);
     }
@@ -80,13 +67,9 @@ export const SideBarItem = ({
         'text-primary flex w-full flex-col items-center dark:text-white/90'
       )}
     >
-      <SideBarItemButtonWrapper
-        isActive={id === selectedId}
-        ariaLabel={label}
-        onClick={selectItemHandler}
-      >
+      <NavBarLink path={path} ariaLabel={label} onClick={selectItemHandler}>
         <div className="flex gap-4">
-          <div>{icon}</div>
+          <>{icon}</>
           {(!isCollapsed && label) || (isMobile && label)}
         </div>
 
@@ -100,24 +83,17 @@ export const SideBarItem = ({
             )}
           />
         )}
-      </SideBarItemButtonWrapper>
+      </NavBarLink>
 
       {subItems && !isCollapsed && showSubItems && (
         <ul className="flex w-full flex-col gap-1 py-2 pl-10">
           {subItems.map((subItem) => (
-            <li key={subItem.id} className="w-full">
-              <SideBarItemButtonWrapper
-                isActive={subItem.id === selectedId}
-                ariaLabel={subItem.label}
-                onClick={() => onSelectItem(subItem.id)}
-                className="justify-start"
-              >
-                <div
-                  className={twMerge('h-2 w-2 rounded-full', subItem.color)}
-                />
-                <span>{subItem.label}</span>
-              </SideBarItemButtonWrapper>
-            </li>
+            <SideBarSubItem
+              key={subItem.id}
+              {...subItem}
+              onSelectItem={onSelectItem}
+              path={`${path}/${subItem.path}`}
+            />
           ))}
         </ul>
       )}
