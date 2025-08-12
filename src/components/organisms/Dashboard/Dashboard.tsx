@@ -1,6 +1,6 @@
 export const Dashboard = () => {
   return (
-    <div className="flex h-screen items-center justify-center bg-red-300">
+    <div className="flex flex-1 items-center justify-center rounded-lg bg-neutral-200">
       Dashboard
     </div>
   );

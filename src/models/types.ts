@@ -34,6 +34,21 @@ export interface UserType {
   avatarUrl: string;
 }
 
+export interface NavBarLinkItemBase {
+  id: string;
+  label: string;
+  path: string;
+}
+
+export interface NavBarLinkSubItem extends NavBarLinkItemBase {
+  color: string;
+}
+
+export interface NavBarLinkItem extends NavBarLinkItemBase {
+  icon?: ReactNode;
+  subItems?: NavBarLinkSubItem[];
+}
+
 export type TaskType = {
   id: string;
   title: string;
@@ -41,7 +56,7 @@ export type TaskType = {
   status: StatusType;
   priority: PriorityType;
   progress: number;
-  createdAt: string; //datetime
+  createdAt: string; //datetime: 'YYYY-MM-DDThh:mm:ss-TZ'
   lastUpdate: string; //datetime
   assignee?: UserType;
 };

@@ -7,17 +7,19 @@ import {
   TasksListIcon
 } from '../../../icons';
 
-import cn from 'clsx';
-import { useState } from 'react';
-import { twMerge } from 'tailwind-merge';
-import { useIsMobile } from '../../../hooks/useIsMobile';
-import SwitchThemeButton from '../../atoms/SwitchThemeButton/SwitchThemeButton';
-import UserLoggedItem from '../../atoms/UserLoggedItem/UserLoggedItem';
 import { MobileMenu } from './components/MobileMenu/MobileMenu';
+import type { NavBarLinkItem } from '../../../models/types';
 import SideBarHeader from './components/SideBarHeader';
 import { SideBarItem } from './components/SideBarItem';
+import SwitchThemeButton from '../../atoms/SwitchThemeButton/SwitchThemeButton';
+import UserLoggedItem from '../../atoms/UserLoggedItem/UserLoggedItem';
+import cn from 'clsx';
+import { currentUser } from '../../../constants';
+import { twMerge } from 'tailwind-merge';
+import { useIsMobile } from '../../../hooks/useIsMobile';
+import { useState } from 'react';
 
-export const SIDE_BAR_ITEMS = [
+export const SIDE_BAR_ITEMS: NavBarLinkItem[] = [
   {
     id: '1',
     label: 'Dashboard',
@@ -33,16 +35,19 @@ export const SIDE_BAR_ITEMS = [
       {
         id: '2-1',
         label: 'Intex Company',
+        path: 'Intex-Company',
         color: 'bg-indigo-600'
       },
       {
         id: '2-2',
         label: 'TaskMaster Mobile App',
+        path: 'TaskMaster-Mobile App',
         color: 'bg-teal-500'
       },
       {
         id: '2-3',
         label: 'E-commerce Website',
+        path: 'E-commerce-Website',
         color: 'bg-red-600'
       }
     ]
@@ -61,7 +66,7 @@ export const SIDE_BAR_ITEMS = [
   }
 ];
 
-export const FOOTER_ITEMS = [
+export const FOOTER_ITEMS: NavBarLinkItem[] = [
   {
     id: '5',
     label: 'Settings',
@@ -76,23 +81,15 @@ export const FOOTER_ITEMS = [
   }
 ];
 
-const currentUser = {
-  name: 'Alex Santos',
-  email: 'alex.santos456@gmail.com',
-  avatarUrl: '/img/avatar.webp'
-};
-
 export const SideBarMenu = () => {
-  const [isCollapsed, setIsCollapsed] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
-  const [selectedId, setSelectedId] = useState(SIDE_BAR_ITEMS[0].id);
   const isMobile = useIsMobile();
-  const showMenu = !isMobile || (isMobile && isOpen);
+  const [isMenuCollapsed, setIsCollapsed] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const showMenu = !isMobile || (isMobile && isMobileMenuOpen);
 
-  const onSelectItem = (id: string) => {
-    setSelectedId(id);
+  const onSelectItem = () => {
     if (isMobile) {
-      setIsOpen(false);
+      setIsMobileMenuOpen(false);
     }
   };
 
@@ -101,17 +98,17 @@ export const SideBarMenu = () => {
       className={twMerge(
         'md:dark:bg-primary dark:bg-primary/70 fixed z-50 flex flex-col border-b border-gray-200 bg-white/40 backdrop-blur-md transition-all duration-300 ease-in-out md:relative md:rounded-xl md:border md:bg-white md:shadow-xl dark:border-white/15',
         cn({
-          'w-full md:w-14': isCollapsed,
-          'w-full md:w-[16rem]': !isCollapsed
+          'w-full md:w-14': isMenuCollapsed,
+          'w-full md:w-[16rem]': !isMenuCollapsed
         })
       )}
     >
       <SideBarHeader
-        isCollapsed={isCollapsed}
+        isCollapsed={isMenuCollapsed}
         setIsCollapsed={setIsCollapsed}
       />
 
-      <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen} />
+      <MobileMenu isOpen={isMobileMenuOpen} setIsOpen={setIsMobileMenuOpen} />
 
       <div className="flex-col px-2 text-sm md:flex md:h-full md:justify-between md:p-2">
         {showMenu && (
@@ -121,9 +118,8 @@ export const SideBarMenu = () => {
                 <SideBarItem
                   key={item.id}
                   {...item}
-                  selectedId={selectedId}
                   onSelectItem={onSelectItem}
-                  isCollapsed={isCollapsed}
+                  isCollapsed={isMenuCollapsed}
                 />
               ))}
             </ul>
@@ -137,17 +133,16 @@ export const SideBarMenu = () => {
                 <SideBarItem
                   key={item.id}
                   {...item}
-                  selectedId={selectedId}
-                  onSelectItem={setSelectedId}
-                  isCollapsed={isCollapsed}
+                  onSelectItem={onSelectItem}
+                  isCollapsed={isMenuCollapsed}
                 />
               ))}
             </ul>
 
-            <SwitchThemeButton isCollapsed={isCollapsed} />
+            <SwitchThemeButton isCollapsed={isMenuCollapsed} />
 
             <div className="pt-2">
-              <UserLoggedItem {...currentUser} isCollapsed={isCollapsed} />
+              <UserLoggedItem {...currentUser} isCollapsed={isMenuCollapsed} />
             </div>
           </div>
         )}

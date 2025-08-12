@@ -1,9 +1,9 @@
 import '@testing-library/jest-dom';
 
-import { fireEvent, render, screen } from '@testing-library/react';
 import { FOOTER_ITEMS, SIDE_BAR_ITEMS, SideBarMenu } from './SideBarMenu';
+import { fireEvent, render, screen } from '@testing-library/react';
 
-import { ThemeProvider } from '../../../contexts/ThemeProvider';
+import { TestWrapper } from '../../../utils/unitTest.util';
 
 describe('SideBarMenu', () => {
   const sideBarItemsLength = SIDE_BAR_ITEMS.length + FOOTER_ITEMS.length;
@@ -13,9 +13,9 @@ describe('SideBarMenu', () => {
   describe('styles', () => {
     it('should render the component correctly expanded/collapsed', () => {
       const component = render(
-        <ThemeProvider>
+        <TestWrapper>
           <SideBarMenu />
-        </ThemeProvider>
+        </TestWrapper>
       );
 
       expect(component).toMatchSnapshot();
@@ -41,14 +41,14 @@ describe('SideBarMenu', () => {
   describe('behavior', () => {
     beforeEach(() => {
       render(
-        <ThemeProvider>
+        <TestWrapper>
           <SideBarMenu />
-        </ThemeProvider>
+        </TestWrapper>
       );
     });
 
     it('should expand the subitems of projects item', () => {
-      const item = screen.getByRole('button', {
+      const item = screen.getByRole('link', {
         name: SIDE_BAR_ITEMS[1].label
       });
 
@@ -66,7 +66,8 @@ describe('SideBarMenu', () => {
     it('should select a subitem', () => {
       const activeClasses =
         'bg-black/10 text-blue-700 md:bg-neutral-100 dark:bg-white/5 dark:text-orange-500';
-      const item = screen.getByRole('button', {
+
+      const item = screen.getByRole('link', {
         name: SIDE_BAR_ITEMS[1].label
       });
 
@@ -76,7 +77,7 @@ describe('SideBarMenu', () => {
         sideBarItemsWithSubItemsLength
       );
 
-      const subItem = screen.getByRole('button', {
+      const subItem = screen.getByRole('link', {
         name: SIDE_BAR_ITEMS[1].subItems?.[0].label
       });
 

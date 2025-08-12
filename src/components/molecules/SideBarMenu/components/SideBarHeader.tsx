@@ -2,6 +2,7 @@ import { CollapseIcon, ExpandIcon } from '../../../../icons';
 
 import cn from 'clsx';
 import { memo } from 'react';
+import { NavLink } from 'react-router-dom';
 import { twMerge } from 'tailwind-merge';
 import { BoxIcon } from '../../../../icons/BoxIcon';
 import { ToggleButton } from '../../../atoms/ToggleButton/ToggleButton';
@@ -31,7 +32,8 @@ export const LogoHeader = ({
 
 const SideBarHeader = ({ isCollapsed, setIsCollapsed }: SideBarHeaderProps) => {
   return (
-    <div
+    <NavLink
+      to="/"
       className={twMerge(
         'hidden items-center justify-between p-2 md:flex',
         cn({
@@ -47,7 +49,7 @@ const SideBarHeader = ({ isCollapsed, setIsCollapsed }: SideBarHeaderProps) => {
         expandIcon={<ExpandIcon />}
         collapseIcon={<CollapseIcon />}
       />
-    </div>
+    </NavLink>
   );
 };
 
