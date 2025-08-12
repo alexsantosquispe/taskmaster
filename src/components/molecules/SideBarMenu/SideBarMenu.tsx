@@ -65,12 +65,14 @@ export const FOOTER_ITEMS = [
   {
     id: '5',
     label: 'Settings',
-    icon: <SettingsIcon />
+    icon: <SettingsIcon />,
+    path: '/settings'
   },
   {
     id: '6',
     label: 'Help',
-    icon: <InfoIcon />
+    icon: <InfoIcon />,
+    path: '/help'
   }
 ];
 
