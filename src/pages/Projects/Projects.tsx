@@ -1,4 +1,4 @@
-import { useGetProjectsQuery } from '../../../services/api';
+import { useGetProjectsQuery } from '../../services/api';
 
 const Projects = () => {
   const { data } = useGetProjectsQuery();
