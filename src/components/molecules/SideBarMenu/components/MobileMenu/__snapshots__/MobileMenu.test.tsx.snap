@@ -7,6 +7,7 @@ exports[`MobileMenu should render the component correctly 1`] = `
     <div>
       <div
         class="flex h-[3.5rem] items-center justify-between pr-2 pl-4 md:hidden"
+        data-testid="mobile-menu"
       >
         <div
           class="flex items-center gap-x-2"
@@ -50,6 +51,7 @@ exports[`MobileMenu should render the component correctly 1`] = `
         >
           <svg
             class="size-5"
+            data-testid="menu-icon"
             fill="none"
             height="24"
             stroke="currentColor"
@@ -77,6 +79,7 @@ exports[`MobileMenu should render the component correctly 1`] = `
   "container": <div>
     <div
       class="flex h-[3.5rem] items-center justify-between pr-2 pl-4 md:hidden"
+      data-testid="mobile-menu"
     >
       <div
         class="flex items-center gap-x-2"
@@ -120,6 +123,7 @@ exports[`MobileMenu should render the component correctly 1`] = `
       >
         <svg
           class="size-5"
+          data-testid="menu-icon"
           fill="none"
           height="24"
           stroke="currentColor"

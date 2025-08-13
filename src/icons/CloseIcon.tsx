@@ -4,6 +4,7 @@ import type { SvgIconProps } from '../models/types';
 export const CloseIcon = ({ className }: SvgIconProps) => {
   return (
     <svg
+      data-testid="close-icon"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"

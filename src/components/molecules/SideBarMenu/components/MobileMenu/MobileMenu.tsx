@@ -17,6 +17,7 @@ export const MobileMenu = ({
 }: MobileMenuProps) => {
   return (
     <div
+      data-testid="mobile-menu"
       className={twMerge(
         'flex h-[3.5rem] items-center justify-between pr-2 pl-4 md:hidden',
         className

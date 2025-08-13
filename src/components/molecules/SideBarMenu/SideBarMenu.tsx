@@ -7,17 +7,17 @@ import {
   TasksListIcon
 } from '../../../icons';
 
-import { MobileMenu } from './components/MobileMenu/MobileMenu';
+import cn from 'clsx';
+import { useState } from 'react';
+import { twMerge } from 'tailwind-merge';
+import { currentUser } from '../../../constants';
+import { useIsMobile } from '../../../hooks/useIsMobile';
 import type { NavBarLinkItem } from '../../../models/types';
-import SideBarHeader from './components/SideBarHeader';
-import { SideBarItem } from './components/SideBarItem';
 import SwitchThemeButton from '../../atoms/SwitchThemeButton/SwitchThemeButton';
 import UserLoggedItem from '../../atoms/UserLoggedItem/UserLoggedItem';
-import cn from 'clsx';
-import { currentUser } from '../../../constants';
-import { twMerge } from 'tailwind-merge';
-import { useIsMobile } from '../../../hooks/useIsMobile';
-import { useState } from 'react';
+import { MobileMenu } from './components/MobileMenu/MobileMenu';
+import SideBarHeader from './components/SideBarHeader';
+import { SideBarItem } from './components/SideBarItem';
 
 export const SIDE_BAR_ITEMS: NavBarLinkItem[] = [
   {
@@ -103,12 +103,16 @@ export const SideBarMenu = () => {
         })
       )}
     >
-      <SideBarHeader
-        isCollapsed={isMenuCollapsed}
-        setIsCollapsed={setIsCollapsed}
-      />
+      {!isMobile && (
+        <SideBarHeader
+          isCollapsed={isMenuCollapsed}
+          setIsCollapsed={setIsCollapsed}
+        />
+      )}
 
-      <MobileMenu isOpen={isMobileMenuOpen} setIsOpen={setIsMobileMenuOpen} />
+      {isMobile && (
+        <MobileMenu isOpen={isMobileMenuOpen} setIsOpen={setIsMobileMenuOpen} />
+      )}
 
       <div className="flex-col px-2 text-sm md:flex md:h-full md:justify-between md:p-2">
         {showMenu && (
