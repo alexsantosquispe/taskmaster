@@ -1,4 +1,5 @@
 import { render } from '@testing-library/react';
+import { CirclePlusIcon } from '../../../icons';
 import { Button } from './Button';
 
 describe('Button', () => {
@@ -9,7 +10,7 @@ describe('Button', () => {
     ariaLabel: 'test button'
   };
 
-  it('should render the component correctly', () => {
+  it('should render the button correctly', () => {
     let component = render(<Button {...props} />);
     expect(component).toMatchSnapshot();
 
@@ -21,6 +22,16 @@ describe('Button', () => {
 
     component = render(
       <Button {...props} isSecondary={true} isDisable={true} />
+    );
+    expect(component).toMatchSnapshot();
+  });
+
+  it('should render the button with icon correctly', () => {
+    let component = render(<Button {...props} icon={<CirclePlusIcon />} />);
+    expect(component).toMatchSnapshot();
+
+    component = render(
+      <Button {...props} icon={<CirclePlusIcon />} isSecondary={true} />
     );
     expect(component).toMatchSnapshot();
   });

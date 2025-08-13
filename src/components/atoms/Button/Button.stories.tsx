@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import type { ReactNode } from 'react';
+import { CirclePlusIcon } from '../../../icons';
+import { Wrapper } from '../../../utils/unitTest.util';
 import { Button } from './Button';
 
 const meta = {
@@ -14,14 +15,6 @@ const meta = {
 export default meta;
 
 type Story = StoryObj<typeof Button>;
-
-const Wrapper = ({ children }: { children: ReactNode }) => {
-  return (
-    <div className="flex items-center justify-center rounded border border-neutral-400 p-8">
-      {children}
-    </div>
-  );
-};
 
 export const Default: Story = () => {
   return (
@@ -59,6 +52,25 @@ export const Default: Story = () => {
           onClick={() => {}}
           isSecondary={true}
           isDisable={true}
+        />
+      </Wrapper>
+
+      <Wrapper>
+        <Button
+          label="Button with Icon"
+          ariaLabel="default button"
+          icon={<CirclePlusIcon />}
+          onClick={() => {}}
+        />
+      </Wrapper>
+
+      <Wrapper>
+        <Button
+          label="Secondary with Icon"
+          ariaLabel="secondary button disabled"
+          onClick={() => {}}
+          icon={<CirclePlusIcon />}
+          isSecondary={true}
         />
       </Wrapper>
     </div>

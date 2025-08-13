@@ -1,6 +1,14 @@
-import { BrowserRouter } from 'react-router-dom';
 import type { ReactNode } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from '../contexts/ThemeProvider';
+
+export const Wrapper = ({ children }: { children: ReactNode }) => {
+  return (
+    <div className="flex items-center justify-center rounded border border-neutral-400 p-8">
+      {children}
+    </div>
+  );
+};
 
 export const TestWrapper = ({ children }: { children: ReactNode }) => {
   return (
