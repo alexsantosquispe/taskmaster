@@ -35,19 +35,19 @@ export const SIDE_BAR_ITEMS: NavBarLinkItem[] = [
       {
         id: '2-1',
         label: 'Intex Company',
-        path: 'Intex-Company',
+        path: '/intex-company',
         color: 'bg-indigo-600'
       },
       {
         id: '2-2',
         label: 'TaskMaster Mobile App',
-        path: 'TaskMaster-Mobile App',
+        path: '/taskmaster-mobile-app',
         color: 'bg-teal-500'
       },
       {
         id: '2-3',
         label: 'E-commerce Website',
-        path: 'E-commerce-Website',
+        path: '/e-commerce-website',
         color: 'bg-red-600'
       }
     ]

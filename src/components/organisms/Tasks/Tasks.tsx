@@ -1,6 +1,6 @@
 export const Tasks = () => {
   return (
-    <div className="flex flex-1 items-center justify-center rounded-lg bg-neutral-200">
+    <div className="bg-primary/10 flex flex-1 items-center justify-center rounded-lg dark:bg-white/15">
       Tasks
     </div>
   );
