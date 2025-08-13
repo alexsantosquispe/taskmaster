@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import { Detail } from './Detail';
+import Detail from './Detail';
 
 describe('Detail component', () => {
   it('should render the component correctly', () => {

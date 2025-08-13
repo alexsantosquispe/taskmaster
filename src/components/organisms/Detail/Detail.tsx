@@ -49,7 +49,7 @@ const TABS = [
   }
 ];
 
-export const Detail = () => {
+const Detail = () => {
   return (
     <div className="flex w-full flex-col gap-2 md:gap-6">
       <div className="flex flex-col gap-2">
@@ -92,3 +92,5 @@ export const Detail = () => {
     </div>
   );
 };
+
+export default Detail;
