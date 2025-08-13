@@ -3,12 +3,12 @@ import type {
   NavBarLinkSubItem
 } from '../../../../models/types';
 
-import { ChevronDownIcon } from '../../../../icons/ChevronDownIcon';
-import { NavBarLink } from './NavBarLink/NavBarLink';
 import cn from 'clsx';
+import { useState } from 'react';
 import { twMerge } from 'tailwind-merge';
 import { useIsMobile } from '../../../../hooks/useIsMobile';
-import { useState } from 'react';
+import { ChevronDownIcon } from '../../../../icons/ChevronDownIcon';
+import { NavBarLink } from './NavBarLink/NavBarLink';
 
 interface SideBarSubItemProps extends NavBarLinkSubItem {
   onSelectItem: () => void;
@@ -92,7 +92,7 @@ export const SideBarItem = ({
               key={subItem.id}
               {...subItem}
               onSelectItem={onSelectItem}
-              path={`${path}/${subItem.path}`}
+              path={`${path}${subItem.path}`}
             />
           ))}
         </ul>

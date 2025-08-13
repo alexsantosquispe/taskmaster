@@ -51,13 +51,12 @@ const TABS = [
 
 export const Detail = () => {
   return (
-    <section className="mt-[3.25rem] flex h-[calc(100vh-3.25rem)] w-full flex-col gap-2 p-2 pt-4 md:mt-0 md:h-full md:gap-6 md:px-4 md:pt-4 md:pb-0">
+    <div className="flex w-full flex-col gap-2 md:gap-6">
       <div className="flex flex-col gap-2">
         <Breadcrumb items={BREADCRUMBS} />
         <h2 className="text-2xl leading-12 font-bold">TaskMaster Mobile App</h2>
       </div>
 
-      {/* Board Section */}
       <div className="flex w-full flex-col gap-y-4 overflow-hidden md:h-full">
         <TabBar tabs={TABS} />
         <div className="scroll-x-auto md:scroll-none flex gap-x-3 overflow-auto md:overflow-hidden">
@@ -90,6 +89,6 @@ export const Detail = () => {
           />
         </div>
       </div>
-    </section>
+    </div>
   );
 };
