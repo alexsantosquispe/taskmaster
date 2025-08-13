@@ -9,6 +9,8 @@
 
 @theme {
   --color-primary: #171717;
+  --color-accent: var(--color-blue-700);
+  --color-accent-dark: var(--color-orange-500);
 }
 
 html,

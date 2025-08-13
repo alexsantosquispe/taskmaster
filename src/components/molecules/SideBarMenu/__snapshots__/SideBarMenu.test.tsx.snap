@@ -309,7 +309,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
               >
                 <a
                   aria-label="Dashboard"
-                  class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:bg-neutral-100 hover:text-blue-700 dark:hover:bg-white/5 dark:hover:text-orange-500"
+                  class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:text-accent dark:hover:text-accent-dark hover:bg-neutral-100 dark:hover:bg-white/5"
                   href="/dashboard"
                 >
                   <div
@@ -365,7 +365,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
               >
                 <a
                   aria-label="Projects"
-                  class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:bg-neutral-100 hover:text-blue-700 dark:hover:bg-white/5 dark:hover:text-orange-500"
+                  class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:text-accent dark:hover:text-accent-dark hover:bg-neutral-100 dark:hover:bg-white/5"
                   href="/projects"
                 >
                   <div
@@ -421,7 +421,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
               >
                 <a
                   aria-label="Tasks"
-                  class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:bg-neutral-100 hover:text-blue-700 dark:hover:bg-white/5 dark:hover:text-orange-500"
+                  class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:text-accent dark:hover:text-accent-dark hover:bg-neutral-100 dark:hover:bg-white/5"
                   href="/tasks"
                 >
                   <div
@@ -475,7 +475,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
               >
                 <a
                   aria-label="Reports"
-                  class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:bg-neutral-100 hover:text-blue-700 dark:hover:bg-white/5 dark:hover:text-orange-500"
+                  class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:text-accent dark:hover:text-accent-dark hover:bg-neutral-100 dark:hover:bg-white/5"
                   href="/reports"
                 >
                   <div
@@ -515,7 +515,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
               >
                 <a
                   aria-label="Settings"
-                  class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:bg-neutral-100 hover:text-blue-700 dark:hover:bg-white/5 dark:hover:text-orange-500"
+                  class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:text-accent dark:hover:text-accent-dark hover:bg-neutral-100 dark:hover:bg-white/5"
                   href="/settings"
                 >
                   <div
@@ -551,7 +551,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
               >
                 <a
                   aria-label="Help"
-                  class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:bg-neutral-100 hover:text-blue-700 dark:hover:bg-white/5 dark:hover:text-orange-500"
+                  class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:text-accent dark:hover:text-accent-dark hover:bg-neutral-100 dark:hover:bg-white/5"
                   href="/help"
                 >
                   <div
@@ -853,7 +853,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
             >
               <a
                 aria-label="Dashboard"
-                class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:bg-neutral-100 hover:text-blue-700 dark:hover:bg-white/5 dark:hover:text-orange-500"
+                class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:text-accent dark:hover:text-accent-dark hover:bg-neutral-100 dark:hover:bg-white/5"
                 href="/dashboard"
               >
                 <div
@@ -909,7 +909,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
             >
               <a
                 aria-label="Projects"
-                class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:bg-neutral-100 hover:text-blue-700 dark:hover:bg-white/5 dark:hover:text-orange-500"
+                class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:text-accent dark:hover:text-accent-dark hover:bg-neutral-100 dark:hover:bg-white/5"
                 href="/projects"
               >
                 <div
@@ -965,7 +965,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
             >
               <a
                 aria-label="Tasks"
-                class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:bg-neutral-100 hover:text-blue-700 dark:hover:bg-white/5 dark:hover:text-orange-500"
+                class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:text-accent dark:hover:text-accent-dark hover:bg-neutral-100 dark:hover:bg-white/5"
                 href="/tasks"
               >
                 <div
@@ -1019,7 +1019,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
             >
               <a
                 aria-label="Reports"
-                class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:bg-neutral-100 hover:text-blue-700 dark:hover:bg-white/5 dark:hover:text-orange-500"
+                class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:text-accent dark:hover:text-accent-dark hover:bg-neutral-100 dark:hover:bg-white/5"
                 href="/reports"
               >
                 <div
@@ -1059,7 +1059,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
             >
               <a
                 aria-label="Settings"
-                class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:bg-neutral-100 hover:text-blue-700 dark:hover:bg-white/5 dark:hover:text-orange-500"
+                class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:text-accent dark:hover:text-accent-dark hover:bg-neutral-100 dark:hover:bg-white/5"
                 href="/settings"
               >
                 <div
@@ -1095,7 +1095,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
             >
               <a
                 aria-label="Help"
-                class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:bg-neutral-100 hover:text-blue-700 dark:hover:bg-white/5 dark:hover:text-orange-500"
+                class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:text-accent dark:hover:text-accent-dark hover:bg-neutral-100 dark:hover:bg-white/5"
                 href="/help"
               >
                 <div

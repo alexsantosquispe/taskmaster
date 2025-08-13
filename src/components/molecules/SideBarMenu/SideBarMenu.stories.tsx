@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { ThemeProvider } from '../../../contexts/ThemeProvider';
+import { TestWrapper } from '../../../utils/unitTest.util';
 import { SideBarMenu } from './SideBarMenu';
 
 const meta = {
@@ -14,11 +14,11 @@ type Story = StoryObj<typeof SideBarMenu>;
 
 export const Default: Story = () => {
   return (
-    <ThemeProvider>
+    <TestWrapper>
       <div className="flex h-screen">
         <SideBarMenu />
       </div>
-    </ThemeProvider>
+    </TestWrapper>
   );
 };
 

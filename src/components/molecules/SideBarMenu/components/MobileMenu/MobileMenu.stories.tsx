@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { MobileMenu } from './MobileMenu';
 
 const meta: Meta<typeof MobileMenu> = {
-  title: 'Components/Molecules/SideBarMenu/MobileMenu',
+  title: 'Molecules/SideBarMenu/MobileMenu',
   component: MobileMenu,
   parameters: {
     layout: 'centered'

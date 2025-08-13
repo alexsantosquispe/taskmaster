@@ -70,7 +70,7 @@ describe('SideBarMenu', () => {
 
     it('should select a subitem', () => {
       const activeClasses =
-        'bg-black/10 text-blue-700 md:bg-neutral-100 dark:bg-white/5 dark:text-orange-500';
+        'bg-black/10 text-accent md:bg-neutral-100 dark:bg-white/5 dark:text-accent-dark';
 
       const item = screen.getByRole('link', {
         name: SIDE_BAR_ITEMS[1].label

@@ -8,11 +8,11 @@ export const apiClient = createApi({
   baseQuery: fakeBaseQuery(),
   tagTypes: ['Projects'],
   endpoints: (builder) => ({
-    getProjects: builder.query<ProjectDTO[] | null, void>({
+    getProjects: builder.query<ProjectDTO[], void>({
       queryFn: async () => {
         const { data, error } = await supabaseClient.from('projects').select();
         if (error) throw error;
-        return { data };
+        return { data: data || [] };
       },
       providesTags: ['Projects']
     })
