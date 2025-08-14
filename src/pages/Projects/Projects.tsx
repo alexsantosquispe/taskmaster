@@ -1,13 +1,16 @@
+import { Banner } from '../../components/atoms/Banner/Banner';
 import { Button } from '../../components/atoms/Button/Button';
+import { Skeleton } from '../../components/atoms/Skeleton/Skeleton';
 import { CirclePlusIcon } from '../../icons';
-import { useGetProjectsQuery } from '../../services/api';
+import type { ProjectDTO } from '../../services/apiTypes';
 import { ProjectCard } from './components/ProjectCard';
+import { useProjects } from './hooks/useProjects';
 
 const Projects = () => {
-  const { data } = useGetProjectsQuery();
+  const { projects, isLoading } = useProjects();
 
   return (
-    <div className="flex flex-col gap-8 overflow-auto md:px-4 xl:max-w-[80rem]">
+    <section className="flex w-full flex-col gap-8 overflow-auto md:px-4 xl:max-w-[80rem]">
       <div className="flex w-full items-center justify-between">
         <h2 className="text-2xl font-bold">Projects</h2>
         <Button
@@ -18,12 +21,23 @@ const Projects = () => {
         />
       </div>
 
-      <div className="grid gap-4 md:grid-cols-2 md:gap-5 lg:grid-cols-3 lg:gap-6 xl:grid-cols-4">
-        {data?.map((project) => {
-          return <ProjectCard key={project.id} {...project} />;
-        })}
-      </div>
-    </div>
+      {isLoading && <Skeleton />}
+
+      {!isLoading && projects?.length === 0 && (
+        <Banner
+          message="There aren't projects to show"
+          description="Create a new project or try a different search query"
+        />
+      )}
+
+      {!isLoading && (
+        <div className="grid gap-4 md:grid-cols-2 md:gap-5 lg:grid-cols-3 lg:gap-6 xl:grid-cols-4">
+          {projects?.map((project: ProjectDTO) => {
+            return <ProjectCard key={project.id} {...project} />;
+          })}
+        </div>
+      )}
+    </section>
   );
 };
 

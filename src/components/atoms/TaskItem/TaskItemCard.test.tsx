@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import { BACKLOG_TASKS } from '../../../utils/data/mocks';
+import { BACKLOG_TASKS } from '../../../utils/mocks/tasks';
 import { TaskItemCard, type TaskItemCardProps } from './TaskItemCard';
 
 describe('TaskItemCard', () => {

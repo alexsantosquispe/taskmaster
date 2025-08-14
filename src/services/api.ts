@@ -10,7 +10,10 @@ export const apiClient = createApi({
   endpoints: (builder) => ({
     getProjects: builder.query<ProjectDTO[], void>({
       queryFn: async () => {
-        const { data, error } = await supabaseClient.from('projects').select();
+        const { data, error } = await supabaseClient
+          .from('projects')
+          .select()
+          .order('create_date', { ascending: false });
         if (error) throw error;
         return { data: data || [] };
       },

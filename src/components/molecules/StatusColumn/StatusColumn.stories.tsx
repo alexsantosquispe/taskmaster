@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { CircleDotDashedIcon } from '../../../icons';
-import { BACKLOG_TASKS } from '../../../utils/data/mocks';
+import { BACKLOG_TASKS } from '../../../utils/mocks/tasks';
 import { StatusColumn } from './StatusColumn';
 
 const meta = {

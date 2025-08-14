@@ -11,7 +11,7 @@ import {
   IN_PROGRESS_TASKS,
   ON_HOLD_TASKS,
   REVIEW_TASKS
-} from '../../utils/data/mocks';
+} from '../../utils/mocks/tasks';
 
 import { Breadcrumb } from '../../components/atoms/Breadcrumb/Breadcrumb';
 import TabBar from '../../components/atoms/TabBar/TabBar';
