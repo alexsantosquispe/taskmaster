@@ -9,6 +9,7 @@ export const SkeletonItem = ({ className }: SkeletonItemProps) => {
 
   return (
     <div
+      data-testid="skeleton-item"
       className={twMerge(
         'flex h-32 animate-pulse flex-col gap-2 rounded-lg border border-neutral-200 px-4 py-3 dark:border-white/15',
         className

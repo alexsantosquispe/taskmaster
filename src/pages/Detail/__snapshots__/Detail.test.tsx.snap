@@ -253,7 +253,7 @@ exports[`Detail component should render the component correctly 1`] = `
                         />
                       </svg>
                       <span>
-                        Jul 5, 2025
+                        Jul 5
                       </span>
                     </div>
                     <div
@@ -425,7 +425,7 @@ exports[`Detail component should render the component correctly 1`] = `
                         />
                       </svg>
                       <span>
-                        Jul 6, 2025
+                        Jul 6
                       </span>
                     </div>
                     <div
@@ -597,7 +597,7 @@ exports[`Detail component should render the component correctly 1`] = `
                         />
                       </svg>
                       <span>
-                        Jul 6, 2025
+                        Jul 6
                       </span>
                     </div>
                     <div
@@ -832,7 +832,7 @@ exports[`Detail component should render the component correctly 1`] = `
                         />
                       </svg>
                       <span>
-                        Jul 9, 2025
+                        Jul 9
                       </span>
                     </div>
                     <div
@@ -1067,7 +1067,7 @@ exports[`Detail component should render the component correctly 1`] = `
                         />
                       </svg>
                       <span>
-                        Jul 10, 2025
+                        Jul 10
                       </span>
                     </div>
                     <div
@@ -1239,7 +1239,7 @@ exports[`Detail component should render the component correctly 1`] = `
                         />
                       </svg>
                       <span>
-                        Jul 10, 2025
+                        Jul 10
                       </span>
                     </div>
                     <div
@@ -1460,7 +1460,7 @@ exports[`Detail component should render the component correctly 1`] = `
                         />
                       </svg>
                       <span>
-                        Jul 6, 2025
+                        Jul 6
                       </span>
                     </div>
                     <div
@@ -1632,7 +1632,7 @@ exports[`Detail component should render the component correctly 1`] = `
                         />
                       </svg>
                       <span>
-                        Jul 8, 2025
+                        Jul 8
                       </span>
                     </div>
                     <div
@@ -1851,7 +1851,7 @@ exports[`Detail component should render the component correctly 1`] = `
                         />
                       </svg>
                       <span>
-                        Jul 3, 2025
+                        Jul 3
                       </span>
                     </div>
                     <div
@@ -2023,7 +2023,7 @@ exports[`Detail component should render the component correctly 1`] = `
                         />
                       </svg>
                       <span>
-                        Jul 4, 2025
+                        Jul 4
                       </span>
                     </div>
                     <div
@@ -2195,7 +2195,7 @@ exports[`Detail component should render the component correctly 1`] = `
                         />
                       </svg>
                       <span>
-                        Jul 5, 2025
+                        Jul 5
                       </span>
                     </div>
                     <div
@@ -2367,7 +2367,7 @@ exports[`Detail component should render the component correctly 1`] = `
                         />
                       </svg>
                       <span>
-                        Jul 7, 2025
+                        Jul 7
                       </span>
                     </div>
                     <div
@@ -2539,7 +2539,7 @@ exports[`Detail component should render the component correctly 1`] = `
                         />
                       </svg>
                       <span>
-                        Jul 8, 2025
+                        Jul 8
                       </span>
                     </div>
                     <div
@@ -2883,7 +2883,7 @@ exports[`Detail component should render the component correctly 1`] = `
                       />
                     </svg>
                     <span>
-                      Jul 5, 2025
+                      Jul 5
                     </span>
                   </div>
                   <div
@@ -3055,7 +3055,7 @@ exports[`Detail component should render the component correctly 1`] = `
                       />
                     </svg>
                     <span>
-                      Jul 6, 2025
+                      Jul 6
                     </span>
                   </div>
                   <div
@@ -3227,7 +3227,7 @@ exports[`Detail component should render the component correctly 1`] = `
                       />
                     </svg>
                     <span>
-                      Jul 6, 2025
+                      Jul 6
                     </span>
                   </div>
                   <div
@@ -3462,7 +3462,7 @@ exports[`Detail component should render the component correctly 1`] = `
                       />
                     </svg>
                     <span>
-                      Jul 9, 2025
+                      Jul 9
                     </span>
                   </div>
                   <div
@@ -3697,7 +3697,7 @@ exports[`Detail component should render the component correctly 1`] = `
                       />
                     </svg>
                     <span>
-                      Jul 10, 2025
+                      Jul 10
                     </span>
                   </div>
                   <div
@@ -3869,7 +3869,7 @@ exports[`Detail component should render the component correctly 1`] = `
                       />
                     </svg>
                     <span>
-                      Jul 10, 2025
+                      Jul 10
                     </span>
                   </div>
                   <div
@@ -4090,7 +4090,7 @@ exports[`Detail component should render the component correctly 1`] = `
                       />
                     </svg>
                     <span>
-                      Jul 6, 2025
+                      Jul 6
                     </span>
                   </div>
                   <div
@@ -4262,7 +4262,7 @@ exports[`Detail component should render the component correctly 1`] = `
                       />
                     </svg>
                     <span>
-                      Jul 8, 2025
+                      Jul 8
                     </span>
                   </div>
                   <div
@@ -4481,7 +4481,7 @@ exports[`Detail component should render the component correctly 1`] = `
                       />
                     </svg>
                     <span>
-                      Jul 3, 2025
+                      Jul 3
                     </span>
                   </div>
                   <div
@@ -4653,7 +4653,7 @@ exports[`Detail component should render the component correctly 1`] = `
                       />
                     </svg>
                     <span>
-                      Jul 4, 2025
+                      Jul 4
                     </span>
                   </div>
                   <div
@@ -4825,7 +4825,7 @@ exports[`Detail component should render the component correctly 1`] = `
                       />
                     </svg>
                     <span>
-                      Jul 5, 2025
+                      Jul 5
                     </span>
                   </div>
                   <div
@@ -4997,7 +4997,7 @@ exports[`Detail component should render the component correctly 1`] = `
                       />
                     </svg>
                     <span>
-                      Jul 7, 2025
+                      Jul 7
                     </span>
                   </div>
                   <div
@@ -5169,7 +5169,7 @@ exports[`Detail component should render the component correctly 1`] = `
                       />
                     </svg>
                     <span>
-                      Jul 8, 2025
+                      Jul 8
                     </span>
                   </div>
                   <div

@@ -89,7 +89,7 @@ exports[`TaskItemCard should render the component correctly 1`] = `
               />
             </svg>
             <span>
-              Jul 5, 2025
+              Jul 5
             </span>
           </div>
           <div
@@ -264,7 +264,7 @@ exports[`TaskItemCard should render the component correctly 1`] = `
             />
           </svg>
           <span>
-            Jul 5, 2025
+            Jul 5
           </span>
         </div>
         <div

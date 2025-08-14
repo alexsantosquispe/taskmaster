@@ -1,6 +1,28 @@
+import cn from 'clsx';
 import { twMerge } from 'tailwind-merge';
 import type { ProjectDTO } from '../../../services/apiTypes';
 import { formatDateToDayMonth } from '../../../utils';
+
+interface ProjectCardProps extends ProjectDTO {
+  isSmall?: boolean;
+}
+
+interface CodeBadgeProps {
+  color: string;
+  code: string;
+}
+
+export const CodeBadge = ({ color, code }: CodeBadgeProps) => {
+  return (
+    <div className="flex items-center gap-1 rounded-md border border-neutral-200 px-1.5 py-1 font-semibold dark:border-white/20">
+      <div
+        style={{ backgroundColor: color }}
+        className={twMerge('h-4 w-4 rounded-full')}
+      />
+      <span className="text-xs">{code}</span>
+    </div>
+  );
+};
 
 export const ProjectCard = ({
   id,
@@ -8,34 +30,33 @@ export const ProjectCard = ({
   description,
   create_date: createDate,
   color,
-  code
-}: ProjectDTO) => {
+  code,
+  isSmall = false
+}: ProjectCardProps) => {
   const lastUpdateDate = formatDateToDayMonth(createDate);
 
   return (
     <article
       key={id}
-      className="dark:bg-primary flex h-40 flex-col rounded-lg border border-neutral-200 px-4 py-3 text-sm dark:border-white/20"
+      className={twMerge(
+        'dark:bg-primary flex h-36 flex-col rounded-lg border border-neutral-200 px-4 py-3 text-sm dark:border-white/20',
+        cn({ 'h-24': isSmall })
+      )}
     >
       <div className="flex flex-1 flex-col gap-3">
-        <div className="flex items-center justify-between gap-2">
-          <h3 className="text-base font-semibold">{name}</h3>
+        <h3 className="line-clamp-1 text-base font-semibold">{name}</h3>
 
-          <div className="flex items-center gap-2 rounded-md border border-neutral-200 px-2 py-1 font-semibold dark:border-white/20">
-            <div
-              style={{ backgroundColor: color }}
-              className={twMerge('h-4 w-4 rounded-full')}
-            />
-            <span>{code}</span>
-          </div>
-        </div>
-
-        <p className="line-clamp-2 flex-1 text-neutral-700 dark:text-neutral-200">
-          {description}
-        </p>
+        {!isSmall && (
+          <p className="line-clamp-2 flex-1 text-neutral-700 dark:text-neutral-200">
+            {description}
+          </p>
+        )}
       </div>
 
-      <span className="self-end text-[0.8125rem] text-neutral-500 dark:text-neutral-300">{`Updated: ${lastUpdateDate}`}</span>
+      <div className="flex items-baseline justify-between gap-2">
+        <span className="text-[0.8125rem] text-neutral-500 dark:text-neutral-300">{`Updated ${lastUpdateDate}`}</span>
+        <CodeBadge color={color} code={code} />
+      </div>
     </article>
   );
 };

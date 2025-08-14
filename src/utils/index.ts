@@ -5,8 +5,7 @@ import { type PriorityType } from '../models/types';
 export const formatDateToDayMonth = (date: string) => {
   const options: Intl.DateTimeFormatOptions = {
     day: 'numeric',
-    month: 'short',
-    year: 'numeric'
+    month: 'short'
   };
   return new Intl.DateTimeFormat('en-US', options).format(new Date(date));
 };

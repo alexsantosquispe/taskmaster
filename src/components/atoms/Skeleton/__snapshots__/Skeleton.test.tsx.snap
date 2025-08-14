@@ -1,0 +1,324 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Skeleton should render the component correctly 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="grid w-full gap-4 md:grid-cols-2 md:gap-5 lg:grid-cols-3 lg:gap-6 xl:grid-cols-4"
+      >
+        <div
+          class="flex h-32 animate-pulse flex-col gap-2 rounded-lg border border-neutral-200 px-4 py-3 dark:border-white/15"
+          data-testid="skeleton-item"
+        >
+          <div
+            class="flex flex-1 flex-col gap-4"
+          >
+            <div
+              class="w-full rounded bg-neutral-200 dark:bg-white/15 h-6"
+            />
+            <div
+              class="w-full rounded bg-neutral-200 dark:bg-white/15 h-4"
+            />
+          </div>
+          <div
+            class="rounded bg-neutral-200 dark:bg-white/15 h-3 w-5/6 self-end"
+          />
+        </div>
+        <div
+          class="flex h-32 animate-pulse flex-col gap-2 rounded-lg border border-neutral-200 px-4 py-3 dark:border-white/15"
+          data-testid="skeleton-item"
+        >
+          <div
+            class="flex flex-1 flex-col gap-4"
+          >
+            <div
+              class="w-full rounded bg-neutral-200 dark:bg-white/15 h-6"
+            />
+            <div
+              class="w-full rounded bg-neutral-200 dark:bg-white/15 h-4"
+            />
+          </div>
+          <div
+            class="rounded bg-neutral-200 dark:bg-white/15 h-3 w-5/6 self-end"
+          />
+        </div>
+        <div
+          class="flex h-32 animate-pulse flex-col gap-2 rounded-lg border border-neutral-200 px-4 py-3 dark:border-white/15"
+          data-testid="skeleton-item"
+        >
+          <div
+            class="flex flex-1 flex-col gap-4"
+          >
+            <div
+              class="w-full rounded bg-neutral-200 dark:bg-white/15 h-6"
+            />
+            <div
+              class="w-full rounded bg-neutral-200 dark:bg-white/15 h-4"
+            />
+          </div>
+          <div
+            class="rounded bg-neutral-200 dark:bg-white/15 h-3 w-5/6 self-end"
+          />
+        </div>
+        <div
+          class="flex h-32 animate-pulse flex-col gap-2 rounded-lg border border-neutral-200 px-4 py-3 dark:border-white/15"
+          data-testid="skeleton-item"
+        >
+          <div
+            class="flex flex-1 flex-col gap-4"
+          >
+            <div
+              class="w-full rounded bg-neutral-200 dark:bg-white/15 h-6"
+            />
+            <div
+              class="w-full rounded bg-neutral-200 dark:bg-white/15 h-4"
+            />
+          </div>
+          <div
+            class="rounded bg-neutral-200 dark:bg-white/15 h-3 w-5/6 self-end"
+          />
+        </div>
+        <div
+          class="flex h-32 animate-pulse flex-col gap-2 rounded-lg border border-neutral-200 px-4 py-3 dark:border-white/15"
+          data-testid="skeleton-item"
+        >
+          <div
+            class="flex flex-1 flex-col gap-4"
+          >
+            <div
+              class="w-full rounded bg-neutral-200 dark:bg-white/15 h-6"
+            />
+            <div
+              class="w-full rounded bg-neutral-200 dark:bg-white/15 h-4"
+            />
+          </div>
+          <div
+            class="rounded bg-neutral-200 dark:bg-white/15 h-3 w-5/6 self-end"
+          />
+        </div>
+        <div
+          class="flex h-32 animate-pulse flex-col gap-2 rounded-lg border border-neutral-200 px-4 py-3 dark:border-white/15"
+          data-testid="skeleton-item"
+        >
+          <div
+            class="flex flex-1 flex-col gap-4"
+          >
+            <div
+              class="w-full rounded bg-neutral-200 dark:bg-white/15 h-6"
+            />
+            <div
+              class="w-full rounded bg-neutral-200 dark:bg-white/15 h-4"
+            />
+          </div>
+          <div
+            class="rounded bg-neutral-200 dark:bg-white/15 h-3 w-5/6 self-end"
+          />
+        </div>
+        <div
+          class="flex h-32 animate-pulse flex-col gap-2 rounded-lg border border-neutral-200 px-4 py-3 dark:border-white/15"
+          data-testid="skeleton-item"
+        >
+          <div
+            class="flex flex-1 flex-col gap-4"
+          >
+            <div
+              class="w-full rounded bg-neutral-200 dark:bg-white/15 h-6"
+            />
+            <div
+              class="w-full rounded bg-neutral-200 dark:bg-white/15 h-4"
+            />
+          </div>
+          <div
+            class="rounded bg-neutral-200 dark:bg-white/15 h-3 w-5/6 self-end"
+          />
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="grid w-full gap-4 md:grid-cols-2 md:gap-5 lg:grid-cols-3 lg:gap-6 xl:grid-cols-4"
+    >
+      <div
+        class="flex h-32 animate-pulse flex-col gap-2 rounded-lg border border-neutral-200 px-4 py-3 dark:border-white/15"
+        data-testid="skeleton-item"
+      >
+        <div
+          class="flex flex-1 flex-col gap-4"
+        >
+          <div
+            class="w-full rounded bg-neutral-200 dark:bg-white/15 h-6"
+          />
+          <div
+            class="w-full rounded bg-neutral-200 dark:bg-white/15 h-4"
+          />
+        </div>
+        <div
+          class="rounded bg-neutral-200 dark:bg-white/15 h-3 w-5/6 self-end"
+        />
+      </div>
+      <div
+        class="flex h-32 animate-pulse flex-col gap-2 rounded-lg border border-neutral-200 px-4 py-3 dark:border-white/15"
+        data-testid="skeleton-item"
+      >
+        <div
+          class="flex flex-1 flex-col gap-4"
+        >
+          <div
+            class="w-full rounded bg-neutral-200 dark:bg-white/15 h-6"
+          />
+          <div
+            class="w-full rounded bg-neutral-200 dark:bg-white/15 h-4"
+          />
+        </div>
+        <div
+          class="rounded bg-neutral-200 dark:bg-white/15 h-3 w-5/6 self-end"
+        />
+      </div>
+      <div
+        class="flex h-32 animate-pulse flex-col gap-2 rounded-lg border border-neutral-200 px-4 py-3 dark:border-white/15"
+        data-testid="skeleton-item"
+      >
+        <div
+          class="flex flex-1 flex-col gap-4"
+        >
+          <div
+            class="w-full rounded bg-neutral-200 dark:bg-white/15 h-6"
+          />
+          <div
+            class="w-full rounded bg-neutral-200 dark:bg-white/15 h-4"
+          />
+        </div>
+        <div
+          class="rounded bg-neutral-200 dark:bg-white/15 h-3 w-5/6 self-end"
+        />
+      </div>
+      <div
+        class="flex h-32 animate-pulse flex-col gap-2 rounded-lg border border-neutral-200 px-4 py-3 dark:border-white/15"
+        data-testid="skeleton-item"
+      >
+        <div
+          class="flex flex-1 flex-col gap-4"
+        >
+          <div
+            class="w-full rounded bg-neutral-200 dark:bg-white/15 h-6"
+          />
+          <div
+            class="w-full rounded bg-neutral-200 dark:bg-white/15 h-4"
+          />
+        </div>
+        <div
+          class="rounded bg-neutral-200 dark:bg-white/15 h-3 w-5/6 self-end"
+        />
+      </div>
+      <div
+        class="flex h-32 animate-pulse flex-col gap-2 rounded-lg border border-neutral-200 px-4 py-3 dark:border-white/15"
+        data-testid="skeleton-item"
+      >
+        <div
+          class="flex flex-1 flex-col gap-4"
+        >
+          <div
+            class="w-full rounded bg-neutral-200 dark:bg-white/15 h-6"
+          />
+          <div
+            class="w-full rounded bg-neutral-200 dark:bg-white/15 h-4"
+          />
+        </div>
+        <div
+          class="rounded bg-neutral-200 dark:bg-white/15 h-3 w-5/6 self-end"
+        />
+      </div>
+      <div
+        class="flex h-32 animate-pulse flex-col gap-2 rounded-lg border border-neutral-200 px-4 py-3 dark:border-white/15"
+        data-testid="skeleton-item"
+      >
+        <div
+          class="flex flex-1 flex-col gap-4"
+        >
+          <div
+            class="w-full rounded bg-neutral-200 dark:bg-white/15 h-6"
+          />
+          <div
+            class="w-full rounded bg-neutral-200 dark:bg-white/15 h-4"
+          />
+        </div>
+        <div
+          class="rounded bg-neutral-200 dark:bg-white/15 h-3 w-5/6 self-end"
+        />
+      </div>
+      <div
+        class="flex h-32 animate-pulse flex-col gap-2 rounded-lg border border-neutral-200 px-4 py-3 dark:border-white/15"
+        data-testid="skeleton-item"
+      >
+        <div
+          class="flex flex-1 flex-col gap-4"
+        >
+          <div
+            class="w-full rounded bg-neutral-200 dark:bg-white/15 h-6"
+          />
+          <div
+            class="w-full rounded bg-neutral-200 dark:bg-white/15 h-4"
+          />
+        </div>
+        <div
+          class="rounded bg-neutral-200 dark:bg-white/15 h-3 w-5/6 self-end"
+        />
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
