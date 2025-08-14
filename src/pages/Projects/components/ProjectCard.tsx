@@ -21,7 +21,7 @@ export const ProjectCard = ({
         <div className="flex items-center justify-between gap-2">
           <h3 className="text-base font-semibold">{name}</h3>
 
-          <div className="flex items-center gap-2 rounded-md border border-neutral-200 px-2 py-1 dark:border-white/20">
+          <div className="flex items-center gap-2 rounded-md border border-neutral-200 px-2 py-1 font-semibold dark:border-white/20">
             <div
               style={{ backgroundColor: color }}
               className={twMerge('h-4 w-4 rounded-full')}
@@ -30,10 +30,12 @@ export const ProjectCard = ({
           </div>
         </div>
 
-        <p className="line-clamp-2 flex-1 text-neutral-700">{description}</p>
+        <p className="line-clamp-2 flex-1 text-neutral-700 dark:text-neutral-200">
+          {description}
+        </p>
       </div>
 
-      <span className="self-end text-[0.8125rem] text-neutral-500">{`Updated: ${lastUpdateDate}`}</span>
+      <span className="self-end text-[0.8125rem] text-neutral-500 dark:text-neutral-300">{`Updated: ${lastUpdateDate}`}</span>
     </article>
   );
 };
