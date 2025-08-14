@@ -13,7 +13,7 @@ exports[`MobileMenu should render the component correctly 1`] = `
           class="flex items-center gap-x-2"
         >
           <svg
-            class="size-6 rounded bg-blue-700 p-[0.1875rem] text-white dark:bg-orange-600"
+            class="size-6 bg-accent dark:bg-accent-dark rounded p-[0.1875rem] text-white"
             fill="none"
             height="16"
             id="Box--Streamline-Majesticons"
@@ -85,7 +85,7 @@ exports[`MobileMenu should render the component correctly 1`] = `
         class="flex items-center gap-x-2"
       >
         <svg
-          class="size-6 rounded bg-blue-700 p-[0.1875rem] text-white dark:bg-orange-600"
+          class="size-6 bg-accent dark:bg-accent-dark rounded p-[0.1875rem] text-white"
           fill="none"
           height="16"
           id="Box--Streamline-Majesticons"

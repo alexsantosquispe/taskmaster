@@ -17,7 +17,7 @@ export const LogoHeader = ({
 }: Pick<SideBarHeaderProps, 'isCollapsed'>) => {
   return (
     <div className={twMerge('flex items-center gap-x-2')}>
-      <BoxIcon className="rounded bg-blue-700 p-[0.1875rem] text-white dark:bg-orange-600" />
+      <BoxIcon className="bg-accent dark:bg-accent-dark rounded p-[0.1875rem] text-white" />
       <h1
         className={twMerge(
           'text-lg',
@@ -32,8 +32,7 @@ export const LogoHeader = ({
 
 const SideBarHeader = ({ isCollapsed, setIsCollapsed }: SideBarHeaderProps) => {
   return (
-    <NavLink
-      to="/"
+    <div
       className={twMerge(
         'hidden items-center justify-between p-2 md:flex',
         cn({
@@ -42,14 +41,16 @@ const SideBarHeader = ({ isCollapsed, setIsCollapsed }: SideBarHeaderProps) => {
         })
       )}
     >
-      <LogoHeader isCollapsed={isCollapsed} />
+      <NavLink to="/">
+        <LogoHeader isCollapsed={isCollapsed} />
+      </NavLink>
       <ToggleButton
         isCollapsed={isCollapsed}
         setIsCollapsed={setIsCollapsed}
         expandIcon={<ExpandIcon />}
         collapseIcon={<CollapseIcon />}
       />
-    </NavLink>
+    </div>
   );
 };
 

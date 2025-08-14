@@ -16,7 +16,7 @@ exports[`SideBarMenu MobileMenu should render the component correctly for mobile
             class="flex items-center gap-x-2"
           >
             <svg
-              class="size-6 rounded bg-blue-700 p-[0.1875rem] text-white dark:bg-orange-600"
+              class="size-6 bg-accent dark:bg-accent-dark rounded p-[0.1875rem] text-white"
               fill="none"
               height="16"
               id="Box--Streamline-Majesticons"
@@ -95,7 +95,7 @@ exports[`SideBarMenu MobileMenu should render the component correctly for mobile
           class="flex items-center gap-x-2"
         >
           <svg
-            class="size-6 rounded bg-blue-700 p-[0.1875rem] text-white dark:bg-orange-600"
+            class="size-6 bg-accent dark:bg-accent-dark rounded p-[0.1875rem] text-white"
             fill="none"
             height="16"
             id="Box--Streamline-Majesticons"
@@ -223,47 +223,51 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
       <section
         class="md:dark:bg-primary dark:bg-primary/70 fixed z-50 flex flex-col border-b border-gray-200 bg-white/40 backdrop-blur-md transition-all duration-300 ease-in-out md:relative md:rounded-xl md:border md:bg-white md:shadow-xl dark:border-white/15 w-full md:w-[16rem]"
       >
-        <a
-          aria-current="page"
-          class="hidden items-center justify-between p-2 md:flex md:flex-row md:pl-4 active"
-          href="/"
+        <div
+          class="hidden items-center justify-between p-2 md:flex md:flex-row md:pl-4"
         >
-          <div
-            class="flex items-center gap-x-2"
+          <a
+            aria-current="page"
+            class="active"
+            href="/"
           >
-            <svg
-              class="size-6 rounded bg-blue-700 p-[0.1875rem] text-white dark:bg-orange-600"
-              fill="none"
-              height="16"
-              id="Box--Streamline-Majesticons"
-              viewBox="0 0 16 16"
-              width="16"
-              xmlns="http://www.w3.org/2000/svg"
+            <div
+              class="flex items-center gap-x-2"
             >
-              <desc>
-                
+              <svg
+                class="size-6 bg-accent dark:bg-accent-dark rounded p-[0.1875rem] text-white"
+                fill="none"
+                height="16"
+                id="Box--Streamline-Majesticons"
+                viewBox="0 0 16 16"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <desc>
+                  
     Box Streamline Icon: https://streamlinehq.com
   
-              </desc>
-              <path
-                clip-rule="evenodd"
-                d="M7.6466666666666665 1.4346666666666668a0.6666666666666666 0.6666666666666666 0 0 1 0.7066666666666667 0l4.602666666666666 2.876666666666667L8 7.226666666666667 3.0439999999999996 4.311333333333333l4.602666666666666 -2.876666666666667zM2.005333333333333 5.247333333333334A0.6673333333333332 0.6673333333333332 0 0 0 2 5.333333333333333v5.333333333333333a0.6666666666666666 0.6666666666666666 0 0 0 0.3133333333333333 0.5653333333333332L7.333333333333333 14.369333333333332v-5.9879999999999995L2.005333333333333 5.246666666666666zM8.666666666666666 14.369333333333332l5.02 -3.1373333333333333A0.6666666666666666 0.6666666666666666 0 0 0 14 10.666666666666666V5.333333333333333c0 -0.028666666666666663 -0.002 -0.057999999999999996 -0.005333333333333333 -0.086L8.666666666666666 8.380666666666666v5.988666666666667z"
-                fill="currentColor"
-                fill-rule="evenodd"
-                stroke-width="0.6667"
-              />
-            </svg>
-            <h1
-              class="text-lg md:block"
-            >
-              <span
-                class="font-bold"
+                </desc>
+                <path
+                  clip-rule="evenodd"
+                  d="M7.6466666666666665 1.4346666666666668a0.6666666666666666 0.6666666666666666 0 0 1 0.7066666666666667 0l4.602666666666666 2.876666666666667L8 7.226666666666667 3.0439999999999996 4.311333333333333l4.602666666666666 -2.876666666666667zM2.005333333333333 5.247333333333334A0.6673333333333332 0.6673333333333332 0 0 0 2 5.333333333333333v5.333333333333333a0.6666666666666666 0.6666666666666666 0 0 0 0.3133333333333333 0.5653333333333332L7.333333333333333 14.369333333333332v-5.9879999999999995L2.005333333333333 5.246666666666666zM8.666666666666666 14.369333333333332l5.02 -3.1373333333333333A0.6666666666666666 0.6666666666666666 0 0 0 14 10.666666666666666V5.333333333333333c0 -0.028666666666666663 -0.002 -0.057999999999999996 -0.005333333333333333 -0.086L8.666666666666666 8.380666666666666v5.988666666666667z"
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  stroke-width="0.6667"
+                />
+              </svg>
+              <h1
+                class="text-lg md:block"
               >
-                Task
-              </span>
-              Master
-            </h1>
-          </div>
+                <span
+                  class="font-bold"
+                >
+                  Task
+                </span>
+                Master
+              </h1>
+            </div>
+          </a>
           <button
             aria-label="Collapse menu"
             class="rounded-lg p-2 text-neutral-600 hover:cursor-pointer hover:bg-neutral-100 hover:text-blue-700 dark:text-white/60 dark:hover:bg-neutral-800 dark:hover:text-orange-500"
@@ -296,7 +300,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
               />
             </svg>
           </button>
-        </a>
+        </div>
         <div
           class="flex-col px-2 text-sm md:flex md:h-full md:justify-between md:p-2"
         >
@@ -767,47 +771,51 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
     <section
       class="md:dark:bg-primary dark:bg-primary/70 fixed z-50 flex flex-col border-b border-gray-200 bg-white/40 backdrop-blur-md transition-all duration-300 ease-in-out md:relative md:rounded-xl md:border md:bg-white md:shadow-xl dark:border-white/15 w-full md:w-[16rem]"
     >
-      <a
-        aria-current="page"
-        class="hidden items-center justify-between p-2 md:flex md:flex-row md:pl-4 active"
-        href="/"
+      <div
+        class="hidden items-center justify-between p-2 md:flex md:flex-row md:pl-4"
       >
-        <div
-          class="flex items-center gap-x-2"
+        <a
+          aria-current="page"
+          class="active"
+          href="/"
         >
-          <svg
-            class="size-6 rounded bg-blue-700 p-[0.1875rem] text-white dark:bg-orange-600"
-            fill="none"
-            height="16"
-            id="Box--Streamline-Majesticons"
-            viewBox="0 0 16 16"
-            width="16"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            class="flex items-center gap-x-2"
           >
-            <desc>
-              
+            <svg
+              class="size-6 bg-accent dark:bg-accent-dark rounded p-[0.1875rem] text-white"
+              fill="none"
+              height="16"
+              id="Box--Streamline-Majesticons"
+              viewBox="0 0 16 16"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <desc>
+                
     Box Streamline Icon: https://streamlinehq.com
   
-            </desc>
-            <path
-              clip-rule="evenodd"
-              d="M7.6466666666666665 1.4346666666666668a0.6666666666666666 0.6666666666666666 0 0 1 0.7066666666666667 0l4.602666666666666 2.876666666666667L8 7.226666666666667 3.0439999999999996 4.311333333333333l4.602666666666666 -2.876666666666667zM2.005333333333333 5.247333333333334A0.6673333333333332 0.6673333333333332 0 0 0 2 5.333333333333333v5.333333333333333a0.6666666666666666 0.6666666666666666 0 0 0 0.3133333333333333 0.5653333333333332L7.333333333333333 14.369333333333332v-5.9879999999999995L2.005333333333333 5.246666666666666zM8.666666666666666 14.369333333333332l5.02 -3.1373333333333333A0.6666666666666666 0.6666666666666666 0 0 0 14 10.666666666666666V5.333333333333333c0 -0.028666666666666663 -0.002 -0.057999999999999996 -0.005333333333333333 -0.086L8.666666666666666 8.380666666666666v5.988666666666667z"
-              fill="currentColor"
-              fill-rule="evenodd"
-              stroke-width="0.6667"
-            />
-          </svg>
-          <h1
-            class="text-lg md:block"
-          >
-            <span
-              class="font-bold"
+              </desc>
+              <path
+                clip-rule="evenodd"
+                d="M7.6466666666666665 1.4346666666666668a0.6666666666666666 0.6666666666666666 0 0 1 0.7066666666666667 0l4.602666666666666 2.876666666666667L8 7.226666666666667 3.0439999999999996 4.311333333333333l4.602666666666666 -2.876666666666667zM2.005333333333333 5.247333333333334A0.6673333333333332 0.6673333333333332 0 0 0 2 5.333333333333333v5.333333333333333a0.6666666666666666 0.6666666666666666 0 0 0 0.3133333333333333 0.5653333333333332L7.333333333333333 14.369333333333332v-5.9879999999999995L2.005333333333333 5.246666666666666zM8.666666666666666 14.369333333333332l5.02 -3.1373333333333333A0.6666666666666666 0.6666666666666666 0 0 0 14 10.666666666666666V5.333333333333333c0 -0.028666666666666663 -0.002 -0.057999999999999996 -0.005333333333333333 -0.086L8.666666666666666 8.380666666666666v5.988666666666667z"
+                fill="currentColor"
+                fill-rule="evenodd"
+                stroke-width="0.6667"
+              />
+            </svg>
+            <h1
+              class="text-lg md:block"
             >
-              Task
-            </span>
-            Master
-          </h1>
-        </div>
+              <span
+                class="font-bold"
+              >
+                Task
+              </span>
+              Master
+            </h1>
+          </div>
+        </a>
         <button
           aria-label="Collapse menu"
           class="rounded-lg p-2 text-neutral-600 hover:cursor-pointer hover:bg-neutral-100 hover:text-blue-700 dark:text-white/60 dark:hover:bg-neutral-800 dark:hover:text-orange-500"
@@ -840,7 +848,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
             />
           </svg>
         </button>
-      </a>
+      </div>
       <div
         class="flex-col px-2 text-sm md:flex md:h-full md:justify-between md:p-2"
       >
