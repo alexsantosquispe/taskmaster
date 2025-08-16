@@ -7,6 +7,9 @@ export const apiClient = createApi({
   reducerPath: 'apiClient',
   baseQuery: fakeBaseQuery(),
   tagTypes: ['Projects'],
+  refetchOnMountOrArgChange: false,
+  refetchOnFocus: true,
+  refetchOnReconnect: true,
   endpoints: (builder) => ({
     getProjects: builder.query<ProjectDTO[], void>({
       queryFn: async () => {
