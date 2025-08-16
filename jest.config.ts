@@ -10,6 +10,7 @@ export default {
   },
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   moduleNameMapper: {
+    '^@/(.*)$': '<rootDir>/src/$1', // <-- maps @/ to src/
     '\\.(css|less|scss|sass)$': 'identity-obj-proxy'
   }
 };

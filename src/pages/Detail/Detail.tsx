@@ -4,18 +4,18 @@ import {
   CircleDotDashedIcon,
   CircleDotIcon,
   LoadIcon
-} from '../../icons';
+} from '@/icons';
 import {
   BACKLOG_TASKS,
   DONE_TASKS,
   IN_PROGRESS_TASKS,
   ON_HOLD_TASKS,
   REVIEW_TASKS
-} from '../../utils/mocks/tasks';
+} from '@/utils/mocks/tasks';
 
-import { Breadcrumb } from '../../components/atoms/Breadcrumb/Breadcrumb';
-import TabBar from '../../components/atoms/TabBar/TabBar';
-import { StatusColumn } from '../../components/molecules/StatusColumn/StatusColumn';
+import { Breadcrumb } from '@/components/atoms/Breadcrumb/Breadcrumb';
+import TabBar from '@/components/atoms/TabBar/TabBar';
+import { StatusColumn } from '@/components/molecules/StatusColumn/StatusColumn';
 
 const BREADCRUMBS = [
   {
