@@ -1,22 +1,44 @@
+import { useState } from 'react';
 import { Banner } from '../../components/atoms/Banner/Banner';
 import { Button } from '../../components/atoms/Button/Button';
+import { Modal } from '../../components/atoms/Modal/Modal';
 import { ProjectCard } from '../../components/atoms/ProjectCard/ProjectCard';
 import { Skeleton } from '../../components/atoms/Skeleton/Skeleton';
 import { CirclePlusIcon } from '../../icons';
 import type { ProjectDTO } from '../../services/apiTypes';
 import { useProjects } from './hooks/useProjects';
 
-export const ProjectsHeader = () => {
+interface CrateProjectModalProps {
+  onClose: () => void;
+}
+
+export const CreateProjectModal = ({ onClose }: CrateProjectModalProps) => {
   return (
-    <div className="flex w-full items-center justify-between">
-      <h2 className="text-2xl font-bold">Projects</h2>
-      <Button
-        label="New Project"
-        onClick={() => {}}
-        icon={<CirclePlusIcon />}
-        ariaLabel="Create new project button"
-      />
-    </div>
+    <Modal title="Create project" onClose={onClose}>
+      <div>modal form</div>
+    </Modal>
+  );
+};
+
+export const ProjectsHeader = () => {
+  const [isOpenModal, setIsOpenModal] = useState(false);
+
+  const openModal = () => setIsOpenModal(true);
+  const closeModal = () => setIsOpenModal(false);
+
+  return (
+    <>
+      <div className="flex w-full items-center justify-between">
+        <h2 className="text-2xl font-bold">Projects</h2>
+        <Button
+          label="New Project"
+          onClick={openModal}
+          icon={<CirclePlusIcon />}
+          ariaLabel="Create new project button"
+        />
+      </div>
+      {isOpenModal && <CreateProjectModal onClose={closeModal} />}
+    </>
   );
 };
 
