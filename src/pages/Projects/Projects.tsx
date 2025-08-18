@@ -26,9 +26,9 @@ const Projects = () => {
 
       {!isLoading && (
         <div className={projectGridStyles}>
-          {projects?.map((project: ProjectDTO) => {
-            return <ProjectCard key={project.id} {...project} />;
-          })}
+          {projects?.map((project: ProjectDTO) => (
+            <ProjectCard key={project.id} {...project} />
+          ))}
         </div>
       )}
     </section>

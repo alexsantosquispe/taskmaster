@@ -1,3 +1,5 @@
+import type { Control, FieldValues } from 'react-hook-form';
+
 import type { ReactNode } from 'react';
 
 export interface SvgIconProps {
@@ -59,4 +61,20 @@ export type TaskType = {
   createdAt: string; //datetime: 'YYYY-MM-DDThh:mm:ss-TZ'
   lastUpdate: string; //datetime
   assignee?: UserType;
+};
+
+export interface InputProps {
+  label: string;
+  name: string;
+  control: Control<FieldValues>;
+  placeholder?: string;
+  type?: string;
+  errorMessage?: string;
+  isDisabled?: boolean;
+  isRequired?: boolean;
+}
+
+export type TextAreaProps = Omit<InputProps, 'type'> & {
+  rows?: number;
+  cols?: number;
 };

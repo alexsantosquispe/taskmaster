@@ -4,7 +4,7 @@ import { twMerge } from 'tailwind-merge';
 
 interface ButtonProps {
   label: string;
-  onClick: () => void;
+  onClick?: () => void;
   ariaLabel: string;
   icon?: ReactNode;
   isSecondary?: boolean;
