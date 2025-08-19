@@ -2,76 +2,103 @@ import type { ProjectDTO } from '../../services/apiTypes';
 
 export const PROJECTS: ProjectDTO[] = [
   {
-    id: '95c38e7e-5ba6-422f-b098-2ac046e36c05',
-    name: 'TaskMater Mobile App',
-    description: 'Task Master mobile app with React Native',
-    create_date: '2025-08-14T14:58:54.943281',
-    color: '#14b8a6',
-    code: 'TMMA'
-  },
-  {
-    id: '5dea7976-aba6-43ac-83ba-bd25bcbd0e59',
-    name: 'Weather Mobile App',
-    description: 'Develop and launch a new weather mobile application',
-    create_date: '2025-08-14T09:50:05.943281',
-    color: '#ef4444',
-    code: 'WMA'
-  },
-  {
-    id: '86152e89-1071-43cc-ad40-4be7afbd42b3',
-    name: 'Website Redesign',
-    description: 'Complete overhaul of the company website',
-    create_date: '2025-08-13T18:00:54.943281',
-    color: '#4f46e5',
-    code: 'WR'
-  },
-  {
-    id: '124a1a86-198a-46b5-9440-391959df16f3',
-    name: 'Analytics Dashboard',
-    description: 'Interactive dashboard for key metrics',
-    create_date: '2025-08-13T14:58:54.943281',
-    color: '#8ecae6',
-    code: 'AD'
-  },
-  {
-    id: 'f5ef9aae-533a-45ed-a1f8-6b13f00a0653',
-    name: 'Inventory Tracker',
-    description: 'Track stock levels in real time',
-    create_date: '2025-08-13T14:58:54.943281',
-    color: '#ffb703',
-    code: 'IT'
-  },
-  {
-    id: '2e35e52e-c2ca-4e15-9e65-dcabeb1b0f42',
-    name: 'API Development',
-    description: 'Build REST API for internal tools',
-    create_date: '2025-08-13T13:06:53.943281',
-    color: '#1447e6',
-    code: 'APID'
-  },
-  {
-    id: 'bc97b0ae-7c57-4f1f-97b3-4a613bf50637',
-    name: 'Security Audit',
-    description: 'Comprehensive system security review',
-    create_date: '2025-08-13T11:58:54.943281',
-    color: '#fb8500',
-    code: 'SA'
-  },
-  {
-    id: 'b114b70e-0b67-4378-b023-432feed93d8e',
-    name: 'Spotify Clone App',
+    id: '49d576c3-aae0-4a61-bf55-5984e018ab22',
+    name: 'Test New Project',
     description:
-      'Implements a Spotify clone web app with UI improvements and functionalities',
-    create_date: '2025-08-12T08:45:11.943281',
-    color: '#000000',
-    code: 'SCA'
+      'This is just a testing project in order to check the correct functionality',
+    create_date: '2025-08-19T00:10:28.555844+00:00',
+    color: '#1447e6',
+    code: 'TNP2',
+    update_date: '2025-08-19T00:10:28.555844+00:00'
   },
   {
-    id: '7c964d3b-5b47-4086-aa42-52d4a75a31ca',
-    name: 'HR Onboarding System',
-    description: 'Automate employee onboarding workflows',
-    create_date: '2025-08-11T11:23:50.943281',
-    color: '#c026d3',
-    code: 'HROS'
+    id: '8765dc62-0708-4a80-886e-206f810734c2',
+    name: 'DataForge',
+    description: 'Data processing and ETL pipeline',
+    create_date: '2025-08-18T23:51:48.391714+00:00',
+    color: '#10B981',
+    code: 'DAT',
+    update_date: '2025-08-18T23:51:48.391714+00:00'
+  },
+  {
+    id: 'ab97ab5a-ecfb-4330-8565-9d7fd94a3686',
+    name: 'UIXFlow',
+    description: 'UI/UX design system and component library',
+    create_date: '2025-08-18T23:51:48.391714+00:00',
+    color: '#F59E0B',
+    code: 'UIX',
+    update_date: '2025-08-18T23:51:48.391714+00:00'
+  },
+  {
+    id: '5082b2a0-1e2a-43ca-9661-a12260520a15',
+    name: 'DevTrack',
+    description: 'Agile project management tool',
+    create_date: '2025-08-18T23:51:48.391714+00:00',
+    color: '#8B5CF6',
+    code: 'DEV',
+    update_date: '2025-08-18T23:51:48.391714+00:00'
+  },
+  {
+    id: '78d6bc1b-1a24-4e54-b662-df5811f86fa6',
+    name: 'TestPilot',
+    description: 'Automated testing framework for CI/CD',
+    create_date: '2025-08-18T23:51:48.391714+00:00',
+    color: '#EF4444',
+    code: 'TES',
+    update_date: '2025-08-18T23:51:48.391714+00:00'
+  },
+  {
+    id: 'b8d4810c-5c2b-49b5-bc9e-1b7ca39ffb36',
+    name: 'AuthShield',
+    description: 'Authentication and authorization microservice',
+    create_date: '2025-08-18T23:51:48.391714+00:00',
+    color: '#3B82F6',
+    code: 'AUT',
+    update_date: '2025-08-18T23:51:48.391714+00:00'
+  },
+  {
+    id: '86c6f4c0-b8e0-4f16-b7d4-10d76df98975',
+    name: 'BugHunter',
+    description: 'Issue tracking and debugging platform',
+    create_date: '2025-08-18T23:51:48.391714+00:00',
+    color: '#EC4899',
+    code: 'BUG',
+    update_date: '2025-08-18T23:51:48.391714+00:00'
+  },
+  {
+    id: '3db89665-201c-4274-b8fb-471c22b71aaf',
+    name: 'CloudSync',
+    description: 'File synchronization and cloud storage solution',
+    create_date: '2025-08-18T23:51:48.391714+00:00',
+    color: '#6366F1',
+    code: 'CLO',
+    update_date: '2025-08-18T23:51:48.391714+00:00'
+  },
+  {
+    id: '3b1eebea-aa23-47b9-9011-7c7c7472fee9',
+    name: 'LogStream',
+    description: 'Centralized logging and monitoring system',
+    create_date: '2025-08-18T23:51:48.391714+00:00',
+    color: '#84CC16',
+    code: 'LOG',
+    update_date: '2025-08-18T23:51:48.391714+00:00'
+  },
+  {
+    id: '788128f4-f64c-4cf7-9c7b-220a3eb55242',
+    name: 'DeployMate',
+    description: 'Deployment automation and release management tool',
+    create_date: '2025-08-18T23:51:48.391714+00:00',
+    color: '#F97316',
+    code: 'DEP',
+    update_date: '2025-08-18T23:51:48.391714+00:00'
+  },
+  {
+    id: 'fd46ba50-a182-4a32-a342-9fc8892548f0',
+    name: 'CodeWave',
+    description: 'Real-time collaborative code editor',
+    create_date: '2025-08-18T23:51:48.391714+00:00',
+    color: '#06B6D4',
+    code: 'COD',
+    update_date: '2025-08-18T23:51:48.391714+00:00'
   }
 ];

@@ -1,0 +1,27 @@
+import { useCreateProjectMutation } from '@/services/api';
+import type { CreateProjectDTO } from '@/services/apiTypes';
+import type { NewProjectFormValues } from '../components/CreateProjectForm/CreateProjectForm.types';
+
+export const useNewProject = (onClose: () => void) => {
+  const [createProject, createProjectResult] = useCreateProjectMutation();
+
+  const onCreateHandler = (formData: NewProjectFormValues) => {
+    const newProject = {
+      name: formData.name,
+      code: formData.code,
+      color: formData.color,
+      description: formData?.description
+    } satisfies CreateProjectDTO;
+
+    createProject(newProject)
+      .unwrap()
+      .finally(() => {
+        onClose();
+      });
+  };
+
+  return {
+    onCreateHandler,
+    isLoading: createProjectResult.isLoading
+  };
+};
