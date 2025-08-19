@@ -1,7 +1,7 @@
+import { formatToFriendlyDate } from '@/utils/dates.utils';
 import cn from 'clsx';
 import { twMerge } from 'tailwind-merge';
 import type { ProjectDTO } from '../../../services/apiTypes';
-import { formatDateToDayMonth } from '../../../utils';
 
 interface ProjectCardProps extends ProjectDTO {
   isSmall?: boolean;
@@ -28,12 +28,12 @@ export const ProjectCard = ({
   id,
   name,
   description,
-  create_date: createDate,
+  update_date: lastUpdateDate,
   color,
   code,
   isSmall = false
 }: ProjectCardProps) => {
-  const lastUpdateDate = formatDateToDayMonth(createDate);
+  const timeUpdated = formatToFriendlyDate(lastUpdateDate);
 
   return (
     <article
@@ -54,7 +54,7 @@ export const ProjectCard = ({
       </div>
 
       <div className="flex items-baseline justify-between gap-2">
-        <span className="text-[0.8125rem] text-neutral-500 dark:text-neutral-300">{`Updated ${lastUpdateDate}`}</span>
+        <span className="text-xs text-neutral-500 dark:text-neutral-300">{`updated ${timeUpdated}`}</span>
         <CodeBadge color={color} code={code} />
       </div>
     </article>

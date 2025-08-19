@@ -1,5 +1,5 @@
-import { CalendarIcon } from '../../../icons';
-import { formatDateToDayMonth } from '../../../utils';
+import { CalendarIcon } from '@/icons';
+import { formatDateToDayMonth } from '@/utils/dates.utils';
 
 interface DateBadgeProps {
   date: string;

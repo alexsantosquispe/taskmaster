@@ -2,14 +2,6 @@ import clsx from 'clsx';
 import { PRIORITY_COLORS } from '../constants';
 import { type PriorityType } from '../models/types';
 
-export const formatDateToDayMonth = (date: string) => {
-  const options: Intl.DateTimeFormatOptions = {
-    day: 'numeric',
-    month: 'short'
-  };
-  return new Intl.DateTimeFormat('en-US', options).format(new Date(date));
-};
-
 export const getPercentageStyles = (percentage: number) => {
   return clsx({
     'stroke-green-700 dark:stroke-green-500 text-green-700 dark:text-green-500':
