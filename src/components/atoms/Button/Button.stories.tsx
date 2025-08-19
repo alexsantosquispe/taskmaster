@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
+import { Wrapper } from '@/utils/testing/unitTest.util';
 import { CirclePlusIcon } from '../../../icons';
-import { Wrapper } from '../../../utils/unitTest.util';
 import { Button } from './Button';
 
 const meta = {
