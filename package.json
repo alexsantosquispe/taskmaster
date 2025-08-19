@@ -20,6 +20,7 @@
     "lint-staged": "lint-staged"
   },
   "dependencies": {
+    "@hookform/resolvers": "5.2.1",
     "@reduxjs/toolkit": "2.8.2",
     "@supabase/supabase-js": "2.55.0",
     "@tailwindcss/vite": "4.1.11",

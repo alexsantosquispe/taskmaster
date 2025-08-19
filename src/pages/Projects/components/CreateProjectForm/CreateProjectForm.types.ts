@@ -7,7 +7,7 @@ export const NEW_PROJECT_FORM_NAMES = {
 
 export interface NewProjectFormValues {
   [NEW_PROJECT_FORM_NAMES.NAME]: string;
-  [NEW_PROJECT_FORM_NAMES.DESCRIPTION]: string;
-  [NEW_PROJECT_FORM_NAMES.COLOR]: string;
   [NEW_PROJECT_FORM_NAMES.CODE]: string;
+  [NEW_PROJECT_FORM_NAMES.COLOR]?: string;
+  [NEW_PROJECT_FORM_NAMES.DESCRIPTION]?: string;
 }

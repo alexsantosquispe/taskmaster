@@ -72,6 +72,7 @@ export interface InputProps {
   errorMessage?: string;
   isDisabled?: boolean;
   isRequired?: boolean;
+  className?: string;
 }
 
 export type TextAreaProps = Omit<InputProps, 'type'> & {

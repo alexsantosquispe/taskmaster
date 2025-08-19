@@ -13,7 +13,8 @@ export const InputField = ({
   type = 'text',
   isDisabled,
   errorMessage = '',
-  isRequired = false
+  isRequired = false,
+  className
 }: InputProps) => {
   return (
     <Controller
@@ -21,7 +22,7 @@ export const InputField = ({
       name={name}
       render={({ field: { onChange, value } }) => {
         return (
-          <div className="flex w-full flex-col">
+          <div className={twMerge('flex w-full flex-col', className)}>
             <label htmlFor={name} className="mb-0.5 text-sm">
               {label}
               {isRequired && <span className="text-rose-600">&nbsp;*</span>}

@@ -14,7 +14,8 @@ export const TextAreaField = ({
   cols = 50,
   isDisabled,
   errorMessage = '',
-  isRequired = false
+  isRequired = false,
+  className
 }: TextAreaProps) => {
   return (
     <Controller
@@ -22,7 +23,7 @@ export const TextAreaField = ({
       control={control}
       render={({ field: { value, onChange } }) => {
         return (
-          <div className="flex flex-col gap-y-0.5">
+          <div className={twMerge('flex flex-col gap-y-0.5', className)}>
             <label htmlFor={name} className="mb-0.5 text-sm">
               {label}
               {isRequired && <span className="text-rose-600">&nbsp;*</span>}
