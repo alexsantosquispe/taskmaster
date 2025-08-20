@@ -1,12 +1,12 @@
-import type { MouseEvent, ReactNode } from 'react';
-
 import cn from 'clsx';
+import type { ReactNode } from 'react';
 import { twMerge } from 'tailwind-merge';
 
 interface ButtonProps {
   label: string;
   onClick?: () => void;
   ariaLabel: string;
+  type?: 'submit' | 'button';
   icon?: ReactNode;
   isSecondary?: boolean;
   isDisable?: boolean;
@@ -18,19 +18,13 @@ export const Button = ({
   label,
   onClick,
   ariaLabel,
+  type = 'button',
   icon,
   isSecondary = false,
   isDisable = false,
   isLoading = false,
   className
 }: ButtonProps) => {
-  const handleOnClick = (event: MouseEvent<HTMLButtonElement>) => {
-    event.preventDefault();
-    if (typeof onClick === 'function' && !isDisable) {
-      onClick();
-    }
-  };
-
   return (
     <button
       aria-label={ariaLabel}
@@ -52,7 +46,8 @@ export const Button = ({
         }),
         className
       )}
-      onClick={handleOnClick}
+      onClick={onClick}
+      type={type}
     >
       {isLoading && (
         <div>

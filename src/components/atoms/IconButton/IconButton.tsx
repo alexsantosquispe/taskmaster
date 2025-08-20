@@ -8,6 +8,7 @@ interface IconButtonProps {
   onClick: () => void;
   isDisable?: boolean;
   tooltipMessage?: string;
+  className?: string;
 }
 
 export const IconButton = ({
@@ -15,17 +16,22 @@ export const IconButton = ({
   onClick,
   icon,
   isDisable = false,
-  tooltipMessage
+  tooltipMessage,
+  className
 }: IconButtonProps) => {
   const [showTooltip, setShowTooltip] = useState(false);
 
   return (
     <div className="relative flex items-center justify-center">
       <button
+        type="button"
         aria-label={ariaLabel}
         onClick={onClick}
         disabled={isDisable}
-        className="text-primary hover:text-accent dark:hover:text-accent-dark flex w-fit items-center justify-center rounded-lg p-2 transition-colors duration-150 ease-in-out hover:cursor-pointer hover:bg-neutral-100 dark:text-white/70 dark:hover:bg-white/15"
+        className={twMerge(
+          'text-primary hover:text-accent dark:hover:text-accent-dark flex w-fit items-center justify-center rounded-lg p-2 transition-colors duration-150 ease-in-out hover:cursor-pointer hover:bg-neutral-100 dark:text-white/70 dark:hover:bg-white/15',
+          className
+        )}
         onMouseEnter={() => setShowTooltip(true)}
         onMouseLeave={() => setShowTooltip(false)}
       >

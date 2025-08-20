@@ -1,4 +1,5 @@
 import { Button } from '@/components/atoms/Button/Button';
+import { ColorPickerWithController } from '@/components/atoms/ColorPicker/ColorPicker';
 import { InputField } from '@/components/atoms/InputField/InputField';
 import { TextAreaField } from '@/components/atoms/TextAreaField/TextAreaField';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -29,41 +30,48 @@ export const CreateProjectForm = ({
     resolver: zodResolver(NewProjectFormSchema),
     defaultValues: NewProjectFormDefaultValues
   });
+  const isFormDisabled = isLoading;
 
-  const onSubmit = (formData: NewProjectFormValues) =>
+  const onSubmit = (formData: NewProjectFormValues) => {
     onCreateProject(formData);
+  };
 
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
       className="flex w-full flex-col gap-y-4 p-2"
     >
-      <div className="grid grid-cols-5 gap-4">
+      <div className="flex gap-4">
         <InputField
           label="Project name"
           name={NEW_PROJECT_FORM_NAMES.NAME}
           control={control as unknown as Control<FieldValues>}
-          errorMessage={errors[NEW_PROJECT_FORM_NAMES.NAME]?.message}
+          errorMessage={
+            !isFormDisabled ? errors[NEW_PROJECT_FORM_NAMES.NAME]?.message : ''
+          }
           placeholder="Enter project name"
-          className="col-span-3"
+          isDisabled={isFormDisabled}
           isRequired
         />
 
         <InputField
           label="Code"
           name={NEW_PROJECT_FORM_NAMES.CODE}
-          errorMessage={errors[NEW_PROJECT_FORM_NAMES.CODE]?.message}
+          errorMessage={
+            !isFormDisabled ? errors[NEW_PROJECT_FORM_NAMES.CODE]?.message : ''
+          }
+          className={{ container: 'w-1/4', input: 'uppercase' }}
           control={control as unknown as Control<FieldValues>}
-          placeholder="Project code"
+          placeholder="XYZ"
+          isDisabled={isFormDisabled}
           isRequired
         />
 
-        <InputField
+        <ColorPickerWithController
           label="Color"
           name={NEW_PROJECT_FORM_NAMES.COLOR}
-          errorMessage={errors[NEW_PROJECT_FORM_NAMES.COLOR]?.message}
           control={control as unknown as Control<FieldValues>}
-          placeholder="Pick a color"
+          className="self-end"
         />
       </div>
 
@@ -73,6 +81,7 @@ export const CreateProjectForm = ({
         errorMessage={errors[NEW_PROJECT_FORM_NAMES.DESCRIPTION]?.message}
         control={control as unknown as Control<FieldValues>}
         placeholder="Enter project description..."
+        isDisabled={isFormDisabled}
       />
 
       <Button
@@ -80,7 +89,8 @@ export const CreateProjectForm = ({
         ariaLabel="Create project button"
         className="self-end"
         isLoading={isLoading}
-        isDisable={isLoading}
+        isDisable={isFormDisabled}
+        type="submit"
       />
     </form>
   );

@@ -1,3 +1,5 @@
+import type { Option } from '@/models/types';
+
 export const NEW_PROJECT_FORM_NAMES = {
   NAME: 'name',
   DESCRIPTION: 'description',
@@ -8,6 +10,6 @@ export const NEW_PROJECT_FORM_NAMES = {
 export interface NewProjectFormValues {
   [NEW_PROJECT_FORM_NAMES.NAME]: string;
   [NEW_PROJECT_FORM_NAMES.CODE]: string;
-  [NEW_PROJECT_FORM_NAMES.COLOR]?: string;
+  [NEW_PROJECT_FORM_NAMES.COLOR]?: Option;
   [NEW_PROJECT_FORM_NAMES.DESCRIPTION]?: string;
 }

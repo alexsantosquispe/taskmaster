@@ -8,8 +8,8 @@ export const useNewProject = (onClose: () => void) => {
   const onCreateHandler = (formData: NewProjectFormValues) => {
     const newProject = {
       name: formData.name,
-      code: formData.code,
-      color: formData.color,
+      code: formData.code.toUpperCase(),
+      color: formData.color?.value,
       description: formData?.description
     } satisfies CreateProjectDTO;
 

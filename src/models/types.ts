@@ -63,19 +63,42 @@ export type TaskType = {
   assignee?: UserType;
 };
 
-export interface InputProps {
-  label: string;
+export interface ComponentWithController {
   name: string;
   control: Control<FieldValues>;
+}
+
+export interface InputProps extends ComponentWithController {
+  label: string;
   placeholder?: string;
   type?: string;
   errorMessage?: string;
   isDisabled?: boolean;
   isRequired?: boolean;
-  className?: string;
+  className?: {
+    container?: string;
+    input?: string;
+  };
 }
 
 export type TextAreaProps = Omit<InputProps, 'type'> & {
   rows?: number;
   cols?: number;
+};
+
+export interface ColorPickerProps {
+  label?: string;
+  value?: Option;
+  onChangeColor?: (color: Option) => void;
+  isRequired?: boolean;
+  className?: string;
+}
+
+export interface ColorPickerWithControllerProps
+  extends ComponentWithController,
+    ColorPickerProps {}
+
+export type Option = {
+  value: string;
+  label: string;
 };

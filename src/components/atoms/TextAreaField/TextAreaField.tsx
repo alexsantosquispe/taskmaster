@@ -23,7 +23,9 @@ export const TextAreaField = ({
       control={control}
       render={({ field: { value, onChange } }) => {
         return (
-          <div className={twMerge('flex flex-col gap-y-0.5', className)}>
+          <div
+            className={twMerge('flex flex-col gap-y-0.5', className?.container)}
+          >
             <label htmlFor={name} className="mb-0.5 text-sm">
               {label}
               {isRequired && <span className="text-rose-600">&nbsp;*</span>}
@@ -42,9 +44,10 @@ export const TextAreaField = ({
                 'resize-none',
                 cn({
                   'border-rose-600 dark:border-rose-400': !!errorMessage,
-                  'bg-gray-100 placeholder:text-gray-200 hover:cursor-not-allowed dark:bg-white/15 dark:placeholder:text-white/10':
+                  'bg-neutral-100 placeholder:text-neutral-300 hover:cursor-not-allowed dark:bg-white/15 dark:placeholder:text-white/10':
                     isDisabled
-                })
+                }),
+                className?.input
               )}
             />
             {errorMessage && (
