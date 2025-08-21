@@ -25,7 +25,10 @@ const MODAL_STYLES = {
 export const Modal = ({ title, onClose, children, classNames }: ModalProps) => {
   return (
     <div className={MODAL_STYLES.BACKDROP}>
-      <div className={twMerge(MODAL_STYLES.CONTAINER, classNames?.container)}>
+      <div
+        data-testid="modal"
+        className={twMerge(MODAL_STYLES.CONTAINER, classNames?.container)}
+      >
         <div className={twMerge(MODAL_STYLES.HEADER, classNames?.header)}>
           <h3 className="p-2 font-bold">{title}</h3>
           <IconButton
