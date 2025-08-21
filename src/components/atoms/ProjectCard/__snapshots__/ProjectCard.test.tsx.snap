@@ -28,7 +28,7 @@ exports[`ProjectCard should render the component correctly 1`] = `
           <span
             class="text-xs text-neutral-500 dark:text-neutral-300"
           >
-            updated 2 days ago
+            updated 3 days ago
           </span>
           <div
             class="flex items-center gap-1 rounded-md border border-neutral-200 px-1.5 py-1 font-semibold dark:border-white/20"
@@ -71,7 +71,7 @@ exports[`ProjectCard should render the component correctly 1`] = `
         <span
           class="text-xs text-neutral-500 dark:text-neutral-300"
         >
-          updated 2 days ago
+          updated 3 days ago
         </span>
         <div
           class="flex items-center gap-1 rounded-md border border-neutral-200 px-1.5 py-1 font-semibold dark:border-white/20"
@@ -171,7 +171,7 @@ exports[`ProjectCard should render the component correctly 2`] = `
           <span
             class="text-xs text-neutral-500 dark:text-neutral-300"
           >
-            updated 2 days ago
+            updated 3 days ago
           </span>
           <div
             class="flex items-center gap-1 rounded-md border border-neutral-200 px-1.5 py-1 font-semibold dark:border-white/20"
@@ -208,7 +208,7 @@ exports[`ProjectCard should render the component correctly 2`] = `
           <span
             class="text-xs text-neutral-500 dark:text-neutral-300"
           >
-            updated 2 days ago
+            updated 3 days ago
           </span>
           <div
             class="flex items-center gap-1 rounded-md border border-neutral-200 px-1.5 py-1 font-semibold dark:border-white/20"
@@ -246,7 +246,7 @@ exports[`ProjectCard should render the component correctly 2`] = `
         <span
           class="text-xs text-neutral-500 dark:text-neutral-300"
         >
-          updated 2 days ago
+          updated 3 days ago
         </span>
         <div
           class="flex items-center gap-1 rounded-md border border-neutral-200 px-1.5 py-1 font-semibold dark:border-white/20"

@@ -29,7 +29,13 @@ export const IconButton = ({
         onClick={onClick}
         disabled={isDisable}
         className={twMerge(
-          'text-primary hover:text-accent dark:hover:text-accent-dark flex w-fit items-center justify-center rounded-lg p-2 transition-colors duration-150 ease-in-out hover:cursor-pointer hover:bg-neutral-100 dark:text-white/70 dark:hover:bg-white/15',
+          'text-primary flex w-fit items-center justify-center rounded-lg p-2 transition-colors duration-150 ease-in-out dark:text-white/70',
+          cn({
+            'hover:text-accent dark:hover:text-accent-dark hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15':
+              !isDisable,
+            'cursor-not-allowed bg-neutral-100 opacity-75 dark:bg-neutral-600':
+              isDisable
+          }),
           className
         )}
         onMouseEnter={() => setShowTooltip(true)}

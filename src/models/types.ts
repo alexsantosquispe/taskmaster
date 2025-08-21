@@ -91,6 +91,7 @@ export interface ColorPickerProps {
   value?: Option;
   onChangeColor?: (color: Option) => void;
   isRequired?: boolean;
+  isDisabled?: boolean;
   className?: string;
 }
 

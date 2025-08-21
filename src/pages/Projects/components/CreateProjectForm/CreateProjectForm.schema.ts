@@ -1,6 +1,11 @@
 import { DEFAULT_COLOR } from '@/constants';
-import { z } from 'zod';
 import { NEW_PROJECT_FORM_NAMES } from './CreateProjectForm.types';
+import { z } from 'zod';
+
+export const OptionSchema = z.object({
+  value: z.string(),
+  label: z.string()
+});
 
 export const NewProjectFormSchema = z.object({
   [NEW_PROJECT_FORM_NAMES.NAME]: z
@@ -9,13 +14,9 @@ export const NewProjectFormSchema = z.object({
   [NEW_PROJECT_FORM_NAMES.CODE]: z
     .string()
     .min(1, { message: 'Code is required' })
+    .max(5, { message: 'Code must be at most 5 characters long' })
     .regex(/^[a-zA-Z]+$/, { message: 'Only letters are allowed' }),
-  [NEW_PROJECT_FORM_NAMES.COLOR]: z
-    .object({
-      value: z.string(),
-      label: z.string()
-    })
-    .optional(),
+  [NEW_PROJECT_FORM_NAMES.COLOR]: OptionSchema.optional(),
   [NEW_PROJECT_FORM_NAMES.DESCRIPTION]: z.string().optional()
 });
 

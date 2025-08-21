@@ -5,7 +5,7 @@ import type {
   Option
 } from '@/models/types';
 
-import clsx from 'clsx';
+import cn from 'clsx';
 import { useState } from 'react';
 import { Controller } from 'react-hook-form';
 import { twMerge } from 'tailwind-merge';
@@ -15,6 +15,7 @@ export const ColorPicker = ({
   label,
   value,
   isRequired = false,
+  isDisabled = false,
   onChangeColor,
   className
 }: ColorPickerProps) => {
@@ -51,13 +52,17 @@ export const ColorPicker = ({
           />
         }
         onClick={togglePalletColor}
+        isDisable={isDisabled}
         className={twMerge(
           'border border-neutral-200 dark:border-white/20',
           className
         )}
       />
       {isPalletColorOpen && (
-        <div className="dark:bg-primary absolute top-full right-0 mt-1 w-[12.25rem] rounded-lg border border-neutral-200 bg-white p-2 shadow-lg dark:border-white/20 dark:shadow-none">
+        <div
+          data-testid="color-pallet"
+          className="dark:bg-primary absolute top-full right-0 mt-1 w-[12.25rem] rounded-lg border border-neutral-200 bg-white p-2 shadow-lg dark:border-white/20 dark:shadow-none"
+        >
           <div className="flex flex-wrap gap-4">
             {COLORS.map((color, index) => {
               const isSelected = color.value === currentColor.value;
@@ -65,11 +70,12 @@ export const ColorPicker = ({
                 <button
                   key={`${color}-${index}`}
                   type="button"
+                  aria-label={`Color code ${color.label}`}
                   onClick={() => onSelectColor(color)}
                   className={twMerge(
                     'hover:ring-accent dark:hover:ring-accent-dark h-4 w-4 rounded-full hover:cursor-pointer hover:ring-2 hover:ring-offset-2',
                     color.label,
-                    clsx({
+                    cn({
                       'ring-accent dark:ring-accent-dark ring-2 ring-offset-2':
                         isSelected
                     })
