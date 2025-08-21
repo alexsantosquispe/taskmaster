@@ -1,6 +1,12 @@
 import { ThemeProvider } from '@/contexts/ThemeProvider';
-import type { ReactNode } from 'react';
+import { render } from '@testing-library/react';
+import { type ReactElement, type ReactNode } from 'react';
+import { useForm, type Control, type FieldValues } from 'react-hook-form';
 import { BrowserRouter } from 'react-router-dom';
+
+interface RenderWithFormOptions {
+  componentToRender: (control: Control<FieldValues>) => ReactElement;
+}
 
 export const Wrapper = ({ children }: { children: ReactNode }) => {
   return (
@@ -23,4 +29,15 @@ export const TestWrapper = ({ children }: { children: ReactNode }) => {
       </BrowserRouter>
     </ThemeProvider>
   );
+};
+
+export const renderWithForm = ({
+  componentToRender
+}: RenderWithFormOptions) => {
+  const Wrapper = () => {
+    const { control } = useForm<FieldValues>();
+    return componentToRender(control);
+  };
+
+  return render(<Wrapper />);
 };
