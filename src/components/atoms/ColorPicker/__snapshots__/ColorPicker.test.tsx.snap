@@ -15,6 +15,7 @@ exports[`ColorPicker styles should render the color picker correctly 1`] = `
         </label>
         <div
           class="relative flex items-center justify-center"
+          data-testid="icon-button"
         >
           <button
             aria-label="Color picker button"
@@ -40,6 +41,7 @@ exports[`ColorPicker styles should render the color picker correctly 1`] = `
       </label>
       <div
         class="relative flex items-center justify-center"
+        data-testid="icon-button"
       >
         <button
           aria-label="Color picker button"
@@ -122,6 +124,7 @@ exports[`ColorPicker styles should render the color picker with controller corre
         </label>
         <div
           class="relative flex items-center justify-center"
+          data-testid="icon-button"
         >
           <button
             aria-label="Color picker button"
@@ -147,6 +150,7 @@ exports[`ColorPicker styles should render the color picker with controller corre
       </label>
       <div
         class="relative flex items-center justify-center"
+        data-testid="icon-button"
       >
         <button
           aria-label="Color picker button"

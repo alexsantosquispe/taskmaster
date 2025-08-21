@@ -22,7 +22,10 @@ export const IconButton = ({
   const [showTooltip, setShowTooltip] = useState(false);
 
   return (
-    <div className="relative flex items-center justify-center">
+    <div
+      className="relative flex items-center justify-center"
+      data-testid="icon-button"
+    >
       <button
         type="button"
         aria-label={ariaLabel}
