@@ -1,4 +1,4 @@
-import { formatDistanceToNowStrict } from 'date-fns';
+import { differenceInSeconds, formatDistanceToNowStrict } from 'date-fns';
 
 export const formatDateToDayMonth = (date: string) => {
   const options: Intl.DateTimeFormatOptions = {
@@ -28,9 +28,13 @@ export const formatStringDateToUTCDate = (date: string): Date | null => {
 };
 
 export const formatToFriendlyDate = (date: string): string => {
-  const formattedDate = formatStringDateToUTCDate(date);
+  const parsedDate = new Date(date);
 
-  if (!formattedDate) return 'Invalid date';
+  if (isNaN(parsedDate.getTime())) return 'Invalid date';
 
-  return `${formatDistanceToNowStrict(formattedDate)} ago`;
+  const diffSeconds = differenceInSeconds(new Date(), parsedDate);
+
+  if (diffSeconds < 60) return 'just now';
+
+  return `${formatDistanceToNowStrict(parsedDate)} ago`;
 };

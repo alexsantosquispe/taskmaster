@@ -19,7 +19,7 @@ export const currentUser = {
 
 export const COLORS: Option[] = [
   { value: '#0ea5e9', label: 'bg-sky-500' },
-  { value: '#3b82f6', label: 'bg-blue-500' },
+  { value: '#2563eb', label: 'bg-blue-600' },
   { value: '#8b5cf6', label: 'bg-violet-500' },
   { value: '#a855f7', label: 'bg-purple-500' },
   { value: '#d946ef', label: 'bg-fuchsia-500' },
