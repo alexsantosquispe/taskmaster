@@ -15,6 +15,7 @@ export const TextAreaField = ({
   isDisabled,
   errorMessage = '',
   isRequired = false,
+  onChangeText,
   className
 }: TextAreaProps) => {
   return (
@@ -22,6 +23,9 @@ export const TextAreaField = ({
       name={name}
       control={control}
       render={({ field: { value, onChange } }) => {
+        if (typeof onChangeText === 'function' && value !== undefined)
+          onChangeText(value);
+
         return (
           <div
             className={twMerge('flex flex-col gap-y-0.5', className?.container)}
