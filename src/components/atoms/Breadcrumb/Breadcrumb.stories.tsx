@@ -1,3 +1,4 @@
+import { Wrapper } from '@/utils/testing/unitTest.util';
 import type { Meta, StoryObj } from '@storybook/react';
 import { Breadcrumb } from './Breadcrumb';
 
@@ -37,7 +38,11 @@ export default meta;
 type Story = StoryObj<typeof Breadcrumb>;
 
 export const Default: Story = () => {
-  return <Breadcrumb items={BREADCRUMBS} />;
+  return (
+    <Wrapper>
+      <Breadcrumb items={BREADCRUMBS} />
+    </Wrapper>
+  );
 };
 
 Default.args = {};

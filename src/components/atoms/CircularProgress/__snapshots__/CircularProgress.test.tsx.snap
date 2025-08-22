@@ -18,7 +18,7 @@ exports[`CircularProgress should render the component correctly 1`] = `
           stroke-width="2"
         />
         <circle
-          class=""
+          class="stroke-primary dark:stroke-white"
           cx="8"
           cy="8"
           fill="none"
@@ -46,7 +46,7 @@ exports[`CircularProgress should render the component correctly 1`] = `
         stroke-width="2"
       />
       <circle
-        class=""
+        class="stroke-primary dark:stroke-white"
         cx="8"
         cy="8"
         fill="none"

@@ -29,7 +29,7 @@ export const Breadcrumb = ({ items, className }: BreadcrumbProps) => {
               href={item.href}
               className={twMerge(
                 'hover:cursor-pointer',
-                cn({ 'text-neutral-950 dark:text-white': isLastItem })
+                cn({ 'text-primary font-semibold dark:text-white': isLastItem })
               )}
             >
               <span>{item.label}</span>

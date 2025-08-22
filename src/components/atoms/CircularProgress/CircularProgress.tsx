@@ -42,7 +42,7 @@ export const CircularProgress = ({
         strokeDashoffset={offset}
         strokeLinecap="round"
         transform={`rotate(-90 ${size / 2} ${size / 2})`}
-        className={twMerge(className)}
+        className={twMerge('stroke-primary dark:stroke-white', className)}
       />
     </svg>
   );

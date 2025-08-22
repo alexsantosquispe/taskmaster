@@ -22,7 +22,7 @@ export const IconGallery = () => {
           placeholder="Search icons..."
           value={filter}
           onChange={(e) => setFilter(e.target.value)}
-          className="rounded-md border border-gray-300 p-2"
+          className="rounded-md border border-neutral-300 p-2"
         />
       </div>
 
@@ -30,10 +30,10 @@ export const IconGallery = () => {
         {filteredIcons.map(([name, IconComponent]) => (
           <div
             key={name}
-            className="flex h-[10rem] w-[10rem] flex-col items-center justify-center gap-4 rounded-lg border border-gray-300"
+            className="flex h-[10rem] w-[10rem] flex-col items-center justify-center gap-4 rounded-lg border border-neutral-300"
           >
             <IconComponent className="size-6" />
-            <span className="text-xs font-medium text-gray-600">{name}</span>
+            <pre className="text-primary text-xs font-medium">{name}</pre>
           </div>
         ))}
       </div>

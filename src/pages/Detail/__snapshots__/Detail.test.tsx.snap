@@ -46,7 +46,7 @@ exports[`Detail component should render the component correctly 1`] = `
               class="flex items-center gap-2 font-medium"
             >
               <a
-                class="hover:cursor-pointer text-neutral-950 dark:text-white"
+                class="hover:cursor-pointer text-primary font-semibold dark:text-white"
                 href=""
               >
                 <span>
@@ -2676,7 +2676,7 @@ exports[`Detail component should render the component correctly 1`] = `
             class="flex items-center gap-2 font-medium"
           >
             <a
-              class="hover:cursor-pointer text-neutral-950 dark:text-white"
+              class="hover:cursor-pointer text-primary font-semibold dark:text-white"
               href=""
             >
               <span>

@@ -1,3 +1,4 @@
+import { Wrapper } from '@/utils/testing/unitTest.util';
 import type { Meta, StoryObj } from '@storybook/react';
 import { CircularProgress } from './CircularProgress';
 
@@ -15,12 +16,14 @@ type Story = StoryObj<typeof CircularProgress>;
 
 export const Default: Story = () => {
   return (
-    <CircularProgress
-      percentage={65}
-      size={40}
-      strokeWidth={2}
-      className="stroke-primary text-neutral-600 dark:stroke-white dark:text-white/80"
-    />
+    <div className="flex gap-8">
+      <Wrapper className="min-w-24">
+        <CircularProgress percentage={50} />
+      </Wrapper>
+      <Wrapper className="min-w-24">
+        <CircularProgress percentage={80} size={30} strokeWidth={3} />
+      </Wrapper>
+    </div>
   );
 };
 
