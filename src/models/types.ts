@@ -75,6 +75,7 @@ export interface InputProps extends ComponentWithController {
   errorMessage?: string;
   isDisabled?: boolean;
   isRequired?: boolean;
+  onChangeText?: (value: string) => void;
   className?: {
     container?: string;
     input?: string;

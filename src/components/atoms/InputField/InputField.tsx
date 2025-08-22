@@ -14,6 +14,7 @@ export const InputField = ({
   isDisabled,
   errorMessage = '',
   isRequired = false,
+  onChangeText,
   className
 }: InputProps) => {
   return (
@@ -21,6 +22,9 @@ export const InputField = ({
       control={control}
       name={name}
       render={({ field: { onChange, value } }) => {
+        if (typeof onChangeText === 'function' && value !== undefined)
+          onChangeText(value);
+
         return (
           <div
             className={twMerge('flex w-full flex-col', className?.container)}
