@@ -6,6 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { twMerge } from 'tailwind-merge';
 
 interface RenderWithFormOptions {
+  defaultValues: FieldValues;
   componentToRender: (control: Control<FieldValues>) => ReactElement;
 }
 
@@ -43,10 +44,11 @@ export const TestWrapper = ({ children }: WrapperProps) => {
 };
 
 export const renderWithForm = ({
+  defaultValues,
   componentToRender
 }: RenderWithFormOptions) => {
   const Wrapper = () => {
-    const { control } = useForm<FieldValues>();
+    const { control } = useForm<FieldValues>({ defaultValues });
     return componentToRender(control);
   };
 

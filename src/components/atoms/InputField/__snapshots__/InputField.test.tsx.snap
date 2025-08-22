@@ -20,6 +20,7 @@ exports[`InputField styles should render the component correctly 1`] = `
           name="name"
           placeholder="Enter your name"
           type="text"
+          value=""
         />
       </div>
     </div>
@@ -40,6 +41,7 @@ exports[`InputField styles should render the component correctly 1`] = `
         name="name"
         placeholder="Enter your name"
         type="text"
+        value=""
       />
     </div>
   </div>,

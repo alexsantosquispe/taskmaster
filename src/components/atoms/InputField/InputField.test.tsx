@@ -1,8 +1,8 @@
 import '@testing-library/jest-dom';
 
-import { fireEvent, screen } from '@testing-library/react';
-
 import { renderWithForm } from '@/utils/testing/unitTest.util';
+import { screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import { InputField } from './InputField';
 
 describe('InputField', () => {
@@ -15,6 +15,7 @@ describe('InputField', () => {
   describe('styles', () => {
     it('should render the component correctly', () => {
       const component = renderWithForm({
+        defaultValues: { name: '' },
         componentToRender: (control) => {
           return <InputField {...props} control={control} />;
         }
@@ -39,6 +40,7 @@ describe('InputField', () => {
     });
     it('should check if the input is disabled', () => {
       renderWithForm({
+        defaultValues: { name: '' },
         componentToRender: (control) => {
           return <InputField {...props} control={control} isDisabled={true} />;
         }
@@ -51,8 +53,11 @@ describe('InputField', () => {
       expect(input).toBeDisabled();
     });
 
-    it('should call the onChangeText callback', () => {
+    it('should call the onChangeText callback', async () => {
+      const user = userEvent.setup();
+
       renderWithForm({
+        defaultValues: { name: '' },
         componentToRender: (control) => {
           return (
             <InputField
@@ -66,11 +71,9 @@ describe('InputField', () => {
 
       const input = screen.getByRole('textbox');
 
-      fireEvent.change(input, { target: { value: nameValue } });
+      await user.type(input, nameValue);
 
       expect(input).toHaveValue(nameValue);
-
-      expect(onChangeMock).toHaveBeenCalledTimes(1);
 
       expect(onChangeMock).toHaveBeenCalledWith(nameValue);
     });
