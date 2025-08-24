@@ -41,6 +41,15 @@ npm run dev
 
 Visit `http://localhost:5173` to view the app.
 
+```bash
+# Run storybook to see the components
+pnpm run storybook
+or
+npm run storybook
+```
+
+Visit `http://localhost:6006` to view the storybook.
+
 ---
 
 ## 🖼️ Screenshots
