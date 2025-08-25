@@ -8,7 +8,8 @@ describe('ProjectCard', () => {
 
   beforeEach(() => {
     jest.useFakeTimers();
-    jest.setSystemTime(new Date(2025, 7, 24));
+    // Explicitly set UTC midnight on Aug 24, 2025
+    jest.setSystemTime(new Date(Date.UTC(2025, 7, 24, 0, 0, 0)));
   });
 
   afterEach(() => {
