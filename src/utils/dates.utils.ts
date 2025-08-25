@@ -13,11 +13,6 @@ export const formatToFriendlyDate = (date: string): string => {
 
   if (isNaN(parsedDate.getTime())) return 'Invalid date';
 
-  console.log('CALCULATION', {
-    today: new Date(),
-    parsedDate
-  });
-
   const diffSeconds = differenceInSeconds(new Date(), parsedDate);
 
   if (diffSeconds < 60) return 'just now';
