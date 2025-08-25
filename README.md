@@ -1,3 +1,5 @@
+[![CI Pipeline](https://github.com/alexsantosquispe/taskmaster/actions/workflows/github_ci.yml/badge.svg?branch=main)](https://github.com/alexsantosquispe/taskmaster/actions/workflows/github_ci.yml)
+
 # Taskmaster
 
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
