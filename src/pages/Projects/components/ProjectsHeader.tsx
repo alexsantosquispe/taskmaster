@@ -1,7 +1,7 @@
 import { Suspense, lazy, useState } from 'react';
 
-import { Button } from '../../../components/atoms/Button/Button';
-import { CirclePlusIcon } from '../../../icons';
+import { Button } from '@/components/atoms/Button/Button';
+import { CirclePlusIcon } from '@/icons';
 
 const CreateProjectModal = lazy(
   () => import('./CreateProjectModal/CreateProjectModal')

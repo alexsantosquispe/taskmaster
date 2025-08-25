@@ -1,7 +1,7 @@
-import { formatToFriendlyDate } from '@/utils/dates.utils';
-import cn from 'clsx';
-import { twMerge } from 'tailwind-merge';
 import type { ProjectDTO } from '../../../services/apiTypes';
+import cn from 'clsx';
+import { formatToFriendlyDate } from '@/utils/dates.utils';
+import { twMerge } from 'tailwind-merge';
 
 interface ProjectCardProps extends ProjectDTO {
   isSmall?: boolean;
@@ -39,7 +39,7 @@ export const ProjectCard = ({
     <article
       key={id}
       className={twMerge(
-        'dark:bg-primary flex h-32 flex-col rounded-lg border border-neutral-200 px-4 py-3 text-sm dark:border-white/20',
+        'dark:bg-primary flex h-[8.25rem] flex-col rounded-lg border border-neutral-200 px-4 py-3 text-sm dark:border-white/20',
         cn({ 'h-24': isSmall })
       )}
     >

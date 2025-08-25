@@ -6,7 +6,7 @@ exports[`ProjectCard should render the component correctly 1`] = `
   "baseElement": <body>
     <div>
       <article
-        class="dark:bg-primary flex h-32 flex-col rounded-lg border border-neutral-200 px-4 py-3 text-sm dark:border-white/20"
+        class="dark:bg-primary flex h-[8.25rem] flex-col rounded-lg border border-neutral-200 px-4 py-3 text-sm dark:border-white/20"
       >
         <div
           class="flex flex-1 flex-col gap-3"
@@ -14,12 +14,12 @@ exports[`ProjectCard should render the component correctly 1`] = `
           <h3
             class="line-clamp-1 text-base font-semibold"
           >
-            Test New Project
+            Spotify Clone App
           </h3>
           <p
             class="line-clamp-2 flex-1 text-neutral-700 dark:text-neutral-200"
           >
-            This is just a testing project in order to check the correct functionality
+            This is new project with react native
           </p>
         </div>
         <div
@@ -28,19 +28,19 @@ exports[`ProjectCard should render the component correctly 1`] = `
           <span
             class="text-xs text-neutral-500 dark:text-neutral-300"
           >
-            updated 5 days ago
+            updated 8 hours ago
           </span>
           <div
             class="flex items-center gap-1 rounded-md border border-neutral-200 px-1.5 py-1 font-semibold dark:border-white/20"
           >
             <div
               class="h-4 w-4 rounded-full"
-              style="background-color: rgb(20, 71, 230);"
+              style="background-color: rgb(37, 99, 235);"
             />
             <span
               class="text-xs"
             >
-              TNP2
+              SCA
             </span>
           </div>
         </div>
@@ -49,7 +49,7 @@ exports[`ProjectCard should render the component correctly 1`] = `
   </body>,
   "container": <div>
     <article
-      class="dark:bg-primary flex h-32 flex-col rounded-lg border border-neutral-200 px-4 py-3 text-sm dark:border-white/20"
+      class="dark:bg-primary flex h-[8.25rem] flex-col rounded-lg border border-neutral-200 px-4 py-3 text-sm dark:border-white/20"
     >
       <div
         class="flex flex-1 flex-col gap-3"
@@ -57,12 +57,12 @@ exports[`ProjectCard should render the component correctly 1`] = `
         <h3
           class="line-clamp-1 text-base font-semibold"
         >
-          Test New Project
+          Spotify Clone App
         </h3>
         <p
           class="line-clamp-2 flex-1 text-neutral-700 dark:text-neutral-200"
         >
-          This is just a testing project in order to check the correct functionality
+          This is new project with react native
         </p>
       </div>
       <div
@@ -71,19 +71,19 @@ exports[`ProjectCard should render the component correctly 1`] = `
         <span
           class="text-xs text-neutral-500 dark:text-neutral-300"
         >
-          updated 5 days ago
+          updated 8 hours ago
         </span>
         <div
           class="flex items-center gap-1 rounded-md border border-neutral-200 px-1.5 py-1 font-semibold dark:border-white/20"
         >
           <div
             class="h-4 w-4 rounded-full"
-            style="background-color: rgb(20, 71, 230);"
+            style="background-color: rgb(37, 99, 235);"
           />
           <span
             class="text-xs"
           >
-            TNP2
+            SCA
           </span>
         </div>
       </div>
@@ -149,7 +149,7 @@ exports[`ProjectCard should render the component correctly 2`] = `
   "baseElement": <body>
     <div>
       <article
-        class="dark:bg-primary flex h-32 flex-col rounded-lg border border-neutral-200 px-4 py-3 text-sm dark:border-white/20"
+        class="dark:bg-primary flex h-[8.25rem] flex-col rounded-lg border border-neutral-200 px-4 py-3 text-sm dark:border-white/20"
       >
         <div
           class="flex flex-1 flex-col gap-3"
@@ -157,12 +157,12 @@ exports[`ProjectCard should render the component correctly 2`] = `
           <h3
             class="line-clamp-1 text-base font-semibold"
           >
-            Test New Project
+            Spotify Clone App
           </h3>
           <p
             class="line-clamp-2 flex-1 text-neutral-700 dark:text-neutral-200"
           >
-            This is just a testing project in order to check the correct functionality
+            This is new project with react native
           </p>
         </div>
         <div
@@ -171,19 +171,19 @@ exports[`ProjectCard should render the component correctly 2`] = `
           <span
             class="text-xs text-neutral-500 dark:text-neutral-300"
           >
-            updated 5 days ago
+            updated 8 hours ago
           </span>
           <div
             class="flex items-center gap-1 rounded-md border border-neutral-200 px-1.5 py-1 font-semibold dark:border-white/20"
           >
             <div
               class="h-4 w-4 rounded-full"
-              style="background-color: rgb(20, 71, 230);"
+              style="background-color: rgb(37, 99, 235);"
             />
             <span
               class="text-xs"
             >
-              TNP2
+              SCA
             </span>
           </div>
         </div>
@@ -199,7 +199,7 @@ exports[`ProjectCard should render the component correctly 2`] = `
           <h3
             class="line-clamp-1 text-base font-semibold"
           >
-            Test New Project
+            Spotify Clone App
           </h3>
         </div>
         <div
@@ -208,19 +208,19 @@ exports[`ProjectCard should render the component correctly 2`] = `
           <span
             class="text-xs text-neutral-500 dark:text-neutral-300"
           >
-            updated 5 days ago
+            updated 8 hours ago
           </span>
           <div
             class="flex items-center gap-1 rounded-md border border-neutral-200 px-1.5 py-1 font-semibold dark:border-white/20"
           >
             <div
               class="h-4 w-4 rounded-full"
-              style="background-color: rgb(20, 71, 230);"
+              style="background-color: rgb(37, 99, 235);"
             />
             <span
               class="text-xs"
             >
-              TNP2
+              SCA
             </span>
           </div>
         </div>
@@ -237,7 +237,7 @@ exports[`ProjectCard should render the component correctly 2`] = `
         <h3
           class="line-clamp-1 text-base font-semibold"
         >
-          Test New Project
+          Spotify Clone App
         </h3>
       </div>
       <div
@@ -246,19 +246,19 @@ exports[`ProjectCard should render the component correctly 2`] = `
         <span
           class="text-xs text-neutral-500 dark:text-neutral-300"
         >
-          updated 5 days ago
+          updated 8 hours ago
         </span>
         <div
           class="flex items-center gap-1 rounded-md border border-neutral-200 px-1.5 py-1 font-semibold dark:border-white/20"
         >
           <div
             class="h-4 w-4 rounded-full"
-            style="background-color: rgb(20, 71, 230);"
+            style="background-color: rgb(37, 99, 235);"
           />
           <span
             class="text-xs"
           >
-            TNP2
+            SCA
           </span>
         </div>
       </div>

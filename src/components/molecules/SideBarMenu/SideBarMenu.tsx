@@ -5,19 +5,19 @@ import {
   ProjectIcon,
   SettingsIcon,
   TasksListIcon
-} from '../../../icons';
+} from '@/icons';
 
-import cn from 'clsx';
-import { useState } from 'react';
-import { twMerge } from 'tailwind-merge';
-import { currentUser } from '../../../constants';
-import { useIsMobile } from '../../../hooks/useIsMobile';
-import type { NavBarLinkItem } from '../../../models/types';
-import SwitchThemeButton from '../../atoms/SwitchThemeButton/SwitchThemeButton';
-import UserLoggedItem from '../../atoms/UserLoggedItem/UserLoggedItem';
 import { MobileMenu } from './components/MobileMenu/MobileMenu';
+import type { NavBarLinkItem } from '@/models/types';
 import SideBarHeader from './components/SideBarHeader';
 import { SideBarItem } from './components/SideBarItem';
+import SwitchThemeButton from '@/components/atoms/SwitchThemeButton/SwitchThemeButton';
+import UserLoggedItem from '@/components/atoms/UserLoggedItem/UserLoggedItem';
+import cn from 'clsx';
+import { currentUser } from '@/constants';
+import { twMerge } from 'tailwind-merge';
+import { useIsMobile } from '@/hooks/useIsMobile';
+import { useState } from 'react';
 
 export const SIDE_BAR_ITEMS: NavBarLinkItem[] = [
   {

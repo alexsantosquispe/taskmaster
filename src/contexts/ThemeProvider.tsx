@@ -1,11 +1,11 @@
-import { useEffect, useState, type ReactNode } from 'react';
-import { THEME_KEY } from '../constants';
-import { setLSValue } from '../utils/localStorage.utils';
+import { THEME_KEY } from '@/constants';
+import { setLSValue } from '@/utils/localStorage.utils';
 import {
   applyThemeToDocument,
   getStoredTheme,
   getSystemTheme
-} from '../utils/theme.utils';
+} from '@/utils/theme.utils';
+import { useEffect, useState, type ReactNode } from 'react';
 import { Theme, ThemeContext, type ThemeType } from './ThemeContext';
 
 interface ThemeProviderProps {

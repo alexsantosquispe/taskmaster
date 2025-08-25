@@ -1,7 +1,7 @@
+import { Chip } from '@/components/atoms/Chip/Chip';
 import type { ReactNode } from 'react';
-import type { TaskType } from '../../../models/types';
-import { Chip } from '../../atoms/Chip/Chip';
-import { TaskItemCard } from '../../atoms/TaskItem/TaskItemCard';
+import { TaskItemCard } from '@/components/atoms/TaskItem/TaskItemCard';
+import type { TaskType } from '@/models/types';
 
 interface StatusColumnProps {
   title: string;
