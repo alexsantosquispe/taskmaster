@@ -1,7 +1,8 @@
-import type { ProjectDTO } from '../../../services/apiTypes';
-import cn from 'clsx';
 import { formatToFriendlyDate } from '@/utils/dates.utils';
+import cn from 'clsx';
+import { Link } from 'react-router-dom';
 import { twMerge } from 'tailwind-merge';
+import type { ProjectDTO } from '../../../services/apiTypes';
 
 interface ProjectCardProps extends ProjectDTO {
   isSmall?: boolean;
@@ -44,7 +45,12 @@ export const ProjectCard = ({
       )}
     >
       <div className="flex flex-1 flex-col gap-3">
-        <h3 className="line-clamp-1 text-base font-semibold">{name}</h3>
+        <Link
+          to={`/projects/${id}`}
+          className="hover:text-accent dark:hover:text-accent-dark hover:underline"
+        >
+          <h3 className="line-clamp-1 text-base font-semibold">{name}</h3>
+        </Link>
 
         {!isSmall && (
           <p className="line-clamp-2 flex-1 text-neutral-700 dark:text-neutral-200">

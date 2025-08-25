@@ -1,6 +1,7 @@
+import { TestWrapper } from '@/utils/testing/unitTest.util';
+import { render } from '@testing-library/react';
 import { PROJECTS } from '../../../utils/mocks/projects';
 import { ProjectCard } from './ProjectCard';
-import { render } from '@testing-library/react';
 
 describe('ProjectCard', () => {
   const props = { ...PROJECTS[0] };
@@ -15,11 +16,19 @@ describe('ProjectCard', () => {
   });
 
   it('should render the component correctly', () => {
-    let component = render(<ProjectCard {...props} />);
+    let component = render(
+      <TestWrapper>
+        <ProjectCard {...props} />
+      </TestWrapper>
+    );
 
     expect(component).toMatchSnapshot();
 
-    component = render(<ProjectCard {...props} isSmall={true} />);
+    component = render(
+      <TestWrapper>
+        <ProjectCard {...props} isSmall={true} />
+      </TestWrapper>
+    );
 
     expect(component).toMatchSnapshot();
   });
