@@ -1,15 +1,15 @@
+import { TooltipWrapper } from '@/components/atoms/TooltipWrapper/TooltipWrapper';
 import {
   ALIGNMENT_TYPES,
   type NavBarLinkItem,
   type NavBarLinkSubItem
-} from '../../../../models/types';
-
-import { TooltipWrapper } from '@/components/TooltipWrapper/TooltipWrapper';
+} from '@/models/types';
 import cn from 'clsx';
 import { useState } from 'react';
 import { twMerge } from 'tailwind-merge';
-import { useIsMobile } from '../../../../hooks/useIsMobile';
-import { ChevronDownIcon } from '../../../../icons/ChevronDownIcon';
+
+import { useIsMobile } from '@/hooks/useIsMobile';
+import { ChevronDownIcon } from '@/icons';
 import { NavBarLink } from './NavBarLink/NavBarLink';
 
 interface SideBarSubItemProps extends NavBarLinkSubItem {

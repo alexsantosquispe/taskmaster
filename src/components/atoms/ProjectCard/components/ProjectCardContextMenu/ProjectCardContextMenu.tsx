@@ -1,13 +1,9 @@
 import { ContextMenu } from '@/components/atoms/ContextMenu/ContextMenu';
 import { Modal } from '@/components/atoms/Modal/Modal';
+import { MENU_OPTIONS } from '@/constants';
 import { EllipsisVerticalIcon } from '@/icons';
 import type { Option } from '@/models/types';
 import { useState } from 'react';
-
-const MENU_OPTIONS: Option[] = [
-  { label: 'Edit', value: 'edit' },
-  { label: 'Delete', value: 'delete' }
-];
 
 export const DeleteProjectModal = ({ onClose }: { onClose: () => void }) => {
   return (

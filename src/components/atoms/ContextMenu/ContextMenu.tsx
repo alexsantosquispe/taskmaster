@@ -10,8 +10,10 @@ interface ContextMenuProps {
   onSelectOption: (option: Option) => void;
   label?: string;
   icon?: ReactNode;
+  isSecondary?: boolean;
   className?: {
     mainContainer?: string;
+    button?: string;
     contentWrapper?: string;
   };
 }
@@ -22,6 +24,7 @@ export const ContextMenu = ({
   onSelectOption,
   label = '',
   icon,
+  isSecondary = true,
   className
 }: ContextMenuProps) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,10 +47,10 @@ export const ContextMenu = ({
       <Button
         ariaLabel={ariaLabel}
         onClick={toggleMenu}
-        isSecondary={true}
+        isSecondary={isSecondary}
         label={label}
         icon={icon}
-        className="rounded-md p-1"
+        className={twMerge('rounded-md p-1', className?.button)}
       />
       {isOpen && (
         <div

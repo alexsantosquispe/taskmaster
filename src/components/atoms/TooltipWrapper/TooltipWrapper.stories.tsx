@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 
 import { ALIGNMENT_TYPES } from '@/models/types';
 import { Wrapper } from '@/utils/testing/unitTest.util';
-import { Button } from '../atoms/Button/Button';
+import { Button } from '../Button/Button';
 import { TooltipWrapper } from './TooltipWrapper';
 
 const meta: Meta<typeof TooltipWrapper> = {

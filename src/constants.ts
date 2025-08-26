@@ -33,3 +33,8 @@ export const COLORS: Option[] = [
 ];
 
 export const DEFAULT_COLOR = COLORS[1];
+
+export const MENU_OPTIONS: Option[] = [
+  { label: 'Edit', value: 'edit' },
+  { label: 'Delete', value: 'delete' }
+];

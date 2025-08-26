@@ -1,8 +1,8 @@
-import { TooltipWrapper } from '@/components/TooltipWrapper/TooltipWrapper';
 import { ALIGNMENT_TYPES, type AlignmentType } from '@/models/types';
 import cn from 'clsx';
 import type { ReactNode } from 'react';
 import { twMerge } from 'tailwind-merge';
+import { TooltipWrapper } from '../TooltipWrapper/TooltipWrapper';
 
 interface IconButtonProps {
   ariaLabel: string;

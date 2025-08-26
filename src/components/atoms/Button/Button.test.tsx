@@ -24,6 +24,9 @@ describe('Button', () => {
       <Button {...props} isSecondary={true} isDisable={true} />
     );
     expect(component).toMatchSnapshot();
+
+    component = render(<Button {...props} isLoading={true} />);
+    expect(component).toMatchSnapshot();
   });
 
   it('should render the button with icon correctly', () => {
