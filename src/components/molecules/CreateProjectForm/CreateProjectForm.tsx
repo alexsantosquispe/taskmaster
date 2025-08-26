@@ -41,7 +41,7 @@ export const CreateProjectForm = ({
       onSubmit={handleSubmit(onSubmit)}
       className="flex w-full flex-col gap-y-4 p-2"
     >
-      <div className="flex gap-4">
+      <div className="flex flex-col gap-4 md:flex-row">
         <InputField
           label="Project name"
           name={NEW_PROJECT_FORM_NAMES.NAME}
@@ -54,25 +54,29 @@ export const CreateProjectForm = ({
           isRequired
         />
 
-        <InputField
-          label="Code"
-          name={NEW_PROJECT_FORM_NAMES.CODE}
-          errorMessage={
-            !isFormDisabled ? errors[NEW_PROJECT_FORM_NAMES.CODE]?.message : ''
-          }
-          className={{ container: 'w-1/4', input: 'uppercase' }}
-          control={control as unknown as Control<FieldValues>}
-          placeholder="XYZ"
-          isDisabled={isFormDisabled}
-          isRequired
-        />
+        <div className="flex gap-4 md:w-1/2">
+          <InputField
+            label="Code"
+            name={NEW_PROJECT_FORM_NAMES.CODE}
+            errorMessage={
+              !isFormDisabled
+                ? errors[NEW_PROJECT_FORM_NAMES.CODE]?.message
+                : ''
+            }
+            className={{ container: 'w-full', input: 'uppercase' }}
+            control={control as unknown as Control<FieldValues>}
+            placeholder="XYZ"
+            isDisabled={isFormDisabled}
+            isRequired
+          />
 
-        <ColorPickerWithController
-          label="Color"
-          name={NEW_PROJECT_FORM_NAMES.COLOR}
-          control={control as unknown as Control<FieldValues>}
-          className="self-end"
-        />
+          <ColorPickerWithController
+            label="Color"
+            name={NEW_PROJECT_FORM_NAMES.COLOR}
+            control={control as unknown as Control<FieldValues>}
+            className="self-end"
+          />
+        </div>
       </div>
 
       <TextAreaField

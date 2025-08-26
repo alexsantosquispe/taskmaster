@@ -6,10 +6,10 @@ exports[`Modal should render the modal 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="bg-primary/70 fixed inset-0 z-50 flex items-center justify-center p-8 backdrop-blur-xs"
+        class="bg-primary/70 fixed inset-0 z-50 flex items-end justify-center backdrop-blur-xs md:items-center md:p-8"
       >
         <div
-          class="dark:bg-primary flex min-w-[32rem] flex-col rounded-xl bg-white dark:border dark:border-white/5"
+          class="dark:bg-primary flex w-full flex-col rounded-t-xl bg-white md:min-w-[32rem] md:rounded-xl dark:border dark:border-white/5"
           data-testid="modal"
         >
           <div
@@ -22,7 +22,7 @@ exports[`Modal should render the modal 1`] = `
             </h3>
             <div
               class="relative flex items-center justify-center"
-              data-testid="icon-button"
+              data-testid="tooltip-wrapper"
             >
               <button
                 aria-label="Close modal button"
@@ -65,10 +65,10 @@ exports[`Modal should render the modal 1`] = `
   </body>,
   "container": <div>
     <div
-      class="bg-primary/70 fixed inset-0 z-50 flex items-center justify-center p-8 backdrop-blur-xs"
+      class="bg-primary/70 fixed inset-0 z-50 flex items-end justify-center backdrop-blur-xs md:items-center md:p-8"
     >
       <div
-        class="dark:bg-primary flex min-w-[32rem] flex-col rounded-xl bg-white dark:border dark:border-white/5"
+        class="dark:bg-primary flex w-full flex-col rounded-t-xl bg-white md:min-w-[32rem] md:rounded-xl dark:border dark:border-white/5"
         data-testid="modal"
       >
         <div
@@ -81,7 +81,7 @@ exports[`Modal should render the modal 1`] = `
           </h3>
           <div
             class="relative flex items-center justify-center"
-            data-testid="icon-button"
+            data-testid="tooltip-wrapper"
           >
             <button
               aria-label="Close modal button"

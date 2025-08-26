@@ -62,7 +62,7 @@ export const ColorPicker = ({
       {isPalletColorOpen && (
         <div
           data-testid="color-pallet"
-          className="dark:bg-primary absolute top-full right-0 mt-1 w-[12.25rem] rounded-lg border border-neutral-200 bg-white p-2 shadow-lg dark:border-white/20 dark:shadow-none"
+          className="dark:bg-primary absolute top-full right-0 mt-1 w-[12.25rem] rounded-lg border border-neutral-200 bg-white p-2 shadow-md dark:border-white/20 dark:shadow-none"
         >
           <div className="flex flex-wrap gap-4">
             {COLORS.map((color, index) => {

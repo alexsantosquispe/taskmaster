@@ -7,7 +7,7 @@ exports[`ToggleButton should render the component correctly 1`] = `
     <div>
       <div
         class="relative flex items-center justify-center"
-        data-testid="icon-button"
+        data-testid="tooltip-wrapper"
       >
         <button
           aria-label="Collapse menu"
@@ -48,7 +48,7 @@ exports[`ToggleButton should render the component correctly 1`] = `
   "container": <div>
     <div
       class="relative flex items-center justify-center"
-      data-testid="icon-button"
+      data-testid="tooltip-wrapper"
     >
       <button
         aria-label="Collapse menu"
@@ -146,7 +146,7 @@ exports[`ToggleButton should render the component correctly 2`] = `
     <div>
       <div
         class="relative flex items-center justify-center"
-        data-testid="icon-button"
+        data-testid="tooltip-wrapper"
       >
         <button
           aria-label="Collapse menu"
@@ -186,7 +186,7 @@ exports[`ToggleButton should render the component correctly 2`] = `
     <div>
       <div
         class="relative flex items-center justify-center"
-        data-testid="icon-button"
+        data-testid="tooltip-wrapper"
       >
         <button
           aria-label="Expand menu"
@@ -227,7 +227,7 @@ exports[`ToggleButton should render the component correctly 2`] = `
   "container": <div>
     <div
       class="relative flex items-center justify-center"
-      data-testid="icon-button"
+      data-testid="tooltip-wrapper"
     >
       <button
         aria-label="Expand menu"

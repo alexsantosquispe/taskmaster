@@ -30,6 +30,16 @@ export const STATUS_TYPES = {
 
 export type StatusType = (typeof STATUS_TYPES)[keyof typeof STATUS_TYPES];
 
+export const ALIGNMENT_TYPES = {
+  TOP: 'top',
+  BOTTOM: 'bottom',
+  LEFT: 'left',
+  RIGHT: 'right'
+} as const;
+
+export type AlignmentType =
+  (typeof ALIGNMENT_TYPES)[keyof typeof ALIGNMENT_TYPES];
+
 export interface UserType {
   id: string;
   name: string;

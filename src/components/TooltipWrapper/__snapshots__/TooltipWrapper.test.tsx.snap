@@ -1,57 +1,35 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
-exports[`ColorPicker styles should render the color picker correctly 1`] = `
+exports[`TooltipWrapper styles should render the component correctly 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="relative flex flex-col"
+        class="relative flex items-center justify-center"
+        data-testid="tooltip-wrapper"
       >
-        <label
-          class="mb-0.5 text-sm"
-        >
-          Color picker
-        </label>
         <div
-          class="relative flex items-center justify-center"
-          data-testid="tooltip-wrapper"
+          class="block"
         >
-          <button
-            aria-label="Color picker button"
-            class="text-primary flex w-fit items-center justify-center rounded-lg p-2 transition-colors duration-150 ease-in-out dark:text-white/70 hover:text-accent dark:hover:text-accent-dark hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15 border border-neutral-200 dark:border-white/20"
-            type="button"
-          >
-            <div
-              class="h-5 w-5 rounded-full bg-blue-600"
-            />
-          </button>
+          <div>
+            Test
+          </div>
         </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="relative flex flex-col"
+      class="relative flex items-center justify-center"
+      data-testid="tooltip-wrapper"
     >
-      <label
-        class="mb-0.5 text-sm"
-      >
-        Color picker
-      </label>
       <div
-        class="relative flex items-center justify-center"
-        data-testid="tooltip-wrapper"
+        class="block"
       >
-        <button
-          aria-label="Color picker button"
-          class="text-primary flex w-fit items-center justify-center rounded-lg p-2 transition-colors duration-150 ease-in-out dark:text-white/70 hover:text-accent dark:hover:text-accent-dark hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15 border border-neutral-200 dark:border-white/20"
-          type="button"
-        >
-          <div
-            class="h-5 w-5 rounded-full bg-blue-600"
-          />
-        </button>
+        <div>
+          Test
+        </div>
       </div>
     </div>
   </div>,
@@ -109,58 +87,42 @@ exports[`ColorPicker styles should render the color picker correctly 1`] = `
 }
 `;
 
-exports[`ColorPicker styles should render the color picker with controller correctly 1`] = `
+exports[`TooltipWrapper styles should render the component correctly 2`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="relative flex flex-col"
+        class="relative flex items-center justify-center"
+        data-testid="tooltip-wrapper"
       >
-        <label
-          class="mb-0.5 text-sm"
-        >
-          Color picker
-        </label>
         <div
-          class="relative flex items-center justify-center"
-          data-testid="tooltip-wrapper"
+          class="block"
         >
-          <button
-            aria-label="Color picker button"
-            class="text-primary flex w-fit items-center justify-center rounded-lg p-2 transition-colors duration-150 ease-in-out dark:text-white/70 hover:text-accent dark:hover:text-accent-dark hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15 border border-neutral-200 dark:border-white/20"
-            type="button"
-          >
-            <div
-              class="h-5 w-5 rounded-full bg-blue-600"
-            />
-          </button>
+          <div>
+            Test
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        class="relative flex items-center justify-center"
+        data-testid="tooltip-wrapper"
+      >
+        <div>
+          Test 2
         </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="relative flex flex-col"
+      class="relative flex items-center justify-center"
+      data-testid="tooltip-wrapper"
     >
-      <label
-        class="mb-0.5 text-sm"
-      >
-        Color picker
-      </label>
-      <div
-        class="relative flex items-center justify-center"
-        data-testid="tooltip-wrapper"
-      >
-        <button
-          aria-label="Color picker button"
-          class="text-primary flex w-fit items-center justify-center rounded-lg p-2 transition-colors duration-150 ease-in-out dark:text-white/70 hover:text-accent dark:hover:text-accent-dark hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15 border border-neutral-200 dark:border-white/20"
-          type="button"
-        >
-          <div
-            class="h-5 w-5 rounded-full bg-blue-600"
-          />
-        </button>
+      <div>
+        Test 2
       </div>
     </div>
   </div>,

@@ -23,13 +23,13 @@ export const COLORS: Option[] = [
   { value: '#8b5cf6', label: 'bg-violet-500' },
   { value: '#a855f7', label: 'bg-purple-500' },
   { value: '#d946ef', label: 'bg-fuchsia-500' },
-  { value: '#ef4444', label: 'bg-red-500' },
+  { value: '#e11d48', label: 'bg-rose-600' },
   { value: '#f97316', label: 'bg-orange-500' },
   { value: '#f59e0b', label: 'bg-amber-500' },
   { value: '#eab308', label: 'bg-yellow-500' },
-  { value: '#84cc16', label: 'bg-lime-500' },
+  { value: '#a3e635', label: 'bg-lime-400' },
   { value: '#22c55e', label: 'bg-green-500' },
-  { value: '#14b8a6', label: 'bg-teal-500' }
+  { value: '#059669', label: 'bg-emerald-600' }
 ];
 
 export const DEFAULT_COLOR = COLORS[1];

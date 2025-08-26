@@ -47,7 +47,7 @@ exports[`MobileMenu should render the component correctly 1`] = `
         </div>
         <div
           class="relative flex items-center justify-center"
-          data-testid="icon-button"
+          data-testid="tooltip-wrapper"
         >
           <button
             aria-label="Collapse menu"
@@ -125,7 +125,7 @@ exports[`MobileMenu should render the component correctly 1`] = `
       </div>
       <div
         class="relative flex items-center justify-center"
-        data-testid="icon-button"
+        data-testid="tooltip-wrapper"
       >
         <button
           aria-label="Collapse menu"

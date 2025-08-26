@@ -1,3 +1,4 @@
+import useKeyPress from '@/hooks/useKeyPress';
 import { CloseIcon } from '@/icons';
 import type { ReactNode } from 'react';
 import { twMerge } from 'tailwind-merge';
@@ -13,23 +14,29 @@ interface ModalProps {
     body?: string;
   };
 }
-const MODAL_STYLES = {
-  BACKDROP:
-    'bg-primary/70 fixed inset-0 z-50 flex items-center justify-center p-8 backdrop-blur-xs',
-  CONTAINER:
-    'dark:bg-primary flex min-w-[32rem] flex-col rounded-xl bg-white dark:border dark:border-white/5',
-  HEADER:
-    'flex items-center justify-between border-b border-neutral-200 px-2 py-1 dark:border-white/20'
-};
 
 export const Modal = ({ title, onClose, children, classNames }: ModalProps) => {
+  useKeyPress('Escape', onClose);
+
   return (
-    <div className={MODAL_STYLES.BACKDROP}>
+    <div
+      className={
+        'bg-primary/70 fixed inset-0 z-50 flex items-end justify-center backdrop-blur-xs md:items-center md:p-8'
+      }
+    >
       <div
         data-testid="modal"
-        className={twMerge(MODAL_STYLES.CONTAINER, classNames?.container)}
+        className={twMerge(
+          'dark:bg-primary flex w-full flex-col rounded-t-xl bg-white md:min-w-[32rem] md:rounded-xl dark:border dark:border-white/5',
+          classNames?.container
+        )}
       >
-        <div className={twMerge(MODAL_STYLES.HEADER, classNames?.header)}>
+        <div
+          className={twMerge(
+            'flex items-center justify-between border-b border-neutral-200 px-2 py-1 dark:border-white/20',
+            classNames?.header
+          )}
+        >
           <h3 className="p-2 font-bold">{title}</h3>
           <IconButton
             ariaLabel="Close modal button"

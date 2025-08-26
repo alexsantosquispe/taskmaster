@@ -1,5 +1,6 @@
+import { useClickOutside } from '@/hooks/useClickOutside';
 import type { Option } from '@/models/types';
-import { useState, type ReactNode } from 'react';
+import { useRef, useState, type ReactNode } from 'react';
 import { twMerge } from 'tailwind-merge';
 import { Button } from '../Button/Button';
 
@@ -24,10 +25,11 @@ export const ContextMenu = ({
   className
 }: ContextMenuProps) => {
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+  useClickOutside(menuRef, () => setIsOpen(false));
+
+  const toggleMenu = () => setIsOpen((prev) => !prev);
 
   const onSelectOptionHandler = (option: Option) => {
     onSelectOption(option);
@@ -36,6 +38,7 @@ export const ContextMenu = ({
 
   return (
     <div
+      ref={menuRef}
       className={twMerge('relative flex flex-col', className?.mainContainer)}
     >
       <Button
@@ -55,19 +58,17 @@ export const ContextMenu = ({
           )}
         >
           <ul className="flex flex-col gap-1">
-            {options.map((option) => {
-              return (
-                <li key={option.value}>
-                  <Button
-                    label={option.label}
-                    ariaLabel={`${option.label} option`}
-                    onClick={() => onSelectOptionHandler(option)}
-                    isSecondary={true}
-                    className="hover:text-primary w-full justify-start rounded-md px-2 py-1 font-medium hover:cursor-default dark:hover:text-white"
-                  />
-                </li>
-              );
-            })}
+            {options.map((option) => (
+              <li key={option.value}>
+                <Button
+                  label={option.label}
+                  ariaLabel={`${option.label} option`}
+                  onClick={() => onSelectOptionHandler(option)}
+                  isSecondary={true}
+                  className="hover:text-primary w-full justify-start rounded-md px-2 py-1 font-medium hover:cursor-default dark:hover:text-white"
+                />
+              </li>
+            ))}
           </ul>
         </div>
       )}

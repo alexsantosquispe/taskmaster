@@ -1,8 +1,10 @@
-import type {
-  NavBarLinkItem,
-  NavBarLinkSubItem
+import {
+  ALIGNMENT_TYPES,
+  type NavBarLinkItem,
+  type NavBarLinkSubItem
 } from '../../../../models/types';
 
+import { TooltipWrapper } from '@/components/TooltipWrapper/TooltipWrapper';
 import cn from 'clsx';
 import { useState } from 'react';
 import { twMerge } from 'tailwind-merge';
@@ -68,10 +70,16 @@ export const SideBarItem = ({
       )}
     >
       <NavBarLink path={path} ariaLabel={label} onClick={selectItemHandler}>
-        <div className="flex gap-4">
-          <>{icon}</>
-          {(!isCollapsed && label) || (isMobile && label)}
-        </div>
+        <TooltipWrapper
+          tooltipMessage={isCollapsed ? label : ''}
+          tooltipAlignment={ALIGNMENT_TYPES.RIGHT}
+          className={{ container: 'mr-2.5' }}
+        >
+          <div className="flex gap-4">
+            {icon}
+            {(!isCollapsed && label) || (isMobile && label)}
+          </div>
+        </TooltipWrapper>
 
         {!isMobile && subItems && !isCollapsed && (
           <ChevronDownIcon

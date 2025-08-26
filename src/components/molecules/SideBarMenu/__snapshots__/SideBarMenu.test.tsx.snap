@@ -50,7 +50,7 @@ exports[`SideBarMenu MobileMenu should render the component correctly for mobile
           </div>
           <div
             class="relative flex items-center justify-center"
-            data-testid="icon-button"
+            data-testid="tooltip-wrapper"
           >
             <button
               aria-label="Collapse menu"
@@ -135,7 +135,7 @@ exports[`SideBarMenu MobileMenu should render the component correctly for mobile
         </div>
         <div
           class="relative flex items-center justify-center"
-          data-testid="icon-button"
+          data-testid="tooltip-wrapper"
         >
           <button
             aria-label="Collapse menu"
@@ -282,7 +282,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
           </a>
           <div
             class="relative flex items-center justify-center"
-            data-testid="icon-button"
+            data-testid="tooltip-wrapper"
           >
             <button
               aria-label="Collapse menu"
@@ -335,50 +335,59 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
                   href="/dashboard"
                 >
                   <div
-                    class="flex gap-4"
+                    class="relative flex items-center justify-center"
+                    data-testid="tooltip-wrapper"
                   >
-                    <svg
-                      class="size-5"
-                      fill="none"
-                      height="24"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      viewBox="0 0 24 24"
-                      width="24"
-                      xmlns="http://www.w3.org/2000/svg"
+                    <div
+                      class="block mr-2.5"
                     >
-                      <rect
-                        height="9"
-                        rx="1"
-                        width="7"
-                        x="3"
-                        y="3"
-                      />
-                      <rect
-                        height="5"
-                        rx="1"
-                        width="7"
-                        x="14"
-                        y="3"
-                      />
-                      <rect
-                        height="9"
-                        rx="1"
-                        width="7"
-                        x="14"
-                        y="12"
-                      />
-                      <rect
-                        height="5"
-                        rx="1"
-                        width="7"
-                        x="3"
-                        y="16"
-                      />
-                    </svg>
-                    Dashboard
+                      <div
+                        class="flex gap-4"
+                      >
+                        <svg
+                          class="size-5"
+                          fill="none"
+                          height="24"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <rect
+                            height="9"
+                            rx="1"
+                            width="7"
+                            x="3"
+                            y="3"
+                          />
+                          <rect
+                            height="5"
+                            rx="1"
+                            width="7"
+                            x="14"
+                            y="3"
+                          />
+                          <rect
+                            height="9"
+                            rx="1"
+                            width="7"
+                            x="14"
+                            y="12"
+                          />
+                          <rect
+                            height="5"
+                            rx="1"
+                            width="7"
+                            x="3"
+                            y="16"
+                          />
+                        </svg>
+                        Dashboard
+                      </div>
+                    </div>
                   </div>
                 </a>
               </li>
@@ -391,34 +400,43 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
                   href="/projects"
                 >
                   <div
-                    class="flex gap-4"
+                    class="relative flex items-center justify-center"
+                    data-testid="tooltip-wrapper"
                   >
-                    <svg
-                      class="size-5"
-                      fill="none"
-                      height="24"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      viewBox="0 0 24 24"
-                      width="24"
-                      xmlns="http://www.w3.org/2000/svg"
+                    <div
+                      class="block mr-2.5"
                     >
-                      <path
-                        d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"
-                      />
-                      <path
-                        d="M8 10v4"
-                      />
-                      <path
-                        d="M12 10v2"
-                      />
-                      <path
-                        d="M16 10v6"
-                      />
-                    </svg>
-                    Projects
+                      <div
+                        class="flex gap-4"
+                      >
+                        <svg
+                          class="size-5"
+                          fill="none"
+                          height="24"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"
+                          />
+                          <path
+                            d="M8 10v4"
+                          />
+                          <path
+                            d="M12 10v2"
+                          />
+                          <path
+                            d="M16 10v6"
+                          />
+                        </svg>
+                        Projects
+                      </div>
+                    </div>
                   </div>
                   <svg
                     class="size-4 transition-transform duration-300"
@@ -447,48 +465,57 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
                   href="/tasks"
                 >
                   <div
-                    class="flex gap-4"
+                    class="relative flex items-center justify-center"
+                    data-testid="tooltip-wrapper"
                   >
-                    <svg
-                      class="size-5"
-                      fill="none"
-                      height="24"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      viewBox="0 0 24 24"
-                      width="24"
-                      xmlns="http://www.w3.org/2000/svg"
+                    <div
+                      class="block mr-2.5"
                     >
-                      <rect
-                        height="7"
-                        rx="1"
-                        width="7"
-                        x="3"
-                        y="3"
-                      />
-                      <rect
-                        height="7"
-                        rx="1"
-                        width="7"
-                        x="3"
-                        y="14"
-                      />
-                      <path
-                        d="M14 4h7"
-                      />
-                      <path
-                        d="M14 9h7"
-                      />
-                      <path
-                        d="M14 15h7"
-                      />
-                      <path
-                        d="M14 20h7"
-                      />
-                    </svg>
-                    Tasks
+                      <div
+                        class="flex gap-4"
+                      >
+                        <svg
+                          class="size-5"
+                          fill="none"
+                          height="24"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <rect
+                            height="7"
+                            rx="1"
+                            width="7"
+                            x="3"
+                            y="3"
+                          />
+                          <rect
+                            height="7"
+                            rx="1"
+                            width="7"
+                            x="3"
+                            y="14"
+                          />
+                          <path
+                            d="M14 4h7"
+                          />
+                          <path
+                            d="M14 9h7"
+                          />
+                          <path
+                            d="M14 15h7"
+                          />
+                          <path
+                            d="M14 20h7"
+                          />
+                        </svg>
+                        Tasks
+                      </div>
+                    </div>
                   </div>
                 </a>
               </li>
@@ -501,28 +528,37 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
                   href="/reports"
                 >
                   <div
-                    class="flex gap-4"
+                    class="relative flex items-center justify-center"
+                    data-testid="tooltip-wrapper"
                   >
-                    <svg
-                      class="size-5"
-                      fill="none"
-                      height="24"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      viewBox="0 0 24 24"
-                      width="24"
-                      xmlns="http://www.w3.org/2000/svg"
+                    <div
+                      class="block mr-2.5"
                     >
-                      <path
-                        d="M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.951c-.55-.055-.998.398-.998.95v8a1 1 0 0 0 1 1z"
-                      />
-                      <path
-                        d="M21.21 15.89A10 10 0 1 1 8 2.83"
-                      />
-                    </svg>
-                    Reports
+                      <div
+                        class="flex gap-4"
+                      >
+                        <svg
+                          class="size-5"
+                          fill="none"
+                          height="24"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.951c-.55-.055-.998.398-.998.95v8a1 1 0 0 0 1 1z"
+                          />
+                          <path
+                            d="M21.21 15.89A10 10 0 1 1 8 2.83"
+                          />
+                        </svg>
+                        Reports
+                      </div>
+                    </div>
                   </div>
                 </a>
               </li>
@@ -541,30 +577,39 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
                   href="/settings"
                 >
                   <div
-                    class="flex gap-4"
+                    class="relative flex items-center justify-center"
+                    data-testid="tooltip-wrapper"
                   >
-                    <svg
-                      class="size-5"
-                      fill="none"
-                      height="24"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      viewBox="0 0 24 24"
-                      width="24"
-                      xmlns="http://www.w3.org/2000/svg"
+                    <div
+                      class="block mr-2.5"
                     >
-                      <path
-                        d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"
-                      />
-                      <circle
-                        cx="12"
-                        cy="12"
-                        r="3"
-                      />
-                    </svg>
-                    Settings
+                      <div
+                        class="flex gap-4"
+                      >
+                        <svg
+                          class="size-5"
+                          fill="none"
+                          height="24"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"
+                          />
+                          <circle
+                            cx="12"
+                            cy="12"
+                            r="3"
+                          />
+                        </svg>
+                        Settings
+                      </div>
+                    </div>
                   </div>
                 </a>
               </li>
@@ -577,33 +622,42 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
                   href="/help"
                 >
                   <div
-                    class="flex gap-4"
+                    class="relative flex items-center justify-center"
+                    data-testid="tooltip-wrapper"
                   >
-                    <svg
-                      class="size-5"
-                      fill="none"
-                      height="24"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      viewBox="0 0 24 24"
-                      width="24"
-                      xmlns="http://www.w3.org/2000/svg"
+                    <div
+                      class="block mr-2.5"
                     >
-                      <circle
-                        cx="12"
-                        cy="12"
-                        r="10"
-                      />
-                      <path
-                        d="M12 16v-4"
-                      />
-                      <path
-                        d="M12 8h.01"
-                      />
-                    </svg>
-                    Help
+                      <div
+                        class="flex gap-4"
+                      >
+                        <svg
+                          class="size-5"
+                          fill="none"
+                          height="24"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle
+                            cx="12"
+                            cy="12"
+                            r="10"
+                          />
+                          <path
+                            d="M12 16v-4"
+                          />
+                          <path
+                            d="M12 8h.01"
+                          />
+                        </svg>
+                        Help
+                      </div>
+                    </div>
                   </div>
                 </a>
               </li>
@@ -836,7 +890,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
         </a>
         <div
           class="relative flex items-center justify-center"
-          data-testid="icon-button"
+          data-testid="tooltip-wrapper"
         >
           <button
             aria-label="Collapse menu"
@@ -889,50 +943,59 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
                 href="/dashboard"
               >
                 <div
-                  class="flex gap-4"
+                  class="relative flex items-center justify-center"
+                  data-testid="tooltip-wrapper"
                 >
-                  <svg
-                    class="size-5"
-                    fill="none"
-                    height="24"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <div
+                    class="block mr-2.5"
                   >
-                    <rect
-                      height="9"
-                      rx="1"
-                      width="7"
-                      x="3"
-                      y="3"
-                    />
-                    <rect
-                      height="5"
-                      rx="1"
-                      width="7"
-                      x="14"
-                      y="3"
-                    />
-                    <rect
-                      height="9"
-                      rx="1"
-                      width="7"
-                      x="14"
-                      y="12"
-                    />
-                    <rect
-                      height="5"
-                      rx="1"
-                      width="7"
-                      x="3"
-                      y="16"
-                    />
-                  </svg>
-                  Dashboard
+                    <div
+                      class="flex gap-4"
+                    >
+                      <svg
+                        class="size-5"
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          height="9"
+                          rx="1"
+                          width="7"
+                          x="3"
+                          y="3"
+                        />
+                        <rect
+                          height="5"
+                          rx="1"
+                          width="7"
+                          x="14"
+                          y="3"
+                        />
+                        <rect
+                          height="9"
+                          rx="1"
+                          width="7"
+                          x="14"
+                          y="12"
+                        />
+                        <rect
+                          height="5"
+                          rx="1"
+                          width="7"
+                          x="3"
+                          y="16"
+                        />
+                      </svg>
+                      Dashboard
+                    </div>
+                  </div>
                 </div>
               </a>
             </li>
@@ -945,34 +1008,43 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
                 href="/projects"
               >
                 <div
-                  class="flex gap-4"
+                  class="relative flex items-center justify-center"
+                  data-testid="tooltip-wrapper"
                 >
-                  <svg
-                    class="size-5"
-                    fill="none"
-                    height="24"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <div
+                    class="block mr-2.5"
                   >
-                    <path
-                      d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"
-                    />
-                    <path
-                      d="M8 10v4"
-                    />
-                    <path
-                      d="M12 10v2"
-                    />
-                    <path
-                      d="M16 10v6"
-                    />
-                  </svg>
-                  Projects
+                    <div
+                      class="flex gap-4"
+                    >
+                      <svg
+                        class="size-5"
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"
+                        />
+                        <path
+                          d="M8 10v4"
+                        />
+                        <path
+                          d="M12 10v2"
+                        />
+                        <path
+                          d="M16 10v6"
+                        />
+                      </svg>
+                      Projects
+                    </div>
+                  </div>
                 </div>
                 <svg
                   class="size-4 transition-transform duration-300"
@@ -1001,48 +1073,57 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
                 href="/tasks"
               >
                 <div
-                  class="flex gap-4"
+                  class="relative flex items-center justify-center"
+                  data-testid="tooltip-wrapper"
                 >
-                  <svg
-                    class="size-5"
-                    fill="none"
-                    height="24"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <div
+                    class="block mr-2.5"
                   >
-                    <rect
-                      height="7"
-                      rx="1"
-                      width="7"
-                      x="3"
-                      y="3"
-                    />
-                    <rect
-                      height="7"
-                      rx="1"
-                      width="7"
-                      x="3"
-                      y="14"
-                    />
-                    <path
-                      d="M14 4h7"
-                    />
-                    <path
-                      d="M14 9h7"
-                    />
-                    <path
-                      d="M14 15h7"
-                    />
-                    <path
-                      d="M14 20h7"
-                    />
-                  </svg>
-                  Tasks
+                    <div
+                      class="flex gap-4"
+                    >
+                      <svg
+                        class="size-5"
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          height="7"
+                          rx="1"
+                          width="7"
+                          x="3"
+                          y="3"
+                        />
+                        <rect
+                          height="7"
+                          rx="1"
+                          width="7"
+                          x="3"
+                          y="14"
+                        />
+                        <path
+                          d="M14 4h7"
+                        />
+                        <path
+                          d="M14 9h7"
+                        />
+                        <path
+                          d="M14 15h7"
+                        />
+                        <path
+                          d="M14 20h7"
+                        />
+                      </svg>
+                      Tasks
+                    </div>
+                  </div>
                 </div>
               </a>
             </li>
@@ -1055,28 +1136,37 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
                 href="/reports"
               >
                 <div
-                  class="flex gap-4"
+                  class="relative flex items-center justify-center"
+                  data-testid="tooltip-wrapper"
                 >
-                  <svg
-                    class="size-5"
-                    fill="none"
-                    height="24"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <div
+                    class="block mr-2.5"
                   >
-                    <path
-                      d="M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.951c-.55-.055-.998.398-.998.95v8a1 1 0 0 0 1 1z"
-                    />
-                    <path
-                      d="M21.21 15.89A10 10 0 1 1 8 2.83"
-                    />
-                  </svg>
-                  Reports
+                    <div
+                      class="flex gap-4"
+                    >
+                      <svg
+                        class="size-5"
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.951c-.55-.055-.998.398-.998.95v8a1 1 0 0 0 1 1z"
+                        />
+                        <path
+                          d="M21.21 15.89A10 10 0 1 1 8 2.83"
+                        />
+                      </svg>
+                      Reports
+                    </div>
+                  </div>
                 </div>
               </a>
             </li>
@@ -1095,30 +1185,39 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
                 href="/settings"
               >
                 <div
-                  class="flex gap-4"
+                  class="relative flex items-center justify-center"
+                  data-testid="tooltip-wrapper"
                 >
-                  <svg
-                    class="size-5"
-                    fill="none"
-                    height="24"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <div
+                    class="block mr-2.5"
                   >
-                    <path
-                      d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"
-                    />
-                    <circle
-                      cx="12"
-                      cy="12"
-                      r="3"
-                    />
-                  </svg>
-                  Settings
+                    <div
+                      class="flex gap-4"
+                    >
+                      <svg
+                        class="size-5"
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"
+                        />
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="3"
+                        />
+                      </svg>
+                      Settings
+                    </div>
+                  </div>
                 </div>
               </a>
             </li>
@@ -1131,33 +1230,42 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
                 href="/help"
               >
                 <div
-                  class="flex gap-4"
+                  class="relative flex items-center justify-center"
+                  data-testid="tooltip-wrapper"
                 >
-                  <svg
-                    class="size-5"
-                    fill="none"
-                    height="24"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <div
+                    class="block mr-2.5"
                   >
-                    <circle
-                      cx="12"
-                      cy="12"
-                      r="10"
-                    />
-                    <path
-                      d="M12 16v-4"
-                    />
-                    <path
-                      d="M12 8h.01"
-                    />
-                  </svg>
-                  Help
+                    <div
+                      class="flex gap-4"
+                    >
+                      <svg
+                        class="size-5"
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="10"
+                        />
+                        <path
+                          d="M12 16v-4"
+                        />
+                        <path
+                          d="M12 8h.01"
+                        />
+                      </svg>
+                      Help
+                    </div>
+                  </div>
                 </div>
               </a>
             </li>

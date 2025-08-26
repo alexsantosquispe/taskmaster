@@ -13,7 +13,7 @@ const CreateProjectModal = ({ onClose }: CrateProjectModalProps) => {
     <Modal
       title="Create project"
       onClose={onClose}
-      classNames={{ container: 'w-[40rem]' }}
+      classNames={{ container: 'md:w-[40rem]' }}
     >
       <CreateProjectForm
         onCreateProject={onCreateHandler}
