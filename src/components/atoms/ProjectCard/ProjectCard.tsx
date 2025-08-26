@@ -3,6 +3,7 @@ import cn from 'clsx';
 import { Link } from 'react-router-dom';
 import { twMerge } from 'tailwind-merge';
 import type { ProjectDTO } from '../../../services/apiTypes';
+import { ProjectCardContextMenu } from './components/ProjectCardContextMenu/ProjectCardContextMenu';
 
 interface ProjectCardProps extends ProjectDTO {
   isSmall?: boolean;
@@ -45,12 +46,15 @@ export const ProjectCard = ({
       )}
     >
       <div className="flex flex-1 flex-col gap-3">
-        <Link
-          to={`/projects/${id}`}
-          className="hover:text-accent dark:hover:text-accent-dark hover:underline"
-        >
-          <h3 className="line-clamp-1 text-base font-semibold">{name}</h3>
-        </Link>
+        <div className="flex items-center justify-between gap-2">
+          <Link
+            to={`/projects/${id}`}
+            className="hover:text-accent dark:hover:text-accent-dark hover:underline"
+          >
+            <h3 className="line-clamp-1 text-base font-semibold">{name}</h3>
+          </Link>
+          <ProjectCardContextMenu />
+        </div>
 
         {!isSmall && (
           <p className="line-clamp-2 flex-1 text-neutral-700 dark:text-neutral-200">

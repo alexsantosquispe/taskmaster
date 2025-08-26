@@ -57,6 +57,7 @@ export const ColorPicker = ({
           'border border-neutral-200 dark:border-white/20',
           className
         )}
+        tooltipMessage="Select color"
       />
       {isPalletColorOpen && (
         <div

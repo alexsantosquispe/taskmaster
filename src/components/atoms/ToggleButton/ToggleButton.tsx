@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import { IconButton } from '../IconButton/IconButton';
 
 interface ToggleButtonProps {
   isCollapsed: boolean;
@@ -18,12 +19,13 @@ export const ToggleButton = ({
   };
 
   return (
-    <button
-      aria-label={isCollapsed ? 'Expand menu' : 'Collapse menu'}
-      className="rounded-lg p-2 text-neutral-600 hover:cursor-pointer hover:bg-neutral-100 hover:text-blue-700 dark:text-white/60 dark:hover:bg-neutral-800 dark:hover:text-orange-500"
+    <IconButton
+      ariaLabel={isCollapsed ? 'Expand menu' : 'Collapse menu'}
+      icon={isCollapsed ? expandIcon : collapseIcon}
       onClick={toggleButton}
-    >
-      {isCollapsed ? expandIcon : collapseIcon}
-    </button>
+      tooltipMessage={isCollapsed ? 'Expand' : 'Collapse'}
+      className="text-neutral-600"
+      tooltipAlignment="right"
+    />
   );
 };

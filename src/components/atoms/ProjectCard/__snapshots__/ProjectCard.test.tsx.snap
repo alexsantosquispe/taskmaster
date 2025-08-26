@@ -11,16 +11,60 @@ exports[`ProjectCard should render the component correctly 1`] = `
         <div
           class="flex flex-1 flex-col gap-3"
         >
-          <a
-            class="hover:text-accent dark:hover:text-accent-dark hover:underline"
-            href="/projects/4e393d82-2ec9-46e6-89a1-f42aca499e24"
+          <div
+            class="flex items-center justify-between gap-2"
           >
-            <h3
-              class="line-clamp-1 text-base font-semibold"
+            <a
+              class="hover:text-accent dark:hover:text-accent-dark hover:underline"
+              href="/projects/4e393d82-2ec9-46e6-89a1-f42aca499e24"
             >
-              Spotify Clone App
-            </h3>
-          </a>
+              <h3
+                class="line-clamp-1 text-base font-semibold"
+              >
+                Spotify Clone App
+              </h3>
+            </a>
+            <div
+              class="relative flex flex-col -mr-2"
+            >
+              <button
+                aria-label="Project options"
+                class="flex w-fit items-center justify-center gap-2 text-sm font-semibold transition-colors duration-200 ease-in-out text-primary dark:text-white hover:text-accent dark:hover:text-accent-dark hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15 rounded-md p-1"
+                type="button"
+              >
+                <div>
+                  <svg
+                    class="size-4"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="1"
+                    />
+                    <circle
+                      cx="12"
+                      cy="5"
+                      r="1"
+                    />
+                    <circle
+                      cx="12"
+                      cy="19"
+                      r="1"
+                    />
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
           <p
             class="line-clamp-2 flex-1 text-neutral-700 dark:text-neutral-200"
           >
@@ -59,16 +103,60 @@ exports[`ProjectCard should render the component correctly 1`] = `
       <div
         class="flex flex-1 flex-col gap-3"
       >
-        <a
-          class="hover:text-accent dark:hover:text-accent-dark hover:underline"
-          href="/projects/4e393d82-2ec9-46e6-89a1-f42aca499e24"
+        <div
+          class="flex items-center justify-between gap-2"
         >
-          <h3
-            class="line-clamp-1 text-base font-semibold"
+          <a
+            class="hover:text-accent dark:hover:text-accent-dark hover:underline"
+            href="/projects/4e393d82-2ec9-46e6-89a1-f42aca499e24"
           >
-            Spotify Clone App
-          </h3>
-        </a>
+            <h3
+              class="line-clamp-1 text-base font-semibold"
+            >
+              Spotify Clone App
+            </h3>
+          </a>
+          <div
+            class="relative flex flex-col -mr-2"
+          >
+            <button
+              aria-label="Project options"
+              class="flex w-fit items-center justify-center gap-2 text-sm font-semibold transition-colors duration-200 ease-in-out text-primary dark:text-white hover:text-accent dark:hover:text-accent-dark hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15 rounded-md p-1"
+              type="button"
+            >
+              <div>
+                <svg
+                  class="size-4"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="1"
+                  />
+                  <circle
+                    cx="12"
+                    cy="5"
+                    r="1"
+                  />
+                  <circle
+                    cx="12"
+                    cy="19"
+                    r="1"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
         <p
           class="line-clamp-2 flex-1 text-neutral-700 dark:text-neutral-200"
         >
@@ -164,16 +252,60 @@ exports[`ProjectCard should render the component correctly 2`] = `
         <div
           class="flex flex-1 flex-col gap-3"
         >
-          <a
-            class="hover:text-accent dark:hover:text-accent-dark hover:underline"
-            href="/projects/4e393d82-2ec9-46e6-89a1-f42aca499e24"
+          <div
+            class="flex items-center justify-between gap-2"
           >
-            <h3
-              class="line-clamp-1 text-base font-semibold"
+            <a
+              class="hover:text-accent dark:hover:text-accent-dark hover:underline"
+              href="/projects/4e393d82-2ec9-46e6-89a1-f42aca499e24"
             >
-              Spotify Clone App
-            </h3>
-          </a>
+              <h3
+                class="line-clamp-1 text-base font-semibold"
+              >
+                Spotify Clone App
+              </h3>
+            </a>
+            <div
+              class="relative flex flex-col -mr-2"
+            >
+              <button
+                aria-label="Project options"
+                class="flex w-fit items-center justify-center gap-2 text-sm font-semibold transition-colors duration-200 ease-in-out text-primary dark:text-white hover:text-accent dark:hover:text-accent-dark hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15 rounded-md p-1"
+                type="button"
+              >
+                <div>
+                  <svg
+                    class="size-4"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="1"
+                    />
+                    <circle
+                      cx="12"
+                      cy="5"
+                      r="1"
+                    />
+                    <circle
+                      cx="12"
+                      cy="19"
+                      r="1"
+                    />
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
           <p
             class="line-clamp-2 flex-1 text-neutral-700 dark:text-neutral-200"
           >
@@ -211,16 +343,60 @@ exports[`ProjectCard should render the component correctly 2`] = `
         <div
           class="flex flex-1 flex-col gap-3"
         >
-          <a
-            class="hover:text-accent dark:hover:text-accent-dark hover:underline"
-            href="/projects/4e393d82-2ec9-46e6-89a1-f42aca499e24"
+          <div
+            class="flex items-center justify-between gap-2"
           >
-            <h3
-              class="line-clamp-1 text-base font-semibold"
+            <a
+              class="hover:text-accent dark:hover:text-accent-dark hover:underline"
+              href="/projects/4e393d82-2ec9-46e6-89a1-f42aca499e24"
             >
-              Spotify Clone App
-            </h3>
-          </a>
+              <h3
+                class="line-clamp-1 text-base font-semibold"
+              >
+                Spotify Clone App
+              </h3>
+            </a>
+            <div
+              class="relative flex flex-col -mr-2"
+            >
+              <button
+                aria-label="Project options"
+                class="flex w-fit items-center justify-center gap-2 text-sm font-semibold transition-colors duration-200 ease-in-out text-primary dark:text-white hover:text-accent dark:hover:text-accent-dark hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15 rounded-md p-1"
+                type="button"
+              >
+                <div>
+                  <svg
+                    class="size-4"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="1"
+                    />
+                    <circle
+                      cx="12"
+                      cy="5"
+                      r="1"
+                    />
+                    <circle
+                      cx="12"
+                      cy="19"
+                      r="1"
+                    />
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
         </div>
         <div
           class="flex items-baseline justify-between gap-2"
@@ -254,16 +430,60 @@ exports[`ProjectCard should render the component correctly 2`] = `
       <div
         class="flex flex-1 flex-col gap-3"
       >
-        <a
-          class="hover:text-accent dark:hover:text-accent-dark hover:underline"
-          href="/projects/4e393d82-2ec9-46e6-89a1-f42aca499e24"
+        <div
+          class="flex items-center justify-between gap-2"
         >
-          <h3
-            class="line-clamp-1 text-base font-semibold"
+          <a
+            class="hover:text-accent dark:hover:text-accent-dark hover:underline"
+            href="/projects/4e393d82-2ec9-46e6-89a1-f42aca499e24"
           >
-            Spotify Clone App
-          </h3>
-        </a>
+            <h3
+              class="line-clamp-1 text-base font-semibold"
+            >
+              Spotify Clone App
+            </h3>
+          </a>
+          <div
+            class="relative flex flex-col -mr-2"
+          >
+            <button
+              aria-label="Project options"
+              class="flex w-fit items-center justify-center gap-2 text-sm font-semibold transition-colors duration-200 ease-in-out text-primary dark:text-white hover:text-accent dark:hover:text-accent-dark hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15 rounded-md p-1"
+              type="button"
+            >
+              <div>
+                <svg
+                  class="size-4"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="1"
+                  />
+                  <circle
+                    cx="12"
+                    cy="5"
+                    r="1"
+                  />
+                  <circle
+                    cx="12"
+                    cy="19"
+                    r="1"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
       </div>
       <div
         class="flex items-baseline justify-between gap-2"

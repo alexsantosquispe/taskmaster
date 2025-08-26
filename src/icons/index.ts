@@ -17,6 +17,7 @@ import { ExpandIcon } from './ExpandIcon';
 import { InfoIcon } from './InfoIcon';
 import { LaptopIcon } from './LaptopIcon';
 import { LoadIcon } from './LoadIcon';
+import { LoadingIcon } from './LoadingIcon';
 import { MenuIcon } from './MenuIcon';
 import { MoonIcon } from './MoonIcon';
 import { ProjectIcon } from './ProjectIcon';
@@ -45,6 +46,7 @@ export {
   InfoIcon,
   LaptopIcon,
   LoadIcon,
+  LoadingIcon,
   MenuIcon,
   MoonIcon,
   ProjectIcon,
