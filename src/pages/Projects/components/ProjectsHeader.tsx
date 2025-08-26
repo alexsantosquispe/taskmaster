@@ -4,7 +4,7 @@ import { Button } from '@/components/atoms/Button/Button';
 import { CirclePlusIcon } from '@/icons';
 
 const CreateProjectModal = lazy(
-  () => import('./CreateProjectModal/CreateProjectModal')
+  () => import('@/components/molecules/CreateProjectModal/CreateProjectModal')
 );
 
 export const ProjectsHeader = () => {

@@ -12,3 +12,6 @@ export type CreateProjectDTO = Partial<
   Pick<ProjectDTO, 'color' | 'description'>
 > &
   Pick<ProjectDTO, 'name' | 'code'>;
+
+export type UpdateProjectDTO = Partial<Pick<ProjectDTO, 'description'>> &
+  Pick<ProjectDTO, 'id' | 'name' | 'code' | 'color'>;

@@ -45,34 +45,40 @@ exports[`MobileMenu should render the component correctly 1`] = `
             Master
           </h1>
         </div>
-        <button
-          aria-label="Collapse menu"
-          class="rounded-lg p-2 text-neutral-600 hover:cursor-pointer hover:bg-neutral-100 hover:text-blue-700 dark:text-white/60 dark:hover:bg-neutral-800 dark:hover:text-orange-500"
+        <div
+          class="relative flex items-center justify-center"
+          data-testid="icon-button"
         >
-          <svg
-            class="size-5"
-            data-testid="menu-icon"
-            fill="none"
-            height="24"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            width="24"
-            xmlns="http://www.w3.org/2000/svg"
+          <button
+            aria-label="Collapse menu"
+            class="flex w-fit items-center justify-center rounded-lg p-2 transition-colors duration-150 ease-in-out dark:text-white/70 hover:text-accent dark:hover:text-accent-dark hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15 text-neutral-600"
+            type="button"
           >
-            <path
-              d="M3 12h18"
-            />
-            <path
-              d="M3 18h18"
-            />
-            <path
-              d="M3 6h18"
-            />
-          </svg>
-        </button>
+            <svg
+              class="size-5"
+              data-testid="menu-icon"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 12h18"
+              />
+              <path
+                d="M3 18h18"
+              />
+              <path
+                d="M3 6h18"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   </body>,
@@ -117,34 +123,40 @@ exports[`MobileMenu should render the component correctly 1`] = `
           Master
         </h1>
       </div>
-      <button
-        aria-label="Collapse menu"
-        class="rounded-lg p-2 text-neutral-600 hover:cursor-pointer hover:bg-neutral-100 hover:text-blue-700 dark:text-white/60 dark:hover:bg-neutral-800 dark:hover:text-orange-500"
+      <div
+        class="relative flex items-center justify-center"
+        data-testid="icon-button"
       >
-        <svg
-          class="size-5"
-          data-testid="menu-icon"
-          fill="none"
-          height="24"
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
+        <button
+          aria-label="Collapse menu"
+          class="flex w-fit items-center justify-center rounded-lg p-2 transition-colors duration-150 ease-in-out dark:text-white/70 hover:text-accent dark:hover:text-accent-dark hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15 text-neutral-600"
+          type="button"
         >
-          <path
-            d="M3 12h18"
-          />
-          <path
-            d="M3 18h18"
-          />
-          <path
-            d="M3 6h18"
-          />
-        </svg>
-      </button>
+          <svg
+            class="size-5"
+            data-testid="menu-icon"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3 12h18"
+            />
+            <path
+              d="M3 18h18"
+            />
+            <path
+              d="M3 6h18"
+            />
+          </svg>
+        </button>
+      </div>
     </div>
   </div>,
   "debug": [Function],

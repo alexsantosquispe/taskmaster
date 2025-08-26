@@ -1,5 +1,5 @@
 import cn from 'clsx';
-import { useState, type ReactNode } from 'react';
+import { useState, type MouseEvent, type ReactNode } from 'react';
 import { twMerge } from 'tailwind-merge';
 
 interface IconButtonProps {
@@ -8,6 +8,7 @@ interface IconButtonProps {
   onClick: () => void;
   isDisable?: boolean;
   tooltipMessage?: string;
+  tooltipAlignment?: 'top' | 'bottom' | 'left' | 'right';
   className?: string;
 }
 
@@ -17,9 +18,16 @@ export const IconButton = ({
   icon,
   isDisable = false,
   tooltipMessage,
+  tooltipAlignment = 'top',
   className
 }: IconButtonProps) => {
   const [showTooltip, setShowTooltip] = useState(false);
+
+  const onClickHandler = (event: MouseEvent<HTMLButtonElement>) => {
+    event.preventDefault();
+    setShowTooltip(false);
+    onClick();
+  };
 
   return (
     <div
@@ -29,7 +37,7 @@ export const IconButton = ({
       <button
         type="button"
         aria-label={ariaLabel}
-        onClick={onClick}
+        onClick={onClickHandler}
         disabled={isDisable}
         className={twMerge(
           'text-primary flex w-fit items-center justify-center rounded-lg p-2 transition-colors duration-150 ease-in-out dark:text-white/70',
@@ -49,7 +57,13 @@ export const IconButton = ({
       {tooltipMessage && showTooltip && (
         <span
           className={twMerge(
-            'bg-primary dark:text-primary absolute bottom-full mb-1.5 rounded-md px-2 py-1 text-sm whitespace-nowrap text-white shadow-lg dark:bg-white/80',
+            'bg-primary dark:text-primary absolute rounded-md px-1.5 py-0.5 text-sm whitespace-nowrap text-white shadow-lg dark:bg-white',
+            cn({
+              'bottom-full mb-1.5': tooltipAlignment === 'top',
+              'left-full ml-1.5': tooltipAlignment === 'right',
+              'top-full mt-1.5': tooltipAlignment === 'bottom',
+              'right-full mr-1.5': tooltipAlignment === 'left'
+            }),
             cn({
               'opacity-100': showTooltip,
               'opacity-0': !showTooltip

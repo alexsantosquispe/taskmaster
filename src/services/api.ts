@@ -1,5 +1,9 @@
 import { createApi, fakeBaseQuery } from '@reduxjs/toolkit/query/react';
-import type { CreateProjectDTO, ProjectDTO } from './apiTypes';
+import type {
+  CreateProjectDTO,
+  ProjectDTO,
+  UpdateProjectDTO
+} from './apiTypes';
 
 import { supabaseClient } from './supabaseClient';
 
@@ -33,8 +37,25 @@ export const apiClient = createApi({
         return { data };
       },
       invalidatesTags: ['Projects']
+    }),
+    updateProject: builder.mutation<ProjectDTO, UpdateProjectDTO>({
+      queryFn: async (newProject) => {
+        const { data, error } = await supabaseClient
+          .from('projects')
+          .update(newProject)
+          .eq('id', newProject.id)
+          .select()
+          .single();
+        if (error) throw error;
+        return { data };
+      },
+      invalidatesTags: ['Projects']
     })
   })
 });
 
-export const { useGetProjectsQuery, useCreateProjectMutation } = apiClient;
+export const {
+  useGetProjectsQuery,
+  useCreateProjectMutation,
+  useUpdateProjectMutation
+} = apiClient;

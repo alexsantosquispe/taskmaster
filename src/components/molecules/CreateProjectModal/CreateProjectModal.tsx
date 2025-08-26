@@ -1,6 +1,6 @@
 import { Modal } from '@/components/atoms/Modal/Modal';
-import { useNewProject } from '../../hooks/useCreateProject';
 import { CreateProjectForm } from '../CreateProjectForm/CreateProjectForm';
+import { useNewProject } from './hooks/useCreateProject';
 
 interface CrateProjectModalProps {
   onClose: () => void;

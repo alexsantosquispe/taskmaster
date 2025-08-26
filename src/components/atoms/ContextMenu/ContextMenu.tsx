@@ -1,0 +1,76 @@
+import type { Option } from '@/models/types';
+import { useState, type ReactNode } from 'react';
+import { twMerge } from 'tailwind-merge';
+import { Button } from '../Button/Button';
+
+interface ContextMenuProps {
+  ariaLabel: string;
+  options: Option[];
+  onSelectOption: (option: Option) => void;
+  label?: string;
+  icon?: ReactNode;
+  className?: {
+    mainContainer?: string;
+    contentWrapper?: string;
+  };
+}
+
+export const ContextMenu = ({
+  ariaLabel,
+  options,
+  onSelectOption,
+  label = '',
+  icon,
+  className
+}: ContextMenuProps) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const onSelectOptionHandler = (option: Option) => {
+    onSelectOption(option);
+    setIsOpen(false);
+  };
+
+  return (
+    <div
+      className={twMerge('relative flex flex-col', className?.mainContainer)}
+    >
+      <Button
+        ariaLabel={ariaLabel}
+        onClick={toggleMenu}
+        isSecondary={true}
+        label={label}
+        icon={icon}
+        className="rounded-md p-1"
+      />
+      {isOpen && (
+        <div
+          data-testid="context-menu"
+          className={twMerge(
+            'dark:bg-primary absolute top-full right-0 mt-1 w-fit rounded-lg border border-neutral-200 bg-white p-1 shadow-md dark:border-white/20 dark:shadow-none',
+            className?.contentWrapper
+          )}
+        >
+          <ul className="flex flex-col gap-1">
+            {options.map((option) => {
+              return (
+                <li key={option.value}>
+                  <Button
+                    label={option.label}
+                    ariaLabel={`${option.label} option`}
+                    onClick={() => onSelectOptionHandler(option)}
+                    isSecondary={true}
+                    className="hover:text-primary w-full justify-start rounded-md px-2 py-1 font-medium hover:cursor-default dark:hover:text-white"
+                  />
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      )}
+    </div>
+  );
+};
