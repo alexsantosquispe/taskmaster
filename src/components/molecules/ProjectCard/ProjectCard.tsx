@@ -53,7 +53,15 @@ export const ProjectCard = ({
           >
             <h3 className="line-clamp-1 text-base font-semibold">{name}</h3>
           </Link>
-          <ProjectCardContextMenu />
+          <ProjectCardContextMenu
+            projectItem={{
+              id,
+              name,
+              description,
+              color,
+              code
+            }}
+          />
         </div>
 
         {!isSmall && (

@@ -5,7 +5,7 @@ import { TestWrapper } from '@/utils/wrappers.utils';
 import { ProjectCard } from './ProjectCard';
 
 const meta = {
-  title: 'Atoms/ProjectCard',
+  title: 'Molecules/ProjectCard',
   component: ProjectCard,
   parameters: {
     layout: 'centered'

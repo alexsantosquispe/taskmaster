@@ -10,7 +10,7 @@ exports[`ProjectCardContextMenu styles should render the component correctly 1`]
       >
         <button
           aria-label="Project options"
-          class="flex w-fit items-center justify-center gap-2 text-sm font-semibold transition-colors duration-200 ease-in-out text-primary dark:text-white hover:text-accent dark:hover:text-accent-dark hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15 rounded-md p-1"
+          class="flex w-fit items-center justify-center gap-2 text-sm font-semibold transition-colors duration-200 ease-in-out hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15 rounded-md p-1 text-primary/80 hover:text-primary dark:text-white/70 dark:hover:text-white"
           type="button"
         >
           <div>
@@ -53,7 +53,7 @@ exports[`ProjectCardContextMenu styles should render the component correctly 1`]
     >
       <button
         aria-label="Project options"
-        class="flex w-fit items-center justify-center gap-2 text-sm font-semibold transition-colors duration-200 ease-in-out text-primary dark:text-white hover:text-accent dark:hover:text-accent-dark hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15 rounded-md p-1"
+        class="flex w-fit items-center justify-center gap-2 text-sm font-semibold transition-colors duration-200 ease-in-out hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15 rounded-md p-1 text-primary/80 hover:text-primary dark:text-white/70 dark:hover:text-white"
         type="button"
       >
         <div>

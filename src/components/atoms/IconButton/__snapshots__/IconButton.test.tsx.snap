@@ -11,7 +11,7 @@ exports[`IconButton styles should render the component correctly 1`] = `
       >
         <button
           aria-label="Icon button"
-          class="text-primary flex w-fit items-center justify-center rounded-lg p-2 transition-colors duration-150 ease-in-out dark:text-white/70 hover:text-accent dark:hover:text-accent-dark hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15"
+          class="text-primary/80 flex w-fit items-center justify-center rounded-lg p-2 transition-colors duration-150 ease-in-out dark:text-white/70 hover:text-accent dark:hover:text-accent-dark hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15"
           type="button"
         >
           <svg
@@ -49,7 +49,7 @@ exports[`IconButton styles should render the component correctly 1`] = `
     >
       <button
         aria-label="Icon button"
-        class="text-primary flex w-fit items-center justify-center rounded-lg p-2 transition-colors duration-150 ease-in-out dark:text-white/70 hover:text-accent dark:hover:text-accent-dark hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15"
+        class="text-primary/80 flex w-fit items-center justify-center rounded-lg p-2 transition-colors duration-150 ease-in-out dark:text-white/70 hover:text-accent dark:hover:text-accent-dark hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15"
         type="button"
       >
         <svg
@@ -144,7 +144,7 @@ exports[`IconButton styles should render the component correctly 2`] = `
       >
         <button
           aria-label="Icon button"
-          class="text-primary flex w-fit items-center justify-center rounded-lg p-2 transition-colors duration-150 ease-in-out dark:text-white/70 hover:text-accent dark:hover:text-accent-dark hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15"
+          class="text-primary/80 flex w-fit items-center justify-center rounded-lg p-2 transition-colors duration-150 ease-in-out dark:text-white/70 hover:text-accent dark:hover:text-accent-dark hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15"
           type="button"
         >
           <svg
@@ -181,7 +181,7 @@ exports[`IconButton styles should render the component correctly 2`] = `
       >
         <button
           aria-label="Icon button"
-          class="text-primary flex w-fit items-center justify-center rounded-lg p-2 transition-colors duration-150 ease-in-out dark:text-white/70 hover:text-accent dark:hover:text-accent-dark hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15"
+          class="text-primary/80 flex w-fit items-center justify-center rounded-lg p-2 transition-colors duration-150 ease-in-out dark:text-white/70 hover:text-accent dark:hover:text-accent-dark hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15"
           type="button"
         >
           <svg
@@ -219,7 +219,7 @@ exports[`IconButton styles should render the component correctly 2`] = `
     >
       <button
         aria-label="Icon button"
-        class="text-primary flex w-fit items-center justify-center rounded-lg p-2 transition-colors duration-150 ease-in-out dark:text-white/70 hover:text-accent dark:hover:text-accent-dark hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15"
+        class="text-primary/80 flex w-fit items-center justify-center rounded-lg p-2 transition-colors duration-150 ease-in-out dark:text-white/70 hover:text-accent dark:hover:text-accent-dark hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15"
         type="button"
       >
         <svg

@@ -9,6 +9,7 @@ interface IconButtonProps {
   icon: ReactNode;
   onClick: () => void;
   isDisable?: boolean;
+  isDefault?: boolean;
   tooltipMessage?: string;
   tooltipAlignment?: AlignmentType;
   className?: string;
@@ -19,6 +20,7 @@ export const IconButton = ({
   onClick,
   icon,
   isDisable = false,
+  isDefault = true,
   tooltipMessage = '',
   tooltipAlignment = ALIGNMENT_TYPES.TOP,
   className
@@ -38,10 +40,12 @@ export const IconButton = ({
             }}
             disabled={isDisable}
             className={twMerge(
-              'text-primary flex w-fit items-center justify-center rounded-lg p-2 transition-colors duration-150 ease-in-out dark:text-white/70',
+              'text-primary/80 flex w-fit items-center justify-center rounded-lg p-2 transition-colors duration-150 ease-in-out dark:text-white/70',
               cn({
                 'hover:text-accent dark:hover:text-accent-dark hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15':
-                  !isDisable,
+                  !isDisable && isDefault,
+                'hover:text-primary hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15 dark:hover:text-white':
+                  !isDisable && !isDefault,
                 'cursor-not-allowed bg-neutral-100 opacity-75 dark:bg-neutral-600':
                   isDisable
               }),

@@ -1,6 +1,6 @@
 import { Banner } from '@/components/atoms/Banner/Banner';
-import { ProjectCard } from '@/components/atoms/ProjectCard/ProjectCard';
 import { Skeleton } from '@/components/atoms/Skeleton/Skeleton';
+import { ProjectCard } from '@/components/molecules/ProjectCard/ProjectCard';
 import type { ProjectDTO } from '@/services/apiTypes';
 import { ProjectsHeader } from './components/ProjectsHeader';
 import { useProjects } from './hooks/useProjects';

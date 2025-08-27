@@ -1,21 +1,11 @@
 import { ContextMenu } from '@/components/atoms/ContextMenu/ContextMenu';
 import { Modal } from '@/components/atoms/Modal/Modal';
+import { DeleteProjectModal } from '@/components/molecules/DeleteProjectModal/DeleteProjectModal';
 import { PROJECT_MENU_OPTIONS } from '@/constants';
 import { EllipsisVerticalIcon } from '@/icons';
 import type { Option } from '@/models/types';
+import type { ProjectDTO } from '@/services/apiTypes';
 import { useState } from 'react';
-
-export const DeleteProjectModal = ({ onClose }: { onClose: () => void }) => {
-  return (
-    <Modal
-      title="Delete project"
-      onClose={onClose}
-      classNames={{ container: 'w-[40rem]' }}
-    >
-      <p>Are you sure you want to delete this project?</p>
-    </Modal>
-  );
-};
 
 export const EditProjectModal = ({ onClose }: { onClose: () => void }) => {
   return (
@@ -29,7 +19,13 @@ export const EditProjectModal = ({ onClose }: { onClose: () => void }) => {
   );
 };
 
-export const ProjectCardContextMenu = () => {
+interface ProjectCardContextMenuProps {
+  projectItem: Omit<ProjectDTO, 'create_date' | 'update_date'>;
+}
+
+export const ProjectCardContextMenu = ({
+  projectItem
+}: ProjectCardContextMenuProps) => {
   const [modalType, setModalType] = useState<'edit' | 'delete' | null>(null);
 
   const handleSelectOption = (option: Option) => {
@@ -46,13 +42,20 @@ export const ProjectCardContextMenu = () => {
         icon={<EllipsisVerticalIcon className="size-4" />}
         className={{
           mainContainer: '-mr-2',
-          contentWrapper: 'min-w-[6rem]'
+          contentWrapper: 'min-w-[6rem]',
+          button:
+            'text-primary/80 hover:text-primary dark:text-white/70 dark:hover:text-white'
         }}
       />
 
       {modalType === 'delete' && (
-        <DeleteProjectModal onClose={() => setModalType(null)} />
+        <DeleteProjectModal
+          projectId={projectItem.id}
+          projectName={projectItem.name}
+          onClose={() => setModalType(null)}
+        />
       )}
+
       {modalType === 'edit' && (
         <EditProjectModal onClose={() => setModalType(null)} />
       )}

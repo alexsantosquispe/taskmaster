@@ -9,7 +9,7 @@ exports[`Modal should render the modal 1`] = `
         class="bg-primary/70 fixed inset-0 z-50 flex items-end justify-center backdrop-blur-xs md:items-center md:p-8"
       >
         <div
-          class="dark:bg-primary flex w-full flex-col rounded-t-xl bg-white md:min-w-[32rem] md:rounded-xl dark:border dark:border-white/5"
+          class="dark:bg-primary flex w-fit flex-col rounded-t-xl bg-white md:min-w-[25rem] md:rounded-xl dark:border dark:border-white/5"
           data-testid="modal"
         >
           <div
@@ -26,7 +26,7 @@ exports[`Modal should render the modal 1`] = `
             >
               <button
                 aria-label="Close modal button"
-                class="text-primary flex w-fit items-center justify-center rounded-lg p-2 transition-colors duration-150 ease-in-out dark:text-white/70 hover:text-accent dark:hover:text-accent-dark hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15"
+                class="text-primary/80 flex w-fit items-center justify-center rounded-lg p-2 transition-colors duration-150 ease-in-out dark:text-white/70 hover:text-primary hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15 dark:hover:text-white"
                 type="button"
               >
                 <svg
@@ -68,7 +68,7 @@ exports[`Modal should render the modal 1`] = `
       class="bg-primary/70 fixed inset-0 z-50 flex items-end justify-center backdrop-blur-xs md:items-center md:p-8"
     >
       <div
-        class="dark:bg-primary flex w-full flex-col rounded-t-xl bg-white md:min-w-[32rem] md:rounded-xl dark:border dark:border-white/5"
+        class="dark:bg-primary flex w-fit flex-col rounded-t-xl bg-white md:min-w-[25rem] md:rounded-xl dark:border dark:border-white/5"
         data-testid="modal"
       >
         <div
@@ -85,7 +85,7 @@ exports[`Modal should render the modal 1`] = `
           >
             <button
               aria-label="Close modal button"
-              class="text-primary flex w-fit items-center justify-center rounded-lg p-2 transition-colors duration-150 ease-in-out dark:text-white/70 hover:text-accent dark:hover:text-accent-dark hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15"
+              class="text-primary/80 flex w-fit items-center justify-center rounded-lg p-2 transition-colors duration-150 ease-in-out dark:text-white/70 hover:text-primary hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15 dark:hover:text-white"
               type="button"
             >
               <svg

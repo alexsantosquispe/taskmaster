@@ -1,10 +1,10 @@
-import type { TaskType } from '../../../models/types';
-import { getPriorityStyles } from '../../../utils';
-import { Avatar } from '../Avatar/Avatar';
-import { Chip } from '../Chip/Chip';
-import { CommentsBadge } from '../CommentsBadge/CommentsBadge';
-import { DateBadge } from '../DateBadge/DateBadge';
-import { ProgressBadge } from '../ProgressBadge/ProgressBadge';
+import { Avatar } from '@/components/atoms/Avatar/Avatar';
+import { Chip } from '@/components/atoms/Chip/Chip';
+import { CommentsBadge } from '@/components/atoms/CommentsBadge/CommentsBadge';
+import { DateBadge } from '@/components/atoms/DateBadge/DateBadge';
+import { ProgressBadge } from '@/components/atoms/ProgressBadge/ProgressBadge';
+import type { TaskType } from '@/models/types';
+import { getPriorityStyles } from '@/utils';
 
 export type TaskItemCardProps = Omit<TaskType, 'createdAt' | 'status'>;
 

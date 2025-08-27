@@ -7,7 +7,7 @@ const inProgressCard = IN_PROGRESS_TASKS[0];
 const doneCard = DONE_TASKS[1];
 
 const meta = {
-  title: 'Atoms/TaskItemCard',
+  title: 'Molecules/TaskItemCard',
   component: TaskItemCard,
   parameters: {
     layout: 'centered'

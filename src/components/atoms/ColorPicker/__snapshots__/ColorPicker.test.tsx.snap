@@ -19,7 +19,7 @@ exports[`ColorPicker styles should render the color picker correctly 1`] = `
         >
           <button
             aria-label="Color picker button"
-            class="text-primary flex w-fit items-center justify-center rounded-lg p-2 transition-colors duration-150 ease-in-out dark:text-white/70 hover:text-accent dark:hover:text-accent-dark hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15 border border-neutral-200 dark:border-white/20"
+            class="text-primary/80 flex w-fit items-center justify-center rounded-lg p-2 transition-colors duration-150 ease-in-out dark:text-white/70 hover:text-accent dark:hover:text-accent-dark hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15 border border-neutral-200 dark:border-white/20"
             type="button"
           >
             <div
@@ -45,7 +45,7 @@ exports[`ColorPicker styles should render the color picker correctly 1`] = `
       >
         <button
           aria-label="Color picker button"
-          class="text-primary flex w-fit items-center justify-center rounded-lg p-2 transition-colors duration-150 ease-in-out dark:text-white/70 hover:text-accent dark:hover:text-accent-dark hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15 border border-neutral-200 dark:border-white/20"
+          class="text-primary/80 flex w-fit items-center justify-center rounded-lg p-2 transition-colors duration-150 ease-in-out dark:text-white/70 hover:text-accent dark:hover:text-accent-dark hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15 border border-neutral-200 dark:border-white/20"
           type="button"
         >
           <div
@@ -128,7 +128,7 @@ exports[`ColorPicker styles should render the color picker with controller corre
         >
           <button
             aria-label="Color picker button"
-            class="text-primary flex w-fit items-center justify-center rounded-lg p-2 transition-colors duration-150 ease-in-out dark:text-white/70 hover:text-accent dark:hover:text-accent-dark hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15 border border-neutral-200 dark:border-white/20"
+            class="text-primary/80 flex w-fit items-center justify-center rounded-lg p-2 transition-colors duration-150 ease-in-out dark:text-white/70 hover:text-accent dark:hover:text-accent-dark hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15 border border-neutral-200 dark:border-white/20"
             type="button"
           >
             <div
@@ -154,7 +154,7 @@ exports[`ColorPicker styles should render the color picker with controller corre
       >
         <button
           aria-label="Color picker button"
-          class="text-primary flex w-fit items-center justify-center rounded-lg p-2 transition-colors duration-150 ease-in-out dark:text-white/70 hover:text-accent dark:hover:text-accent-dark hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15 border border-neutral-200 dark:border-white/20"
+          class="text-primary/80 flex w-fit items-center justify-center rounded-lg p-2 transition-colors duration-150 ease-in-out dark:text-white/70 hover:text-accent dark:hover:text-accent-dark hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15 border border-neutral-200 dark:border-white/20"
           type="button"
         >
           <div

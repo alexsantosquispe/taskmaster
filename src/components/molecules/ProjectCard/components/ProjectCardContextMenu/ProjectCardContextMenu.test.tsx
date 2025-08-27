@@ -3,12 +3,17 @@ import '@testing-library/jest-dom';
 import { fireEvent, render, screen } from '@testing-library/react';
 
 import { PROJECT_MENU_OPTIONS } from '@/constants';
+import { PROJECTS } from '@/utils/mocks/projects';
 import { ProjectCardContextMenu } from './ProjectCardContextMenu';
 
 describe('ProjectCardContextMenu', () => {
+  const props = {
+    projectItem: PROJECTS[0]
+  };
+
   describe('styles', () => {
     it('should render the component correctly', () => {
-      let component = render(<ProjectCardContextMenu />);
+      let component = render(<ProjectCardContextMenu {...props} />);
 
       expect(component).toMatchSnapshot();
     });
@@ -16,7 +21,7 @@ describe('ProjectCardContextMenu', () => {
 
   describe('behavior', () => {
     beforeEach(() => {
-      render(<ProjectCardContextMenu />);
+      render(<ProjectCardContextMenu {...props} />);
     });
 
     afterEach(() => {
@@ -78,7 +83,9 @@ describe('ProjectCardContextMenu', () => {
 
       expect(screen.getByTestId('modal')).toBeInTheDocument();
 
-      expect(screen.getByText('Delete project')).toBeInTheDocument();
+      expect(
+        screen.getByText('Are you sure you want to delete this project?')
+      ).toBeInTheDocument();
 
       const closeModalButton = screen.getByRole('button', {
         name: 'Close modal button'
