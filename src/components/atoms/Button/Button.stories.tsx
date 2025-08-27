@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Wrapper } from '@/utils/wrappers.utils';
+import { WrapperUI } from '@/utils/test.utils';
 import { CirclePlusIcon } from '../../../icons';
 import { Button } from './Button';
 
@@ -19,33 +19,33 @@ type Story = StoryObj<typeof Button>;
 export const Default: Story = () => {
   return (
     <div className="grid grid-cols-4 gap-8">
-      <Wrapper>
+      <WrapperUI>
         <Button
           label="Default Button"
           ariaLabel="default button"
           onClick={() => {}}
         />
-      </Wrapper>
+      </WrapperUI>
 
-      <Wrapper>
+      <WrapperUI>
         <Button
           label="Button Disabled"
           ariaLabel="default Button Disabled"
           onClick={() => {}}
           isDisable={true}
         />
-      </Wrapper>
+      </WrapperUI>
 
-      <Wrapper>
+      <WrapperUI>
         <Button
           label="Secondary Button"
           ariaLabel="secondary button"
           onClick={() => {}}
           isSecondary={true}
         />
-      </Wrapper>
+      </WrapperUI>
 
-      <Wrapper>
+      <WrapperUI>
         <Button
           label="Secondary Disabled"
           ariaLabel="secondary button disabled"
@@ -53,18 +53,18 @@ export const Default: Story = () => {
           isSecondary={true}
           isDisable={true}
         />
-      </Wrapper>
+      </WrapperUI>
 
-      <Wrapper>
+      <WrapperUI>
         <Button
           label="Button with Icon"
           ariaLabel="default button"
           icon={<CirclePlusIcon />}
           onClick={() => {}}
         />
-      </Wrapper>
+      </WrapperUI>
 
-      <Wrapper>
+      <WrapperUI>
         <Button
           label="Secondary with Icon"
           ariaLabel="secondary button disabled"
@@ -72,7 +72,7 @@ export const Default: Story = () => {
           icon={<CirclePlusIcon />}
           isSecondary={true}
         />
-      </Wrapper>
+      </WrapperUI>
     </div>
   );
 };

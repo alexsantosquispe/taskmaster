@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { ALIGNMENT_TYPES } from '@/models/types';
-import { Wrapper } from '@/utils/wrappers.utils';
+import { WrapperUI } from '@/utils/test.utils';
 import { Button } from '../Button/Button';
 import { TooltipWrapper } from './TooltipWrapper';
 
@@ -20,7 +20,7 @@ type Story = StoryObj<typeof TooltipWrapper>;
 export const Default: Story = () => {
   return (
     <div className="grid grid-cols-4 gap-8">
-      <Wrapper>
+      <WrapperUI>
         <TooltipWrapper
           tooltipMessage="Tooltip"
           tooltipAlignment={ALIGNMENT_TYPES.LEFT}
@@ -31,9 +31,9 @@ export const Default: Story = () => {
             onClick={() => {}}
           />
         </TooltipWrapper>
-      </Wrapper>
+      </WrapperUI>
 
-      <Wrapper>
+      <WrapperUI>
         <TooltipWrapper tooltipMessage="Tooltip">
           <Button
             label="Default button"
@@ -41,9 +41,9 @@ export const Default: Story = () => {
             onClick={() => {}}
           />
         </TooltipWrapper>
-      </Wrapper>
+      </WrapperUI>
 
-      <Wrapper>
+      <WrapperUI>
         <TooltipWrapper
           tooltipMessage="Tooltip"
           tooltipAlignment={ALIGNMENT_TYPES.BOTTOM}
@@ -54,9 +54,9 @@ export const Default: Story = () => {
             onClick={() => {}}
           />
         </TooltipWrapper>
-      </Wrapper>
+      </WrapperUI>
 
-      <Wrapper>
+      <WrapperUI>
         <TooltipWrapper
           tooltipMessage="Tooltip"
           tooltipAlignment={ALIGNMENT_TYPES.RIGHT}
@@ -67,13 +67,13 @@ export const Default: Story = () => {
             onClick={() => {}}
           />
         </TooltipWrapper>
-      </Wrapper>
+      </WrapperUI>
 
       <TooltipWrapper
         tooltipMessage="Tooltip"
         componentToRender={(setShowTooltip) => {
           return (
-            <Wrapper className="flex flex-col gap-4">
+            <WrapperUI className="flex flex-col gap-4">
               <span>Manual show/hide</span>
               <div className="flex gap-4">
                 <Button
@@ -87,7 +87,7 @@ export const Default: Story = () => {
                   onClick={() => setShowTooltip(false)}
                 />
               </div>
-            </Wrapper>
+            </WrapperUI>
           );
         }}
       />

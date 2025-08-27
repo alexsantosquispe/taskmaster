@@ -50,6 +50,20 @@ export const apiClient = createApi({
         return { data };
       },
       invalidatesTags: ['Projects']
+    }),
+    deleteProject: builder.mutation<
+      { status: boolean; projectId: string },
+      string
+    >({
+      queryFn: async (projectId) => {
+        const { error } = await supabaseClient
+          .from('projects')
+          .delete()
+          .eq('id', projectId);
+        if (error) throw error;
+        return { data: { status: true, projectId } };
+      },
+      invalidatesTags: ['Projects']
     })
   })
 });
@@ -57,5 +71,6 @@ export const apiClient = createApi({
 export const {
   useGetProjectsQuery,
   useCreateProjectMutation,
-  useUpdateProjectMutation
+  useUpdateProjectMutation,
+  useDeleteProjectMutation
 } = apiClient;

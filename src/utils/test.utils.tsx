@@ -1,7 +1,10 @@
 import { ThemeProvider } from '@/contexts/ThemeProvider';
+import { apiClient } from '@/services/api';
+import { configureStore } from '@reduxjs/toolkit';
 import { render } from '@testing-library/react';
 import { type ReactElement, type ReactNode } from 'react';
 import { useForm, type Control, type FieldValues } from 'react-hook-form';
+import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import { twMerge } from 'tailwind-merge';
 
@@ -27,7 +30,7 @@ interface WrapperProps {
   className?: string;
 }
 
-export const Wrapper = ({ children, className }: WrapperProps) => {
+export const WrapperUI = ({ children, className }: WrapperProps) => {
   return (
     <div
       className={twMerge(
@@ -53,4 +56,16 @@ export const TestWrapper = ({ children }: WrapperProps) => {
       </BrowserRouter>
     </ThemeProvider>
   );
+};
+
+export const ReduxWrapper = ({ children }: { children: ReactNode }) => {
+  const store = configureStore({
+    reducer: {
+      [apiClient.reducerPath]: apiClient.reducer
+    },
+    middleware: (getDefaultMiddleware) =>
+      getDefaultMiddleware().concat(apiClient.middleware)
+  });
+
+  return <Provider store={store}>{children}</Provider>;
 };

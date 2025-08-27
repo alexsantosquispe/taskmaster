@@ -1,23 +1,17 @@
+import { Suspense, lazy, useState } from 'react';
+
 import { ContextMenu } from '@/components/atoms/ContextMenu/ContextMenu';
-import { Modal } from '@/components/atoms/Modal/Modal';
-import { DeleteProjectModal } from '@/components/molecules/DeleteProjectModal/DeleteProjectModal';
 import { PROJECT_MENU_OPTIONS } from '@/constants';
 import { EllipsisVerticalIcon } from '@/icons';
 import type { Option } from '@/models/types';
 import type { ProjectDTO } from '@/services/apiTypes';
-import { useState } from 'react';
 
-export const EditProjectModal = ({ onClose }: { onClose: () => void }) => {
-  return (
-    <Modal
-      title="Edit project"
-      onClose={onClose}
-      classNames={{ container: 'w-[40rem]' }}
-    >
-      <p>Edit project form goes here</p>
-    </Modal>
-  );
-};
+const DeleteProjectModal = lazy(
+  () => import('@/components/molecules/DeleteProjectModal/DeleteProjectModal')
+);
+const EditProjectModal = lazy(
+  () => import('@/components/molecules/EditProjectModal/EditProjectModal')
+);
 
 interface ProjectCardContextMenuProps {
   projectItem: Omit<ProjectDTO, 'create_date' | 'update_date'>;
@@ -49,15 +43,19 @@ export const ProjectCardContextMenu = ({
       />
 
       {modalType === 'delete' && (
-        <DeleteProjectModal
-          projectId={projectItem.id}
-          projectName={projectItem.name}
-          onClose={() => setModalType(null)}
-        />
+        <Suspense>
+          <DeleteProjectModal
+            projectId={projectItem.id}
+            projectName={projectItem.name}
+            onClose={() => setModalType(null)}
+          />
+        </Suspense>
       )}
 
       {modalType === 'edit' && (
-        <EditProjectModal onClose={() => setModalType(null)} />
+        <Suspense>
+          <EditProjectModal onClose={() => setModalType(null)} />
+        </Suspense>
       )}
     </>
   );

@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Wrapper } from '@/utils/wrappers.utils';
+import { WrapperUI } from '@/utils/test.utils';
 import { useForm } from 'react-hook-form';
 import { InputField } from './InputField';
 
@@ -26,23 +26,23 @@ export const Default: Story = () => {
 
   return (
     <div className="flex gap-4">
-      <Wrapper>
+      <WrapperUI>
         <InputField {...props} control={control} />
-      </Wrapper>
-      <Wrapper>
+      </WrapperUI>
+      <WrapperUI>
         <InputField {...props} isDisabled={true} control={control} />
-      </Wrapper>
-      <Wrapper>
+      </WrapperUI>
+      <WrapperUI>
         <InputField {...props} isRequired={true} control={control} />
-      </Wrapper>
-      <Wrapper>
+      </WrapperUI>
+      <WrapperUI>
         <InputField
           {...props}
           isRequired={true}
           errorMessage="Error message"
           control={control}
         />
-      </Wrapper>
+      </WrapperUI>
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { PROJECTS } from '@/utils/mocks/projects';
-import { TestWrapper } from '@/utils/wrappers.utils';
+import { TestWrapper } from '@/utils/test.utils';
 import { ProjectCard } from './ProjectCard';
 
 const meta = {

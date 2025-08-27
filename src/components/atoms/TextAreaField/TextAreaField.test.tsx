@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom';
 
-import { renderWithForm } from '@/utils/wrappers.utils';
+import { renderWithForm } from '@/utils/test.utils';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { TextAreaField } from './TextAreaField';

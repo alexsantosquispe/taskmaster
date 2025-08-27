@@ -1,4 +1,4 @@
-import { Wrapper } from '@/utils/wrappers.utils';
+import { WrapperUI } from '@/utils/test.utils';
 import type { Meta, StoryObj } from '@storybook/react';
 import { Breadcrumb } from './Breadcrumb';
 
@@ -39,9 +39,9 @@ type Story = StoryObj<typeof Breadcrumb>;
 
 export const Default: Story = () => {
   return (
-    <Wrapper>
+    <WrapperUI>
       <Breadcrumb items={BREADCRUMBS} />
-    </Wrapper>
+    </WrapperUI>
   );
 };
 

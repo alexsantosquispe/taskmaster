@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { TestWrapper } from '@/utils/wrappers.utils';
+import { TestWrapper } from '@/utils/test.utils';
 import { SideBarMenu } from './SideBarMenu';
 
 const meta = {

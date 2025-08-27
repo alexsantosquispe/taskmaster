@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Wrapper } from '@/utils/wrappers.utils';
+import { WrapperUI } from '@/utils/test.utils';
 import { ColorPicker } from './ColorPicker';
 
 const meta: Meta<typeof ColorPicker> = {
@@ -18,12 +18,12 @@ type Story = StoryObj<typeof ColorPicker>;
 export const Default: Story = () => {
   return (
     <div className="flex gap-4">
-      <Wrapper>
+      <WrapperUI>
         <ColorPicker label="Color picker" />
-      </Wrapper>
-      <Wrapper>
+      </WrapperUI>
+      <WrapperUI>
         <ColorPicker label="Picker disabled" isDisabled={true} />
-      </Wrapper>
+      </WrapperUI>
     </div>
   );
 };

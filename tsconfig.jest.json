@@ -6,7 +6,8 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "allowJs": true,
-    "verbatimModuleSyntax": false
+    "verbatimModuleSyntax": false,
+    "types": ["jest", "@testing-library/jest-dom"]
   },
   "include": [
     "src/**/*.test.ts",

@@ -1,7 +1,7 @@
 import { EllipsisVerticalIcon } from '@/icons';
 import { ContextMenu } from './ContextMenu';
 
-import { Wrapper } from '@/utils/wrappers.utils';
+import { WrapperUI } from '@/utils/test.utils';
 import type { Meta, StoryObj } from '@storybook/react';
 const options = [
   { label: 'Option 1', value: 'option-1' },
@@ -25,7 +25,7 @@ type Story = StoryObj<typeof ContextMenu>;
 export const Default: Story = () => {
   return (
     <div className="grid grid-cols-2 gap-8">
-      <Wrapper>
+      <WrapperUI>
         <ContextMenu
           ariaLabel="test"
           options={options}
@@ -36,9 +36,9 @@ export const Default: Story = () => {
             button: 'border border-neutral-200 px-2'
           }}
         />
-      </Wrapper>
+      </WrapperUI>
 
-      <Wrapper>
+      <WrapperUI>
         <ContextMenu
           ariaLabel="test"
           options={options}
@@ -49,7 +49,7 @@ export const Default: Story = () => {
             button: 'border border-neutral-200 px-2'
           }}
         />
-      </Wrapper>
+      </WrapperUI>
     </div>
   );
 };

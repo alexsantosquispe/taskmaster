@@ -1,9 +1,8 @@
-import '@testing-library/jest-dom';
-
-import { fireEvent, render, screen } from '@testing-library/react';
+import { fireEvent, render, screen, waitFor } from '@testing-library/react';
 
 import { PROJECT_MENU_OPTIONS } from '@/constants';
 import { PROJECTS } from '@/utils/mocks/projects';
+import { ReduxWrapper } from '@/utils/test.utils';
 import { ProjectCardContextMenu } from './ProjectCardContextMenu';
 
 describe('ProjectCardContextMenu', () => {
@@ -13,7 +12,11 @@ describe('ProjectCardContextMenu', () => {
 
   describe('styles', () => {
     it('should render the component correctly', () => {
-      let component = render(<ProjectCardContextMenu {...props} />);
+      let component = render(
+        <ReduxWrapper>
+          <ProjectCardContextMenu {...props} />
+        </ReduxWrapper>
+      );
 
       expect(component).toMatchSnapshot();
     });
@@ -21,7 +24,11 @@ describe('ProjectCardContextMenu', () => {
 
   describe('behavior', () => {
     beforeEach(() => {
-      render(<ProjectCardContextMenu {...props} />);
+      render(
+        <ReduxWrapper>
+          <ProjectCardContextMenu {...props} />
+        </ReduxWrapper>
+      );
     });
 
     afterEach(() => {
@@ -40,62 +47,60 @@ describe('ProjectCardContextMenu', () => {
       );
     });
 
-    it('should hide the context menu when select an option and open the edit modal', () => {
+    it('should hide the context menu when select an option and open the edit modal', async () => {
       const optionsButton = screen.getByRole('button');
-
       fireEvent.click(optionsButton);
 
       expect(screen.getByTestId('context-menu')).toBeInTheDocument();
 
       const editOption = screen.getByText(PROJECT_MENU_OPTIONS[0].label);
-
       fireEvent.click(editOption);
 
-      expect(screen.queryByTestId('context-menu')).not.toBeInTheDocument();
+      await waitFor(() => {
+        expect(screen.queryByTestId('context-menu')).not.toBeInTheDocument();
+      });
 
-      expect(screen.getByTestId('modal')).toBeInTheDocument();
+      expect(await screen.findByTestId('modal')).toBeInTheDocument();
 
-      expect(screen.getByText('Edit project')).toBeInTheDocument();
+      expect(await screen.findByText('Edit project')).toBeInTheDocument();
 
       const closeModalButton = screen.getByRole('button', {
         name: 'Close modal button'
       });
-
-      expect(closeModalButton).toBeInTheDocument();
-
       fireEvent.click(closeModalButton);
 
-      expect(screen.queryByTestId('modal')).not.toBeInTheDocument();
+      await waitFor(() => {
+        expect(screen.queryByTestId('modal')).not.toBeInTheDocument();
+      });
     });
 
-    it('should hide the context menu when select an option and open the delete modal', () => {
+    it('should hide the context menu when select an option and open the delete modal', async () => {
       const optionsButton = screen.getByRole('button');
-
       fireEvent.click(optionsButton);
 
       expect(screen.getByTestId('context-menu')).toBeInTheDocument();
 
       const deleteOption = screen.getByText(PROJECT_MENU_OPTIONS[1].label);
-
       fireEvent.click(deleteOption);
 
-      expect(screen.queryByTestId('context-menu')).not.toBeInTheDocument();
+      await waitFor(() => {
+        expect(screen.queryByTestId('context-menu')).not.toBeInTheDocument();
+      });
 
-      expect(screen.getByTestId('modal')).toBeInTheDocument();
+      expect(await screen.findByTestId('modal')).toBeInTheDocument();
 
       expect(
-        screen.getByText('Are you sure you want to delete this project?')
+        await screen.findByText('Are you sure you want to delete this project?')
       ).toBeInTheDocument();
 
       const closeModalButton = screen.getByRole('button', {
         name: 'Close modal button'
       });
-
-      expect(closeModalButton).toBeInTheDocument();
-
       fireEvent.click(closeModalButton);
 
-      expect(screen.queryByTestId('modal')).not.toBeInTheDocument();
+      await waitFor(() => {
+        expect(screen.queryByTestId('modal')).not.toBeInTheDocument();
+      });
     });
   });
 });

@@ -3,7 +3,7 @@ import '@testing-library/jest-dom';
 import { fireEvent, render, screen } from '@testing-library/react';
 
 import { PROJECTS } from '@/utils/mocks/projects';
-import { TestWrapper } from '@/utils/wrappers.utils';
+import { TestWrapper } from '@/utils/test.utils';
 import { ProjectCard } from './ProjectCard';
 
 describe('ProjectCard', () => {

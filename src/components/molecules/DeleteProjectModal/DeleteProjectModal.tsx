@@ -1,6 +1,7 @@
 import { Button } from '@/components/atoms/Button/Button';
 import { Modal } from '@/components/atoms/Modal/Modal';
 import cn from 'clsx';
+import { useDeleteProject } from './useDeleteProject';
 
 interface DeleteProjectModalProps {
   projectId: string;
@@ -8,15 +9,15 @@ interface DeleteProjectModalProps {
   onClose: () => void;
 }
 
-export const DeleteProjectModal = ({
+const DeleteProjectModal = ({
   projectId,
   projectName,
   onClose
 }: DeleteProjectModalProps) => {
-  const onDelete = () => {
-    console.log(projectId);
-    onClose();
-  };
+  const { onDeleteProject, isLoading } = useDeleteProject({
+    projectId,
+    onClose
+  });
 
   return (
     <Modal
@@ -51,12 +52,16 @@ export const DeleteProjectModal = ({
             label="Delete project"
             ariaLabel="Delete project"
             className={cn({
-              'bg-rose-700 hover:bg-rose-600 dark:bg-rose-800 dark:hover:bg-rose-700': true
+              'bg-rose-700 hover:bg-rose-600 dark:bg-rose-800 dark:hover:bg-rose-700':
+                !isLoading
             })}
-            onClick={onDelete}
+            onClick={onDeleteProject}
+            isLoading={isLoading}
           />
         </div>
       </div>
     </Modal>
   );
 };
+
+export default DeleteProjectModal;

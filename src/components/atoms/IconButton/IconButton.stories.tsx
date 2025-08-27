@@ -1,7 +1,7 @@
 import { CirclePlusIcon, InfoIcon } from '@/icons';
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Wrapper } from '@/utils/wrappers.utils';
+import { WrapperUI } from '@/utils/test.utils';
 import { IconButton } from './IconButton';
 
 const meta: Meta<typeof IconButton> = {
@@ -19,22 +19,22 @@ type Story = StoryObj<typeof IconButton>;
 export const Default: Story = () => {
   return (
     <div className="grid grid-cols-2 gap-8">
-      <Wrapper>
+      <WrapperUI>
         <IconButton
           ariaLabel="Icon button"
           icon={<CirclePlusIcon />}
           onClick={() => {}}
         />
-      </Wrapper>
+      </WrapperUI>
 
-      <Wrapper>
+      <WrapperUI>
         <IconButton
           ariaLabel="Icon button"
           icon={<InfoIcon />}
           onClick={() => {}}
           tooltipMessage="Tooltip message"
         />
-      </Wrapper>
+      </WrapperUI>
     </div>
   );
 };

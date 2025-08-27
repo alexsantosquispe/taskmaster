@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Wrapper } from '@/utils/wrappers.utils';
+import { WrapperUI } from '@/utils/test.utils';
 import { useState } from 'react';
 import { Button } from '../Button/Button';
 import { Modal } from './Modal';
@@ -21,7 +21,7 @@ export const Default: Story = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <Wrapper>
+    <WrapperUI>
       <div className="flex flex-col">
         <Button
           ariaLabel="Button to open modal"
@@ -34,7 +34,7 @@ export const Default: Story = () => {
           </Modal>
         )}
       </div>
-    </Wrapper>
+    </WrapperUI>
   );
 };
 
