@@ -4,7 +4,7 @@ import { fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { FOOTER_ITEMS, SIDE_BAR_ITEMS, SideBarMenu } from './SideBarMenu';
 
 import { useIsMobile } from '@/hooks/useIsMobile';
-import { TestWrapper } from '@/utils/testing/unitTest.util';
+import { TestWrapper } from '@/utils/wrappers.utils';
 
 jest.mock('../../../hooks/useIsMobile', () => ({
   useIsMobile: jest.fn()

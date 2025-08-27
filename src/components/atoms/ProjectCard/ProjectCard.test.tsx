@@ -1,6 +1,9 @@
-import { TestWrapper } from '@/utils/testing/unitTest.util';
-import { render } from '@testing-library/react';
-import { PROJECTS } from '../../../utils/mocks/projects';
+import '@testing-library/jest-dom';
+
+import { fireEvent, render, screen } from '@testing-library/react';
+
+import { PROJECTS } from '@/utils/mocks/projects';
+import { TestWrapper } from '@/utils/wrappers.utils';
 import { ProjectCard } from './ProjectCard';
 
 describe('ProjectCard', () => {
@@ -16,21 +19,39 @@ describe('ProjectCard', () => {
     jest.useRealTimers();
   });
 
-  it('should render the component correctly', () => {
-    let component = render(
-      <TestWrapper>
-        <ProjectCard {...props} />
-      </TestWrapper>
-    );
+  describe('styles', () => {
+    it('should render the component correctly', () => {
+      let component = render(
+        <TestWrapper>
+          <ProjectCard {...props} />
+        </TestWrapper>
+      );
 
-    expect(component).toMatchSnapshot();
+      expect(component).toMatchSnapshot();
 
-    component = render(
-      <TestWrapper>
-        <ProjectCard {...props} isSmall={true} />
-      </TestWrapper>
-    );
+      component = render(
+        <TestWrapper>
+          <ProjectCard {...props} isSmall={true} />
+        </TestWrapper>
+      );
 
-    expect(component).toMatchSnapshot();
+      expect(component).toMatchSnapshot();
+    });
+  });
+
+  describe('behavior', () => {
+    it('should open the context menu when click the button', () => {
+      render(
+        <TestWrapper>
+          <ProjectCard {...props} />
+        </TestWrapper>
+      );
+
+      const optionsButton = screen.getByRole('button');
+
+      fireEvent.click(optionsButton);
+
+      expect(screen.getByTestId('context-menu')).toBeInTheDocument();
+    });
   });
 });

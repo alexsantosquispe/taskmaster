@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
-exports[`ProjectCard should render the component correctly 1`] = `
+exports[`ProjectCard styles should render the component correctly 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
@@ -241,7 +241,7 @@ exports[`ProjectCard should render the component correctly 1`] = `
 }
 `;
 
-exports[`ProjectCard should render the component correctly 2`] = `
+exports[`ProjectCard styles should render the component correctly 2`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>

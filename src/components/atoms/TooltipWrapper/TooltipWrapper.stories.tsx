@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { ALIGNMENT_TYPES } from '@/models/types';
-import { Wrapper } from '@/utils/testing/unitTest.util';
+import { Wrapper } from '@/utils/wrappers.utils';
 import { Button } from '../Button/Button';
 import { TooltipWrapper } from './TooltipWrapper';
 
@@ -79,13 +79,11 @@ export const Default: Story = () => {
                 <Button
                   label="Show"
                   ariaLabel="Show Tooltip button"
-                  isSecondary
                   onClick={() => setShowTooltip(true)}
                 />
                 <Button
                   label="Hide"
                   ariaLabel="Hide Tooltip button"
-                  isSecondary
                   onClick={() => setShowTooltip(false)}
                 />
               </div>

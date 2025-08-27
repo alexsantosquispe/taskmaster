@@ -10,6 +10,18 @@ interface RenderWithFormOptions {
   componentToRender: (control: Control<FieldValues>) => ReactElement;
 }
 
+export const renderWithForm = ({
+  defaultValues,
+  componentToRender
+}: RenderWithFormOptions) => {
+  const Wrapper = () => {
+    const { control } = useForm<FieldValues>({ defaultValues });
+    return componentToRender(control);
+  };
+
+  return render(<Wrapper />);
+};
+
 interface WrapperProps {
   children: ReactNode;
   className?: string;
@@ -41,16 +53,4 @@ export const TestWrapper = ({ children }: WrapperProps) => {
       </BrowserRouter>
     </ThemeProvider>
   );
-};
-
-export const renderWithForm = ({
-  defaultValues,
-  componentToRender
-}: RenderWithFormOptions) => {
-  const Wrapper = () => {
-    const { control } = useForm<FieldValues>({ defaultValues });
-    return componentToRender(control);
-  };
-
-  return render(<Wrapper />);
 };

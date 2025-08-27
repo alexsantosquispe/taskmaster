@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Wrapper } from '@/utils/testing/unitTest.util';
+import { Wrapper } from '@/utils/wrappers.utils';
 import { useState } from 'react';
 import { Button } from '../Button/Button';
 import { Modal } from './Modal';

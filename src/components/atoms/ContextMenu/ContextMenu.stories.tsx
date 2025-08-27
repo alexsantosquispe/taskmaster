@@ -1,7 +1,7 @@
 import { EllipsisVerticalIcon } from '@/icons';
 import { ContextMenu } from './ContextMenu';
 
-import { Wrapper } from '@/utils/testing/unitTest.util';
+import { Wrapper } from '@/utils/wrappers.utils';
 import type { Meta, StoryObj } from '@storybook/react';
 const options = [
   { label: 'Option 1', value: 'option-1' },

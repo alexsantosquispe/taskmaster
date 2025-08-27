@@ -24,6 +24,10 @@ describe('Modal', () => {
   });
 
   describe('behavior', () => {
+    beforeEach(() => {
+      jest.clearAllMocks();
+    });
+
     it('should close the modal when click the close button', () => {
       render(
         <Modal {...props}>
@@ -38,6 +42,30 @@ describe('Modal', () => {
       fireEvent.click(closeButton);
 
       expect(onCloseMock).toHaveBeenCalledTimes(1);
+    });
+
+    it('should close the modal when pressing Escape key', () => {
+      render(
+        <Modal {...props}>
+          <div>Modal content</div>
+        </Modal>
+      );
+
+      fireEvent.keyDown(window, { key: 'Escape' });
+
+      expect(onCloseMock).toHaveBeenCalledTimes(1);
+    });
+
+    it('should not close the modal when pressing another key', () => {
+      render(
+        <Modal {...props}>
+          <div>Modal content</div>
+        </Modal>
+      );
+
+      fireEvent.keyDown(window, { key: 'Enter' });
+
+      expect(onCloseMock).not.toHaveBeenCalled();
     });
   });
 });

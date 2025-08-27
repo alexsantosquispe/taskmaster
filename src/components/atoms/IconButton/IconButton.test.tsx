@@ -14,12 +14,14 @@ describe('IconButton', () => {
     tooltipMessage: 'Tooltip message'
   };
 
-  it('should render the component correctly', () => {
-    const component = render(<IconButton {...props} />);
+  describe('styles', () => {
+    it('should render the component correctly', () => {
+      let component = render(<IconButton {...props} />);
+      expect(component).toMatchSnapshot();
 
-    expect(component).toMatchSnapshot();
-
-    expect(screen.getByRole('button')).toBeInTheDocument();
+      component = render(<IconButton {...props} tooltipMessage="tooltip" />);
+      expect(component).toMatchSnapshot();
+    });
   });
 
   describe('behavior', () => {

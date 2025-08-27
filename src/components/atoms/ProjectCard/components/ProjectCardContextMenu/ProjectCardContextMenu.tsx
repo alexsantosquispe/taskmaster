@@ -1,6 +1,6 @@
 import { ContextMenu } from '@/components/atoms/ContextMenu/ContextMenu';
 import { Modal } from '@/components/atoms/Modal/Modal';
-import { MENU_OPTIONS } from '@/constants';
+import { PROJECT_MENU_OPTIONS } from '@/constants';
 import { EllipsisVerticalIcon } from '@/icons';
 import type { Option } from '@/models/types';
 import { useState } from 'react';
@@ -41,7 +41,7 @@ export const ProjectCardContextMenu = () => {
     <>
       <ContextMenu
         ariaLabel="Project options"
-        options={MENU_OPTIONS}
+        options={PROJECT_MENU_OPTIONS}
         onSelectOption={handleSelectOption}
         icon={<EllipsisVerticalIcon className="size-4" />}
         className={{

@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Wrapper } from '@/utils/testing/unitTest.util';
+import { Wrapper } from '@/utils/wrappers.utils';
 import { ColorPicker } from './ColorPicker';
 
 const meta: Meta<typeof ColorPicker> = {
