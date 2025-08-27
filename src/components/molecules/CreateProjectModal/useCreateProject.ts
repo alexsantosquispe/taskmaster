@@ -1,6 +1,6 @@
 import { useCreateProjectMutation } from '@/services/api';
 import type { CreateProjectDTO } from '@/services/apiTypes';
-import type { NewProjectFormValues } from '../../CreateProjectForm/CreateProjectForm.types';
+import type { NewProjectFormValues } from '../CreateProjectForm/CreateProjectForm.types';
 
 export const useCreateProject = (onClose: () => void) => {
   const [createProject, createProjectResult] = useCreateProjectMutation();
