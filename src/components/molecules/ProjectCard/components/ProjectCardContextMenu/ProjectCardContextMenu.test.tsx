@@ -1,5 +1,3 @@
-import '@testing-library/jest-dom';
-
 import { fireEvent, render, screen, waitFor } from '@testing-library/react';
 
 import { PROJECT_MENU_OPTIONS } from '@/constants';
