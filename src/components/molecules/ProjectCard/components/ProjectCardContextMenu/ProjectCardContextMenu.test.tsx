@@ -1,8 +1,10 @@
+import '@testing-library/jest-dom';
+
+import { ReduxWrapper, ToastWrapper } from '@/utils/test.utils';
 import { fireEvent, render, screen, waitFor } from '@testing-library/react';
 
 import { PROJECT_MENU_OPTIONS } from '@/constants';
 import { PROJECTS } from '@/utils/mocks/projects';
-import { ReduxWrapper } from '@/utils/test.utils';
 import { ProjectCardContextMenu } from './ProjectCardContextMenu';
 
 describe('ProjectCardContextMenu', () => {
@@ -14,7 +16,9 @@ describe('ProjectCardContextMenu', () => {
     it('should render the component correctly', () => {
       let component = render(
         <ReduxWrapper>
-          <ProjectCardContextMenu {...props} />
+          <ToastWrapper>
+            <ProjectCardContextMenu {...props} />
+          </ToastWrapper>
         </ReduxWrapper>
       );
 
@@ -26,7 +30,9 @@ describe('ProjectCardContextMenu', () => {
     beforeEach(() => {
       render(
         <ReduxWrapper>
-          <ProjectCardContextMenu {...props} />
+          <ToastWrapper>
+            <ProjectCardContextMenu {...props} />
+          </ToastWrapper>
         </ReduxWrapper>
       );
     });
