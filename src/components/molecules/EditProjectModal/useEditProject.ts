@@ -14,7 +14,7 @@ export const useEditProject = ({ projectId, onClose }: UseEditProjectProps) => {
     const updatedProject = {
       id: projectId,
       name: formData.name,
-      code: formData.code,
+      code: formData.code.toUpperCase(),
       color: formData.color?.value || '',
       description: formData.description
     } satisfies UpdateProjectDTO;
