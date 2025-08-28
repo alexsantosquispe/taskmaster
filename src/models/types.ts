@@ -40,6 +40,22 @@ export const ALIGNMENT_TYPES = {
 export type AlignmentType =
   (typeof ALIGNMENT_TYPES)[keyof typeof ALIGNMENT_TYPES];
 
+export const TOAST_TYPES = {
+  DEFAULT: 'default',
+  SUCCESS: 'success',
+  ERROR: 'error'
+} as const;
+
+export type ToastType = (typeof TOAST_TYPES)[keyof typeof TOAST_TYPES];
+
+export interface ToastMessage {
+  id: string;
+  title: string;
+  message: string;
+  type?: ToastType;
+  duration?: number;
+}
+
 export interface UserType {
   id: string;
   name: string;

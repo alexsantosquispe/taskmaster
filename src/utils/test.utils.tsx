@@ -1,4 +1,5 @@
 import { ThemeProvider } from '@/contexts/ThemeProvider';
+import { ToastProvider } from '@/contexts/ToastProvider';
 import { apiClient } from '@/services/api';
 import { configureStore } from '@reduxjs/toolkit';
 import { render } from '@testing-library/react';
@@ -56,6 +57,10 @@ export const TestWrapper = ({ children }: WrapperProps) => {
       </BrowserRouter>
     </ThemeProvider>
   );
+};
+
+export const ToastWrapper = ({ children }: { children: ReactNode }) => {
+  return <ToastProvider>{children}</ToastProvider>;
 };
 
 export const ReduxWrapper = ({ children }: { children: ReactNode }) => {

@@ -16,6 +16,7 @@ const DeleteProjectModal = ({
 }: DeleteProjectModalProps) => {
   const { onDeleteProject, isLoading } = useDeleteProject({
     projectId,
+    projectName,
     onClose
   });
 
