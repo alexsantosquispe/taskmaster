@@ -1,11 +1,11 @@
 import { useCreateProjectMutation } from '@/services/api';
 import type { CreateProjectDTO } from '@/services/apiTypes';
-import type { NewProjectFormValues } from '../CreateProjectForm/CreateProjectForm.types';
+import type { ProjectFormValues } from '../CreateProjectForm/ProjectForm.types';
 
 export const useCreateProject = (onClose: () => void) => {
   const [createProject, createProjectResult] = useCreateProjectMutation();
 
-  const onCreateHandler = (formData: NewProjectFormValues) => {
+  const onCreateHandler = (formData: ProjectFormValues) => {
     const newProject = {
       name: formData.name,
       code: formData.code.toUpperCase(),

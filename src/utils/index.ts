@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import { PRIORITY_COLORS } from '../constants';
+import { COLORS, PRIORITY_COLORS } from '../constants';
 import { type PriorityType } from '../models/types';
 
 export const getPercentageStyles = (percentage: number) => {
@@ -18,3 +18,6 @@ export const getPercentageStyles = (percentage: number) => {
 export const getPriorityStyles = (priority: PriorityType) => {
   return PRIORITY_COLORS[priority];
 };
+
+export const getColorByValue = (colorValue: string) =>
+  COLORS.find((color) => color.value === colorValue);

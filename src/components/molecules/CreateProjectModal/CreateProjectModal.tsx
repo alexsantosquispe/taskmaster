@@ -1,5 +1,5 @@
 import { Modal } from '@/components/atoms/Modal/Modal';
-import { CreateProjectForm } from '../CreateProjectForm/CreateProjectForm';
+import { ProjectForm } from '../CreateProjectForm/ProjectForm';
 import { useCreateProject } from './useCreateProject';
 
 interface CrateProjectModalProps {
@@ -15,8 +15,9 @@ const CreateProjectModal = ({ onClose }: CrateProjectModalProps) => {
       onClose={onClose}
       classNames={{ container: 'md:w-[40rem]' }}
     >
-      <CreateProjectForm
-        onCreateProject={onCreateHandler}
+      <ProjectForm
+        submitButtonLabel="Create project"
+        onSubmitProject={onCreateHandler}
         isLoading={isLoading}
       />
     </Modal>

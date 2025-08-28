@@ -1,9 +1,9 @@
 import { Suspense, lazy, useState } from 'react';
 
 import { ContextMenu } from '@/components/atoms/ContextMenu/ContextMenu';
-import { PROJECT_MENU_OPTIONS } from '@/constants';
 import { EllipsisVerticalIcon } from '@/icons';
 import type { Option } from '@/models/types';
+import { PROJECT_MENU_OPTIONS } from '@/constants';
 import type { ProjectDTO } from '@/services/apiTypes';
 
 const DeleteProjectModal = lazy(
@@ -54,7 +54,10 @@ export const ProjectCardContextMenu = ({
 
       {modalType === 'edit' && (
         <Suspense>
-          <EditProjectModal onClose={() => setModalType(null)} />
+          <EditProjectModal
+            {...projectItem}
+            onClose={() => setModalType(null)}
+          />
         </Suspense>
       )}
     </>

@@ -5,36 +5,37 @@ import { TextAreaField } from '@/components/atoms/TextAreaField/TextAreaField';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm, type Control, type FieldValues } from 'react-hook-form';
 import {
-  NewProjectFormDefaultValues,
-  NewProjectFormSchema
-} from './CreateProjectForm.schema';
+  PROJECT_FORM_DEFAULT_VALUES,
+  ProjectFormSchema
+} from './ProjectForm.schema';
 import {
-  NEW_PROJECT_FORM_NAMES,
-  type NewProjectFormValues
-} from './CreateProjectForm.types';
+  PROJECT_FORM_NAMES,
+  type ProjectFormValues
+} from './ProjectForm.types';
 
-interface CreateProjectFormProps {
-  onCreateProject: (formData: NewProjectFormValues) => void;
+interface ProjectFormProps {
+  submitButtonLabel: string;
+  onSubmitProject: (formData: ProjectFormValues) => void;
   isLoading: boolean;
+  defaultValues?: ProjectFormValues;
 }
 
-export const CreateProjectForm = ({
-  onCreateProject,
-  isLoading
-}: CreateProjectFormProps) => {
+export const ProjectForm = ({
+  submitButtonLabel,
+  onSubmitProject,
+  isLoading,
+  defaultValues
+}: ProjectFormProps) => {
   const {
     control,
     handleSubmit,
     formState: { errors }
-  } = useForm<NewProjectFormValues>({
-    resolver: zodResolver(NewProjectFormSchema),
-    defaultValues: NewProjectFormDefaultValues
+  } = useForm<ProjectFormValues>({
+    resolver: zodResolver(ProjectFormSchema),
+    defaultValues: defaultValues ?? PROJECT_FORM_DEFAULT_VALUES
   });
-  const isFormDisabled = isLoading;
 
-  const onSubmit = (formData: NewProjectFormValues) => {
-    onCreateProject(formData);
-  };
+  const onSubmit = (formData: ProjectFormValues) => onSubmitProject(formData);
 
   return (
     <form
@@ -44,35 +45,33 @@ export const CreateProjectForm = ({
       <div className="flex flex-col gap-4 md:flex-row">
         <InputField
           label="Project name"
-          name={NEW_PROJECT_FORM_NAMES.NAME}
+          name={PROJECT_FORM_NAMES.NAME}
           control={control as unknown as Control<FieldValues>}
           errorMessage={
-            !isFormDisabled ? errors[NEW_PROJECT_FORM_NAMES.NAME]?.message : ''
+            !isLoading ? errors[PROJECT_FORM_NAMES.NAME]?.message : ''
           }
           placeholder="Enter project name"
-          isDisabled={isFormDisabled}
+          isDisabled={isLoading}
           isRequired
         />
 
         <div className="flex gap-4 md:w-1/2">
           <InputField
             label="Code"
-            name={NEW_PROJECT_FORM_NAMES.CODE}
+            name={PROJECT_FORM_NAMES.CODE}
             errorMessage={
-              !isFormDisabled
-                ? errors[NEW_PROJECT_FORM_NAMES.CODE]?.message
-                : ''
+              !isLoading ? errors[PROJECT_FORM_NAMES.CODE]?.message : ''
             }
             className={{ container: 'w-full', input: 'uppercase' }}
             control={control as unknown as Control<FieldValues>}
             placeholder="XYZ"
-            isDisabled={isFormDisabled}
+            isDisabled={isLoading}
             isRequired
           />
 
           <ColorPickerWithController
             label="Color"
-            name={NEW_PROJECT_FORM_NAMES.COLOR}
+            name={PROJECT_FORM_NAMES.COLOR}
             control={control as unknown as Control<FieldValues>}
             className="self-end"
           />
@@ -81,19 +80,18 @@ export const CreateProjectForm = ({
 
       <TextAreaField
         label="Description"
-        name={NEW_PROJECT_FORM_NAMES.DESCRIPTION}
-        errorMessage={errors[NEW_PROJECT_FORM_NAMES.DESCRIPTION]?.message}
+        name={PROJECT_FORM_NAMES.DESCRIPTION}
+        errorMessage={errors[PROJECT_FORM_NAMES.DESCRIPTION]?.message}
         control={control as unknown as Control<FieldValues>}
         placeholder="Enter project description..."
-        isDisabled={isFormDisabled}
+        isDisabled={isLoading}
       />
 
       <Button
-        label="Create project"
-        ariaLabel="Create project button"
+        label={submitButtonLabel}
+        ariaLabel={`${submitButtonLabel} button`}
         className="self-end"
         isLoading={isLoading}
-        isDisable={isFormDisabled}
         type="submit"
       />
     </form>
