@@ -1,3 +1,4 @@
+import { ToastStack } from '@/components/atoms/ToastStack/ToastStack';
 import { ThemeProvider } from '@/contexts/ThemeProvider';
 import { ToastProvider } from '@/contexts/ToastProvider';
 import { apiClient } from '@/services/api';
@@ -59,8 +60,13 @@ export const TestWrapper = ({ children }: WrapperProps) => {
   );
 };
 
-export const ToastWrapper = ({ children }: { children: ReactNode }) => {
-  return <ToastProvider>{children}</ToastProvider>;
+export const ToastProviderWrapper = ({ children }: { children: ReactNode }) => {
+  return (
+    <ToastProvider>
+      <ToastStack />
+      {children}
+    </ToastProvider>
+  );
 };
 
 export const ReduxWrapper = ({ children }: { children: ReactNode }) => {

@@ -5,7 +5,10 @@ export const ToastStack = () => {
   const { messages, removeToast } = useToast();
 
   return (
-    <section className="fixed top-2 right-8 z-40 flex flex-col items-center gap-1">
+    <section
+      className="fixed top-2 right-8 z-40 flex flex-col items-center gap-1"
+      data-testid="toast-stack"
+    >
       {messages.map((item) => (
         <Toast key={item.id} {...item} onRemove={removeToast} />
       ))}
