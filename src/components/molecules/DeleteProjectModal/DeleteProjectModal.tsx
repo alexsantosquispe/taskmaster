@@ -32,12 +32,11 @@ const DeleteProjectModal = ({
           Are you sure you want to delete this project?
         </h3>
         <p className="rounded-lg border border-rose-300 bg-rose-50 px-2 py-3 text-center leading-6 text-neutral-600 dark:border-rose-500/20 dark:bg-rose-700/10 dark:text-white/80">
-          The project{' '}
+          The project
           <strong className="text-rose-600 dark:text-rose-500">
-            {projectName}
-          </strong>{' '}
-          will be deleted. Once deleted, you will not be able to recover this
-          project.
+            {` ${projectName} `}
+          </strong>
+          will be deleted. So, you will not be able to recover this project.
         </p>
 
         <div className="flex flex-1 items-center justify-end gap-4">
