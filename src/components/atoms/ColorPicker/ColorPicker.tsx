@@ -1,3 +1,5 @@
+import '@testing-library/jest-dom';
+
 import { COLORS, DEFAULT_COLOR } from '@/constants';
 import type {
   ColorPickerProps,

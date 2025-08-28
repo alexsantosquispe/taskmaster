@@ -7,17 +7,6 @@ jest.mock('@/config/env', () => ({
   }
 }));
 
-// Object.defineProperty(globalThis, 'import', {
-//   value: {
-//     meta: {
-//       env: {
-//         VITE_SUPABASE_ANON_KEY: 'test-anon-key',
-//         VITE_SUPABASE_URL: 'https://test.supabase.co'
-//       }
-//     }
-//   }
-// });
-
 Object.defineProperty(window, 'matchMedia', {
   writable: true,
   value: jest.fn().mockImplementation((query) => ({

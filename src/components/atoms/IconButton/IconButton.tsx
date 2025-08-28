@@ -1,3 +1,5 @@
+import '@testing-library/jest-dom';
+
 import { ALIGNMENT_TYPES, type AlignmentType } from '@/models/types';
 import cn from 'clsx';
 import type { ReactNode } from 'react';
