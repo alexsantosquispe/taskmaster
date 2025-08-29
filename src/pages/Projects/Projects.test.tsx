@@ -1,7 +1,11 @@
 import '@testing-library/jest-dom';
 
-import { ReduxWrapper, TestWrapper } from '@/utils/test.utils';
-import { render, screen, waitFor } from '@testing-library/react';
+import {
+  ReduxWrapper,
+  TestWrapper,
+  ToastProviderWrapper
+} from '@/utils/test.utils';
+import { fireEvent, render, screen, waitFor } from '@testing-library/react';
 
 import { PROJECTS } from '@/utils/mocks/projects';
 import Projects from './Projects';
@@ -65,6 +69,38 @@ describe('Projects', () => {
       expect(screen.getAllByTestId('project-card').length).toBe(
         PROJECTS.length
       );
+    });
+  });
+
+  it('should open the new project modal', async () => {
+    mockOrder.mockResolvedValue({ data: [], error: null });
+
+    render(
+      <TestWrapper>
+        <ReduxWrapper>
+          <ToastProviderWrapper>
+            <Projects />
+          </ToastProviderWrapper>
+        </ReduxWrapper>
+      </TestWrapper>
+    );
+
+    await waitFor(() =>
+      expect(
+        screen.getByText("There aren't projects to show")
+      ).toBeInTheDocument()
+    );
+
+    const button = screen.getByRole('button', {
+      name: 'Create new project button'
+    });
+
+    expect(button).toBeInTheDocument();
+
+    fireEvent.click(button);
+
+    await waitFor(() => {
+      expect(screen.getByTestId('modal')).toBeInTheDocument();
     });
   });
 });
