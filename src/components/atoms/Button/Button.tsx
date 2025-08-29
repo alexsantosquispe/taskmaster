@@ -40,9 +40,9 @@ export const Button = ({
           'hover:text-accent dark:hover:text-accent-dark hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15':
             isSecondary && !isDisable && !isLoading,
           'cursor-not-allowed': isDisable || isLoading,
-          'bg-primary/40 shadow-none dark:bg-white/15 dark:text-white/40':
+          'bg-neutral-300 shadow-none dark:bg-white/15 dark:text-white/40':
             !isSecondary && (isDisable || isLoading),
-          'text-primary/50 dark:text-white/40':
+          'text-neutral-400 dark:text-white/40':
             isSecondary && (isDisable || isLoading)
         }),
         className

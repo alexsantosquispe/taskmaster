@@ -93,7 +93,7 @@ exports[`Button should render the button correctly 2`] = `
     <div>
       <button
         aria-label="test button"
-        class="flex w-fit items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold transition-colors duration-200 ease-in-out text-white cursor-not-allowed bg-primary/40 shadow-none dark:bg-white/15 dark:text-white/40"
+        class="flex w-fit items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold transition-colors duration-200 ease-in-out text-white cursor-not-allowed bg-neutral-300 shadow-none dark:bg-white/15 dark:text-white/40"
         disabled=""
         type="button"
       >
@@ -104,7 +104,7 @@ exports[`Button should render the button correctly 2`] = `
   "container": <div>
     <button
       aria-label="test button"
-      class="flex w-fit items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold transition-colors duration-200 ease-in-out text-white cursor-not-allowed bg-primary/40 shadow-none dark:bg-white/15 dark:text-white/40"
+      class="flex w-fit items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold transition-colors duration-200 ease-in-out text-white cursor-not-allowed bg-neutral-300 shadow-none dark:bg-white/15 dark:text-white/40"
       disabled=""
       type="button"
     >
@@ -181,7 +181,7 @@ exports[`Button should render the button correctly 3`] = `
     <div>
       <button
         aria-label="test button"
-        class="flex w-fit items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold transition-colors duration-200 ease-in-out text-white cursor-not-allowed bg-primary/40 shadow-none dark:bg-white/15 dark:text-white/40"
+        class="flex w-fit items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold transition-colors duration-200 ease-in-out text-white cursor-not-allowed bg-neutral-300 shadow-none dark:bg-white/15 dark:text-white/40"
         disabled=""
         type="button"
       >
@@ -277,7 +277,7 @@ exports[`Button should render the button correctly 4`] = `
     <div>
       <button
         aria-label="test button"
-        class="flex w-fit items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold transition-colors duration-200 ease-in-out text-white cursor-not-allowed bg-primary/40 shadow-none dark:bg-white/15 dark:text-white/40"
+        class="flex w-fit items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold transition-colors duration-200 ease-in-out text-white cursor-not-allowed bg-neutral-300 shadow-none dark:bg-white/15 dark:text-white/40"
         disabled=""
         type="button"
       >
@@ -296,7 +296,7 @@ exports[`Button should render the button correctly 4`] = `
     <div>
       <button
         aria-label="test button"
-        class="flex w-fit items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold transition-colors duration-200 ease-in-out cursor-not-allowed text-primary/50 dark:text-white/40"
+        class="flex w-fit items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold transition-colors duration-200 ease-in-out cursor-not-allowed text-neutral-400 dark:text-white/40"
         disabled=""
         type="button"
       >
@@ -307,7 +307,7 @@ exports[`Button should render the button correctly 4`] = `
   "container": <div>
     <button
       aria-label="test button"
-      class="flex w-fit items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold transition-colors duration-200 ease-in-out cursor-not-allowed text-primary/50 dark:text-white/40"
+      class="flex w-fit items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold transition-colors duration-200 ease-in-out cursor-not-allowed text-neutral-400 dark:text-white/40"
       disabled=""
       type="button"
     >
@@ -384,7 +384,7 @@ exports[`Button should render the button correctly 5`] = `
     <div>
       <button
         aria-label="test button"
-        class="flex w-fit items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold transition-colors duration-200 ease-in-out text-white cursor-not-allowed bg-primary/40 shadow-none dark:bg-white/15 dark:text-white/40"
+        class="flex w-fit items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold transition-colors duration-200 ease-in-out text-white cursor-not-allowed bg-neutral-300 shadow-none dark:bg-white/15 dark:text-white/40"
         disabled=""
         type="button"
       >
@@ -403,7 +403,7 @@ exports[`Button should render the button correctly 5`] = `
     <div>
       <button
         aria-label="test button"
-        class="flex w-fit items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold transition-colors duration-200 ease-in-out cursor-not-allowed text-primary/50 dark:text-white/40"
+        class="flex w-fit items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold transition-colors duration-200 ease-in-out cursor-not-allowed text-neutral-400 dark:text-white/40"
         disabled=""
         type="button"
       >
@@ -413,7 +413,7 @@ exports[`Button should render the button correctly 5`] = `
     <div>
       <button
         aria-label="test button"
-        class="flex w-fit items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold transition-colors duration-200 ease-in-out cursor-not-allowed bg-primary/40 shadow-none dark:bg-white/15 dark:text-white/40"
+        class="flex w-fit items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold transition-colors duration-200 ease-in-out cursor-not-allowed bg-neutral-300 shadow-none dark:bg-white/15 dark:text-white/40"
         disabled=""
         type="button"
       >
@@ -443,7 +443,7 @@ exports[`Button should render the button correctly 5`] = `
   "container": <div>
     <button
       aria-label="test button"
-      class="flex w-fit items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold transition-colors duration-200 ease-in-out cursor-not-allowed bg-primary/40 shadow-none dark:bg-white/15 dark:text-white/40"
+      class="flex w-fit items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold transition-colors duration-200 ease-in-out cursor-not-allowed bg-neutral-300 shadow-none dark:bg-white/15 dark:text-white/40"
       disabled=""
       type="button"
     >

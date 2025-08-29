@@ -7,10 +7,10 @@ function App() {
     <div className="text-primary flex min-h-screen flex-col bg-white dark:bg-black dark:text-white">
       <main className="flex h-screen w-full flex-col gap-2 md:flex-row md:p-2">
         <SideBarMenu />
-        <>
+        <div className="relative flex flex-1">
           <AppRouter />
           <ToastStack />
-        </>
+        </div>
       </main>
     </div>
   );

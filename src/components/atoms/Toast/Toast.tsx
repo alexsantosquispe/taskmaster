@@ -29,7 +29,7 @@ export const Toast = ({
     <div
       data-testid={`toast-${id}`}
       className={twMerge(
-        'flex w-[22rem] flex-col gap-1 rounded-lg border p-3 text-sm shadow-lg backdrop-blur-lg',
+        'flex max-h-[4.375rem] w-[22rem] flex-col gap-1 rounded-lg border p-3 text-sm shadow-lg backdrop-blur-lg',
         cn({
           'text-primary dark:bg-primary border-neutral-500 bg-white dark:border-white/30 dark:text-white':
             type === TOAST_TYPES.DEFAULT,
@@ -60,7 +60,7 @@ export const Toast = ({
         />
       </div>
 
-      <p className="font-regular text-neutral-700 dark:text-neutral-300">
+      <p className="font-regular line-clamp-1 text-neutral-700 dark:text-neutral-300">
         {message}
       </p>
     </div>
