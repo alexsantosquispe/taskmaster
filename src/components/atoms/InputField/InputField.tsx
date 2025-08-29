@@ -21,6 +21,8 @@ export const InputField = ({
     <Controller
       control={control}
       name={name}
+      shouldUnregister={true}
+      aria-label={label}
       render={({ field: { onChange, value } }) => {
         if (typeof onChangeText === 'function' && value !== undefined)
           onChangeText(value);
@@ -52,7 +54,9 @@ export const InputField = ({
               )}
             />
             {errorMessage && (
-              <span className={INPUT_FIELD_ERROR}>{errorMessage}</span>
+              <span data-testid="error-message" className={INPUT_FIELD_ERROR}>
+                {errorMessage}
+              </span>
             )}
           </div>
         );

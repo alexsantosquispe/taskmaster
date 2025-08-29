@@ -41,6 +41,7 @@ export const ProjectForm = ({
     <form
       onSubmit={handleSubmit(onSubmit)}
       className="flex w-full flex-col gap-y-4 p-2"
+      aria-label="New project form"
     >
       <div className="flex flex-col gap-4 md:flex-row">
         <InputField

@@ -11,7 +11,6 @@ import { PROJECTS } from '@/utils/mocks/projects';
 import Projects from './Projects';
 
 const mockOrder = jest.fn().mockResolvedValue({ data: [], error: null });
-
 jest.mock('@supabase/supabase-js', () => ({
   createClient: jest.fn(() => ({
     from: jest.fn(() => ({
@@ -99,8 +98,8 @@ describe('Projects', () => {
 
     fireEvent.click(button);
 
-    await waitFor(() => {
-      expect(screen.getByTestId('modal')).toBeInTheDocument();
-    });
+    expect(await screen.findByTestId('modal')).toBeInTheDocument();
+
+    expect(screen.getByText('New project')).toBeInTheDocument();
   });
 });

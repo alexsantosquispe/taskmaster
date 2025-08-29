@@ -11,7 +11,7 @@ const CreateProjectModal = ({ onClose }: CrateProjectModalProps) => {
 
   return (
     <Modal
-      title="Create project"
+      title="New project"
       onClose={onClose}
       classNames={{ container: 'md:w-[40rem]' }}
     >
