@@ -40,6 +40,7 @@ export const ProjectCard = ({
   return (
     <article
       key={id}
+      data-testid="project-card"
       className={twMerge(
         'dark:bg-primary flex h-[8.25rem] flex-col rounded-lg border border-neutral-200 px-4 py-3 text-sm dark:border-white/20',
         cn({ 'h-24': isSmall })

@@ -37,6 +37,7 @@ export const Skeleton = ({ numberOfItems = 10, className }: SkeletonProps) => {
 
   return (
     <div
+      data-testid="skeleton"
       className={twMerge(
         'grid w-full gap-4 md:grid-cols-2 md:gap-5 lg:grid-cols-3 lg:gap-6 xl:grid-cols-4',
         className?.container
