@@ -54,6 +54,31 @@ Visit `http://localhost:6006` to view the storybook.
 
 ---
 
+## 📊 Tests
+
+```bash
+# Run tests
+pnpm run test
+or
+npm run test
+```
+
+```bash
+# Run tests with coverage
+pnpm run test:coverage
+or
+npm run test:coverage
+```
+
+```bash
+# Run tests with update snapshots
+pnpm run test:update
+or
+npm run test:update
+```
+
+---
+
 ## 🖼️ Screenshots
 
 ### Light
