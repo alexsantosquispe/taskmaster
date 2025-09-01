@@ -94,7 +94,7 @@ export const SideBarMenu = () => {
   };
 
   return (
-    <section
+    <aside
       className={twMerge(
         'md:dark:bg-primary dark:bg-primary/70 fixed z-40 flex flex-col border-b border-gray-200 bg-white/40 backdrop-blur-md transition-all duration-300 ease-in-out md:relative md:rounded-xl md:border md:bg-white md:shadow-xl dark:border-white/15',
         cn({
@@ -151,6 +151,6 @@ export const SideBarMenu = () => {
           </div>
         )}
       </div>
-    </section>
+    </aside>
   );
 };

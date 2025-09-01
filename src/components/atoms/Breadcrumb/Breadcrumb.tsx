@@ -1,6 +1,7 @@
+import { ChevronUpIcon } from '@/icons';
 import cn from 'clsx';
+import { Link } from 'react-router-dom';
 import { twMerge } from 'tailwind-merge';
-import { ChevronUpIcon } from '../../../icons';
 
 type BreadcrumbItem = {
   id: string;
@@ -25,15 +26,15 @@ export const Breadcrumb = ({ items, className }: BreadcrumbProps) => {
         const isLastItem = index === items.length - 1;
         return (
           <div key={item.id} className="flex items-center gap-2 font-medium">
-            <a
-              href={item.href}
+            <Link
+              to={item.href}
               className={twMerge(
                 'hover:cursor-pointer',
                 cn({ 'text-primary font-semibold dark:text-white': isLastItem })
               )}
             >
               <span>{item.label}</span>
-            </a>
+            </Link>
             {!isLastItem && <ChevronUpIcon className="size-3 rotate-90" />}
           </div>
         );

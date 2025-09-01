@@ -16,17 +16,18 @@ import {
 import { Breadcrumb } from '@/components/atoms/Breadcrumb/Breadcrumb';
 import TabBar from '@/components/atoms/TabBar/TabBar';
 import { StatusColumn } from '@/components/molecules/StatusColumn/StatusColumn';
+import { useLocation } from 'react-router-dom';
 
 const BREADCRUMBS = [
   {
     id: 'projects',
     label: 'Projects',
-    href: ''
+    href: '/projects'
   },
   {
     id: 'taskmaster-mobile-app',
     label: 'TaskMaster Mobile App',
-    href: ''
+    href: '/projects/taskmaster-mobile-app'
   }
 ];
 
@@ -50,16 +51,18 @@ const TABS = [
 ];
 
 const Detail = () => {
+  const { state } = useLocation();
+
   return (
-    <div className="flex w-full flex-col gap-2 md:gap-6">
+    <section className="flex w-full flex-col gap-2 md:gap-6 xl:max-w-[var(--width-large-screen)]">
       <div className="flex flex-col gap-2">
         <Breadcrumb items={BREADCRUMBS} />
-        <h2 className="text-2xl leading-12 font-bold">TaskMaster Mobile App</h2>
+        <h2 className="text-2xl leading-12 font-bold">{state?.projectName}</h2>
       </div>
 
       <div className="flex w-full flex-col gap-y-4 overflow-hidden md:h-full">
         <TabBar tabs={TABS} />
-        <div className="scroll-x-auto md:scroll-none flex gap-x-3 overflow-auto md:overflow-hidden">
+        <div className="scroll-x-auto md:scroll-none flex gap-x-2 overflow-auto md:overflow-hidden">
           <StatusColumn
             title="Backlog"
             icon={<CircleDotDashedIcon />}
@@ -89,7 +92,7 @@ const Detail = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

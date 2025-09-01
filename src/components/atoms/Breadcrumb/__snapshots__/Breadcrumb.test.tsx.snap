@@ -13,7 +13,7 @@ exports[`Breadcrumb should render the component correctly 1`] = `
         >
           <a
             class="hover:cursor-pointer"
-            href=""
+            href="/"
           >
             <span>
               Projects
@@ -41,7 +41,7 @@ exports[`Breadcrumb should render the component correctly 1`] = `
         >
           <a
             class="hover:cursor-pointer text-primary font-semibold dark:text-white"
-            href=""
+            href="/"
           >
             <span>
               TaskMaster Mobile App
@@ -60,7 +60,7 @@ exports[`Breadcrumb should render the component correctly 1`] = `
       >
         <a
           class="hover:cursor-pointer"
-          href=""
+          href="/"
         >
           <span>
             Projects
@@ -88,7 +88,7 @@ exports[`Breadcrumb should render the component correctly 1`] = `
       >
         <a
           class="hover:cursor-pointer text-primary font-semibold dark:text-white"
-          href=""
+          href="/"
         >
           <span>
             TaskMaster Mobile App

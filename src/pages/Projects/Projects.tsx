@@ -12,7 +12,7 @@ const Projects = () => {
   const { projects, isLoading } = useProjects();
 
   return (
-    <section className="flex w-full flex-col gap-8 overflow-auto px-4 xl:max-w-[80rem]">
+    <section className="flex w-full flex-col gap-8 overflow-auto px-4 md:px-0 xl:max-w-[var(--width-large-screen)]">
       <ProjectsHeader />
 
       {isLoading && <Skeleton />}

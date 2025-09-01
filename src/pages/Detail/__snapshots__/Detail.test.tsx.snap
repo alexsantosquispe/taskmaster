@@ -5,8 +5,8 @@ exports[`Detail component should render the component correctly 1`] = `
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="flex w-full flex-col gap-2 md:gap-6"
+      <section
+        class="flex w-full flex-col gap-2 md:gap-6 xl:max-w-[var(--width-large-screen)]"
       >
         <div
           class="flex flex-col gap-2"
@@ -19,7 +19,7 @@ exports[`Detail component should render the component correctly 1`] = `
             >
               <a
                 class="hover:cursor-pointer"
-                href=""
+                href="/projects"
               >
                 <span>
                   Projects
@@ -47,7 +47,7 @@ exports[`Detail component should render the component correctly 1`] = `
             >
               <a
                 class="hover:cursor-pointer text-primary font-semibold dark:text-white"
-                href=""
+                href="/projects/taskmaster-mobile-app"
               >
                 <span>
                   TaskMaster Mobile App
@@ -57,9 +57,7 @@ exports[`Detail component should render the component correctly 1`] = `
           </div>
           <h2
             class="text-2xl leading-12 font-bold"
-          >
-            TaskMaster Mobile App
-          </h2>
+          />
         </div>
         <div
           class="flex w-full flex-col gap-y-4 overflow-hidden md:h-full"
@@ -101,7 +99,7 @@ exports[`Detail component should render the component correctly 1`] = `
             </button>
           </div>
           <div
-            class="scroll-x-auto md:scroll-none flex gap-x-3 overflow-auto md:overflow-hidden"
+            class="scroll-x-auto md:scroll-none flex gap-x-2 overflow-auto md:overflow-hidden"
           >
             <div
               class="dark:bg-primary flex h-fit flex-col rounded-xl border border-neutral-200 bg-neutral-100 px-2 pb-2 md:h-auto md:w-1/5 md:overflow-hidden dark:border-neutral-700"
@@ -2631,12 +2629,12 @@ exports[`Detail component should render the component correctly 1`] = `
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   </body>,
   "container": <div>
-    <div
-      class="flex w-full flex-col gap-2 md:gap-6"
+    <section
+      class="flex w-full flex-col gap-2 md:gap-6 xl:max-w-[var(--width-large-screen)]"
     >
       <div
         class="flex flex-col gap-2"
@@ -2649,7 +2647,7 @@ exports[`Detail component should render the component correctly 1`] = `
           >
             <a
               class="hover:cursor-pointer"
-              href=""
+              href="/projects"
             >
               <span>
                 Projects
@@ -2677,7 +2675,7 @@ exports[`Detail component should render the component correctly 1`] = `
           >
             <a
               class="hover:cursor-pointer text-primary font-semibold dark:text-white"
-              href=""
+              href="/projects/taskmaster-mobile-app"
             >
               <span>
                 TaskMaster Mobile App
@@ -2687,9 +2685,7 @@ exports[`Detail component should render the component correctly 1`] = `
         </div>
         <h2
           class="text-2xl leading-12 font-bold"
-        >
-          TaskMaster Mobile App
-        </h2>
+        />
       </div>
       <div
         class="flex w-full flex-col gap-y-4 overflow-hidden md:h-full"
@@ -2731,7 +2727,7 @@ exports[`Detail component should render the component correctly 1`] = `
           </button>
         </div>
         <div
-          class="scroll-x-auto md:scroll-none flex gap-x-3 overflow-auto md:overflow-hidden"
+          class="scroll-x-auto md:scroll-none flex gap-x-2 overflow-auto md:overflow-hidden"
         >
           <div
             class="dark:bg-primary flex h-fit flex-col rounded-xl border border-neutral-200 bg-neutral-100 px-2 pb-2 md:h-auto md:w-1/5 md:overflow-hidden dark:border-neutral-700"
@@ -5261,7 +5257,7 @@ exports[`Detail component should render the component correctly 1`] = `
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

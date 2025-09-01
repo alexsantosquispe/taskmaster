@@ -11,6 +11,7 @@
   --color-primary: #171717;
   --color-accent: var(--color-blue-700);
   --color-accent-dark: var(--color-orange-500);
+  --width-large-screen: 88rem;
 }
 
 html,

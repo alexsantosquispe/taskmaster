@@ -1,3 +1,4 @@
+import { TestWrapper } from '@/utils/test.utils';
 import { render } from '@testing-library/react';
 import { Breadcrumb } from './Breadcrumb';
 
@@ -16,7 +17,11 @@ const BREADCRUMBS = [
 
 describe('Breadcrumb', () => {
   it('should render the component correctly', () => {
-    const component = render(<Breadcrumb items={BREADCRUMBS} />);
+    const component = render(
+      <TestWrapper>
+        <Breadcrumb items={BREADCRUMBS} />
+      </TestWrapper>
+    );
 
     expect(component).toMatchSnapshot();
   });

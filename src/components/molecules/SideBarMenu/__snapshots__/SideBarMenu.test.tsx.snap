@@ -5,7 +5,7 @@ exports[`SideBarMenu MobileMenu should render the component correctly for mobile
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <section
+      <aside
         class="md:dark:bg-primary dark:bg-primary/70 fixed z-40 flex flex-col border-b border-gray-200 bg-white/40 backdrop-blur-md transition-all duration-300 ease-in-out md:relative md:rounded-xl md:border md:bg-white md:shadow-xl dark:border-white/15 w-full md:w-[16rem]"
       >
         <div
@@ -86,11 +86,11 @@ exports[`SideBarMenu MobileMenu should render the component correctly for mobile
         <div
           class="flex-col px-2 text-sm md:flex md:h-full md:justify-between md:p-2"
         />
-      </section>
+      </aside>
     </div>
   </body>,
   "container": <div>
-    <section
+    <aside
       class="md:dark:bg-primary dark:bg-primary/70 fixed z-40 flex flex-col border-b border-gray-200 bg-white/40 backdrop-blur-md transition-all duration-300 ease-in-out md:relative md:rounded-xl md:border md:bg-white md:shadow-xl dark:border-white/15 w-full md:w-[16rem]"
     >
       <div
@@ -171,7 +171,7 @@ exports[`SideBarMenu MobileMenu should render the component correctly for mobile
       <div
         class="flex-col px-2 text-sm md:flex md:h-full md:justify-between md:p-2"
       />
-    </section>
+    </aside>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -232,7 +232,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <section
+      <aside
         class="md:dark:bg-primary dark:bg-primary/70 fixed z-40 flex flex-col border-b border-gray-200 bg-white/40 backdrop-blur-md transition-all duration-300 ease-in-out md:relative md:rounded-xl md:border md:bg-white md:shadow-xl dark:border-white/15 w-full md:w-[16rem]"
       >
         <div
@@ -836,11 +836,11 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
             </div>
           </div>
         </div>
-      </section>
+      </aside>
     </div>
   </body>,
   "container": <div>
-    <section
+    <aside
       class="md:dark:bg-primary dark:bg-primary/70 fixed z-40 flex flex-col border-b border-gray-200 bg-white/40 backdrop-blur-md transition-all duration-300 ease-in-out md:relative md:rounded-xl md:border md:bg-white md:shadow-xl dark:border-white/15 w-full md:w-[16rem]"
     >
       <div
@@ -1444,7 +1444,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
           </div>
         </div>
       </div>
-    </section>
+    </aside>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
