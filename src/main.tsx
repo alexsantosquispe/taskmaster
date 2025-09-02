@@ -4,7 +4,7 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
-import App from './App.tsx';
+import { AppRouter } from './AppRouter.tsx';
 import { ThemeProvider } from './contexts/ThemeProvider.tsx';
 import { ToastProvider } from './contexts/ToastProvider.tsx';
 import { store } from './store.ts';
@@ -15,7 +15,7 @@ createRoot(document.getElementById('root')!).render(
       <Provider store={store}>
         <BrowserRouter>
           <ToastProvider>
-            <App />
+            <AppRouter />
           </ToastProvider>
         </BrowserRouter>
       </Provider>

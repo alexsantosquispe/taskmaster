@@ -24,13 +24,13 @@ export const SIDE_BAR_ITEMS: NavBarLinkItem[] = [
     id: '1',
     label: 'Dashboard',
     icon: <BoardIcon />,
-    path: '/dashboard'
+    path: '/home/dashboard'
   },
   {
     id: '2',
     label: 'Projects',
     icon: <ProjectIcon />,
-    path: '/projects',
+    path: '/home/projects',
     subItems: [
       {
         id: '2-1',
@@ -56,13 +56,13 @@ export const SIDE_BAR_ITEMS: NavBarLinkItem[] = [
     id: '3',
     label: 'Tasks',
     icon: <TasksListIcon />,
-    path: '/tasks'
+    path: '/home/tasks'
   },
   {
     id: '4',
     label: 'Reports',
     icon: <ChartPieIcon />,
-    path: '/reports'
+    path: '/home/reports'
   }
 ];
 
@@ -71,13 +71,13 @@ export const FOOTER_ITEMS: NavBarLinkItem[] = [
     id: '5',
     label: 'Settings',
     icon: <SettingsIcon />,
-    path: '/settings'
+    path: '/home/settings'
   },
   {
     id: '6',
     label: 'Help',
     icon: <InfoIcon />,
-    path: '/help'
+    path: '/home/help'
   }
 ];
 
