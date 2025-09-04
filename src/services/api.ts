@@ -15,12 +15,17 @@ export const apiClient = createApi({
   refetchOnFocus: true,
   refetchOnReconnect: true,
   endpoints: (builder) => ({
-    getProjects: builder.query<ProjectDTO[], void>({
-      queryFn: async () => {
-        const { data, error } = await supabaseClient
-          .from('projects')
-          .select()
-          .order('update_date', { ascending: false });
+    getProjects: builder.query<ProjectDTO[], string | undefined>({
+      queryFn: async (searchValue) => {
+        let query = supabaseClient.from('projects').select();
+
+        if (searchValue && searchValue.trim() !== '') {
+          query = query.ilike('name', `%${searchValue}%`);
+        }
+
+        const { data, error } = await query.order('update_date', {
+          ascending: false
+        });
         if (error) throw error;
         return { data: data || [] };
       },
