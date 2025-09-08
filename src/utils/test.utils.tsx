@@ -36,7 +36,7 @@ export const WrapperUI = ({ children, className }: WrapperProps) => {
   return (
     <div
       className={twMerge(
-        'flex items-center justify-center rounded border border-neutral-400 p-8',
+        'text-primary flex items-center justify-center rounded border border-neutral-400 p-8 dark:text-white',
         className
       )}
     >
