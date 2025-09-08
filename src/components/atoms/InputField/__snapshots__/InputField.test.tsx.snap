@@ -6,7 +6,7 @@ exports[`InputField styles should render the component correctly 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="flex w-full flex-col"
+        class="relative flex w-full flex-col"
       >
         <label
           class="mb-0.5 text-sm"
@@ -15,7 +15,8 @@ exports[`InputField styles should render the component correctly 1`] = `
           Name
         </label>
         <input
-          class="focus:ring-accent focus:border-accent dark:focus:ring-accent-dark dark:focus:border-accent-dark w-full rounded-lg border border-neutral-200 px-4 py-2 text-sm focus:ring-1 focus:outline-none dark:border-white/20"
+          autocomplete="off"
+          class="focus:ring-accent focus:border-accent dark:focus:ring-accent-dark dark:focus:border-accent-dark w-full rounded-lg border border-neutral-200 px-4 py-2 text-sm shadow-xs focus:ring-1 focus:outline-none dark:border-white/20"
           id="name"
           name="name"
           placeholder="Enter your name"
@@ -27,7 +28,7 @@ exports[`InputField styles should render the component correctly 1`] = `
   </body>,
   "container": <div>
     <div
-      class="flex w-full flex-col"
+      class="relative flex w-full flex-col"
     >
       <label
         class="mb-0.5 text-sm"
@@ -36,7 +37,8 @@ exports[`InputField styles should render the component correctly 1`] = `
         Name
       </label>
       <input
-        class="focus:ring-accent focus:border-accent dark:focus:ring-accent-dark dark:focus:border-accent-dark w-full rounded-lg border border-neutral-200 px-4 py-2 text-sm focus:ring-1 focus:outline-none dark:border-white/20"
+        autocomplete="off"
+        class="focus:ring-accent focus:border-accent dark:focus:ring-accent-dark dark:focus:border-accent-dark w-full rounded-lg border border-neutral-200 px-4 py-2 text-sm shadow-xs focus:ring-1 focus:outline-none dark:border-white/20"
         id="name"
         name="name"
         placeholder="Enter your name"

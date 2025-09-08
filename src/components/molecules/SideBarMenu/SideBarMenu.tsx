@@ -7,17 +7,17 @@ import {
   TasksListIcon
 } from '@/icons';
 
-import SwitchThemeButton from '@/components/atoms/SwitchThemeButton/SwitchThemeButton';
-import UserLoggedItem from '@/components/atoms/UserLoggedItem/UserLoggedItem';
-import { currentUser } from '@/constants';
-import { useIsMobile } from '@/hooks/useIsMobile';
-import type { NavBarLinkItem } from '@/models/types';
-import cn from 'clsx';
-import { useState } from 'react';
-import { twMerge } from 'tailwind-merge';
 import { MobileMenu } from './components/MobileMenu/MobileMenu';
+import type { NavBarLinkItem } from '@/models/types';
 import SideBarHeader from './components/SideBarHeader';
 import { SideBarItem } from './components/SideBarItem';
+import SwitchThemeButton from '@/components/atoms/SwitchThemeButton/SwitchThemeButton';
+import UserLoggedItem from '@/components/atoms/UserLoggedItem/UserLoggedItem';
+import cn from 'clsx';
+import { currentUser } from '@/constants';
+import { twMerge } from 'tailwind-merge';
+import { useIsMobile } from '@/hooks/useIsMobile';
+import { useState } from 'react';
 
 export const SIDE_BAR_ITEMS: NavBarLinkItem[] = [
   {
@@ -96,7 +96,7 @@ export const SideBarMenu = () => {
   return (
     <aside
       className={twMerge(
-        'md:dark:bg-primary dark:bg-primary/70 fixed z-40 flex flex-col border-b border-gray-200 bg-white/40 backdrop-blur-md transition-all duration-300 ease-in-out md:relative md:rounded-xl md:border md:bg-white md:shadow-md dark:border-white/15',
+        'md:dark:bg-primary dark:bg-primary/70 fixed z-40 flex flex-col border-b border-gray-200 bg-white/40 backdrop-blur-md transition-all duration-300 ease-in-out md:relative md:rounded-xl md:border md:bg-white md:shadow-lg dark:border-white/15',
         cn({
           'w-full md:w-14': isMenuCollapsed,
           'w-full md:w-[16rem]': !isMenuCollapsed

@@ -14,6 +14,8 @@ import { CollapseIcon } from './CollapseIcon';
 import { CommentCircleIcon } from './CommentCircleIcon';
 import { EllipsisVerticalIcon } from './EllipsisVerticalIcon';
 import { ExpandIcon } from './ExpandIcon';
+import { EyeClosedIcon } from './EyeClosedIcon';
+import { EyeIcon } from './EyeIcon';
 import { InfoIcon } from './InfoIcon';
 import { LaptopIcon } from './LaptopIcon';
 import { LoadIcon } from './LoadIcon';
@@ -43,6 +45,8 @@ export {
   CommentCircleIcon,
   EllipsisVerticalIcon,
   ExpandIcon,
+  EyeClosedIcon,
+  EyeIcon,
   InfoIcon,
   LaptopIcon,
   LoadIcon,

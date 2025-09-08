@@ -1,5 +1,5 @@
-import { Suspense, lazy } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
+import { Suspense, lazy } from 'react';
 
 import App from './App';
 import { Dashboard } from './pages/Dashboard/Dashboard';
@@ -17,7 +17,7 @@ export const AppRouter = () => {
     <Routes>
       <Route path="/" element={<Navigate to="/login" />} />
       <Route path="login" element={<SignIn />} />
-      <Route path="register" element={<SignUp />} />
+      <Route path="signup" element={<SignUp />} />
 
       <Route path="home" element={<App />}>
         <Route index path="dashboard" element={<Dashboard />} />
