@@ -102,6 +102,7 @@ export interface InputProps extends ComponentWithController {
   isDisabled?: boolean;
   isRequired?: boolean;
   onChangeText?: (value: string) => void;
+  autoComplete?: string;
   className?: {
     container?: string;
     input?: string;

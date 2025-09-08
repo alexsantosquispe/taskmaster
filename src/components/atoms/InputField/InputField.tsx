@@ -1,8 +1,12 @@
 import { INPUT_FIELD_ERROR, INPUT_FIELD_STYLES } from '@/styles';
+import { useCallback, useState } from 'react';
 
+import { Controller } from 'react-hook-form';
+import { EyeClosedIcon } from '@/icons/EyeClosedIcon';
+import { EyeIcon } from '@/icons/EyeIcon';
+import { IconButton } from '../IconButton/IconButton';
 import type { InputProps } from '@/models/types';
 import cn from 'clsx';
-import { Controller } from 'react-hook-form';
 import { twMerge } from 'tailwind-merge';
 
 export const InputField = ({
@@ -15,8 +19,17 @@ export const InputField = ({
   errorMessage = '',
   isRequired = false,
   onChangeText,
+  autoComplete = 'off',
   className
 }: InputProps) => {
+  const [showPassword, setShowPassword] = useState(false);
+  const passwordType = showPassword ? 'text' : 'password';
+
+  const toggleShowPassword = useCallback(
+    () => setShowPassword((prev) => !prev),
+    [setShowPassword]
+  );
+
   return (
     <Controller
       control={control}
@@ -29,20 +42,39 @@ export const InputField = ({
 
         return (
           <div
-            className={twMerge('flex w-full flex-col', className?.container)}
+            className={twMerge(
+              'relative flex w-full flex-col',
+              className?.container
+            )}
           >
             <label htmlFor={name} className="mb-0.5 text-sm">
               {label}
               {isRequired && <span className="text-rose-600">&nbsp;*</span>}
             </label>
+            {type === 'password' && (
+              <IconButton
+                ariaLabel="Show and hide password"
+                icon={
+                  showPassword ? (
+                    <EyeIcon className="size-4" />
+                  ) : (
+                    <EyeClosedIcon className="size-4" />
+                  )
+                }
+                onClick={toggleShowPassword}
+                className="absolute top-[0.3125rem] right-1 rounded-md p-1.5 text-neutral-400 dark:text-white/50"
+                isDefault={false}
+              />
+            )}
             <input
               id={name}
               name={name}
               onChange={onChange}
               value={value}
               placeholder={placeholder}
-              type={type}
+              type={type === 'password' ? passwordType : type}
               disabled={isDisabled}
+              autoComplete={autoComplete}
               className={twMerge(
                 INPUT_FIELD_STYLES,
                 cn({

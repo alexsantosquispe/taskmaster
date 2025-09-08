@@ -6,7 +6,7 @@ exports[`SideBarMenu MobileMenu should render the component correctly for mobile
   "baseElement": <body>
     <div>
       <aside
-        class="md:dark:bg-primary dark:bg-primary/70 fixed z-40 flex flex-col border-b border-gray-200 bg-white/40 backdrop-blur-md transition-all duration-300 ease-in-out md:relative md:rounded-xl md:border md:bg-white md:shadow-md dark:border-white/15 w-full md:w-[16rem]"
+        class="md:dark:bg-primary dark:bg-primary/70 fixed z-40 flex flex-col border-b border-gray-200 bg-white/40 backdrop-blur-md transition-all duration-300 ease-in-out md:relative md:rounded-xl md:border md:bg-white md:shadow-lg dark:border-white/15 w-full md:w-[16rem]"
       >
         <div
           class="flex h-[3.5rem] items-center justify-between pr-2 pl-4 md:hidden"
@@ -91,7 +91,7 @@ exports[`SideBarMenu MobileMenu should render the component correctly for mobile
   </body>,
   "container": <div>
     <aside
-      class="md:dark:bg-primary dark:bg-primary/70 fixed z-40 flex flex-col border-b border-gray-200 bg-white/40 backdrop-blur-md transition-all duration-300 ease-in-out md:relative md:rounded-xl md:border md:bg-white md:shadow-md dark:border-white/15 w-full md:w-[16rem]"
+      class="md:dark:bg-primary dark:bg-primary/70 fixed z-40 flex flex-col border-b border-gray-200 bg-white/40 backdrop-blur-md transition-all duration-300 ease-in-out md:relative md:rounded-xl md:border md:bg-white md:shadow-lg dark:border-white/15 w-full md:w-[16rem]"
     >
       <div
         class="flex h-[3.5rem] items-center justify-between pr-2 pl-4 md:hidden"
@@ -233,7 +233,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
   "baseElement": <body>
     <div>
       <aside
-        class="md:dark:bg-primary dark:bg-primary/70 fixed z-40 flex flex-col border-b border-gray-200 bg-white/40 backdrop-blur-md transition-all duration-300 ease-in-out md:relative md:rounded-xl md:border md:bg-white md:shadow-md dark:border-white/15 w-full md:w-[16rem]"
+        class="md:dark:bg-primary dark:bg-primary/70 fixed z-40 flex flex-col border-b border-gray-200 bg-white/40 backdrop-blur-md transition-all duration-300 ease-in-out md:relative md:rounded-xl md:border md:bg-white md:shadow-lg dark:border-white/15 w-full md:w-[16rem]"
       >
         <div
           class="hidden items-center justify-between p-2 md:flex md:flex-row md:pl-4"
@@ -332,7 +332,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
                 <a
                   aria-label="Dashboard"
                   class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:text-accent dark:hover:text-accent-dark hover:bg-neutral-100 dark:hover:bg-white/5"
-                  href="/dashboard"
+                  href="/home/dashboard"
                 >
                   <div
                     class="relative flex items-center justify-center"
@@ -397,7 +397,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
                 <a
                   aria-label="Projects"
                   class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:text-accent dark:hover:text-accent-dark hover:bg-neutral-100 dark:hover:bg-white/5"
-                  href="/projects"
+                  href="/home/projects"
                 >
                   <div
                     class="relative flex items-center justify-center"
@@ -462,7 +462,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
                 <a
                   aria-label="Tasks"
                   class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:text-accent dark:hover:text-accent-dark hover:bg-neutral-100 dark:hover:bg-white/5"
-                  href="/tasks"
+                  href="/home/tasks"
                 >
                   <div
                     class="relative flex items-center justify-center"
@@ -525,7 +525,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
                 <a
                   aria-label="Reports"
                   class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:text-accent dark:hover:text-accent-dark hover:bg-neutral-100 dark:hover:bg-white/5"
-                  href="/reports"
+                  href="/home/reports"
                 >
                   <div
                     class="relative flex items-center justify-center"
@@ -574,7 +574,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
                 <a
                   aria-label="Settings"
                   class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:text-accent dark:hover:text-accent-dark hover:bg-neutral-100 dark:hover:bg-white/5"
-                  href="/settings"
+                  href="/home/settings"
                 >
                   <div
                     class="relative flex items-center justify-center"
@@ -619,7 +619,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
                 <a
                   aria-label="Help"
                   class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:text-accent dark:hover:text-accent-dark hover:bg-neutral-100 dark:hover:bg-white/5"
-                  href="/help"
+                  href="/home/help"
                 >
                   <div
                     class="relative flex items-center justify-center"
@@ -841,7 +841,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
   </body>,
   "container": <div>
     <aside
-      class="md:dark:bg-primary dark:bg-primary/70 fixed z-40 flex flex-col border-b border-gray-200 bg-white/40 backdrop-blur-md transition-all duration-300 ease-in-out md:relative md:rounded-xl md:border md:bg-white md:shadow-md dark:border-white/15 w-full md:w-[16rem]"
+      class="md:dark:bg-primary dark:bg-primary/70 fixed z-40 flex flex-col border-b border-gray-200 bg-white/40 backdrop-blur-md transition-all duration-300 ease-in-out md:relative md:rounded-xl md:border md:bg-white md:shadow-lg dark:border-white/15 w-full md:w-[16rem]"
     >
       <div
         class="hidden items-center justify-between p-2 md:flex md:flex-row md:pl-4"
@@ -940,7 +940,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
               <a
                 aria-label="Dashboard"
                 class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:text-accent dark:hover:text-accent-dark hover:bg-neutral-100 dark:hover:bg-white/5"
-                href="/dashboard"
+                href="/home/dashboard"
               >
                 <div
                   class="relative flex items-center justify-center"
@@ -1005,7 +1005,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
               <a
                 aria-label="Projects"
                 class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:text-accent dark:hover:text-accent-dark hover:bg-neutral-100 dark:hover:bg-white/5"
-                href="/projects"
+                href="/home/projects"
               >
                 <div
                   class="relative flex items-center justify-center"
@@ -1070,7 +1070,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
               <a
                 aria-label="Tasks"
                 class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:text-accent dark:hover:text-accent-dark hover:bg-neutral-100 dark:hover:bg-white/5"
-                href="/tasks"
+                href="/home/tasks"
               >
                 <div
                   class="relative flex items-center justify-center"
@@ -1133,7 +1133,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
               <a
                 aria-label="Reports"
                 class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:text-accent dark:hover:text-accent-dark hover:bg-neutral-100 dark:hover:bg-white/5"
-                href="/reports"
+                href="/home/reports"
               >
                 <div
                   class="relative flex items-center justify-center"
@@ -1182,7 +1182,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
               <a
                 aria-label="Settings"
                 class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:text-accent dark:hover:text-accent-dark hover:bg-neutral-100 dark:hover:bg-white/5"
-                href="/settings"
+                href="/home/settings"
               >
                 <div
                   class="relative flex items-center justify-center"
@@ -1227,7 +1227,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
               <a
                 aria-label="Help"
                 class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:text-accent dark:hover:text-accent-dark hover:bg-neutral-100 dark:hover:bg-white/5"
-                href="/help"
+                href="/home/help"
               >
                 <div
                   class="relative flex items-center justify-center"
