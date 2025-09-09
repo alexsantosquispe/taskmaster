@@ -6,7 +6,7 @@ interface AuthWrapperProps {
 
 export const AuthWrapper = ({ children }: AuthWrapperProps) => {
   return (
-    <div className="flex w-[26rem] flex-col gap-4 rounded-xl border border-neutral-200 px-8 py-16 shadow-lg md:px-12 dark:border-white/20">
+    <div className="flex w-[24rem] flex-col gap-4 rounded-xl border border-neutral-200 px-8 py-16 shadow-lg md:w-[26rem] md:px-12 dark:border-white/20">
       {children}
     </div>
   );

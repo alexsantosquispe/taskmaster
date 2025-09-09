@@ -27,9 +27,13 @@ const THEME_BUTTONS = [
 
 interface SwitchThemeButtonProps {
   isCollapsed?: boolean;
+  className?: string;
 }
 
-const SwitchThemeButton = ({ isCollapsed }: SwitchThemeButtonProps) => {
+const SwitchThemeButton = ({
+  isCollapsed,
+  className
+}: SwitchThemeButtonProps) => {
   const { theme, setTheme } = useTheme();
 
   const onSelectTheme = (id: string) => {
@@ -43,7 +47,8 @@ const SwitchThemeButton = ({ isCollapsed }: SwitchThemeButtonProps) => {
         cn({
           'flex-col gap-y-0.5': isCollapsed,
           'flex-row': !isCollapsed
-        })
+        }),
+        className
       )}
     >
       {THEME_BUTTONS.map((item) => (
