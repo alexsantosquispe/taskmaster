@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { AppRouter } from './AppRouter.tsx';
 import { ThemeProvider } from './contexts/ThemeProvider.tsx';
 import { ToastProvider } from './contexts/ToastProvider.tsx';
-import { store } from './store.ts';
+import { store } from './store/store.ts';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

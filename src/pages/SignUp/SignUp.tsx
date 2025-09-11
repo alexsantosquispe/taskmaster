@@ -2,11 +2,11 @@ import { TextLink } from '@/components/atoms/TextLink/TextLink';
 import { AuthForm } from '@/components/molecules/AuthForm/AuthForm';
 import type { AuthFormType } from '@/components/molecules/AuthForm/AuthForm.schema';
 import { AuthWrapper } from '@/components/molecules/AuthWrapper/AuthWrapper';
-import authClient from '@/services/authApi';
+import { useSignUpMutation } from '@/services/authApi';
 import { Layout } from '../Layout';
 
-export const SignUp = () => {
-  const [signUp, signUpResult] = authClient.useSignUpMutation();
+const SignUp = () => {
+  const [signUp, signUpResult] = useSignUpMutation();
 
   const createAccount = (formData: AuthFormType) => {
     signUp(formData);
@@ -36,3 +36,5 @@ export const SignUp = () => {
     </Layout>
   );
 };
+
+export default SignUp;

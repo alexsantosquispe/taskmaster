@@ -2,14 +2,19 @@ import { TextLink } from '@/components/atoms/TextLink/TextLink';
 import { AuthForm } from '@/components/molecules/AuthForm/AuthForm';
 import type { AuthFormType } from '@/components/molecules/AuthForm/AuthForm.schema';
 import { AuthWrapper } from '@/components/molecules/AuthWrapper/AuthWrapper';
-import authClient from '@/services/authApi';
+import { useSignInMutation } from '@/services/authApi';
+import { useNavigate } from 'react-router-dom';
 import { Layout } from '../Layout';
 
 export const SignIn = () => {
-  const [signIn, signInResult] = authClient.useSignInMutation();
+  const [signIn, signInResult] = useSignInMutation();
+  const navigate = useNavigate();
 
   const signInUser = (formData: AuthFormType) => {
-    signIn(formData);
+    signIn(formData)
+      .unwrap()
+      .then(() => navigate('/home/dashboard'))
+      .catch((error) => console.log(error));
   };
 
   return (
