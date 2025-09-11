@@ -1,9 +1,17 @@
 import { TextLink } from '@/components/atoms/TextLink/TextLink';
 import { AuthForm } from '@/components/molecules/AuthForm/AuthForm';
+import type { AuthFormType } from '@/components/molecules/AuthForm/AuthForm.schema';
 import { AuthWrapper } from '@/components/molecules/AuthWrapper/AuthWrapper';
+import authClient from '@/services/authApi';
 import { Layout } from '../Layout';
 
 export const SignIn = () => {
+  const [signIn, signInResult] = authClient.useSignInMutation();
+
+  const signInUser = (formData: AuthFormType) => {
+    signIn(formData);
+  };
+
   return (
     <Layout>
       <section className="text-primary flex w-full flex-1 items-center justify-center bg-white px-4 md:p-0 dark:bg-black dark:text-white">
@@ -17,7 +25,8 @@ export const SignIn = () => {
 
           <AuthForm
             submitButtonLabel="Login"
-            onSubmitHandler={() => {}}
+            onSubmitHandler={signInUser}
+            isLoading={signInResult.isLoading}
             hasForgotPassword={true}
           />
 

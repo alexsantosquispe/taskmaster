@@ -13,6 +13,7 @@ import {
 interface AuthFormProps {
   submitButtonLabel: string;
   onSubmitHandler: (formData: AuthFormType) => void;
+  isLoading: boolean;
   hasTermsAndPrivacyLegend?: boolean;
   hasForgotPassword?: boolean;
 }
@@ -20,6 +21,7 @@ interface AuthFormProps {
 export const AuthForm = ({
   submitButtonLabel,
   onSubmitHandler,
+  isLoading,
   hasTermsAndPrivacyLegend = false,
   hasForgotPassword = false
 }: AuthFormProps) => {
@@ -75,6 +77,7 @@ export const AuthForm = ({
         label={submitButtonLabel}
         ariaLabel={`${submitButtonLabel} button`}
         className="w-full"
+        isLoading={isLoading}
       />
     </form>
   );

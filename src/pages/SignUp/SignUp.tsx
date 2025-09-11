@@ -2,11 +2,14 @@ import { TextLink } from '@/components/atoms/TextLink/TextLink';
 import { AuthForm } from '@/components/molecules/AuthForm/AuthForm';
 import type { AuthFormType } from '@/components/molecules/AuthForm/AuthForm.schema';
 import { AuthWrapper } from '@/components/molecules/AuthWrapper/AuthWrapper';
+import authClient from '@/services/authApi';
 import { Layout } from '../Layout';
 
 export const SignUp = () => {
+  const [signUp, signUpResult] = authClient.useSignUpMutation();
+
   const createAccount = (formData: AuthFormType) => {
-    console.log(formData);
+    signUp(formData);
   };
 
   return (
@@ -21,6 +24,7 @@ export const SignUp = () => {
           <AuthForm
             submitButtonLabel="Create an account"
             onSubmitHandler={createAccount}
+            isLoading={signUpResult.isLoading}
             hasTermsAndPrivacyLegend={true}
           />
 
