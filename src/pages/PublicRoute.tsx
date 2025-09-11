@@ -6,7 +6,7 @@ interface PublicRouteProps {
   children: ReactNode;
 }
 
-export const PublicRoute = ({ children }: PublicRouteProps) => {
+const PublicRoute = ({ children }: PublicRouteProps) => {
   const { isAuthenticated } = useAuth();
 
   if (isAuthenticated) {
@@ -15,3 +15,5 @@ export const PublicRoute = ({ children }: PublicRouteProps) => {
 
   return <>{children}</>;
 };
+
+export default PublicRoute;

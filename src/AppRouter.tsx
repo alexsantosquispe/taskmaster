@@ -3,10 +3,10 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 
 import App from './App';
 import { Dashboard } from './pages/Dashboard/Dashboard';
-import { ProtectedRoute } from './pages/ProtectedRoute';
-import { PublicRoute } from './pages/PublicRoute';
 import { SignIn } from './pages/SignIn/SignIn';
 
+const PublicRoute = lazy(() => import('./pages/PublicRoute'));
+const ProtectedRoute = lazy(() => import('./pages/ProtectedRoute'));
 const SignUp = lazy(() => import('./pages/SignUp/SignUp'));
 const ProjectsLayout = lazy(() => import('./pages/Projects/ProjectsLayout'));
 const Projects = lazy(() => import('./pages/Projects/Projects'));
@@ -21,9 +21,11 @@ export const AppRouter = () => {
       <Route
         path="login"
         element={
-          <PublicRoute>
-            <SignIn />
-          </PublicRoute>
+          <Suspense>
+            <PublicRoute>
+              <SignIn />
+            </PublicRoute>
+          </Suspense>
         }
       />
       <Route
@@ -37,7 +39,13 @@ export const AppRouter = () => {
         }
       />
 
-      <Route element={<ProtectedRoute />}>
+      <Route
+        element={
+          <Suspense>
+            <ProtectedRoute />
+          </Suspense>
+        }
+      >
         <Route path="home" element={<App />}>
           <Route index path="dashboard" element={<Dashboard />} />
           <Route
