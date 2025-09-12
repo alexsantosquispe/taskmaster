@@ -1,13 +1,13 @@
 import { Suspense, lazy } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 
-import App from './App';
-import { Dashboard } from './pages/Dashboard/Dashboard';
 import { SignIn } from './pages/SignIn/SignIn';
 
 const PublicRoute = lazy(() => import('./pages/PublicRoute'));
 const ProtectedRoute = lazy(() => import('./pages/ProtectedRoute'));
+const Dashboard = lazy(() => import('./pages/Dashboard/Dashboard'));
 const SignUp = lazy(() => import('./pages/SignUp/SignUp'));
+const App = lazy(() => import('./App'));
 const ProjectsLayout = lazy(() => import('./pages/Projects/ProjectsLayout'));
 const Projects = lazy(() => import('./pages/Projects/Projects'));
 const Detail = lazy(() => import('./pages/Detail/Detail'));
@@ -18,6 +18,7 @@ export const AppRouter = () => {
   return (
     <Routes>
       <Route path="/" element={<Navigate to="/login" />} />
+
       <Route
         path="login"
         element={
@@ -28,6 +29,7 @@ export const AppRouter = () => {
           </Suspense>
         }
       />
+
       <Route
         path="signup"
         element={
@@ -46,8 +48,23 @@ export const AppRouter = () => {
           </Suspense>
         }
       >
-        <Route path="home" element={<App />}>
-          <Route index path="dashboard" element={<Dashboard />} />
+        <Route
+          path="home"
+          element={
+            <Suspense>
+              <App />
+            </Suspense>
+          }
+        >
+          <Route
+            index
+            path="dashboard"
+            element={
+              <Suspense>
+                <Dashboard />
+              </Suspense>
+            }
+          />
           <Route
             path="projects"
             element={

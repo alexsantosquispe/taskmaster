@@ -35,7 +35,7 @@ export const SignIn = () => {
             hasForgotPassword={true}
           />
 
-          <p className="text-semibold pt-4 text-center text-sm text-neutral-600 dark:text-neutral-200">
+          <p className="text-medium pt-4 text-center text-sm text-neutral-600 dark:text-neutral-200">
             {`Don't have an account? `}
             <TextLink to="/signup">Create an account</TextLink>
           </p>

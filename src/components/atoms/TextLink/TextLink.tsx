@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
 import type { ReactNode } from 'react';
+import { Link } from 'react-router-dom';
 import { twMerge } from 'tailwind-merge';
 
 interface TextLinkProps {
@@ -13,7 +13,7 @@ export const TextLink = ({ to, children, className }: TextLinkProps) => {
     <Link
       to={to}
       className={twMerge(
-        'text-accent dark:text-accent-dark hover:underline',
+        'dark:text-accent-dark text-accent hover:underline',
         className
       )}
     >
