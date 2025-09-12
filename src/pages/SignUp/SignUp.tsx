@@ -1,15 +1,20 @@
-import { TextLink } from '@/components/atoms/TextLink/TextLink';
 import { AuthForm } from '@/components/molecules/AuthForm/AuthForm';
 import type { AuthFormType } from '@/components/molecules/AuthForm/AuthForm.schema';
 import { AuthWrapper } from '@/components/molecules/AuthWrapper/AuthWrapper';
-import { useSignUpMutation } from '@/services/authApi';
 import { Layout } from '../Layout';
+import { TextLink } from '@/components/atoms/TextLink/TextLink';
+import { useNavigate } from 'react-router-dom';
+import { useSignUpMutation } from '@/services/authApi';
 
 const SignUp = () => {
   const [signUp, signUpResult] = useSignUpMutation();
+  const navigate = useNavigate();
 
   const createAccount = (formData: AuthFormType) => {
-    signUp(formData);
+    signUp(formData)
+      .unwrap()
+      .then(() => navigate('/home/dashboard'))
+      .catch((error) => console.log(error));
   };
 
   return (

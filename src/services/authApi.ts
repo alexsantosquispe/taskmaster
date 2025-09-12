@@ -1,8 +1,4 @@
-import type {
-  AuthApiError,
-  AuthError,
-  AuthResponse
-} from '@supabase/supabase-js';
+import type { AuthApiError, AuthResponse } from '@supabase/supabase-js';
 import { createApi, fakeBaseQuery } from '@reduxjs/toolkit/query/react';
 
 import type { AuthFormType } from '@/components/molecules/AuthForm/AuthForm.schema';
@@ -16,9 +12,13 @@ export const authApi = createApi({
   endpoints: (builder) => ({
     signUp: builder.mutation<AuthResultData, AuthFormType>({
       queryFn: async (credentials) => {
-        const { data, error } = await supabaseClient.auth.signUp(credentials);
-        if (error) return { error: error as AuthError };
-        return { data };
+        try {
+          const { data, error } = await supabaseClient.auth.signUp(credentials);
+          if (error) throw error;
+          return { data };
+        } catch (error) {
+          return { error: (error as AuthApiError).message };
+        }
       }
     }),
     signIn: builder.mutation<AuthResultData, AuthFormType>({
@@ -35,9 +35,13 @@ export const authApi = createApi({
     }),
     signOut: builder.mutation<undefined, void>({
       queryFn: async () => {
-        const { error } = await supabaseClient.auth.signOut();
-        if (error) return { error: error as AuthError };
-        return { data: undefined };
+        try {
+          const { error } = await supabaseClient.auth.signOut();
+          if (error) throw error;
+          return { data: undefined };
+        } catch (error) {
+          return { error: (error as AuthApiError).message };
+        }
       }
     })
   })
