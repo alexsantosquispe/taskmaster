@@ -1,5 +1,5 @@
-import { Suspense, lazy } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
+import { Suspense, lazy } from 'react';
 
 import { SignIn } from './pages/SignIn/SignIn';
 
@@ -13,6 +13,7 @@ const Projects = lazy(() => import('./pages/Projects/Projects'));
 const Detail = lazy(() => import('./pages/Detail/Detail'));
 const Reports = lazy(() => import('./pages/Reports/Reports'));
 const Tasks = lazy(() => import('./pages/Tasks/Tasks'));
+const NotFound = lazy(() => import('./pages/NotFound/NotFound'));
 
 export const AppRouter = () => {
   return (
@@ -108,6 +109,15 @@ export const AppRouter = () => {
           />
         </Route>
       </Route>
+
+      <Route
+        path="*"
+        element={
+          <Suspense>
+            <NotFound />
+          </Suspense>
+        }
+      />
     </Routes>
   );
 };
