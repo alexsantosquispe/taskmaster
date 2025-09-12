@@ -16,6 +16,7 @@ import { EllipsisVerticalIcon } from './EllipsisVerticalIcon';
 import { ExpandIcon } from './ExpandIcon';
 import { EyeClosedIcon } from './EyeClosedIcon';
 import { EyeIcon } from './EyeIcon';
+import { FrownIcon } from './FrownIcon';
 import { InfoIcon } from './InfoIcon';
 import { LaptopIcon } from './LaptopIcon';
 import { LoadIcon } from './LoadIcon';
@@ -47,6 +48,7 @@ export {
   ExpandIcon,
   EyeClosedIcon,
   EyeIcon,
+  FrownIcon,
   InfoIcon,
   LaptopIcon,
   LoadIcon,
