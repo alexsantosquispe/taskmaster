@@ -1,10 +1,10 @@
-import { TextLink } from '@/components/atoms/TextLink/TextLink';
 import { AuthForm } from '@/components/molecules/AuthForm/AuthForm';
 import type { AuthFormType } from '@/components/molecules/AuthForm/AuthForm.schema';
 import { AuthWrapper } from '@/components/molecules/AuthWrapper/AuthWrapper';
-import { useSignInMutation } from '@/services/authApi';
-import { useNavigate } from 'react-router-dom';
 import { Layout } from '../Layout';
+import { TextLink } from '@/components/atoms/TextLink/TextLink';
+import { useNavigate } from 'react-router-dom';
+import { useSignInMutation } from '@/services/authApi';
 
 export const SignIn = () => {
   const [signIn, signInResult] = useSignInMutation();
