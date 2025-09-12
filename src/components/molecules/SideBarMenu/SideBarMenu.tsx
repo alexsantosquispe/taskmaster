@@ -14,7 +14,6 @@ import { SideBarItem } from './components/SideBarItem';
 import SwitchThemeButton from '@/components/atoms/SwitchThemeButton/SwitchThemeButton';
 import UserLoggedItem from '@/components/atoms/UserLoggedItem/UserLoggedItem';
 import cn from 'clsx';
-import { currentUser } from '@/constants';
 import { twMerge } from 'tailwind-merge';
 import { useIsMobile } from '@/hooks/useIsMobile';
 import { useState } from 'react';
@@ -146,7 +145,7 @@ export const SideBarMenu = () => {
             <SwitchThemeButton isCollapsed={isMenuCollapsed} />
 
             <div className="pt-2">
-              <UserLoggedItem {...currentUser} isCollapsed={isMenuCollapsed} />
+              <UserLoggedItem isCollapsed={isMenuCollapsed} />
             </div>
           </div>
         )}

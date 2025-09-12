@@ -6,7 +6,7 @@ exports[`UserLoggedItem should render the component correctly 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="flex items-center rounded-lg py-2 transition-opacity duration-300 ease-in-out hover:cursor-pointer justify-between px-2 hover:bg-neutral-100 dark:hover:bg-neutral-800"
+        class="flex items-center rounded-lg py-2 justify-between px-2"
       >
         <div
           class="flex items-center gap-2"
@@ -24,49 +24,59 @@ exports[`UserLoggedItem should render the component correctly 1`] = `
             class="flex flex-col justify-center text-xs"
           >
             <span>
-              Jhon Doe
+              Alex Santos
             </span>
             <span
               class="text-neutral-600 dark:text-white/60"
-            >
-              jhon@test.com
-            </span>
+            />
           </div>
         </div>
-        <svg
-          class="size-6 rounded p-1 text-neutral-600 hover:cursor-pointer dark:text-white/60"
-          fill="none"
-          height="24"
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
+        <div
+          class="relative flex flex-col -mr-2"
         >
-          <circle
-            cx="12"
-            cy="12"
-            r="1"
-          />
-          <circle
-            cx="12"
-            cy="5"
-            r="1"
-          />
-          <circle
-            cx="12"
-            cy="19"
-            r="1"
-          />
-        </svg>
+          <button
+            aria-label="User logged options"
+            class="flex w-fit items-center justify-center gap-2 text-sm font-semibold transition-colors duration-200 ease-in-out hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15 rounded-md p-1 text-primary/80 hover:text-primary dark:text-white/70 dark:hover:text-white"
+            type="button"
+          >
+            <div>
+              <svg
+                class="size-4"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="1"
+                />
+                <circle
+                  cx="12"
+                  cy="5"
+                  r="1"
+                />
+                <circle
+                  cx="12"
+                  cy="19"
+                  r="1"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="flex items-center rounded-lg py-2 transition-opacity duration-300 ease-in-out hover:cursor-pointer justify-between px-2 hover:bg-neutral-100 dark:hover:bg-neutral-800"
+      class="flex items-center rounded-lg py-2 justify-between px-2"
     >
       <div
         class="flex items-center gap-2"
@@ -84,43 +94,53 @@ exports[`UserLoggedItem should render the component correctly 1`] = `
           class="flex flex-col justify-center text-xs"
         >
           <span>
-            Jhon Doe
+            Alex Santos
           </span>
           <span
             class="text-neutral-600 dark:text-white/60"
-          >
-            jhon@test.com
-          </span>
+          />
         </div>
       </div>
-      <svg
-        class="size-6 rounded p-1 text-neutral-600 hover:cursor-pointer dark:text-white/60"
-        fill="none"
-        height="24"
-        stroke="currentColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
-        viewBox="0 0 24 24"
-        width="24"
-        xmlns="http://www.w3.org/2000/svg"
+      <div
+        class="relative flex flex-col -mr-2"
       >
-        <circle
-          cx="12"
-          cy="12"
-          r="1"
-        />
-        <circle
-          cx="12"
-          cy="5"
-          r="1"
-        />
-        <circle
-          cx="12"
-          cy="19"
-          r="1"
-        />
-      </svg>
+        <button
+          aria-label="User logged options"
+          class="flex w-fit items-center justify-center gap-2 text-sm font-semibold transition-colors duration-200 ease-in-out hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15 rounded-md p-1 text-primary/80 hover:text-primary dark:text-white/70 dark:hover:text-white"
+          type="button"
+        >
+          <div>
+            <svg
+              class="size-4"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="1"
+              />
+              <circle
+                cx="12"
+                cy="5"
+                r="1"
+              />
+              <circle
+                cx="12"
+                cy="19"
+                r="1"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
     </div>
   </div>,
   "debug": [Function],

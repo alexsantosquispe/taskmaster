@@ -1,10 +1,10 @@
 import '@testing-library/jest-dom';
 
-import { fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { FOOTER_ITEMS, SIDE_BAR_ITEMS, SideBarMenu } from './SideBarMenu';
+import { ReduxWrapper, TestWrapper } from '@/utils/test.utils';
+import { fireEvent, render, screen, waitFor } from '@testing-library/react';
 
 import { useIsMobile } from '@/hooks/useIsMobile';
-import { TestWrapper } from '@/utils/test.utils';
 
 jest.mock('../../../hooks/useIsMobile', () => ({
   useIsMobile: jest.fn()
@@ -19,7 +19,9 @@ describe('SideBarMenu', () => {
     it('should render the component correctly expanded/collapsed', () => {
       const component = render(
         <TestWrapper>
-          <SideBarMenu />
+          <ReduxWrapper>
+            <SideBarMenu />
+          </ReduxWrapper>
         </TestWrapper>
       );
 
@@ -47,7 +49,9 @@ describe('SideBarMenu', () => {
     beforeEach(() => {
       render(
         <TestWrapper>
-          <SideBarMenu />
+          <ReduxWrapper>
+            <SideBarMenu />
+          </ReduxWrapper>
         </TestWrapper>
       );
     });
@@ -106,7 +110,9 @@ describe('SideBarMenu', () => {
 
       const component = render(
         <TestWrapper>
-          <SideBarMenu />
+          <ReduxWrapper>
+            <SideBarMenu />
+          </ReduxWrapper>
         </TestWrapper>
       );
 
@@ -134,7 +140,9 @@ describe('SideBarMenu', () => {
 
       render(
         <TestWrapper>
-          <SideBarMenu />
+          <ReduxWrapper>
+            <SideBarMenu />
+          </ReduxWrapper>
         </TestWrapper>
       );
 

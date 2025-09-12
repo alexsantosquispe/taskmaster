@@ -2,6 +2,8 @@ import { ToastStack } from '@/components/atoms/ToastStack/ToastStack';
 import { ThemeProvider } from '@/contexts/ThemeProvider';
 import { ToastProvider } from '@/contexts/ToastProvider';
 import { apiClient } from '@/services/api';
+import { authApi } from '@/services/authApi';
+import authReducer from '@/store/slices/authSlice';
 import { configureStore } from '@reduxjs/toolkit';
 import { render } from '@testing-library/react';
 import { type ReactElement, type ReactNode } from 'react';
@@ -72,10 +74,12 @@ export const ToastProviderWrapper = ({ children }: { children: ReactNode }) => {
 export const ReduxWrapper = ({ children }: { children: ReactNode }) => {
   const store = configureStore({
     reducer: {
-      [apiClient.reducerPath]: apiClient.reducer
+      auth: authReducer,
+      [apiClient.reducerPath]: apiClient.reducer,
+      [authApi.reducerPath]: authApi.reducer
     },
     middleware: (getDefaultMiddleware) =>
-      getDefaultMiddleware().concat(apiClient.middleware)
+      getDefaultMiddleware().concat(apiClient.middleware, authApi.middleware)
   });
 
   return <Provider store={store}>{children}</Provider>;

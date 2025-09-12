@@ -7,7 +7,7 @@ const PublicRoute = lazy(() => import('./pages/PublicRoute'));
 const ProtectedRoute = lazy(() => import('./pages/ProtectedRoute'));
 const Dashboard = lazy(() => import('./pages/Dashboard/Dashboard'));
 const SignUp = lazy(() => import('./pages/SignUp/SignUp'));
-const App = lazy(() => import('./App'));
+const App = lazy(() => import('./pages/App'));
 const ProjectsLayout = lazy(() => import('./pages/Projects/ProjectsLayout'));
 const Projects = lazy(() => import('./pages/Projects/Projects'));
 const Detail = lazy(() => import('./pages/Detail/Detail'));

@@ -1,8 +1,8 @@
 import { Outlet, useNavigate } from 'react-router-dom';
 
+import { SideBarMenu } from '@/components/molecules/SideBarMenu/SideBarMenu';
+import { ToastStack } from '@/components/atoms/ToastStack/ToastStack';
 import { useEffect } from 'react';
-import { ToastStack } from './components/atoms/ToastStack/ToastStack';
-import { SideBarMenu } from './components/molecules/SideBarMenu/SideBarMenu';
 
 function App() {
   const navigate = useNavigate();
