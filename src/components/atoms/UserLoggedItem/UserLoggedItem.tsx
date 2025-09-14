@@ -1,21 +1,18 @@
-import { ContextMenu } from '../ContextMenu/ContextMenu';
-import { EllipsisVerticalIcon } from '../../../icons/EllipsisVerticalIcon';
-import type { Option } from '@/models/types';
-import cn from 'clsx';
 import { currentUser } from '@/constants';
+import { useAuth } from '@/hooks/useAuth';
+import type { Option } from '@/models/types';
+import { useSignOutMutation } from '@/services/authApi';
+import cn from 'clsx';
 import { memo } from 'react';
 import { twMerge } from 'tailwind-merge';
-import { useAuth } from '@/hooks/useAuth';
-import { useSignOutMutation } from '@/services/authApi';
+import { EllipsisVerticalIcon } from '../../../icons/EllipsisVerticalIcon';
+import { ContextMenu } from '../ContextMenu/ContextMenu';
 
 interface UserLoggedItemProps {
   isCollapsed?: boolean;
 }
 
-const OPTIONS = [
-  { label: 'Profile', value: 'profile' },
-  { label: 'Logout', value: 'logout' }
-];
+const OPTIONS = [{ label: 'Logout', value: 'logout' }];
 
 const UserLoggedItem = ({ isCollapsed = false }: UserLoggedItemProps) => {
   const [signOut] = useSignOutMutation();
