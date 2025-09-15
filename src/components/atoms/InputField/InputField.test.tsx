@@ -1,7 +1,8 @@
 import '@testing-library/jest-dom';
 
+import { fireEvent, screen } from '@testing-library/react';
+
 import { renderWithForm } from '@/utils/test.utils';
-import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { InputField } from './InputField';
 
@@ -76,6 +77,39 @@ describe('InputField', () => {
       expect(input).toHaveValue(nameValue);
 
       expect(onChangeMock).toHaveBeenCalledWith(nameValue);
+    });
+
+    it('should sho/hide password type field', () => {
+      renderWithForm({
+        defaultValues: { name: '' },
+        componentToRender: (control) => {
+          return (
+            <InputField
+              label="Password"
+              name="password"
+              type="password"
+              placeholder="Enter your password"
+              control={control}
+            />
+          );
+        }
+      });
+
+      const input = screen.getByPlaceholderText('Enter your password');
+
+      expect(input).toHaveAttribute('type', 'password');
+
+      const toggleButton = screen.getByRole('button', {
+        name: 'Show password'
+      });
+
+      expect(toggleButton).toBeInTheDocument();
+
+      fireEvent.click(toggleButton);
+
+      expect(input).toHaveAttribute('type', 'text');
+
+      expect(toggleButton).toHaveAttribute('aria-label', 'Hide password');
     });
   });
 });

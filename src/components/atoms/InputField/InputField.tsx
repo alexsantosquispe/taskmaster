@@ -73,7 +73,7 @@ export const InputField = ({
             />
             {type === 'password' && (
               <IconButton
-                ariaLabel="Show and hide password"
+                ariaLabel={showPassword ? 'Hide password' : 'Show password'}
                 icon={
                   showPassword ? (
                     <EyeIcon className="size-4" />
