@@ -5,43 +5,20 @@ exports[`UserLoggedItem should render the component correctly 1`] = `
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="flex items-center rounded-lg py-2 justify-between px-2"
+      <a
+        href="/home/profile"
       >
         <div
-          class="flex items-center gap-2"
+          class="flex items-center rounded-lg py-2 hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/10 justify-between px-2"
         >
           <div
-            class="h-8 w-8"
+            class="flex items-center gap-2"
           >
-            <img
-              alt="avatar user"
-              class="h-8 w-8"
-              src="/img/avatar.webp"
-            />
-          </div>
-          <div
-            class="flex flex-col justify-center text-xs"
-          >
-            <span>
-              Alex Santos
-            </span>
-            <span
-              class="text-neutral-600 dark:text-white/60"
-            />
-          </div>
-        </div>
-        <div
-          class="relative flex flex-col -mr-2"
-        >
-          <button
-            aria-label="User logged options"
-            class="flex w-fit items-center justify-center gap-2 text-sm font-semibold transition-colors duration-200 ease-in-out hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15 rounded-md p-1 text-primary/80 hover:text-primary dark:text-white/70 dark:hover:text-white"
-            type="button"
-          >
-            <div>
+            <div
+              class="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-200 text-neutral-600 dark:bg-white/20 dark:text-white"
+            >
               <svg
-                class="size-4"
+                class="size-5"
                 fill="none"
                 height="24"
                 stroke="currentColor"
@@ -54,64 +31,60 @@ exports[`UserLoggedItem should render the component correctly 1`] = `
               >
                 <circle
                   cx="12"
-                  cy="12"
-                  r="1"
+                  cy="8"
+                  r="5"
                 />
-                <circle
-                  cx="12"
-                  cy="5"
-                  r="1"
-                />
-                <circle
-                  cx="12"
-                  cy="19"
-                  r="1"
+                <path
+                  d="M20 21a8 8 0 0 0-16 0"
                 />
               </svg>
             </div>
-          </button>
+            <div
+              class="flex flex-col justify-center text-xs"
+            >
+              <span>
+                Alex Santos
+              </span>
+              <span
+                class="text-neutral-600 dark:text-white/60"
+              />
+            </div>
+          </div>
+          <svg
+            class="size-4 rotate-90"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m18 15-6-6-6 6"
+            />
+          </svg>
         </div>
-      </div>
+      </a>
     </div>
   </body>,
   "container": <div>
-    <div
-      class="flex items-center rounded-lg py-2 justify-between px-2"
+    <a
+      href="/home/profile"
     >
       <div
-        class="flex items-center gap-2"
+        class="flex items-center rounded-lg py-2 hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/10 justify-between px-2"
       >
         <div
-          class="h-8 w-8"
+          class="flex items-center gap-2"
         >
-          <img
-            alt="avatar user"
-            class="h-8 w-8"
-            src="/img/avatar.webp"
-          />
-        </div>
-        <div
-          class="flex flex-col justify-center text-xs"
-        >
-          <span>
-            Alex Santos
-          </span>
-          <span
-            class="text-neutral-600 dark:text-white/60"
-          />
-        </div>
-      </div>
-      <div
-        class="relative flex flex-col -mr-2"
-      >
-        <button
-          aria-label="User logged options"
-          class="flex w-fit items-center justify-center gap-2 text-sm font-semibold transition-colors duration-200 ease-in-out hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15 rounded-md p-1 text-primary/80 hover:text-primary dark:text-white/70 dark:hover:text-white"
-          type="button"
-        >
-          <div>
+          <div
+            class="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-200 text-neutral-600 dark:bg-white/20 dark:text-white"
+          >
             <svg
-              class="size-4"
+              class="size-5"
               fill="none"
               height="24"
               stroke="currentColor"
@@ -124,24 +97,43 @@ exports[`UserLoggedItem should render the component correctly 1`] = `
             >
               <circle
                 cx="12"
-                cy="12"
-                r="1"
+                cy="8"
+                r="5"
               />
-              <circle
-                cx="12"
-                cy="5"
-                r="1"
-              />
-              <circle
-                cx="12"
-                cy="19"
-                r="1"
+              <path
+                d="M20 21a8 8 0 0 0-16 0"
               />
             </svg>
           </div>
-        </button>
+          <div
+            class="flex flex-col justify-center text-xs"
+          >
+            <span>
+              Alex Santos
+            </span>
+            <span
+              class="text-neutral-600 dark:text-white/60"
+            />
+          </div>
+        </div>
+        <svg
+          class="size-4 rotate-90"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="m18 15-6-6-6 6"
+          />
+        </svg>
       </div>
-    </div>
+    </a>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

@@ -1,14 +1,16 @@
-import { ReduxWrapper } from '@/utils/test.utils';
+import { ReduxWrapper, TestWrapper } from '@/utils/test.utils';
+
 import { render } from '@testing-library/react';
 import UserLoggedItem from './UserLoggedItem';
 
 describe('UserLoggedItem', () => {
-  //TODO: implement tests
-  it.skip('should render the component correctly', () => {
+  it('should render the component correctly', () => {
     const component = render(
-      <ReduxWrapper>
-        <UserLoggedItem />
-      </ReduxWrapper>
+      <TestWrapper>
+        <ReduxWrapper>
+          <UserLoggedItem />
+        </ReduxWrapper>
+      </TestWrapper>
     );
 
     expect(component).toMatchSnapshot();
