@@ -1,8 +1,8 @@
 import '@testing-library/jest-dom';
 
-import { FOOTER_ITEMS, SIDE_BAR_ITEMS, SideBarMenu } from './SideBarMenu';
 import { ReduxWrapper, TestWrapper } from '@/utils/test.utils';
 import { fireEvent, render, screen, waitFor } from '@testing-library/react';
+import { SIDE_BAR_ITEMS, SideBarMenu } from './SideBarMenu';
 
 import { useIsMobile } from '@/hooks/useIsMobile';
 
@@ -11,9 +11,7 @@ jest.mock('../../../hooks/useIsMobile', () => ({
 }));
 
 describe('SideBarMenu', () => {
-  const sideBarItemsLength = SIDE_BAR_ITEMS.length + FOOTER_ITEMS.length;
-  const sideBarItemsWithSubItemsLength =
-    sideBarItemsLength + (SIDE_BAR_ITEMS[1].subItems?.length || 0);
+  const sideBarItemsLength = SIDE_BAR_ITEMS.length;
 
   describe('styles', () => {
     it('should render the component correctly expanded/collapsed', () => {
@@ -42,61 +40,6 @@ describe('SideBarMenu', () => {
       const expandButton = screen.getByTestId('expand-icon');
 
       expect(expandButton).toBeInTheDocument();
-    });
-  });
-
-  describe('behavior', () => {
-    beforeEach(() => {
-      render(
-        <TestWrapper>
-          <ReduxWrapper>
-            <SideBarMenu />
-          </ReduxWrapper>
-        </TestWrapper>
-      );
-    });
-
-    it('should expand the subitems of projects item', () => {
-      const item = screen.getByRole('link', {
-        name: SIDE_BAR_ITEMS[1].label
-      });
-
-      const listItems = screen.getAllByRole('listitem');
-
-      expect(listItems).toHaveLength(sideBarItemsLength);
-
-      fireEvent.click(item);
-
-      expect(screen.getAllByRole('listitem')).toHaveLength(
-        sideBarItemsWithSubItemsLength
-      );
-    });
-
-    it('should select a subitem', () => {
-      const activeClasses =
-        'bg-black/10 text-accent md:bg-neutral-100 dark:bg-white/5 dark:text-accent-dark';
-
-      const item = screen.getByRole('link', {
-        name: SIDE_BAR_ITEMS[1].label
-      });
-
-      fireEvent.click(item);
-
-      expect(screen.getAllByRole('listitem')).toHaveLength(
-        sideBarItemsWithSubItemsLength
-      );
-
-      const subItem = screen.getByRole('link', {
-        name: SIDE_BAR_ITEMS[1].subItems?.[0].label
-      });
-
-      expect(subItem).toBeInTheDocument();
-
-      expect(subItem).not.toHaveClass(activeClasses);
-
-      fireEvent.click(subItem);
-
-      expect(subItem).toHaveClass(activeClasses);
     });
   });
 

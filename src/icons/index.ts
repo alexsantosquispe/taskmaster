@@ -27,7 +27,7 @@ import { ProjectIcon } from './ProjectIcon';
 import { SettingsIcon } from './SettingsIcon';
 import { SunIcon } from './SunIcon';
 import { TasksListIcon } from './TasksListIcon';
-import { UserIcon } from './UserIcon';
+import { UserRoundIcon } from './UserRoundIcon';
 
 export {
   BoardIcon,
@@ -59,5 +59,5 @@ export {
   SettingsIcon,
   SunIcon,
   TasksListIcon,
-  UserIcon
+  UserRoundIcon
 };

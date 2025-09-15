@@ -1,22 +1,15 @@
-import {
-  BoardIcon,
-  ChartPieIcon,
-  InfoIcon,
-  ProjectIcon,
-  SettingsIcon,
-  TasksListIcon
-} from '@/icons';
+import { BoardIcon, ChartPieIcon, ProjectIcon, TasksListIcon } from '@/icons';
 
-import { MobileMenu } from './components/MobileMenu/MobileMenu';
-import type { NavBarLinkItem } from '@/models/types';
-import SideBarHeader from './components/SideBarHeader';
-import { SideBarItem } from './components/SideBarItem';
 import SwitchThemeButton from '@/components/atoms/SwitchThemeButton/SwitchThemeButton';
 import UserLoggedItem from '@/components/atoms/UserLoggedItem/UserLoggedItem';
-import cn from 'clsx';
-import { twMerge } from 'tailwind-merge';
 import { useIsMobile } from '@/hooks/useIsMobile';
+import type { NavBarLinkItem } from '@/models/types';
+import cn from 'clsx';
 import { useState } from 'react';
+import { twMerge } from 'tailwind-merge';
+import { MobileMenu } from './components/MobileMenu/MobileMenu';
+import SideBarHeader from './components/SideBarHeader';
+import { SideBarItem } from './components/SideBarItem';
 
 export const SIDE_BAR_ITEMS: NavBarLinkItem[] = [
   {
@@ -29,27 +22,7 @@ export const SIDE_BAR_ITEMS: NavBarLinkItem[] = [
     id: '2',
     label: 'Projects',
     icon: <ProjectIcon />,
-    path: '/home/projects',
-    subItems: [
-      {
-        id: '2-1',
-        label: 'Intex Company',
-        path: '/intex-company',
-        color: 'bg-indigo-600'
-      },
-      {
-        id: '2-2',
-        label: 'TaskMaster Mobile App',
-        path: '/taskmaster-mobile-app',
-        color: 'bg-teal-500'
-      },
-      {
-        id: '2-3',
-        label: 'E-commerce Website',
-        path: '/e-commerce-website',
-        color: 'bg-red-600'
-      }
-    ]
+    path: '/home/projects'
   },
   {
     id: '3',
@@ -62,21 +35,6 @@ export const SIDE_BAR_ITEMS: NavBarLinkItem[] = [
     label: 'Reports',
     icon: <ChartPieIcon />,
     path: '/home/reports'
-  }
-];
-
-export const FOOTER_ITEMS: NavBarLinkItem[] = [
-  {
-    id: '5',
-    label: 'Settings',
-    icon: <SettingsIcon />,
-    path: '/home/settings'
-  },
-  {
-    id: '6',
-    label: 'Help',
-    icon: <InfoIcon />,
-    path: '/home/help'
   }
 ];
 
@@ -131,22 +89,8 @@ export const SideBarMenu = () => {
 
         {!isMobile && (
           <div className="flex flex-col gap-1">
-            <ul>
-              {FOOTER_ITEMS.map((item) => (
-                <SideBarItem
-                  key={item.id}
-                  {...item}
-                  onSelectItem={onSelectItem}
-                  isCollapsed={isMenuCollapsed}
-                />
-              ))}
-            </ul>
-
             <SwitchThemeButton isCollapsed={isMenuCollapsed} />
-
-            <div className="pt-2">
-              <UserLoggedItem isCollapsed={isMenuCollapsed} />
-            </div>
+            <UserLoggedItem isCollapsed={isMenuCollapsed} />
           </div>
         )}
       </div>

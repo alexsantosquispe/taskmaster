@@ -10,14 +10,23 @@ exports[`Avatar component should render the component correctly 1`] = `
       >
         <svg
           class="size-5"
-          fill="currentColor"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
           viewBox="0 0 24 24"
+          width="24"
           xmlns="http://www.w3.org/2000/svg"
         >
+          <circle
+            cx="12"
+            cy="8"
+            r="5"
+          />
           <path
-            clip-rule="evenodd"
-            d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z"
-            fill-rule="evenodd"
+            d="M20 21a8 8 0 0 0-16 0"
           />
         </svg>
       </div>
@@ -29,14 +38,23 @@ exports[`Avatar component should render the component correctly 1`] = `
     >
       <svg
         class="size-5"
-        fill="currentColor"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
         viewBox="0 0 24 24"
+        width="24"
         xmlns="http://www.w3.org/2000/svg"
       >
+        <circle
+          cx="12"
+          cy="8"
+          r="5"
+        />
         <path
-          clip-rule="evenodd"
-          d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z"
-          fill-rule="evenodd"
+          d="M20 21a8 8 0 0 0-16 0"
         />
       </svg>
     </div>
@@ -105,14 +123,23 @@ exports[`Avatar component should render the component correctly 2`] = `
       >
         <svg
           class="size-5"
-          fill="currentColor"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
           viewBox="0 0 24 24"
+          width="24"
           xmlns="http://www.w3.org/2000/svg"
         >
+          <circle
+            cx="12"
+            cy="8"
+            r="5"
+          />
           <path
-            clip-rule="evenodd"
-            d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z"
-            fill-rule="evenodd"
+            d="M20 21a8 8 0 0 0-16 0"
           />
         </svg>
       </div>

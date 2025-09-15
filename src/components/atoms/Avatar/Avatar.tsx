@@ -1,4 +1,4 @@
-import { UserIcon } from '../../../icons';
+import { UserRoundIcon } from '@/icons';
 interface AvatarProps {
   url?: string;
 }
@@ -9,7 +9,7 @@ export const Avatar = ({ url }: AvatarProps) => {
       {url ? (
         <img src={url} className="h-5 w-5" alt="User avatar image" />
       ) : (
-        <UserIcon className="size-5" />
+        <UserRoundIcon className="size-5" />
       )}
     </div>
   );

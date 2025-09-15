@@ -438,22 +438,6 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
                       </div>
                     </div>
                   </div>
-                  <svg
-                    class="size-4 transition-transform duration-300"
-                    fill="none"
-                    height="24"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m6 9 6 6 6-6"
-                    />
-                  </svg>
                 </a>
               </li>
               <li
@@ -567,107 +551,12 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
           <div
             class="flex flex-col gap-1"
           >
-            <ul>
-              <li
-                class="text-primary flex w-full flex-col items-center dark:text-white/90"
-              >
-                <a
-                  aria-label="Settings"
-                  class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:text-accent dark:hover:text-accent-dark hover:bg-neutral-100 dark:hover:bg-white/5"
-                  href="/home/settings"
-                >
-                  <div
-                    class="relative flex items-center justify-center"
-                    data-testid="tooltip-wrapper"
-                  >
-                    <div
-                      class="block mr-2.5"
-                    >
-                      <div
-                        class="flex gap-4"
-                      >
-                        <svg
-                          class="size-5"
-                          fill="none"
-                          height="24"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          viewBox="0 0 24 24"
-                          width="24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"
-                          />
-                          <circle
-                            cx="12"
-                            cy="12"
-                            r="3"
-                          />
-                        </svg>
-                        Settings
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li
-                class="text-primary flex w-full flex-col items-center dark:text-white/90"
-              >
-                <a
-                  aria-label="Help"
-                  class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:text-accent dark:hover:text-accent-dark hover:bg-neutral-100 dark:hover:bg-white/5"
-                  href="/home/help"
-                >
-                  <div
-                    class="relative flex items-center justify-center"
-                    data-testid="tooltip-wrapper"
-                  >
-                    <div
-                      class="block mr-2.5"
-                    >
-                      <div
-                        class="flex gap-4"
-                      >
-                        <svg
-                          class="size-5"
-                          fill="none"
-                          height="24"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          viewBox="0 0 24 24"
-                          width="24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <circle
-                            cx="12"
-                            cy="12"
-                            r="10"
-                          />
-                          <path
-                            d="M12 16v-4"
-                          />
-                          <path
-                            d="M12 8h.01"
-                          />
-                        </svg>
-                        Help
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
             <div
-              class="flex w-fit self-center rounded-lg bg-neutral-100 p-0.5 text-[0.8125rem] dark:bg-neutral-800 flex-row"
+              class="flex w-full self-center rounded-lg bg-neutral-100 p-0.5 text-[0.8125rem] dark:bg-neutral-800 flex-row"
             >
               <button
                 aria-label="System"
-                class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold transition-colors duration-150 ease-in-out hover:cursor-pointer text-primary dark:text-white px-2 dark:bg-primary bg-white shadow md:w-20"
+                class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold transition-colors duration-150 ease-in-out hover:cursor-pointer text-primary dark:text-white px-2 dark:bg-primary bg-white shadow md:w-full"
               >
                 <div>
                   <svg
@@ -696,7 +585,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
               </button>
               <button
                 aria-label="Light"
-                class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold text-neutral-600 transition-colors duration-150 ease-in-out hover:cursor-pointer dark:text-white/70 px-2 md:w-20"
+                class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold text-neutral-600 transition-colors duration-150 ease-in-out hover:cursor-pointer dark:text-white/70 px-2 md:w-full"
               >
                 <div>
                   <svg
@@ -748,7 +637,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
               </button>
               <button
                 aria-label="Dark"
-                class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold text-neutral-600 transition-colors duration-150 ease-in-out hover:cursor-pointer dark:text-white/70 px-2 md:w-20"
+                class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold text-neutral-600 transition-colors duration-150 ease-in-out hover:cursor-pointer dark:text-white/70 px-2 md:w-full"
               >
                 <div>
                   <svg
@@ -773,23 +662,39 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
                 </span>
               </button>
             </div>
-            <div
-              class="pt-2"
+            <a
+              href="/home/profile"
             >
               <div
-                class="flex items-center rounded-lg py-2 justify-between px-2"
+                class="flex items-center rounded-lg py-2 hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/10 justify-between px-2"
               >
                 <div
                   class="flex items-center gap-2"
                 >
                   <div
-                    class="h-8 w-8"
+                    class="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-200 text-neutral-600 dark:bg-white/20 dark:text-white"
                   >
-                    <img
-                      alt="avatar user"
-                      class="h-8 w-8"
-                      src="/img/avatar.webp"
-                    />
+                    <svg
+                      class="size-5"
+                      fill="none"
+                      height="24"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="12"
+                        cy="8"
+                        r="5"
+                      />
+                      <path
+                        d="M20 21a8 8 0 0 0-16 0"
+                      />
+                    </svg>
                   </div>
                   <div
                     class="flex flex-col justify-center text-xs"
@@ -802,48 +707,24 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
                     />
                   </div>
                 </div>
-                <div
-                  class="relative flex flex-col -mr-2"
+                <svg
+                  class="size-4 rotate-90"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <button
-                    aria-label="User logged options"
-                    class="flex w-fit items-center justify-center gap-2 text-sm font-semibold transition-colors duration-200 ease-in-out hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15 rounded-md p-1 text-primary/80 hover:text-primary dark:text-white/70 dark:hover:text-white"
-                    type="button"
-                  >
-                    <div>
-                      <svg
-                        class="size-4"
-                        fill="none"
-                        height="24"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <circle
-                          cx="12"
-                          cy="12"
-                          r="1"
-                        />
-                        <circle
-                          cx="12"
-                          cy="5"
-                          r="1"
-                        />
-                        <circle
-                          cx="12"
-                          cy="19"
-                          r="1"
-                        />
-                      </svg>
-                    </div>
-                  </button>
-                </div>
+                  <path
+                    d="m18 15-6-6-6 6"
+                  />
+                </svg>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </aside>
@@ -1056,22 +937,6 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
                     </div>
                   </div>
                 </div>
-                <svg
-                  class="size-4 transition-transform duration-300"
-                  fill="none"
-                  height="24"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="m6 9 6 6 6-6"
-                  />
-                </svg>
               </a>
             </li>
             <li
@@ -1185,107 +1050,12 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
         <div
           class="flex flex-col gap-1"
         >
-          <ul>
-            <li
-              class="text-primary flex w-full flex-col items-center dark:text-white/90"
-            >
-              <a
-                aria-label="Settings"
-                class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:text-accent dark:hover:text-accent-dark hover:bg-neutral-100 dark:hover:bg-white/5"
-                href="/home/settings"
-              >
-                <div
-                  class="relative flex items-center justify-center"
-                  data-testid="tooltip-wrapper"
-                >
-                  <div
-                    class="block mr-2.5"
-                  >
-                    <div
-                      class="flex gap-4"
-                    >
-                      <svg
-                        class="size-5"
-                        fill="none"
-                        height="24"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"
-                        />
-                        <circle
-                          cx="12"
-                          cy="12"
-                          r="3"
-                        />
-                      </svg>
-                      Settings
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li
-              class="text-primary flex w-full flex-col items-center dark:text-white/90"
-            >
-              <a
-                aria-label="Help"
-                class="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-3 transition-colors duration-150 ease-in-out hover:cursor-pointer md:p-2 hover:text-accent dark:hover:text-accent-dark hover:bg-neutral-100 dark:hover:bg-white/5"
-                href="/home/help"
-              >
-                <div
-                  class="relative flex items-center justify-center"
-                  data-testid="tooltip-wrapper"
-                >
-                  <div
-                    class="block mr-2.5"
-                  >
-                    <div
-                      class="flex gap-4"
-                    >
-                      <svg
-                        class="size-5"
-                        fill="none"
-                        height="24"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <circle
-                          cx="12"
-                          cy="12"
-                          r="10"
-                        />
-                        <path
-                          d="M12 16v-4"
-                        />
-                        <path
-                          d="M12 8h.01"
-                        />
-                      </svg>
-                      Help
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
-          </ul>
           <div
-            class="flex w-fit self-center rounded-lg bg-neutral-100 p-0.5 text-[0.8125rem] dark:bg-neutral-800 flex-row"
+            class="flex w-full self-center rounded-lg bg-neutral-100 p-0.5 text-[0.8125rem] dark:bg-neutral-800 flex-row"
           >
             <button
               aria-label="System"
-              class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold transition-colors duration-150 ease-in-out hover:cursor-pointer text-primary dark:text-white px-2 dark:bg-primary bg-white shadow md:w-20"
+              class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold transition-colors duration-150 ease-in-out hover:cursor-pointer text-primary dark:text-white px-2 dark:bg-primary bg-white shadow md:w-full"
             >
               <div>
                 <svg
@@ -1314,7 +1084,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
             </button>
             <button
               aria-label="Light"
-              class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold text-neutral-600 transition-colors duration-150 ease-in-out hover:cursor-pointer dark:text-white/70 px-2 md:w-20"
+              class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold text-neutral-600 transition-colors duration-150 ease-in-out hover:cursor-pointer dark:text-white/70 px-2 md:w-full"
             >
               <div>
                 <svg
@@ -1366,7 +1136,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
             </button>
             <button
               aria-label="Dark"
-              class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold text-neutral-600 transition-colors duration-150 ease-in-out hover:cursor-pointer dark:text-white/70 px-2 md:w-20"
+              class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold text-neutral-600 transition-colors duration-150 ease-in-out hover:cursor-pointer dark:text-white/70 px-2 md:w-full"
             >
               <div>
                 <svg
@@ -1391,23 +1161,39 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
               </span>
             </button>
           </div>
-          <div
-            class="pt-2"
+          <a
+            href="/home/profile"
           >
             <div
-              class="flex items-center rounded-lg py-2 justify-between px-2"
+              class="flex items-center rounded-lg py-2 hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/10 justify-between px-2"
             >
               <div
                 class="flex items-center gap-2"
               >
                 <div
-                  class="h-8 w-8"
+                  class="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-200 text-neutral-600 dark:bg-white/20 dark:text-white"
                 >
-                  <img
-                    alt="avatar user"
-                    class="h-8 w-8"
-                    src="/img/avatar.webp"
-                  />
+                  <svg
+                    class="size-5"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="12"
+                      cy="8"
+                      r="5"
+                    />
+                    <path
+                      d="M20 21a8 8 0 0 0-16 0"
+                    />
+                  </svg>
                 </div>
                 <div
                   class="flex flex-col justify-center text-xs"
@@ -1420,48 +1206,24 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
                   />
                 </div>
               </div>
-              <div
-                class="relative flex flex-col -mr-2"
+              <svg
+                class="size-4 rotate-90"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <button
-                  aria-label="User logged options"
-                  class="flex w-fit items-center justify-center gap-2 text-sm font-semibold transition-colors duration-200 ease-in-out hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/15 rounded-md p-1 text-primary/80 hover:text-primary dark:text-white/70 dark:hover:text-white"
-                  type="button"
-                >
-                  <div>
-                    <svg
-                      class="size-4"
-                      fill="none"
-                      height="24"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      viewBox="0 0 24 24"
-                      width="24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle
-                        cx="12"
-                        cy="12"
-                        r="1"
-                      />
-                      <circle
-                        cx="12"
-                        cy="5"
-                        r="1"
-                      />
-                      <circle
-                        cx="12"
-                        cy="19"
-                        r="1"
-                      />
-                    </svg>
-                  </div>
-                </button>
-              </div>
+                <path
+                  d="m18 15-6-6-6 6"
+                />
+              </svg>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </aside>

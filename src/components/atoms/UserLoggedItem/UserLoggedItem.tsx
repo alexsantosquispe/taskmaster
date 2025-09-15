@@ -1,74 +1,48 @@
 import { currentUser } from '@/constants';
 import { useAuth } from '@/hooks/useAuth';
-import type { Option } from '@/models/types';
-import { useSignOutMutation } from '@/services/authApi';
+import { ChevronUpIcon } from '@/icons';
+import { UserRoundIcon } from '@/icons/UserRoundIcon';
 import cn from 'clsx';
 import { memo } from 'react';
+import { Link } from 'react-router-dom';
 import { twMerge } from 'tailwind-merge';
-import { EllipsisVerticalIcon } from '../../../icons/EllipsisVerticalIcon';
-import { ContextMenu } from '../ContextMenu/ContextMenu';
 
 interface UserLoggedItemProps {
   isCollapsed?: boolean;
 }
 
-const OPTIONS = [{ label: 'Logout', value: 'logout' }];
-
 const UserLoggedItem = ({ isCollapsed = false }: UserLoggedItemProps) => {
-  const [signOut] = useSignOutMutation();
   const { user } = useAuth();
 
-  const handleUserOptions = (option: Option) => {
-    if (option.value === 'logout') {
-      signOut();
-    }
-  };
-
   return (
-    <div
-      className={twMerge(
-        'flex items-center rounded-lg py-2',
-        cn({
-          'justify-between px-2': !isCollapsed,
-          'justify-center': isCollapsed
-        })
-      )}
-    >
-      <div className="flex items-center gap-2">
-        <div className="h-8 w-8">
-          <img
-            src={currentUser.avatarUrl}
-            className="h-8 w-8"
-            alt="avatar user"
-          />
+    <Link to="/home/profile">
+      <div
+        className={twMerge(
+          'flex items-center rounded-lg py-2 hover:cursor-pointer hover:bg-neutral-100 dark:hover:bg-white/10',
+          cn({
+            'justify-between px-2': !isCollapsed,
+            'justify-center': isCollapsed
+          })
+        )}
+      >
+        <div className="flex items-center gap-2">
+          <div className="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-200 text-neutral-600 dark:bg-white/20 dark:text-white">
+            <UserRoundIcon />
+          </div>
+
+          {!isCollapsed && (
+            <div className="flex flex-col justify-center text-xs">
+              <span>{currentUser.name}</span>
+              <span className="text-neutral-600 dark:text-white/60">
+                {user?.email}
+              </span>
+            </div>
+          )}
         </div>
 
-        {!isCollapsed && (
-          <div className="flex flex-col justify-center text-xs">
-            <span>{currentUser.name}</span>
-            <span className="text-neutral-600 dark:text-white/60">
-              {user?.email}
-            </span>
-          </div>
-        )}
+        {!isCollapsed && <ChevronUpIcon className="size-4 rotate-90" />}
       </div>
-
-      {!isCollapsed && (
-        <ContextMenu
-          ariaLabel="User logged options"
-          options={OPTIONS}
-          onSelectOption={handleUserOptions}
-          icon={<EllipsisVerticalIcon className="size-4" />}
-          className={{
-            mainContainer: '-mr-2',
-            contentWrapper:
-              'top-auto right-auto bottom-full left-full min-w-[6rem]',
-            button:
-              'text-primary/80 hover:text-primary dark:text-white/70 dark:hover:text-white'
-          }}
-        />
-      )}
-    </div>
+    </Link>
   );
 };
 
