@@ -552,11 +552,11 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
             class="flex flex-col gap-1"
           >
             <div
-              class="flex w-full self-center rounded-lg bg-neutral-100 p-0.5 text-[0.8125rem] dark:bg-neutral-800 flex-row"
+              class="flex self-center rounded-lg bg-neutral-100 p-0.5 text-[0.8125rem] dark:bg-neutral-800 w-full flex-row"
             >
               <button
                 aria-label="System"
-                class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold transition-colors duration-150 ease-in-out hover:cursor-pointer text-primary dark:text-white px-2 dark:bg-primary bg-white shadow md:w-full"
+                class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold transition-colors duration-150 ease-in-out hover:cursor-pointer text-primary dark:text-white px-2 dark:bg-primary bg-white shadow md:w-20"
               >
                 <div>
                   <svg
@@ -585,7 +585,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
               </button>
               <button
                 aria-label="Light"
-                class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold text-neutral-600 transition-colors duration-150 ease-in-out hover:cursor-pointer dark:text-white/70 px-2 md:w-full"
+                class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold text-neutral-600 transition-colors duration-150 ease-in-out hover:cursor-pointer dark:text-white/70 px-2 md:w-20"
               >
                 <div>
                   <svg
@@ -637,7 +637,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
               </button>
               <button
                 aria-label="Dark"
-                class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold text-neutral-600 transition-colors duration-150 ease-in-out hover:cursor-pointer dark:text-white/70 px-2 md:w-full"
+                class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold text-neutral-600 transition-colors duration-150 ease-in-out hover:cursor-pointer dark:text-white/70 px-2 md:w-20"
               >
                 <div>
                   <svg
@@ -1051,11 +1051,11 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
           class="flex flex-col gap-1"
         >
           <div
-            class="flex w-full self-center rounded-lg bg-neutral-100 p-0.5 text-[0.8125rem] dark:bg-neutral-800 flex-row"
+            class="flex self-center rounded-lg bg-neutral-100 p-0.5 text-[0.8125rem] dark:bg-neutral-800 w-full flex-row"
           >
             <button
               aria-label="System"
-              class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold transition-colors duration-150 ease-in-out hover:cursor-pointer text-primary dark:text-white px-2 dark:bg-primary bg-white shadow md:w-full"
+              class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold transition-colors duration-150 ease-in-out hover:cursor-pointer text-primary dark:text-white px-2 dark:bg-primary bg-white shadow md:w-20"
             >
               <div>
                 <svg
@@ -1084,7 +1084,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
             </button>
             <button
               aria-label="Light"
-              class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold text-neutral-600 transition-colors duration-150 ease-in-out hover:cursor-pointer dark:text-white/70 px-2 md:w-full"
+              class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold text-neutral-600 transition-colors duration-150 ease-in-out hover:cursor-pointer dark:text-white/70 px-2 md:w-20"
             >
               <div>
                 <svg
@@ -1136,7 +1136,7 @@ exports[`SideBarMenu styles should render the component correctly expanded/colla
             </button>
             <button
               aria-label="Dark"
-              class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold text-neutral-600 transition-colors duration-150 ease-in-out hover:cursor-pointer dark:text-white/70 px-2 md:w-full"
+              class="flex h-7 w-full items-center justify-center gap-1 rounded-md font-semibold text-neutral-600 transition-colors duration-150 ease-in-out hover:cursor-pointer dark:text-white/70 px-2 md:w-20"
             >
               <div>
                 <svg

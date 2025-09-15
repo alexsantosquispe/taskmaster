@@ -43,10 +43,10 @@ const SwitchThemeButton = ({
   return (
     <div
       className={twMerge(
-        'flex w-full self-center rounded-lg bg-neutral-100 p-0.5 text-[0.8125rem] dark:bg-neutral-800',
+        'flex self-center rounded-lg bg-neutral-100 p-0.5 text-[0.8125rem] dark:bg-neutral-800',
         cn({
-          'flex-col gap-y-0.5': isCollapsed,
-          'flex-row': !isCollapsed
+          'w-fit flex-col gap-y-0.5': isCollapsed,
+          'w-full flex-row': !isCollapsed
         }),
         className
       )}
@@ -58,11 +58,11 @@ const SwitchThemeButton = ({
           isSelected={theme === item.id}
           onSelectTab={() => onSelectTheme(item.id)}
           className={twMerge(
-            'px-2',
+            'px-2 md:w-fit',
             cn({
               'dark:bg-primary bg-white shadow': item.id === theme,
-              'md:w-full': !isCollapsed,
-              'p-1': isCollapsed
+              'md:w-20': !isCollapsed,
+              'w-fit p-1': isCollapsed
             })
           )}
           isCollapsed={isCollapsed}

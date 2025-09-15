@@ -55,7 +55,7 @@ export const SideBarMenu = () => {
       className={twMerge(
         'md:dark:bg-primary dark:bg-primary/70 fixed z-40 flex flex-col border-b border-gray-200 bg-white/40 backdrop-blur-md transition-all duration-300 ease-in-out md:relative md:rounded-xl md:border md:bg-white md:shadow-lg dark:border-white/15',
         cn({
-          'w-full md:w-14': isMenuCollapsed,
+          'w-fit md:w-14': isMenuCollapsed,
           'w-full md:w-[16rem]': !isMenuCollapsed
         })
       )}
