@@ -17,7 +17,7 @@ exports[`ProjectCard styles should render the component correctly 1`] = `
           >
             <a
               class="hover:text-accent dark:hover:text-accent-dark hover:underline"
-              href="/projects/Spotify Clone App"
+              href="/home/projects/Spotify Clone App"
             >
               <h3
                 class="line-clamp-1 text-base font-semibold"
@@ -110,7 +110,7 @@ exports[`ProjectCard styles should render the component correctly 1`] = `
         >
           <a
             class="hover:text-accent dark:hover:text-accent-dark hover:underline"
-            href="/projects/Spotify Clone App"
+            href="/home/projects/Spotify Clone App"
           >
             <h3
               class="line-clamp-1 text-base font-semibold"
@@ -260,7 +260,7 @@ exports[`ProjectCard styles should render the component correctly 2`] = `
           >
             <a
               class="hover:text-accent dark:hover:text-accent-dark hover:underline"
-              href="/projects/Spotify Clone App"
+              href="/home/projects/Spotify Clone App"
             >
               <h3
                 class="line-clamp-1 text-base font-semibold"
@@ -352,7 +352,7 @@ exports[`ProjectCard styles should render the component correctly 2`] = `
           >
             <a
               class="hover:text-accent dark:hover:text-accent-dark hover:underline"
-              href="/projects/Spotify Clone App"
+              href="/home/projects/Spotify Clone App"
             >
               <h3
                 class="line-clamp-1 text-base font-semibold"
@@ -440,7 +440,7 @@ exports[`ProjectCard styles should render the component correctly 2`] = `
         >
           <a
             class="hover:text-accent dark:hover:text-accent-dark hover:underline"
-            href="/projects/Spotify Clone App"
+            href="/home/projects/Spotify Clone App"
           >
             <h3
               class="line-clamp-1 text-base font-semibold"

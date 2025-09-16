@@ -49,7 +49,7 @@ export const ProjectCard = ({
       <div className="flex flex-1 flex-col gap-3">
         <div className="flex items-center justify-between gap-2">
           <Link
-            to={`/projects/${name}`}
+            to={`/home/projects/${name}`}
             state={{ projectId: id, projectName: name }}
             className="hover:text-accent dark:hover:text-accent-dark hover:underline"
           >
