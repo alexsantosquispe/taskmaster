@@ -79,5 +79,26 @@ describe('TextAreaField', () => {
 
       expect(onChangeMock).toHaveBeenCalledWith(nameValue);
     });
+
+    it('should be displayed as required and the error message', () => {
+      renderWithForm({
+        defaultValues: { name: '' },
+        componentToRender: (control) => {
+          return (
+            <TextAreaField
+              {...props}
+              control={control}
+              onChangeText={onChangeMock}
+              isRequired={true}
+              errorMessage="This field is required"
+            />
+          );
+        }
+      });
+
+      expect(screen.getByText('*')).toBeInTheDocument();
+
+      expect(screen.getByText('This field is required')).toBeInTheDocument();
+    });
   });
 });
