@@ -7,8 +7,6 @@ const Profile = () => {
           View all your profile details here.
         </p>
       </div>
-
-      <div></div>
     </section>
   );
 };

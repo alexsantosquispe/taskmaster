@@ -1,5 +1,5 @@
-import { Suspense, lazy } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
+import { Suspense, lazy } from 'react';
 
 import { SignIn } from './pages/SignIn/SignIn';
 
@@ -58,6 +58,7 @@ export const AppRouter = () => {
             </Suspense>
           }
         >
+          <Route index element={<Navigate to="dashboard" replace />} />
           <Route
             path="dashboard"
             element={
