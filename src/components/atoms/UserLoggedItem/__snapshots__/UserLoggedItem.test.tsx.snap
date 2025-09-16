@@ -15,10 +15,10 @@ exports[`UserLoggedItem should render the component correctly 1`] = `
             class="flex items-center gap-2"
           >
             <div
-              class="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-200 text-neutral-600 dark:bg-white/20 dark:text-white"
+              class="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-200 text-neutral-600 dark:bg-white/20 dark:text-white/70"
             >
               <svg
-                class="size-5"
+                class="size-5 text-neutral-600 dark:text-white/90"
                 fill="none"
                 height="24"
                 stroke="currentColor"
@@ -81,10 +81,10 @@ exports[`UserLoggedItem should render the component correctly 1`] = `
           class="flex items-center gap-2"
         >
           <div
-            class="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-200 text-neutral-600 dark:bg-white/20 dark:text-white"
+            class="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-200 text-neutral-600 dark:bg-white/20 dark:text-white/70"
           >
             <svg
-              class="size-5"
+              class="size-5 text-neutral-600 dark:text-white/90"
               fill="none"
               height="24"
               stroke="currentColor"

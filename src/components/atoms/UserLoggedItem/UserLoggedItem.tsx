@@ -1,11 +1,11 @@
-import { currentUser } from '@/constants';
-import { useAuth } from '@/hooks/useAuth';
+import { Avatar } from '../Avatar/Avatar';
 import { ChevronUpIcon } from '@/icons';
-import { UserRoundIcon } from '@/icons/UserRoundIcon';
-import cn from 'clsx';
-import { memo } from 'react';
 import { Link } from 'react-router-dom';
+import cn from 'clsx';
+import { currentUser } from '@/constants';
+import { memo } from 'react';
 import { twMerge } from 'tailwind-merge';
+import { useAuth } from '@/hooks/useAuth';
 
 interface UserLoggedItemProps {
   isCollapsed?: boolean;
@@ -26,10 +26,7 @@ const UserLoggedItem = ({ isCollapsed = false }: UserLoggedItemProps) => {
         )}
       >
         <div className="flex items-center gap-2">
-          <div className="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-200 text-neutral-600 dark:bg-white/20 dark:text-white">
-            <UserRoundIcon />
-          </div>
-
+          <Avatar />
           {!isCollapsed && (
             <div className="flex flex-col justify-center text-xs">
               <span>{currentUser.name}</span>

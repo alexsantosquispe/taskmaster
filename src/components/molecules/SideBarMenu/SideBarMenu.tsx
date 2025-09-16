@@ -1,15 +1,15 @@
 import { BoardIcon, ChartPieIcon, ProjectIcon, TasksListIcon } from '@/icons';
 
-import SwitchThemeButton from '@/components/atoms/SwitchThemeButton/SwitchThemeButton';
-import UserLoggedItem from '@/components/atoms/UserLoggedItem/UserLoggedItem';
-import { useIsMobile } from '@/hooks/useIsMobile';
-import type { NavBarLinkItem } from '@/models/types';
-import cn from 'clsx';
-import { useState } from 'react';
-import { twMerge } from 'tailwind-merge';
 import { MobileMenu } from './components/MobileMenu/MobileMenu';
+import type { NavBarLinkItem } from '@/models/types';
 import SideBarHeader from './components/SideBarHeader';
 import { SideBarItem } from './components/SideBarItem';
+import SwitchThemeButton from '@/components/atoms/SwitchThemeButton/SwitchThemeButton';
+import UserLoggedItem from '@/components/atoms/UserLoggedItem/UserLoggedItem';
+import cn from 'clsx';
+import { twMerge } from 'tailwind-merge';
+import { useIsMobile } from '@/hooks/useIsMobile';
+import { useState } from 'react';
 
 export const SIDE_BAR_ITEMS: NavBarLinkItem[] = [
   {
@@ -71,8 +71,8 @@ export const SideBarMenu = () => {
         <MobileMenu isOpen={isMobileMenuOpen} setIsOpen={setIsMobileMenuOpen} />
       )}
 
-      <div className="flex-col px-2 text-sm md:flex md:h-full md:justify-between md:p-2">
-        {showMenu && (
+      {showMenu && (
+        <div className="flex-col px-2 text-sm md:flex md:h-full md:justify-between md:p-2">
           <nav>
             <ul className="flex flex-col gap-1 py-2 md:p-0">
               {SIDE_BAR_ITEMS.map((item) => (
@@ -85,15 +85,12 @@ export const SideBarMenu = () => {
               ))}
             </ul>
           </nav>
-        )}
-
-        {!isMobile && (
           <div className="flex flex-col gap-1">
-            <SwitchThemeButton isCollapsed={isMenuCollapsed} />
-            <UserLoggedItem isCollapsed={isMenuCollapsed} />
+            <SwitchThemeButton isCollapsed={!isMobile && isMenuCollapsed} />
+            <UserLoggedItem isCollapsed={!isMobile && isMenuCollapsed} />
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </aside>
   );
 };

@@ -297,11 +297,11 @@ exports[`Detail component should render the component correctly 1`] = `
                     class="flex items-center justify-between gap-2 py-2 dark:text-white/80"
                   >
                     <div
-                      class="flex w-fit items-center justify-center overflow-hidden rounded-full bg-gray-200 p-0.5 text-neutral-500"
+                      class="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-200 text-neutral-600 dark:bg-white/20 dark:text-white/70"
                     >
                       <img
                         alt="User avatar image"
-                        class="h-5 w-5"
+                        class="size-6"
                         src="/img/user-avatar.webp"
                       />
                     </div>
@@ -469,11 +469,11 @@ exports[`Detail component should render the component correctly 1`] = `
                     class="flex items-center justify-between gap-2 py-2 dark:text-white/80"
                   >
                     <div
-                      class="flex w-fit items-center justify-center overflow-hidden rounded-full bg-gray-200 p-0.5 text-neutral-500"
+                      class="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-200 text-neutral-600 dark:bg-white/20 dark:text-white/70"
                     >
                       <img
                         alt="User avatar image"
-                        class="h-5 w-5"
+                        class="size-6"
                         src="/img/user-avatar.webp"
                       />
                     </div>
@@ -641,11 +641,11 @@ exports[`Detail component should render the component correctly 1`] = `
                     class="flex items-center justify-between gap-2 py-2 dark:text-white/80"
                   >
                     <div
-                      class="flex w-fit items-center justify-center overflow-hidden rounded-full bg-gray-200 p-0.5 text-neutral-500"
+                      class="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-200 text-neutral-600 dark:bg-white/20 dark:text-white/70"
                     >
                       <img
                         alt="User avatar image"
-                        class="h-5 w-5"
+                        class="size-6"
                         src="/img/user-avatar.webp"
                       />
                     </div>
@@ -876,11 +876,11 @@ exports[`Detail component should render the component correctly 1`] = `
                     class="flex items-center justify-between gap-2 py-2 dark:text-white/80"
                   >
                     <div
-                      class="flex w-fit items-center justify-center overflow-hidden rounded-full bg-gray-200 p-0.5 text-neutral-500"
+                      class="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-200 text-neutral-600 dark:bg-white/20 dark:text-white/70"
                     >
                       <img
                         alt="User avatar image"
-                        class="h-5 w-5"
+                        class="size-6"
                         src="/img/user-avatar.webp"
                       />
                     </div>
@@ -1111,11 +1111,11 @@ exports[`Detail component should render the component correctly 1`] = `
                     class="flex items-center justify-between gap-2 py-2 dark:text-white/80"
                   >
                     <div
-                      class="flex w-fit items-center justify-center overflow-hidden rounded-full bg-gray-200 p-0.5 text-neutral-500"
+                      class="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-200 text-neutral-600 dark:bg-white/20 dark:text-white/70"
                     >
                       <img
                         alt="User avatar image"
-                        class="h-5 w-5"
+                        class="size-6"
                         src="/img/user-avatar.webp"
                       />
                     </div>
@@ -1283,11 +1283,11 @@ exports[`Detail component should render the component correctly 1`] = `
                     class="flex items-center justify-between gap-2 py-2 dark:text-white/80"
                   >
                     <div
-                      class="flex w-fit items-center justify-center overflow-hidden rounded-full bg-gray-200 p-0.5 text-neutral-500"
+                      class="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-200 text-neutral-600 dark:bg-white/20 dark:text-white/70"
                     >
                       <img
                         alt="User avatar image"
-                        class="h-5 w-5"
+                        class="size-6"
                         src="/img/user-avatar.webp"
                       />
                     </div>
@@ -1504,11 +1504,11 @@ exports[`Detail component should render the component correctly 1`] = `
                     class="flex items-center justify-between gap-2 py-2 dark:text-white/80"
                   >
                     <div
-                      class="flex w-fit items-center justify-center overflow-hidden rounded-full bg-gray-200 p-0.5 text-neutral-500"
+                      class="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-200 text-neutral-600 dark:bg-white/20 dark:text-white/70"
                     >
                       <img
                         alt="User avatar image"
-                        class="h-5 w-5"
+                        class="size-6"
                         src="/img/user-avatar.webp"
                       />
                     </div>
@@ -1676,11 +1676,11 @@ exports[`Detail component should render the component correctly 1`] = `
                     class="flex items-center justify-between gap-2 py-2 dark:text-white/80"
                   >
                     <div
-                      class="flex w-fit items-center justify-center overflow-hidden rounded-full bg-gray-200 p-0.5 text-neutral-500"
+                      class="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-200 text-neutral-600 dark:bg-white/20 dark:text-white/70"
                     >
                       <img
                         alt="User avatar image"
-                        class="h-5 w-5"
+                        class="size-6"
                         src="/img/user-avatar.webp"
                       />
                     </div>
@@ -1895,11 +1895,11 @@ exports[`Detail component should render the component correctly 1`] = `
                     class="flex items-center justify-between gap-2 py-2 dark:text-white/80"
                   >
                     <div
-                      class="flex w-fit items-center justify-center overflow-hidden rounded-full bg-gray-200 p-0.5 text-neutral-500"
+                      class="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-200 text-neutral-600 dark:bg-white/20 dark:text-white/70"
                     >
                       <img
                         alt="User avatar image"
-                        class="h-5 w-5"
+                        class="size-6"
                         src="/img/user-avatar.webp"
                       />
                     </div>
@@ -2067,11 +2067,11 @@ exports[`Detail component should render the component correctly 1`] = `
                     class="flex items-center justify-between gap-2 py-2 dark:text-white/80"
                   >
                     <div
-                      class="flex w-fit items-center justify-center overflow-hidden rounded-full bg-gray-200 p-0.5 text-neutral-500"
+                      class="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-200 text-neutral-600 dark:bg-white/20 dark:text-white/70"
                     >
                       <img
                         alt="User avatar image"
-                        class="h-5 w-5"
+                        class="size-6"
                         src="/img/user-avatar.webp"
                       />
                     </div>
@@ -2239,11 +2239,11 @@ exports[`Detail component should render the component correctly 1`] = `
                     class="flex items-center justify-between gap-2 py-2 dark:text-white/80"
                   >
                     <div
-                      class="flex w-fit items-center justify-center overflow-hidden rounded-full bg-gray-200 p-0.5 text-neutral-500"
+                      class="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-200 text-neutral-600 dark:bg-white/20 dark:text-white/70"
                     >
                       <img
                         alt="User avatar image"
-                        class="h-5 w-5"
+                        class="size-6"
                         src="/img/user-avatar.webp"
                       />
                     </div>
@@ -2411,11 +2411,11 @@ exports[`Detail component should render the component correctly 1`] = `
                     class="flex items-center justify-between gap-2 py-2 dark:text-white/80"
                   >
                     <div
-                      class="flex w-fit items-center justify-center overflow-hidden rounded-full bg-gray-200 p-0.5 text-neutral-500"
+                      class="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-200 text-neutral-600 dark:bg-white/20 dark:text-white/70"
                     >
                       <img
                         alt="User avatar image"
-                        class="h-5 w-5"
+                        class="size-6"
                         src="/img/user-avatar.webp"
                       />
                     </div>
@@ -2583,11 +2583,11 @@ exports[`Detail component should render the component correctly 1`] = `
                     class="flex items-center justify-between gap-2 py-2 dark:text-white/80"
                   >
                     <div
-                      class="flex w-fit items-center justify-center overflow-hidden rounded-full bg-gray-200 p-0.5 text-neutral-500"
+                      class="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-200 text-neutral-600 dark:bg-white/20 dark:text-white/70"
                     >
                       <img
                         alt="User avatar image"
-                        class="h-5 w-5"
+                        class="size-6"
                         src="/img/user-avatar.webp"
                       />
                     </div>
@@ -2925,11 +2925,11 @@ exports[`Detail component should render the component correctly 1`] = `
                   class="flex items-center justify-between gap-2 py-2 dark:text-white/80"
                 >
                   <div
-                    class="flex w-fit items-center justify-center overflow-hidden rounded-full bg-gray-200 p-0.5 text-neutral-500"
+                    class="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-200 text-neutral-600 dark:bg-white/20 dark:text-white/70"
                   >
                     <img
                       alt="User avatar image"
-                      class="h-5 w-5"
+                      class="size-6"
                       src="/img/user-avatar.webp"
                     />
                   </div>
@@ -3097,11 +3097,11 @@ exports[`Detail component should render the component correctly 1`] = `
                   class="flex items-center justify-between gap-2 py-2 dark:text-white/80"
                 >
                   <div
-                    class="flex w-fit items-center justify-center overflow-hidden rounded-full bg-gray-200 p-0.5 text-neutral-500"
+                    class="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-200 text-neutral-600 dark:bg-white/20 dark:text-white/70"
                   >
                     <img
                       alt="User avatar image"
-                      class="h-5 w-5"
+                      class="size-6"
                       src="/img/user-avatar.webp"
                     />
                   </div>
@@ -3269,11 +3269,11 @@ exports[`Detail component should render the component correctly 1`] = `
                   class="flex items-center justify-between gap-2 py-2 dark:text-white/80"
                 >
                   <div
-                    class="flex w-fit items-center justify-center overflow-hidden rounded-full bg-gray-200 p-0.5 text-neutral-500"
+                    class="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-200 text-neutral-600 dark:bg-white/20 dark:text-white/70"
                   >
                     <img
                       alt="User avatar image"
-                      class="h-5 w-5"
+                      class="size-6"
                       src="/img/user-avatar.webp"
                     />
                   </div>
@@ -3504,11 +3504,11 @@ exports[`Detail component should render the component correctly 1`] = `
                   class="flex items-center justify-between gap-2 py-2 dark:text-white/80"
                 >
                   <div
-                    class="flex w-fit items-center justify-center overflow-hidden rounded-full bg-gray-200 p-0.5 text-neutral-500"
+                    class="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-200 text-neutral-600 dark:bg-white/20 dark:text-white/70"
                   >
                     <img
                       alt="User avatar image"
-                      class="h-5 w-5"
+                      class="size-6"
                       src="/img/user-avatar.webp"
                     />
                   </div>
@@ -3739,11 +3739,11 @@ exports[`Detail component should render the component correctly 1`] = `
                   class="flex items-center justify-between gap-2 py-2 dark:text-white/80"
                 >
                   <div
-                    class="flex w-fit items-center justify-center overflow-hidden rounded-full bg-gray-200 p-0.5 text-neutral-500"
+                    class="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-200 text-neutral-600 dark:bg-white/20 dark:text-white/70"
                   >
                     <img
                       alt="User avatar image"
-                      class="h-5 w-5"
+                      class="size-6"
                       src="/img/user-avatar.webp"
                     />
                   </div>
@@ -3911,11 +3911,11 @@ exports[`Detail component should render the component correctly 1`] = `
                   class="flex items-center justify-between gap-2 py-2 dark:text-white/80"
                 >
                   <div
-                    class="flex w-fit items-center justify-center overflow-hidden rounded-full bg-gray-200 p-0.5 text-neutral-500"
+                    class="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-200 text-neutral-600 dark:bg-white/20 dark:text-white/70"
                   >
                     <img
                       alt="User avatar image"
-                      class="h-5 w-5"
+                      class="size-6"
                       src="/img/user-avatar.webp"
                     />
                   </div>
@@ -4132,11 +4132,11 @@ exports[`Detail component should render the component correctly 1`] = `
                   class="flex items-center justify-between gap-2 py-2 dark:text-white/80"
                 >
                   <div
-                    class="flex w-fit items-center justify-center overflow-hidden rounded-full bg-gray-200 p-0.5 text-neutral-500"
+                    class="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-200 text-neutral-600 dark:bg-white/20 dark:text-white/70"
                   >
                     <img
                       alt="User avatar image"
-                      class="h-5 w-5"
+                      class="size-6"
                       src="/img/user-avatar.webp"
                     />
                   </div>
@@ -4304,11 +4304,11 @@ exports[`Detail component should render the component correctly 1`] = `
                   class="flex items-center justify-between gap-2 py-2 dark:text-white/80"
                 >
                   <div
-                    class="flex w-fit items-center justify-center overflow-hidden rounded-full bg-gray-200 p-0.5 text-neutral-500"
+                    class="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-200 text-neutral-600 dark:bg-white/20 dark:text-white/70"
                   >
                     <img
                       alt="User avatar image"
-                      class="h-5 w-5"
+                      class="size-6"
                       src="/img/user-avatar.webp"
                     />
                   </div>
@@ -4523,11 +4523,11 @@ exports[`Detail component should render the component correctly 1`] = `
                   class="flex items-center justify-between gap-2 py-2 dark:text-white/80"
                 >
                   <div
-                    class="flex w-fit items-center justify-center overflow-hidden rounded-full bg-gray-200 p-0.5 text-neutral-500"
+                    class="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-200 text-neutral-600 dark:bg-white/20 dark:text-white/70"
                   >
                     <img
                       alt="User avatar image"
-                      class="h-5 w-5"
+                      class="size-6"
                       src="/img/user-avatar.webp"
                     />
                   </div>
@@ -4695,11 +4695,11 @@ exports[`Detail component should render the component correctly 1`] = `
                   class="flex items-center justify-between gap-2 py-2 dark:text-white/80"
                 >
                   <div
-                    class="flex w-fit items-center justify-center overflow-hidden rounded-full bg-gray-200 p-0.5 text-neutral-500"
+                    class="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-200 text-neutral-600 dark:bg-white/20 dark:text-white/70"
                   >
                     <img
                       alt="User avatar image"
-                      class="h-5 w-5"
+                      class="size-6"
                       src="/img/user-avatar.webp"
                     />
                   </div>
@@ -4867,11 +4867,11 @@ exports[`Detail component should render the component correctly 1`] = `
                   class="flex items-center justify-between gap-2 py-2 dark:text-white/80"
                 >
                   <div
-                    class="flex w-fit items-center justify-center overflow-hidden rounded-full bg-gray-200 p-0.5 text-neutral-500"
+                    class="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-200 text-neutral-600 dark:bg-white/20 dark:text-white/70"
                   >
                     <img
                       alt="User avatar image"
-                      class="h-5 w-5"
+                      class="size-6"
                       src="/img/user-avatar.webp"
                     />
                   </div>
@@ -5039,11 +5039,11 @@ exports[`Detail component should render the component correctly 1`] = `
                   class="flex items-center justify-between gap-2 py-2 dark:text-white/80"
                 >
                   <div
-                    class="flex w-fit items-center justify-center overflow-hidden rounded-full bg-gray-200 p-0.5 text-neutral-500"
+                    class="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-200 text-neutral-600 dark:bg-white/20 dark:text-white/70"
                   >
                     <img
                       alt="User avatar image"
-                      class="h-5 w-5"
+                      class="size-6"
                       src="/img/user-avatar.webp"
                     />
                   </div>
@@ -5211,11 +5211,11 @@ exports[`Detail component should render the component correctly 1`] = `
                   class="flex items-center justify-between gap-2 py-2 dark:text-white/80"
                 >
                   <div
-                    class="flex w-fit items-center justify-center overflow-hidden rounded-full bg-gray-200 p-0.5 text-neutral-500"
+                    class="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-200 text-neutral-600 dark:bg-white/20 dark:text-white/70"
                   >
                     <img
                       alt="User avatar image"
-                      class="h-5 w-5"
+                      class="size-6"
                       src="/img/user-avatar.webp"
                     />
                   </div>

@@ -12,6 +12,7 @@
   --color-accent: var(--color-blue-700);
   --color-accent-dark: var(--color-orange-500);
   --width-large-screen: 80rem;
+  --width-medium-screen: 65rem;
 }
 
 html,

@@ -105,6 +105,7 @@ export interface InputProps extends ComponentWithController {
   autoComplete?: string;
   className?: {
     container?: string;
+    label?: string;
     input?: string;
   };
 }
