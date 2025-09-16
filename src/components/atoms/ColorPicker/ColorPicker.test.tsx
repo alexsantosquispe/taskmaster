@@ -23,13 +23,20 @@ describe('ColorPicker', () => {
 
   describe('styles', () => {
     it('should render the color picker correctly', () => {
-      const component = render(<ColorPicker {...props} />);
+      const component = render(
+        <ColorPicker label="Color picker" onChangeColor={onChangeColorMock} />
+      );
 
       expect(component).toMatchSnapshot();
     });
 
     it('should render the color picker with controller correctly', () => {
-      const component = render(<ColorPickerWrapperController {...props} />);
+      const component = render(
+        <ColorPickerWrapperController
+          label="Color picker with controller"
+          isRequired={true}
+        />
+      );
 
       expect(component).toMatchSnapshot();
     });

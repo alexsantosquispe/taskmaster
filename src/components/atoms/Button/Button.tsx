@@ -4,9 +4,9 @@ import type { ReactNode } from 'react';
 import { twMerge } from 'tailwind-merge';
 
 export interface ButtonProps {
+  ariaLabel: string;
   label?: string;
   onClick?: () => void;
-  ariaLabel: string;
   type?: 'submit' | 'button';
   icon?: ReactNode;
   isSecondary?: boolean;

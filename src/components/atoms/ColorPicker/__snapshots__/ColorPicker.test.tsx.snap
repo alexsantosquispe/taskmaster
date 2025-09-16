@@ -120,7 +120,12 @@ exports[`ColorPicker styles should render the color picker with controller corre
         <label
           class="mb-0.5 text-sm"
         >
-          Color picker
+          Color picker with controller
+          <span
+            class="text-rose-600"
+          >
+             *
+          </span>
         </label>
         <div
           class="relative flex items-center justify-center"
@@ -146,7 +151,12 @@ exports[`ColorPicker styles should render the color picker with controller corre
       <label
         class="mb-0.5 text-sm"
       >
-        Color picker
+        Color picker with controller
+        <span
+          class="text-rose-600"
+        >
+           *
+        </span>
       </label>
       <div
         class="relative flex items-center justify-center"
