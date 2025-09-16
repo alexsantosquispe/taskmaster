@@ -20,8 +20,9 @@ export const ProjectsHeader = ({ onSearchCallback }: ProjectsHeaderProps) => {
 
   return (
     <>
-      <div className="flex w-full items-center justify-between py-1">
-        <h2 className="text-2xl font-bold">Projects</h2>
+      <div className="flex w-full flex-col gap-2 py-1 md:flex-row md:items-center md:justify-between">
+        <h2 className="text-2xl font-bold md:text-3xl">Projects</h2>
+
         <div className="flex gap-4">
           <SearchBar
             onSearchCallback={onSearchCallback}

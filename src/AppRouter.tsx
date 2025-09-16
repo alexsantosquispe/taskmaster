@@ -59,7 +59,6 @@ export const AppRouter = () => {
           }
         >
           <Route
-            index
             path="dashboard"
             element={
               <Suspense>

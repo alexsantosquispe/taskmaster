@@ -2,11 +2,11 @@ import SwitchThemeButton from '@/components/atoms/SwitchThemeButton/SwitchThemeB
 import { LogoHeader } from '@/components/molecules/SideBarMenu/components/SideBarHeader';
 import type { ReactNode } from 'react';
 
-interface LayoutProps {
+interface PublicLayoutProps {
   children: ReactNode;
 }
 
-export const Layout = ({ children }: LayoutProps) => {
+export const PublicLayout = ({ children }: PublicLayoutProps) => {
   return (
     <div className="text-primary flex min-h-screen flex-col bg-white dark:bg-black dark:text-white">
       <nav className="fixed z-40 flex h-[3.5rem] w-full justify-between border-b border-neutral-200 bg-white/40 px-4 backdrop-blur-md md:bg-white dark:border-white/15 dark:bg-black/70">

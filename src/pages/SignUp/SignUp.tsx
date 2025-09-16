@@ -1,10 +1,10 @@
+import { TextLink } from '@/components/atoms/TextLink/TextLink';
 import { AuthForm } from '@/components/molecules/AuthForm/AuthForm';
 import type { AuthFormType } from '@/components/molecules/AuthForm/AuthForm.schema';
 import { AuthWrapper } from '@/components/molecules/AuthWrapper/AuthWrapper';
-import { Layout } from '../Layout';
-import { TextLink } from '@/components/atoms/TextLink/TextLink';
-import { useNavigate } from 'react-router-dom';
 import { useSignUpMutation } from '@/services/authApi';
+import { useNavigate } from 'react-router-dom';
+import { PublicLayout } from '../PublicLayout';
 
 const SignUp = () => {
   const [signUp, signUpResult] = useSignUpMutation();
@@ -18,7 +18,7 @@ const SignUp = () => {
   };
 
   return (
-    <Layout>
+    <PublicLayout>
       <section className="text-primary flex w-full flex-1 items-center justify-center bg-white px-4 md:p-0 dark:bg-black dark:text-white">
         <AuthWrapper>
           <div className="flex flex-col items-center gap-2 pb-4">
@@ -38,7 +38,7 @@ const SignUp = () => {
           </p>
         </AuthWrapper>
       </section>
-    </Layout>
+    </PublicLayout>
   );
 };
 

@@ -22,7 +22,7 @@ const SearchBar = ({
         type="search"
         placeholder={placeholder}
         onChange={(e) => onSearch(e.target.value)}
-        className={twMerge(INPUT_FIELD_STYLES, 'min-w-[16rem]', className)}
+        className={twMerge(INPUT_FIELD_STYLES, 'md:min-w-[16rem]', className)}
       />
     </div>
   );
