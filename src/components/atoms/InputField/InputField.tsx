@@ -1,13 +1,13 @@
 import { INPUT_FIELD_ERROR, INPUT_FIELD_STYLES } from '@/styles';
 import { useCallback, useState } from 'react';
 
-import { Controller } from 'react-hook-form';
 import { EyeClosedIcon } from '@/icons/EyeClosedIcon';
 import { EyeIcon } from '@/icons/EyeIcon';
-import { IconButton } from '../IconButton/IconButton';
 import type { InputProps } from '@/models/types';
 import cn from 'clsx';
+import { Controller } from 'react-hook-form';
 import { twMerge } from 'tailwind-merge';
+import { IconButton } from '../IconButton/IconButton';
 
 export const InputField = ({
   label,

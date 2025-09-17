@@ -1,7 +1,8 @@
-import type { AuthApiError, AuthResponse } from '@supabase/supabase-js';
 import { createApi, fakeBaseQuery } from '@reduxjs/toolkit/query/react';
+import type { AuthApiError, AuthResponse } from '@supabase/supabase-js';
 
 import type { AuthFormType } from '@/components/molecules/AuthForm/AuthForm.schema';
+import type { ProfileDTO } from './apiTypes';
 import { supabaseClient } from './supabaseClient';
 
 type AuthResultData = AuthResponse['data'];
@@ -43,9 +44,61 @@ export const authApi = createApi({
           return { error: (error as AuthApiError).message };
         }
       }
+    }),
+    getUserProfile: builder.query<ProfileDTO, string>({
+      queryFn: async (profileId) => {
+        try {
+          const { data, error } = await supabaseClient
+            .from('profiles')
+            .select()
+            .eq('id', profileId)
+            .single();
+          if (error) throw error;
+          return { data };
+        } catch (error) {
+          return { error: (error as AuthApiError).message };
+        }
+      }
+    }),
+    addProfile: builder.mutation<unknown, ProfileDTO>({
+      queryFn: async (profile) => {
+        try {
+          const { data, error } = await supabaseClient
+            .from('profiles')
+            .insert(profile)
+            .select()
+            .single();
+          if (error) throw error;
+          return { data };
+        } catch (error) {
+          return { error: (error as AuthApiError).message };
+        }
+      }
+    }),
+    updateProfile: builder.mutation<unknown, ProfileDTO>({
+      queryFn: async (profile) => {
+        try {
+          const { data, error } = await supabaseClient
+            .from('profiles')
+            .update(profile)
+            .eq('id', profile.id)
+            .select()
+            .single();
+          if (error) throw error;
+          return { data };
+        } catch (error) {
+          return { error: (error as AuthApiError).message };
+        }
+      }
     })
   })
 });
 
-export const { useSignUpMutation, useSignInMutation, useSignOutMutation } =
-  authApi;
+export const {
+  useSignUpMutation,
+  useSignInMutation,
+  useSignOutMutation,
+  useGetUserProfileQuery,
+  useAddProfileMutation,
+  useUpdateProfileMutation
+} = authApi;

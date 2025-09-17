@@ -1,5 +1,6 @@
 import { Button } from '@/components/atoms/Button/Button';
 import { InputField } from '@/components/atoms/InputField/InputField';
+import { useAuth } from '@/hooks/useAuth';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm, type Control, type FieldValues } from 'react-hook-form';
 import {
@@ -18,13 +19,21 @@ interface ProfileFormProps {
 }
 
 export const ProfileForm = ({ onSubmitProfile }: ProfileFormProps) => {
+  const { user } = useAuth();
+
   const {
     control,
     handleSubmit,
     formState: { isDirty }
   } = useForm<ProfileFormType>({
     resolver: zodResolver(ProfileFormSchema),
-    defaultValues: PROFILE_FORM_DEFAULT_VALUES
+    defaultValues: {
+      firstName: PROFILE_FORM_DEFAULT_VALUES.firstName,
+      lastName: PROFILE_FORM_DEFAULT_VALUES.lastName,
+      email: user?.email || PROFILE_FORM_DEFAULT_VALUES.email,
+      username:
+        user?.email?.split('@')[0] || PROFILE_FORM_DEFAULT_VALUES.username
+    }
   });
 
   const onSubmit = (formData: FieldValues) => onSubmitProfile(formData);
