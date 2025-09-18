@@ -1,7 +1,9 @@
 import { Button } from '@/components/atoms/Button/Button';
 import { InputField } from '@/components/atoms/InputField/InputField';
 import { useAuth } from '@/hooks/useAuth';
+import { useGetProfileQuery } from '@/services/authApi';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { useEffect } from 'react';
 import { useForm, type Control, type FieldValues } from 'react-hook-form';
 import {
   PROFILE_FORM_DEFAULT_VALUES,
@@ -20,21 +22,30 @@ interface ProfileFormProps {
 
 export const ProfileForm = ({ onSubmitProfile }: ProfileFormProps) => {
   const { user } = useAuth();
+  const { data } = useGetProfileQuery(user?.id, {
+    skip: !user?.id
+  });
 
   const {
     control,
     handleSubmit,
-    formState: { isDirty }
+    formState: { isDirty },
+    reset
   } = useForm<ProfileFormType>({
     resolver: zodResolver(ProfileFormSchema),
-    defaultValues: {
-      firstName: PROFILE_FORM_DEFAULT_VALUES.firstName,
-      lastName: PROFILE_FORM_DEFAULT_VALUES.lastName,
-      email: user?.email || PROFILE_FORM_DEFAULT_VALUES.email,
-      username:
-        user?.email?.split('@')[0] || PROFILE_FORM_DEFAULT_VALUES.username
-    }
+    defaultValues: PROFILE_FORM_DEFAULT_VALUES
   });
+
+  useEffect(() => {
+    if (data) {
+      reset({
+        firstName: data.first_name ?? PROFILE_FORM_DEFAULT_VALUES.firstName,
+        lastName: data.last_name ?? PROFILE_FORM_DEFAULT_VALUES.lastName,
+        email: data.email ?? PROFILE_FORM_DEFAULT_VALUES.email,
+        username: data.username ?? PROFILE_FORM_DEFAULT_VALUES.username
+      });
+    }
+  }, [data]);
 
   const onSubmit = (formData: FieldValues) => onSubmitProfile(formData);
 
