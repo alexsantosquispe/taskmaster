@@ -22,12 +22,12 @@ const BREADCRUMBS = [
   {
     id: 'projects',
     label: 'Projects',
-    href: '/projects'
+    href: '/home/projects'
   },
   {
     id: 'taskmaster-mobile-app',
     label: 'TaskMaster Mobile App',
-    href: '/projects/taskmaster-mobile-app'
+    href: '/home/projects/taskmaster-mobile-app'
   }
 ];
 

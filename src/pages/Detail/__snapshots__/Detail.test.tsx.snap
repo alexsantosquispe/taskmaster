@@ -19,7 +19,7 @@ exports[`Detail component should render the component correctly 1`] = `
             >
               <a
                 class="hover:cursor-pointer"
-                href="/projects"
+                href="/home/projects"
               >
                 <span>
                   Projects
@@ -47,7 +47,7 @@ exports[`Detail component should render the component correctly 1`] = `
             >
               <a
                 class="hover:cursor-pointer text-primary font-semibold dark:text-white"
-                href="/projects/taskmaster-mobile-app"
+                href="/home/projects/taskmaster-mobile-app"
               >
                 <span>
                   TaskMaster Mobile App
@@ -2647,7 +2647,7 @@ exports[`Detail component should render the component correctly 1`] = `
           >
             <a
               class="hover:cursor-pointer"
-              href="/projects"
+              href="/home/projects"
             >
               <span>
                 Projects
@@ -2675,7 +2675,7 @@ exports[`Detail component should render the component correctly 1`] = `
           >
             <a
               class="hover:cursor-pointer text-primary font-semibold dark:text-white"
-              href="/projects/taskmaster-mobile-app"
+              href="/home/projects/taskmaster-mobile-app"
             >
               <span>
                 TaskMaster Mobile App
