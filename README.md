@@ -12,15 +12,41 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![Storybook](https://img.shields.io/badge/Storybook-FF4785?style=for-the-badge&logo=storybook&logoColor=white)](https://storybook.js.org/)
+
 </div>
 
 ## 📌 Overview
 
 Taskmaster is a modern task management application designed to help teams and individuals organize their work efficiently. Built with a focus on performance and user experience, it provides a clean and intuitive interface for managing tasks and projects.
 
+## 📚 Table of Contents
+
+- [Overview](#overview)
+- [Quick Start](#quick-start)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Preview](#preview)
+- [Features](#features)
+- [Architecture](#architecture)
+  - [Key Architectural Decisions](#key-architectural-decisions)
+- [Tech Stack](#tech-stack)
+- [Development](#development)
+  - [Available Scripts](#available-scripts)
+  - [Running the App](#running-the-app)
+- [Testing](#testing)
+- [Linting and Formatting](#linting-and-formatting)
+- [Development Practices](#development-practices)
+  - [Code Quality](#code-quality)
+  - [Git Workflow](#git-workflow)
+  - [Code Review Guidelines](#code-review-guidelines)
+- [CI/CD Pipeline](#cicd-pipeline)
+  - [GitHub Actions](#github-actions)
+  - [Local Development](#local-development)
+
 ## 🚀 Quick Start
 
 ### Prerequisites
+
 - [Node.js](https://nodejs.org/) `v18` or later
 - [pnpm](https://pnpm.io/) (recommended) or npm
 
@@ -43,11 +69,13 @@ Visit `http://localhost:5173` to view the app.
 ## 🖼️ Preview
 
 ### Light Theme
+
 <div align="center">
   <img src="./screenshots/light.webp" alt="Light Theme" width="80%"/>
 </div>
 
 ### Dark Theme
+
 <div align="center">
   <img src="./screenshots/dark.webp" alt="Dark Theme" width="80%"/>
 </div>
@@ -119,7 +147,6 @@ src/
 - **Formatting**: Prettier
 - **Version Control**: Git
 
-
 ## 🚀 Development
 
 ### Available Scripts
@@ -138,9 +165,11 @@ src/
 ### Running the App
 
 1. Start the development server:
+
    ```bash
    pnpm dev
    ```
+
    The app will be available at `http://localhost:5173`
 
 2. (Optional) Run Storybook to view components in isolation:
@@ -193,6 +222,7 @@ This project uses ESLint for code linting and Prettier for code formatting. We r
    - Ensure all tests pass
 
 ### Code Review Guidelines
+
 - Follow SOLID principles
 - Keep components small and focused
 - Write meaningful commit messages
@@ -220,13 +250,17 @@ The project includes GitHub Actions workflows for continuous integration:
 ### Local Development
 
 #### Pre-commit Hooks
+
 Husky is configured to run the following on `git commit`:
+
 - Linting with ESLint
 - Type checking with TypeScript
 - Formatting with Prettier
 
 #### Pre-push Hooks
+
 Before pushing to remote:
+
 - Runs the full test suite
 - Ensures all tests pass
 - Verifies build process
