@@ -17,7 +17,7 @@
 
 ## 📌 Overview
 
-Taskmaster is a modern task management application designed to help teams and individuals organize their work efficiently. Built with a focus on performance and user experience, it provides a clean and intuitive interface for managing tasks and projects.
+Taskmaster is a modern task management application built to help organize projects and tasks efficiently. It features a clean, intuitive interface with a focus on performance and user experience. Developed as a personal project, Taskmaster also showcases my frontend development skills, including modern tooling, best practices, and attention to design detail.
 
 ## 📚 Table of Contents
 
