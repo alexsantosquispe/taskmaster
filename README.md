@@ -71,6 +71,7 @@ Visit `http://localhost:5173` to view the app.
 ### Light Theme
 
 <div align="center">
+  <img src="./screenshots/login.webp" alt="Login Light Theme" width="80%"/>
   <img src="./screenshots/light.webp" alt="Light Theme" width="80%"/>
 </div>
 
