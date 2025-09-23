@@ -45,7 +45,7 @@ export const authApi = createApi({
           if (error) throw error;
           return { data };
         } catch (error) {
-          return { error: (error as AuthApiError).message };
+          return { error: (error as AuthApiError).message as string };
         }
       }
     }),

@@ -13,8 +13,7 @@ export const SignIn = () => {
   const signInUser = (formData: AuthFormType) => {
     signIn(formData)
       .unwrap()
-      .then(() => navigate('/home/dashboard'))
-      .catch((error) => console.log(error));
+      .then(() => navigate('/home/dashboard'));
   };
 
   return (
@@ -26,6 +25,11 @@ export const SignIn = () => {
             <p className="text-semibold text-sm text-neutral-600 dark:text-neutral-200">
               Enter your credentials to access your account.
             </p>
+            {!!signInResult.error && (
+              <div className="flex w-full items-center justify-between rounded-lg border border-rose-600 bg-rose-50 px-3 py-2 text-sm text-rose-700 dark:border-rose-600 dark:bg-rose-950/60 dark:text-rose-500">
+                <span>{`${signInResult?.error}`}</span>
+              </div>
+            )}
           </div>
 
           <AuthForm

@@ -13,8 +13,7 @@ const SignUp = () => {
   const createAccount = (formData: AuthFormType) => {
     signUp(formData)
       .unwrap()
-      .then(() => navigate('/home/dashboard'))
-      .catch((error) => console.log(error));
+      .then(() => navigate('/home/dashboard'));
   };
 
   return (
@@ -24,6 +23,11 @@ const SignUp = () => {
           <div className="flex flex-col items-center gap-2 pb-4">
             <h1 className="text-2xl font-bold">Create an account</h1>
             <p className="text-semibold text-sm text-neutral-600 dark:text-neutral-200">{`Let's get started with your 30 days free trial`}</p>
+            {!!signUpResult.error && (
+              <div className="flex w-full items-center justify-between rounded-lg border border-rose-600 bg-rose-50 px-3 py-2 text-sm text-rose-700 dark:border-rose-600 dark:bg-rose-950/60 dark:text-rose-500">
+                <span>{`${signUpResult?.error}`}</span>
+              </div>
+            )}
           </div>
 
           <AuthForm
