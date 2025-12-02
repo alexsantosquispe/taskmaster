@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { TestWrapper } from '@/utils/test.utils';
+import { ReduxWrapper, TestWrapper } from '@/utils/test.utils';
 import { SideBarMenu } from './SideBarMenu';
 
 const meta = {
@@ -15,9 +15,11 @@ type Story = StoryObj<typeof SideBarMenu>;
 export const Default: Story = () => {
   return (
     <TestWrapper>
-      <div className="flex h-screen">
-        <SideBarMenu />
-      </div>
+      <ReduxWrapper>
+        <div className="flex h-screen">
+          <SideBarMenu />
+        </div>
+      </ReduxWrapper>
     </TestWrapper>
   );
 };

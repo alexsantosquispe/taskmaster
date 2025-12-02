@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
+import { ReduxWrapper, TestWrapper } from '@/utils/test.utils';
 import UserLoggedItem from './UserLoggedItem';
 
 const meta = {
@@ -15,7 +16,13 @@ export default meta;
 type Story = StoryObj<typeof UserLoggedItem>;
 
 export const Default: Story = () => {
-  return <UserLoggedItem />;
+  return (
+    <TestWrapper>
+      <ReduxWrapper>
+        <UserLoggedItem />
+      </ReduxWrapper>
+    </TestWrapper>
+  );
 };
 
 Default.args = {};
