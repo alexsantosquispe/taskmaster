@@ -1,15 +1,15 @@
 import { BoardIcon, ChartPieIcon, ProjectIcon, TasksListIcon } from '@/icons';
 
-import { MobileMenu } from './components/MobileMenu/MobileMenu';
-import type { NavBarLinkItem } from '@/models/types';
-import SideBarHeader from './components/SideBarHeader';
-import { SideBarItem } from './components/SideBarItem';
 import SwitchThemeButton from '@/components/atoms/SwitchThemeButton/SwitchThemeButton';
 import UserLoggedItem from '@/components/atoms/UserLoggedItem/UserLoggedItem';
-import cn from 'clsx';
-import { twMerge } from 'tailwind-merge';
 import { useIsMobile } from '@/hooks/useIsMobile';
+import type { NavBarLinkItem } from '@/models/types';
+import cn from 'clsx';
 import { useState } from 'react';
+import { twMerge } from 'tailwind-merge';
+import { MobileMenu } from './components/MobileMenu/MobileMenu';
+import SideBarHeader from './components/SideBarHeader';
+import { SideBarItem } from './components/SideBarItem';
 
 export const SIDE_BAR_ITEMS: NavBarLinkItem[] = [
   {
