@@ -2,7 +2,7 @@ import '@testing-library/jest-dom';
 
 import { fireEvent, render, screen } from '@testing-library/react';
 
-import { ThemeProvider } from '../../../contexts/ThemeProvider';
+import { ThemeProvider } from '@alexsantosquispe/use-theme-hook';
 import SwitchThemeButton from './SwitchThemeButton';
 
 describe('SwitchThemeButton', () => {

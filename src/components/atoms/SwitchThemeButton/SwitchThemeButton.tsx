@@ -1,25 +1,28 @@
+import {
+  THEME_TYPES,
+  useTheme,
+  type ThemeType
+} from '@alexsantosquispe/use-theme-hook';
 import { LaptopIcon, MoonIcon, SunIcon } from '../../../icons';
 
 import cn from 'clsx';
 import { memo } from 'react';
 import { twMerge } from 'tailwind-merge';
-import { Theme, type ThemeType } from '../../../contexts/ThemeContext';
-import { useTheme } from '../../../hooks/useTheme';
 import { TabBarItem } from '../TabBar/components/TabBarItem';
 
 const THEME_BUTTONS = [
   {
-    id: Theme.system,
+    id: THEME_TYPES.SYSTEM,
     label: 'System',
     icon: <LaptopIcon />
   },
   {
-    id: Theme.light,
+    id: THEME_TYPES.LIGHT,
     label: 'Light',
     icon: <SunIcon />
   },
   {
-    id: Theme.dark,
+    id: THEME_TYPES.DARK,
     label: 'Dark',
     icon: <MoonIcon />
   }
