@@ -1,9 +1,9 @@
 import { ToastStack } from '@/components/atoms/ToastStack/ToastStack';
-import { ThemeProvider } from '@/contexts/ThemeProvider';
 import { ToastProvider } from '@/contexts/ToastProvider';
 import { apiClient } from '@/services/api';
 import { authApi } from '@/services/authApi';
 import authReducer from '@/store/slices/authSlice';
+import { ThemeProvider } from '@alexsantosquispe/use-theme-hook';
 import { configureStore } from '@reduxjs/toolkit';
 import { render } from '@testing-library/react';
 import { type ReactElement, type ReactNode } from 'react';

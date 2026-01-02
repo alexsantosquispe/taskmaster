@@ -1,6 +1,6 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 
-import { ThemeProvider } from '../../../contexts/ThemeProvider';
+import { ThemeProvider } from '@alexsantosquispe/use-theme-hook';
 import SwitchThemeButton from './SwitchThemeButton';
 
 const meta = {

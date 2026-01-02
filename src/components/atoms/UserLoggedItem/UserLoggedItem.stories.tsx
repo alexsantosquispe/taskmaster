@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { ReduxWrapper, TestWrapper } from '@/utils/test.utils';
 import UserLoggedItem from './UserLoggedItem';

@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { CircleDotDashedIcon } from '@/icons';
 import { BACKLOG_TASKS } from '@/utils/mocks/tasks';

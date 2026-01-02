@@ -1,5 +1,5 @@
 import { WrapperUI } from '@/utils/test.utils';
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { CircularProgress } from './CircularProgress';
 
 const meta = {

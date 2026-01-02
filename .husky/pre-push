@@ -1,4 +1,4 @@
-# .husky/pre-commit
+# .husky/pre-push
 handle_error() {
     echo "❌ $1 failed!"
     exit 1

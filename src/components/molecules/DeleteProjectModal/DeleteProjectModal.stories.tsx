@@ -3,13 +3,13 @@ import {
   ToastProviderWrapper,
   WrapperUI
 } from '@/utils/test.utils';
-import DeleteProjectModal from './DeleteProjectModal';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { Button } from '@/components/atoms/Button/Button';
 import { configureStore } from '@reduxjs/toolkit';
-import type { Meta, StoryObj } from '@storybook/react';
 import { useState } from 'react';
 import { Provider } from 'react-redux';
+import DeleteProjectModal from './DeleteProjectModal';
 
 const meta: Meta<typeof DeleteProjectModal> = {
   title: 'Molecules/DeleteProjectModal',
