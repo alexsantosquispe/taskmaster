@@ -1,4 +1,4 @@
-import { WrapperUI } from '@/utils/test.utils';
+import { TestWrapper, WrapperUI } from '@/utils/test.utils';
 import type { Meta, StoryObj } from '@storybook/react';
 import { Breadcrumb } from './Breadcrumb';
 
@@ -40,7 +40,9 @@ type Story = StoryObj<typeof Breadcrumb>;
 export const Default: Story = () => {
   return (
     <WrapperUI>
-      <Breadcrumb items={BREADCRUMBS} />
+      <TestWrapper>
+        <Breadcrumb items={BREADCRUMBS} />
+      </TestWrapper>
     </WrapperUI>
   );
 };
