@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { ALIGNMENT_TYPES } from '@/models/types';
 import { WrapperUI } from '@/utils/test.utils';

@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { TOAST_TYPES } from '@/models/types';
 import { Toast } from './Toast';

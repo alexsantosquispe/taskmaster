@@ -2,7 +2,7 @@ import { EllipsisVerticalIcon } from '@/icons';
 import { ContextMenu } from './ContextMenu';
 
 import { WrapperUI } from '@/utils/test.utils';
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 const options = [
   { label: 'Option 1', value: 'option-1' },
   { label: 'Option 2', value: 'option-2' },

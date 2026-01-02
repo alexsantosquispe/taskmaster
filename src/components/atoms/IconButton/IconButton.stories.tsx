@@ -1,5 +1,5 @@
 import { CirclePlusIcon, InfoIcon } from '@/icons';
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { WrapperUI } from '@/utils/test.utils';
 import { IconButton } from './IconButton';

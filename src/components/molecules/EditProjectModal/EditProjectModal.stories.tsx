@@ -3,7 +3,7 @@ import {
   ToastProviderWrapper,
   WrapperUI
 } from '@/utils/test.utils';
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { Button } from '@/components/atoms/Button/Button';
 import { PROJECTS } from '@/utils/mocks/projects';

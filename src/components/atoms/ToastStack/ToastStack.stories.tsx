@@ -1,5 +1,5 @@
 import { ToastProviderWrapper, WrapperUI } from '@/utils/test.utils.tsx';
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { useToast } from '@/hooks/useToast.ts';
 import { TOAST_TYPES, type ToastMessage } from '@/models/types.ts';
